@@ -1,0 +1,173 @@
+
+		.smart-green {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 600px;
+			/*background: #fefefe;*/
+			/*background: rgba(251, 88, 246, 0.93);*/
+			padding: 30px 30px 20px 30px;
+			font: 14px Arial, Helvetica, sans-serif;
+			color: #428bca;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+		}
+
+		.smart-green h1 {
+			/*font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+			font: 24px "Helvetica Neue", Arial, Helvetica, sans-serif;
+			padding: 20px 0px 10px 40px;  /* 上 右 下 左 */
+			display: block;
+			margin: -30px -30px 10px -30px;  /* 上 右 下 左 */
+			color: #333333;
+			background: #f5f5f5;
+			/*background: #f57b45;*/
+			/*text-shadow: 1px 1px 1px #949494;*/
+			border-radius: 5px 5px 0px 0px;
+			-webkit-border-radius: 5px 5px 0px 0px;
+			-moz-border-radius: 5px 5px 0px 0px;
+			/*border-bottom: 1px solid #454545;*/
+		}
+
+		.smart-green h1 > span {
+			display: block;
+			font-size: 11px;
+			color: #FFF;
+		}
+
+		.smart-green label {
+			display: block;
+			margin: 0px 0px 5px;
+			/*background: #fbfbfb;*/
+			/*font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+			font: 14px "Helvetica Neue", Arial, Helvetica, sans-serif;
+			color: #333333;
+			text-align: right;
+			font-weight: 700;
+			line-height: 20px;
+			background: #fbfbfb;
+		}
+
+
+		.smart-green label a{
+			display: block;
+			color: #2a6496;
+		}
+
+
+		.smart-green label > span {
+			float: left;
+			margin-top: 10px;
+			color: #5E5E5E;
+		}
+
+
+		.smart-green input[type="text"], .smart-green input[type="email"], .smart-green textarea, .smart-green select,.smart-green select> option{
+			margin-right: 200px;
+			color: #555;
+			height: 30px;
+			line-height: 15px;
+			width: 100%;
+			/*width: 400px;*/
+			padding: 0px 0px 0px 10px;
+			margin-top: 2px;
+			border: 1px solid #E5E5E5;
+			background: #ffffff;
+			/*background: #ff7d2d;*/
+			outline: 0;
+			-webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+			box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+			font: normal 14px/14px Arial, Helvetica, sans-serif;
+		}
+
+
+		.smart-green textarea {
+			height: 100px;
+			padding-top: 10px;
+		}
+
+
+		.smart-green .button {
+			background-color: #3276b1;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-border-radius: 5px;
+			border: none;
+			padding: 10px 25px 10px 25px;  /* 上 右 下 左 */
+			color: #FFF;
+			/*text-shadow: 1px 1px 1px #949494;*/
+		}
+
+		.tabledata{
+			background: rgba(251, 251, 251, 0.93);
+			margin: -0px -30px 0px -30px;  /* 上 右 下 左 */
+		}
+		/*.tabledata select {*/
+			/*margin-right: 200px;*/
+			/*color: #555;*/
+			/*height: 30px;*/
+			/*line-height: 15px;*/
+			/*width: 100%;*/
+			/*!*width: 400px;*!*/
+			/*padding: 0px 0px 0px 10px;*/
+			/*margin-top: 2px;*/
+			/*border: 1px solid #E5E5E5;*/
+			/*background: #ffffff;*/
+			/*outline: 0;*/
+			/*-webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);*/
+			/*box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);*/
+			/*font: normal 14px/14px Arial, Helvetica, sans-serif;*/
+		/*}*/
+		.kongbai{
+			background-color: #eeeeee;
+			/*border-radius: 5px;*/
+			/*-webkit-border-radius: 5px;*/
+			/*-moz-border-border-radius: 5px;*/
+			/*border: none;*/
+			padding: 1px 0px 0px 0px;   /* 上 右 下 左 */
+			margin: 0px -30px 0px -30px;  /* 上 右 下 左 */
+			/*color: #FFF;*/
+			/*text-shadow: 1px 1px 1px #949494;*/
+		}
+		/*.smart-green .button:hover {*/
+			/*background-color: #80A24A;*/
+		/*}*/
+
+		.error-msg{
+			color: red;
+			margin-top: 10px;
+		}
+		.success-msg{
+			color: green;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+/*----------------------------------------------------------------------------------------------		*/
+		.box2{
+			margin: 10px -30px 0px -30px;  /* 上 右 下 左 */
+			height: 40px;
+			background: #f5f5f5;
+		}
+		.box2button{
+			display: block;
+			float: left;
+		}
+		.box2a{
+			display: block;
+			float: right;
+			padding: 10px 25px 10px 25px;
+			/*background: #ff7645;*/
+		}
+		.box2a a{
+			color: #2a6496;
+			text-decoration: none;
+		}
+		.box2a a:hover{
+			text-decoration: underline;
+		}
+
+		input, select,textarea{
+  			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+  			-webkit-box-sizing: border-box;
+		}/*解决Input与Select设置CSS宽度相同时显示宽度不同的解决！*/

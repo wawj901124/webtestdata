@@ -1,0 +1,123 @@
+{% extends 'modulepage.html' %}
+{% block table %}
+    <table cellpadding="5" cellspacing="5">
+                <tr>
+                    <td>
+                        <label>测试项目:</label>
+                    </td>
+                    <td>
+                        <select id="testproject" name="testproject">
+                            {%for tp in testprojects%}
+                                <option value={{forloop.counter}} {% if tp.id == modulepage.testproject_id  %}selected="selected"{% endif %}>{{ tp.web_project}}</option>
+                            {%endfor%}
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>项目模块:</label>
+                    </td>
+                    <td>
+                        <select id="projectmodule" name="projectmodule">
+                            {%for pm in projectmodules%}
+                                <option value={{forloop.counter}} {% if pm.id == modulepage.projectmodule_id %}selected="selected"{% endif %}>{{ pm.web_module}}</option>
+                            {%endfor%}
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>元素页面:</label>
+                    </td>
+                    <td>
+                        <input id="ele_page" name="ele_page" type="text" value="{{ modulepageform.ele_page.value }}"/>
+                    </td>
+                </tr>
+
+    {#            <tr>#}
+    {#                <td>#}
+    {#                    <label>功能点:</label>#}
+    {#                </td>#}
+    {#                <td>#}
+    {#                    <textarea id="requirement_function" name="requirement_function"> {{ testcase.requirement_function }}</textarea>#}
+    {#                </td>#}
+    {#            </tr>#}
+
+    {#            <tr>#}
+    {#                <td>#}
+    {#                    <label>用例优先级:</label>#}
+    {#                </td>#}
+    {#                <td>#}
+    {#                    <input type="radio"  name="case_priority" value="P0" {% if testcase.case_priority == 'P0' %}checked="checked"{% endif %}>冒烟用例#}
+    {#                    <input type="radio" name="case_priority"   value="P1" {% if testcase.case_priority  == 'P1' %}checked="checked"{% endif %}>系统的重要功能用例#}
+    {#                    <input type="radio"  name="case_priority"  value="P2" {% if testcase.case_priority == 'P2' %}checked="checked"{% endif %}>系统的一般功能用例#}
+    {#                    <input type="radio" name="case_priority"   value="P3" {% if testcase.case_priority  == 'P3' %}checked="checked"{% endif %}>极低级别的用例#}
+    {#                </td>#}
+    {#            </tr>#}
+
+    {#            <tr>#}
+    {#                <td>#}
+    {#                    <label>流程类型:</label>#}
+    {#                </td>#}
+    {#                <td>#}
+    {#                    <input type="radio"  name="case_process_type" value="normal" {% if testcase.case_process_type == 'normal' %}checked="checked"{% endif %}>正常流#}
+    {#                    <input type="radio" name="case_process_type"   value="unusual" {% if testcase.case_process_type  == 'unusual' %}checked="checked"{% endif %}>异常流#}
+    {#                </td>#}
+    {#            </tr>#}
+
+                <tr>
+                    <td>
+                        <label>元素页面URL:</label>
+                    </td>
+                    <td>
+                        <input id="ele_page_url" name="ele_page_url" type="text" value="{{ modulepageform.ele_page_url.value }}"/>
+                    </td>
+                </tr>
+
+{#                <tr>#}
+{#                    <td>#}
+{#                        <label>元素名字:</label>#}
+{#                    </td>#}
+{#                    <td>#}
+{#                        <textarea id="ele_name" name="ele_name">{{ pageele.ele_name }}</textarea>#}
+{#                    </td>#}
+{#                </tr>#}
+{##}
+{#                <tr>#}
+{#                    <td>#}
+{#                        <label>元素xpath路径:</label>#}
+{#                    </td>#}
+{#                    <td>#}
+{#                        <textarea id="ele_xpath" name="ele_xpath">{{ pageele.ele_xpath }}</textarea>#}
+{#                    </td>#}
+{#                </tr>#}
+
+    {#            <tr>#}
+    {#                <td>#}
+    {#                    <label>测试用例预期结果:</label>#}
+    {#                </td>#}
+    {#                <td>#}
+    {#                    <textarea id="case_expected_result" name="case_expected_result"> {{ testcase.case_expected_result }}</textarea>#}
+    {#                </td>#}
+    {#            </tr>#}
+    {##}
+    {#            <tr>#}
+    {#                <td>#}
+    {#                    <label>编写备注:</label>#}
+    {#                </td>#}
+    {#                <td>#}
+    {#                    <textarea id="write_comments" name="write_comments"> {{ testcase.write_comments }}</textarea>#}
+    {#                </td>#}
+    {#            </tr>#}
+    {#            <tr>#}
+    {#                <td>#}
+    {#                    <label>编写人员:</label>#}
+    {#                </td>#}
+    {#                <td>#}
+    {#                    <input id="write_user" name="write_user"  type="text" readonly="readonly"  value="{{ testcase.write_user|default:'' }}"/>#}
+    {#                </td>#}
+    {#            </tr>#}
+            </table>
+{% endblock %}

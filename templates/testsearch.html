@@ -1,0 +1,137 @@
+{% extends 'pageelebase.html' %}
+{% block title %}add testsearch{% endblock %}
+{% block formurl %}{% url 'test_fun:test_search_id' testsearch.id %}{% endblock %}
+{% block table %}
+    <table cellpadding="5" cellspacing="5">
+            <tr>
+                <td>
+                    <label>is_cookie:</label>
+                </td>
+                <td>
+                    <input type="radio"  id="is_cookie" name="is_cookie"  value="1" {% if testsearch.is_cookie %}checked="checked" {% endif %}>是
+                    <input type="radio"  id="is_cookie" name="is_cookie"  value="0" {% if not testsearch.is_cookie %}checked="checked" {% endif %}>否
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>模块页面:</label>
+                </td>
+                <td>
+                    <select id="modulepage" name="modulepage">
+                        {% if not testsearch.modulepage %}
+                            <option value="" selected="selected">-------------------------------</option>
+                        {% endif %}
+                        {%for mp in modulepages%}
+                            <option value={{forloop.counter}} {% if mp.id == testsearch.modulepage_id%}selected="selected"{% endif %}>{{ mp.testproject }}__{{ mp.projectmodule }}_{{ mp.ele_page }}</option>
+                        {%endfor%}
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Select_option_xpath:</label>
+                </td>
+                <td>
+                    <select id="select_option_xpath" name="select_option_xpath">
+                        {% if not testsearch.select_option_xpath %}
+                            <option value="" selected="selected">-------------------------------</option>
+                        {% endif %}
+                        {%for pe in pageeles%}
+                            <option value={{forloop.counter}} {% if pe.id == testsearch.select_option_xpath_id%}selected="selected"{% endif %}>{{ pe.modulepage|default:"" }}_{{ pe.ele_name|default:"" }}</option>
+                        {%endfor%}
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>select_option_text:</label>
+                </td>
+                <td>
+                    <input id="select_option_text" name="select_option_text" type="text" value="{{ testsearch.select_option_text }}"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>select_input_xpath:</label>
+                </td>
+                <td>
+                    <select id="select_input_xpath" name="select_input_xpath">
+                        {% if not testsearch.select_input_xpath %}
+                            <option value="" selected="selected">-------------------------------</option>
+                        {% endif %}
+                        {%for pe in pageeles%}
+                            <option value={{forloop.counter}} {% if pe.id == testsearch.select_input_xpath_id%}selected="selected"{% endif %}>{{ pe.modulepage }}_{{ pe.ele_name }}</option>
+                        {%endfor%}
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>select_input_text:</label>
+                </td>
+                <td>
+                    <input id="select_input_text" name="select_input_text" type="text" value="{{ testsearch.select_input_text|default:""  }}"/>
+                                {#                    Django 模板HTML中 变量 过滤器 标签 的使用方法#}
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>search_button_xpath:</label>
+                </td>
+                <td>
+                    <select id="search_button_xpath" name="search_button_xpath">
+                        {% if not testsearch.search_button_xpath %}
+                            <option value="" selected="selected">-------------------------------</option>
+                        {% endif %}
+                        {%for pe in pageeles%}
+                            <option value={{forloop.counter}} {% if pe.id == testsearch.search_button_xpath_id%}selected="selected"{% endif %}>{{ pe.modulepage }}_{{ pe.ele_name}}</option>
+                        {%endfor%}
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>search_table_result_xpath:</label>
+                </td>
+                <td>
+                    <select id="search_table_result_xpath" name="search_table_result_xpath">
+                        {% if not search_table_result_xpath %}
+                            <option value="" selected="selected">-------------------------------</option>
+                        {% endif %}
+                        {%for pe in pageeles%}
+                            <option value={{forloop.counter}} {% if pe.id == testsearch.search_table_result_xpath_id%}selected="selected"{% endif %}>{{ pe.modulepage }}_{{ pe.ele_name}}</option>
+                        {%endfor%}
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>colnum:</label>
+                </td>
+                <td>
+                    <input id="colnum" name="colnum" type="text" value="{{ testsearch.colnum }}"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>check_text:</label>
+                </td>
+                <td>
+                    <input id="check_text" name="check_text" type="text" value="{{ testsearch.check_text }}"/>
+                </td>
+            </tr>
+
+        </table>
+
+{% endblock %}
+
+{% block backlist %}'http://127.0.0.1:8000/xadmin/testfundata/testsearch/'{% endblock %}
