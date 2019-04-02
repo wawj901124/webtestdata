@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'crispy_forms',  # 注册xadmin的依赖应用crispy_forms
     'pageelement.apps.PageelementConfig',   #注册pageelement
     'testfundata.apps.TestfundataConfig',   #注册testfundata
+    'logindata.apps.LogindataConfig',   #注册logindata
 
 ]
 
@@ -165,6 +166,7 @@ STATICFILES_DIRS = [
 
 #Web元素URL域名配置
 #测试环境域名
-WEB_URL_TITLE = 'https://bjw.halodigit.com:9090'
+# WEB_URL_TITLE = 'https://bjw.halodigit.com:9090'
+WEB_URL_TITLE = 'https://bjw.halodigit.com:9060'
 #现网域名
 # WEB_URL_TITLE = 'https://m-mbmpay.ahdipay.com'

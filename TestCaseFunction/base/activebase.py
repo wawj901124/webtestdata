@@ -141,6 +141,8 @@ class  ActiveWeb:
     def findElementByXpathAndClick(self,path):
         ele = self.findElementByXpath(path)
         ele.click()   #点击
+        print("点击元素的Xpath路径为：%s" % path)
+        self.delayTime(3)
         return ele
 
     #通过xpath查找元素，然后点击
