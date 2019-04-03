@@ -149,6 +149,7 @@ class  ActiveWeb:
     def findElementByXpathAndScriptClick(self,path):
         ele = self.findElementByXpath(path)
         self.driver.execute_script("arguments[0].click();", ele)
+        self.delayTime(3)
         return ele
 
     #通过xpath查找到要输入文件的input元素，然后上传文件
@@ -380,7 +381,7 @@ class  ActiveWeb:
         print("url2为：%s."%url2)
         self.driver.refresh()   #刷新当前页面
         print("刷新当前页面---------")
-        self.delayTime(5)   #等待10秒
+        self.delayTime(5000)   #等待10秒
         self.getCookies()
 
     #打印红色文字

@@ -1,4 +1,7 @@
+from webtestdata.settings import WEB_URL_TITLE
+
 class LoginPage:
+    pageurl = "%s/nereus/agent/v/#/login" % WEB_URL_TITLE
 
     logintitle = "/html/body/div[1]/div[2]/form/div/p[1]"          #登录框的title
 

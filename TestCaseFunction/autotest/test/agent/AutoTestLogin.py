@@ -99,15 +99,6 @@ def __generateTestCases():
     rows_count = logindata_all.count()
 
     for logindata in logindata_all:
-        if logindata.accountinput == None:
-            accountinput = None
-        else:
-            accountinput =logindata.accountinput
-
-        if logindata.passwordinput == None:
-            passwordinput = None
-        else:
-            passwordinput = logindata.passwordinput
         if len(str(logindata.id)) == 1:
             logindataid = '0000%s'%logindata.id
         elif len(str(logindata.id)) == 2:

@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'pageelement.apps.PageelementConfig',   #注册pageelement
     'testfundata.apps.TestfundataConfig',   #注册testfundata
     'logindata.apps.LogindataConfig',   #注册logindata
+    'searchdata.apps.SearchdataConfig',   #注册searchdata
 
 ]
 
