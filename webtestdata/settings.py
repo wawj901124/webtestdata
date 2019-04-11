@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'testfundata.apps.TestfundataConfig',   #注册testfundata
     'logindata.apps.LogindataConfig',   #注册logindata
     'searchdata.apps.SearchdataConfig',   #注册searchdata
+    'addmerchant.apps.AddmerchantConfig',  # 注册addmerchant
+
 
 ]
 
@@ -169,5 +171,8 @@ STATICFILES_DIRS = [
 #测试环境域名
 # WEB_URL_TITLE = 'https://bjw.halodigit.com:9090'
 WEB_URL_TITLE = 'https://bjw.halodigit.com:9060'
+AGENT_REVISE_MERCHANTID = "1002113"
+AGENT_DETAILS_MERCHANTID = "1002107"
+AGENT_CONTRAT_MERCHANID = "1002108"
 #现网域名
 # WEB_URL_TITLE = 'https://m-mbmpay.ahdipay.com'

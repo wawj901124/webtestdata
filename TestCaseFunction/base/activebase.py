@@ -6,6 +6,10 @@ import time   #导入时间
 import os
 import traceback
 import json
+import win32gui
+import win32con
+
+
 
 from selenium import webdriver   #导入驱动
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
@@ -146,8 +150,23 @@ class  ActiveWeb:
         return ele
 
     #通过xpath查找元素，然后点击
+    def findElementByXpathAndClickNum(self,num,path):
+        ele = self.getEleImage(num,path)
+        ele.click()   #点击
+        print("点击元素的Xpath路径为：%s" % path)
+        self.delayTime(3)
+        return ele
+
+    #通过xpath查找元素，然后点击
     def findElementByXpathAndScriptClick(self,path):
         ele = self.findElementByXpath(path)
+        self.driver.execute_script("arguments[0].click();", ele)
+        self.delayTime(3)
+        return ele
+
+    #通过xpath查找元素，然后点击
+    def findElementByXpathAndScriptClickNum(self,num,path):
+        ele = self.getEleImage(num,path)
         self.driver.execute_script("arguments[0].click();", ele)
         self.delayTime(3)
         return ele
@@ -164,6 +183,71 @@ class  ActiveWeb:
             self.printnormalword()
             self.closeBrowse()
 
+    #通过xpath查找到要输入文件的input元素，然后上传文件
+    def findElementByXpathAndAndFileNum(self,num,path,filepath):
+        ele = self.getEleImage(num,path)
+        try:
+            ele.send_keys(filepath)
+            self.delayTime(1000)
+        except Exception as e:
+            self.printredword()
+            print("上传文件失败，关闭驱动.问题描述：",e)
+            self.printnormalword()
+            self.closeBrowse()
+
+    #通过xpath查找到要输入文件的input元素，然后上传文件
+    #pip install SendKeys
+    #import win32gui
+    #import win32con
+    #import time
+    def findElementByXpathAndAndFileNumVue(self,num,path,filepath):
+        ele = self.findElementByXpathAndScriptClickNum(num,path)
+        # ele = self.getEleImage(num,path)
+        try:
+            #pip install pywin32
+            #import win32gui
+            # import win32con
+            #文件名：D:\pic\1.jpg
+            dialog = win32gui.FindWindow('#32770', '文件上传')  # 对话框
+            ComboBoxEx32 = win32gui.FindWindowEx(dialog, 0, 'ComboBoxEx32', None)
+            ComboBox = win32gui.FindWindowEx(ComboBoxEx32, 0, 'ComboBox', None)
+            Edit = win32gui.FindWindowEx(ComboBox, 0, 'Edit', None)  # 上面三句依次寻找对象，直到找到输入框Edit对象的句柄
+            button = win32gui.FindWindowEx(dialog, 0, 'Button', None)  # 确定按钮Button
+
+            win32gui.SendMessage(Edit, win32con.WM_SETTEXT, None, filepath)  # 往输入框输入绝对地址
+            win32gui.SendMessage(dialog, win32con.WM_COMMAND, 1, button)  # 按button
+            self.delayTime(5)
+
+        except Exception as e:
+            self.printredword()
+            print("上传文件失败，关闭驱动.问题描述：",e)
+            self.printnormalword()
+            # self.delayTime(1000)
+            self.closeBrowse()
+
+    #通过xpath查找到select元素,然后点击，然后点击要选择的项
+    def findElementByXpathAndClickOptionXpath(self,xpath,optiontextxpath):
+        try:
+            self.findElementByXpathAndScriptClick(xpath)
+            self.findElementByXpathAndScriptClick(optiontextxpath)
+            self.delayTime(2)
+        except Exception as e:
+            self.printredword()
+            print("出现问题，关闭驱动.问题描述：",e)
+            self.printnormalword()
+            self.closeBrowse()
+
+    #通过xpath查找到select元素,然后点击，然后点击要选择的项
+    def findElementByXpathAndClickOptionXpathNum(self,num,xpath,optiontextxpath):
+        try:
+            self.findElementByXpathAndScriptClickNum(num,xpath)
+            self.findElementByXpathAndScriptClickNum(num,optiontextxpath)
+            self.delayTime(2)
+        except Exception as e:
+            self.printredword()
+            print("出现问题，关闭驱动.问题描述：",e)
+            self.printnormalword()
+            self.closeBrowse()
 
     #通过xpath查找到select元素,选择要选择的项
     def findElementByXpathAndReturnOptions(self,path,optiontext):
