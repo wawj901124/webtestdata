@@ -48,7 +48,7 @@ class RunAllTest(unittest.TestCase):
         # 定义测试报告
         runner = HTMLTestRunner.HTMLTestRunner(
             stream=fp,
-            title=u'uiautomation2 python 自动化测试_测试报告',
+            title=u'python 自动化测试_测试报告',
             description=u'用例执行情况：',
             verbosity=2)   #verbosity=2,输出测试用例中打印的信息
         runner.run(suite)
