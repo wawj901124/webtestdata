@@ -10,7 +10,6 @@ import win32gui
 import win32con
 
 
-
 from selenium import webdriver   #导入驱动
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from PIL import Image   #导入Image
@@ -22,6 +21,7 @@ from selenium.webdriver.common.action_chains import ActionChains   #导入Action
 
 
 from TestCaseFunction.util.gettimestr import GetTimeStr   #导入获取时间串函数
+from log.my_log import UserLog
 
 
 
@@ -60,10 +60,15 @@ class  ActiveWeb:
         operadriver = webdriver.Opera  # 需要把驱动所在路径配置到系统环境变量里
         return  operadriver
 
+    def outPutMyLog(self,context):
+        mylog = UserLog(context)
+        mylog.runMyLog()
+
     #打开网址
     def getUrl(self,url):
         self.driver.get(url)
-        print("进入网址：%s"% url)
+        self.outPutMyLog("进入网址：%s"% url)
+        # print("进入网址：%s"% url)
 
     #通过xpath查找元素
     def findElementByXpath(self,path):
@@ -73,7 +78,8 @@ class  ActiveWeb:
             self.driver.execute_script("arguments[0].setAttribute('style',arguments[1]);", ele,"background:green;border:2px solid red")   #高亮显示操作的元素
             #使用JavaScript代码将传入的页面元素对象的背景颜色和边框颜分别设置为绿色和红色
         except Exception as e:
-            print(e)
+            self.outPutMyLog(e)
+            # print(e)
             self.getScreenshotNormal()
             self.delayTime(5)
         finally:
@@ -104,7 +110,8 @@ class  ActiveWeb:
         tStr = self.getTimeStr()
         eleimage = "../imagefile/ele/%s_%s_ele.png" % (num,tStr)
         imageScreen.save(eleimage)   #保存控件截图
-        print('找到的ele的截图：', eleimage)
+        self.outPutMyLog('找到的ele的截图：', eleimage)
+        # print('找到的ele的截图：', eleimage)
         return ele
 
 
@@ -145,7 +152,8 @@ class  ActiveWeb:
     def findElementByXpathAndClick(self,path):
         ele = self.findElementByXpath(path)
         ele.click()   #点击
-        print("点击元素的Xpath路径为：%s" % path)
+        self.outPutMyLog("点击元素的Xpath路径为：%s" % path)
+        # print("点击元素的Xpath路径为：%s" % path)
         self.delayTime(3)
         return ele
 
@@ -153,7 +161,8 @@ class  ActiveWeb:
     def findElementByXpathAndClickNum(self,num,path):
         ele = self.getEleImage(num,path)
         ele.click()   #点击
-        print("点击元素的Xpath路径为：%s" % path)
+        self.outPutMyLog("点击元素的Xpath路径为：%s" % path)
+        # print("点击元素的Xpath路径为：%s" % path)
         self.delayTime(3)
         return ele
 
@@ -179,7 +188,8 @@ class  ActiveWeb:
             self.delayTime(1)
         except Exception as e:
             self.printredword()
-            print("上传文件失败，关闭驱动.问题描述：",e)
+            self.outPutMyLog("上传文件失败，关闭驱动.问题描述：",e)
+            # print("上传文件失败，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
 
@@ -191,7 +201,8 @@ class  ActiveWeb:
             self.delayTime(1000)
         except Exception as e:
             self.printredword()
-            print("上传文件失败，关闭驱动.问题描述：",e)
+            self.outPutMyLog("上传文件失败，关闭驱动.问题描述：",e)
+            # print("上传文件失败，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
 
@@ -220,7 +231,8 @@ class  ActiveWeb:
 
         except Exception as e:
             self.printredword()
-            print("上传文件失败，关闭驱动.问题描述：",e)
+            self.outPutMyLog("上传文件失败，关闭驱动.问题描述：",e)
+            # print("上传文件失败，关闭驱动.问题描述：",e)
             self.printnormalword()
             # self.delayTime(1000)
             self.closeBrowse()
@@ -233,7 +245,8 @@ class  ActiveWeb:
             self.delayTime(2)
         except Exception as e:
             self.printredword()
-            print("出现问题，关闭驱动.问题描述：",e)
+            self.outPutMyLog("出现问题，关闭驱动.问题描述：",e)
+            # print("出现问题，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
 
@@ -245,7 +258,8 @@ class  ActiveWeb:
             self.delayTime(2)
         except Exception as e:
             self.printredword()
-            print("出现问题，关闭驱动.问题描述：",e)
+            self.outPutMyLog("出现问题，关闭驱动.问题描述：",e)
+            # print("出现问题，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
 
@@ -257,7 +271,8 @@ class  ActiveWeb:
             self.delayTime(2)
         except Exception as e:
             self.printredword()
-            print("填写内容与选项内容对不上，关闭驱动.问题描述：",e)
+            self.outPutMyLog("填写内容与选项内容对不上，关闭驱动.问题描述：",e)
+            # print("填写内容与选项内容对不上，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
 
@@ -271,11 +286,13 @@ class  ActiveWeb:
             for option in all_options:
                 optionlist.append(option.text)
                 # print('选项内容为：',option.text)
-            print('获取的选项所有内容：',optionlist)
+            self.outPutMyLog('获取的选项所有内容：',optionlist)
+            # print('获取的选项所有内容：',optionlist)
             return optionlist
         except Exception as e:
             self.printredword()
-            print("获取选项内容出错，关闭驱动.问题描述：",e)
+            self.outPutMyLog("获取选项内容出错，关闭驱动.问题描述：",e)
+            # print("获取选项内容出错，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
 
@@ -297,12 +314,14 @@ class  ActiveWeb:
                     collist.append(tdlist[j].text)
                     # print('第%s列内容如下：'% str(j+1),tdlist[j].text)
                     tabledic[i+1] = collist
-            print('获取的表格内容：',tabledic)
+            self.outPutMyLog('获取的表格内容：',tabledic)
+            # print('获取的表格内容：',tabledic)
             return tabledic
             # print('列表内容为：',option.text)
         except Exception as e:
             self.printredword()
-            print("获取表格内容出错，关闭驱动.问题描述：",e)
+            self.outPutMyLog("获取表格内容出错，关闭驱动.问题描述：",e)
+            # print("获取表格内容出错，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
 
@@ -324,12 +343,14 @@ class  ActiveWeb:
                     collist.append(tdlist[j].text)
                     # print('第%s列内容如下：'% str(j+1),tdlist[j].text)
                     tabledic[i+1] = collist
-            print('获取的表格内容：',tabledic)
+            self.outPutMyLog('获取的表格内容：',tabledic)
+            # print('获取的表格内容：',tabledic)
             return tabledic
             # print('列表内容为：',option.text)
         except Exception as e:
             self.printredword()
-            print("获取表格内容出错，关闭驱动.问题描述：",e)
+            self.outPutMyLog("获取表格内容出错，关闭驱动.问题描述：",e)
+            # print("获取表格内容出错，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
 
@@ -337,31 +358,38 @@ class  ActiveWeb:
         tabledic = self.findElementByXpathAndReturnTable(path)
         for value in tabledic.values():
             if inputtext.lower() in value[colnum].lower():
-                print('input输入内容变小写：',inputtext.lower())
-                print('搜索到的表格内容变小写：',value[colnum].lower())
+                self.outPutMyLog('input输入内容变小写：',inputtext.lower())
+                self.outPutMyLog('搜索到的表格内容变小写：',value[colnum].lower())
+                # print('input输入内容变小写：',inputtext.lower())
+                # print('搜索到的表格内容变小写：',value[colnum].lower())
             else:
-                print("搜索到的内容不匹配！！！")
+                self.outPutMyLog("搜索到的内容不匹配！！！")
+                # print("搜索到的内容不匹配！！！")
 
     #获取页面截图
     def getScreenshot(self):
         driver = self.driver
         self.printredword()
-        print("调用截取图片函数")
+        self.outPutMyLog("调用截取图片函数")
+        # print("调用截取图片函数")
         tStr = self.getTimeStr()
         path = "../imagefile/%s.png"% tStr
         path = '%s/screenshots/screenpicture_%s.png' % (
         str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), tStr)
         self.printnormalword()
         driver.get_screenshot_as_file(path)
-        print("*****")
+        self.outPutMyLog("*****")
+        # print("*****")
         print(path)
-        print("*****")
+        self.outPutMyLog("*****")
+        # print("*****")
         return path
 
     #获取页面截图
     def getScreenshotNormal(self):
         driver = self.driver
-        print("调用截取图片函数")
+        self.outPutMyLog("调用截取图片函数")
+        # print("调用截取图片函数")
         tStr = self.getTimeStr()
         path = "../imagefile/%s.png"% tStr
         driver.get_screenshot_as_file(path)
@@ -398,8 +426,8 @@ class  ActiveWeb:
                 nonepixtongjidic[item] += 1
             else:
                 nonepixtongjidic[item] = 1
-
-        print("nonepixtongjidic:",nonepixtongjidic)
+        self.outPutMyLog("nonepixtongjidic:",nonepixtongjidic)
+        # print("nonepixtongjidic:",nonepixtongjidic)
         nonepixtongjilist = sorted(nonepixtongjidic.values(),reverse=True)   #按照键值对的值对字典进行倒序排序
         numvalue = []
         numvalue.append(nonepixtongjilist[1])   #获取第二个值
@@ -447,43 +475,53 @@ class  ActiveWeb:
     def getCookies(self):
         cookies = self.driver.get_cookies()
         for cookie in cookies:
-            print("获取的cookie的值为：%s" % cookie)
+            self.outPutMyLog("获取的cookie的值为：%s" % cookie)
+            # print("获取的cookie的值为：%s" % cookie)
         return cookies
 
     #写入cookies
     def writerCookies(self,cookies,url,url2):
-        print("\n开始写入cookie-----------------\n")
+        self.outPutMyLog("\n开始写入cookie-----------------\n")
+        # print("\n开始写入cookie-----------------\n")
         self.getUrl(url)
         long = len(cookies)
         for i in range(long):
             cookie = {'name': cookies[i]['name'], 'value': cookies[i]['value']}
             self.driver.add_cookie(cookie)   #selenium添加cookies时，得先登录网址才能添加cookies的
-            print("写入cookie的值为：%s" % cookie)
+            self.outPutMyLog("写入cookie的值为：%s" % cookie)
+            # print("写入cookie的值为：%s" % cookie)
         self.driver.refresh()  #
-        print("刷新当前页面---------")
+        self.outPutMyLog("刷新当前页面---------")
+        # print("刷新当前页面---------")
         self.getUrl(url2)
-        print("url2为：%s."%url2)
+        self.outPutMyLog("url2为：%s."%url2)
+        # print("url2为：%s."%url2)
         self.driver.refresh()   #刷新当前页面
-        print("刷新当前页面---------")
+        self.outPutMyLog("刷新当前页面---------")
+        # print("刷新当前页面---------")
         self.delayTime(5000)   #等待10秒
         self.getCookies()
 
     #打印红色文字
     def printredword(self):
-        print('\033[1;31;0m')   #<!--1-高亮显示 31-前景色红色  47-背景色白色-->
+        self.outPutMyLog('\033[1;31;0m')
+        # print('\033[1;31;0m')   #<!--1-高亮显示 31-前景色红色  47-背景色白色-->
 
     #打印默认文字
     def printnormalword(self):
-        print('\033[0m')  # <!--采用终端默认设置，即取消颜色设置-->
+        self.outPutMyLog('\033[0m')
+        # print('\033[0m')  # <!--采用终端默认设置，即取消颜色设置-->
 
     #打印绿色文字
     def printgreenword(self):
+        self.outPutMyLog('\033[1;32;0m')
         print('\033[1;32;0m')  # <!--1-高亮显示 32-前景色绿色  40-背景色黑色-->
 
     #延迟3秒
     def delayTime(self,dalaytime):
         time.sleep(int(dalaytime))   #延迟，
-        print("等待%s秒---"% dalaytime)
+        self.outPutMyLog("等待%s秒---"% dalaytime)
+        # print("等待%s秒---"% dalaytime)
 
 
 
