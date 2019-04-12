@@ -110,7 +110,7 @@ class  ActiveWeb:
         tStr = self.getTimeStr()
         eleimage = "../imagefile/ele/%s_%s_ele.png" % (num,tStr)
         imageScreen.save(eleimage)   #保存控件截图
-        self.outPutMyLog('找到的ele的截图：', eleimage)
+        self.outPutMyLog('找到的ele的截图：%s'% eleimage)
         # print('找到的ele的截图：', eleimage)
         return ele
 
@@ -188,7 +188,7 @@ class  ActiveWeb:
             self.delayTime(1)
         except Exception as e:
             self.printredword()
-            self.outPutMyLog("上传文件失败，关闭驱动.问题描述：",e)
+            self.outPutMyLog("上传文件失败，关闭驱动.问题描述：%s"% e)
             # print("上传文件失败，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
@@ -201,7 +201,7 @@ class  ActiveWeb:
             self.delayTime(1000)
         except Exception as e:
             self.printredword()
-            self.outPutMyLog("上传文件失败，关闭驱动.问题描述：",e)
+            self.outPutMyLog("上传文件失败，关闭驱动.问题描述：%s"% e)
             # print("上传文件失败，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
@@ -231,7 +231,7 @@ class  ActiveWeb:
 
         except Exception as e:
             self.printredword()
-            self.outPutMyLog("上传文件失败，关闭驱动.问题描述：",e)
+            self.outPutMyLog("上传文件失败，关闭驱动.问题描述：%s"% e)
             # print("上传文件失败，关闭驱动.问题描述：",e)
             self.printnormalword()
             # self.delayTime(1000)
@@ -245,7 +245,7 @@ class  ActiveWeb:
             self.delayTime(2)
         except Exception as e:
             self.printredword()
-            self.outPutMyLog("出现问题，关闭驱动.问题描述：",e)
+            self.outPutMyLog("出现问题，关闭驱动.问题描述：%s" % e)
             # print("出现问题，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
@@ -258,7 +258,7 @@ class  ActiveWeb:
             self.delayTime(2)
         except Exception as e:
             self.printredword()
-            self.outPutMyLog("出现问题，关闭驱动.问题描述：",e)
+            self.outPutMyLog("出现问题，关闭驱动.问题描述：%s"% e)
             # print("出现问题，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
@@ -271,7 +271,7 @@ class  ActiveWeb:
             self.delayTime(2)
         except Exception as e:
             self.printredword()
-            self.outPutMyLog("填写内容与选项内容对不上，关闭驱动.问题描述：",e)
+            self.outPutMyLog("填写内容与选项内容对不上，关闭驱动.问题描述：%s"% e)
             # print("填写内容与选项内容对不上，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
@@ -286,12 +286,12 @@ class  ActiveWeb:
             for option in all_options:
                 optionlist.append(option.text)
                 # print('选项内容为：',option.text)
-            self.outPutMyLog('获取的选项所有内容：',optionlist)
+            self.outPutMyLog('获取的选项所有内容：%s'% optionlist)
             # print('获取的选项所有内容：',optionlist)
             return optionlist
         except Exception as e:
             self.printredword()
-            self.outPutMyLog("获取选项内容出错，关闭驱动.问题描述：",e)
+            self.outPutMyLog("获取选项内容出错，关闭驱动.问题描述%e"% e)
             # print("获取选项内容出错，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
@@ -314,13 +314,13 @@ class  ActiveWeb:
                     collist.append(tdlist[j].text)
                     # print('第%s列内容如下：'% str(j+1),tdlist[j].text)
                     tabledic[i+1] = collist
-            self.outPutMyLog('获取的表格内容：',tabledic)
+            self.outPutMyLog('获取的表格内容：%s'% tabledic)
             # print('获取的表格内容：',tabledic)
             return tabledic
             # print('列表内容为：',option.text)
         except Exception as e:
             self.printredword()
-            self.outPutMyLog("获取表格内容出错，关闭驱动.问题描述：",e)
+            self.outPutMyLog("获取表格内容出错，关闭驱动.问题描述：%s"% e)
             # print("获取表格内容出错，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
@@ -343,13 +343,13 @@ class  ActiveWeb:
                     collist.append(tdlist[j].text)
                     # print('第%s列内容如下：'% str(j+1),tdlist[j].text)
                     tabledic[i+1] = collist
-            self.outPutMyLog('获取的表格内容：',tabledic)
+            self.outPutMyLog('获取的表格内容：%s'%tabledic)
             # print('获取的表格内容：',tabledic)
             return tabledic
             # print('列表内容为：',option.text)
         except Exception as e:
             self.printredword()
-            self.outPutMyLog("获取表格内容出错，关闭驱动.问题描述：",e)
+            self.outPutMyLog("获取表格内容出错，关闭驱动.问题描述：%s"% e)
             # print("获取表格内容出错，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
@@ -358,8 +358,8 @@ class  ActiveWeb:
         tabledic = self.findElementByXpathAndReturnTable(path)
         for value in tabledic.values():
             if inputtext.lower() in value[colnum].lower():
-                self.outPutMyLog('input输入内容变小写：',inputtext.lower())
-                self.outPutMyLog('搜索到的表格内容变小写：',value[colnum].lower())
+                self.outPutMyLog('input输入内容变小写：%s'% inputtext.lower())
+                self.outPutMyLog('搜索到的表格内容变小写：%s'% value[colnum].lower())
                 # print('input输入内容变小写：',inputtext.lower())
                 # print('搜索到的表格内容变小写：',value[colnum].lower())
             else:
@@ -426,7 +426,7 @@ class  ActiveWeb:
                 nonepixtongjidic[item] += 1
             else:
                 nonepixtongjidic[item] = 1
-        self.outPutMyLog("nonepixtongjidic:",nonepixtongjidic)
+        self.outPutMyLog("nonepixtongjidic:%s" % nonepixtongjidic)
         # print("nonepixtongjidic:",nonepixtongjidic)
         nonepixtongjilist = sorted(nonepixtongjidic.values(),reverse=True)   #按照键值对的值对字典进行倒序排序
         numvalue = []
@@ -494,7 +494,7 @@ class  ActiveWeb:
         self.outPutMyLog("刷新当前页面---------")
         # print("刷新当前页面---------")
         self.getUrl(url2)
-        self.outPutMyLog("url2为：%s."%url2)
+        self.outPutMyLog("url2为：%s."% url2)
         # print("url2为：%s."%url2)
         self.driver.refresh()   #刷新当前页面
         self.outPutMyLog("刷新当前页面---------")
