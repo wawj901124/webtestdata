@@ -78,7 +78,7 @@ class  ActiveWeb:
             self.driver.execute_script("arguments[0].setAttribute('style',arguments[1]);", ele,"background:green;border:2px solid red")   #高亮显示操作的元素
             #使用JavaScript代码将传入的页面元素对象的背景颜色和边框颜分别设置为绿色和红色
         except Exception as e:
-            self.outPutMyLog(e)
+            self.outPutMyLog("问题描述：%s" % e)
             # print(e)
             self.getScreenshotNormal()
             self.delayTime(5)
@@ -92,7 +92,8 @@ class  ActiveWeb:
             except Exception as e:
                 self.printredword()
                 self.getScreenshot()
-                print("停顿5秒后再次查找依然未找到元素，关闭驱动.问题描述：",e)
+                self.outPutMyLog("停顿5秒后再次查找依然未找到元素，关闭驱动.问题描述：%s"% e)
+                # print("停顿5秒后再次查找依然未找到元素，关闭驱动.问题描述：",e)
                 self.printnormalword()
                 self.closeBrowse()
         return ele
@@ -108,7 +109,7 @@ class  ActiveWeb:
         pageScreenshot = Image.open(pageScreenshotpath)   #打开截图
         imageScreen = pageScreenshot.crop(coderange)   #使用Image的crop函数，从截图中再次截取我们需要的区域,即验证码区域
         tStr = self.getTimeStr()
-        eleimage = "../imagefile/ele/%s_%s_ele.png" % (num,tStr)
+        eleimage = "%s/imagefile/ele/%s_%s_ele.png" % (str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),num,tStr)
         imageScreen.save(eleimage)   #保存控件截图
         self.outPutMyLog('找到的ele的截图：%s'% eleimage)
         # print('找到的ele的截图：', eleimage)
@@ -373,7 +374,7 @@ class  ActiveWeb:
         self.outPutMyLog("调用截取图片函数")
         # print("调用截取图片函数")
         tStr = self.getTimeStr()
-        path = "../imagefile/%s.png"% tStr
+        # path = "../imagefile/%s.png"% tStr
         path = '%s/screenshots/screenpicture_%s.png' % (
         str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), tStr)
         self.printnormalword()
@@ -391,7 +392,7 @@ class  ActiveWeb:
         self.outPutMyLog("调用截取图片函数")
         # print("调用截取图片函数")
         tStr = self.getTimeStr()
-        path = "../imagefile/%s.png"% tStr
+        path = "%s/imagefile/%s.png"% (str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),tStr)
         driver.get_screenshot_as_file(path)
         return path
 
@@ -406,14 +407,14 @@ class  ActiveWeb:
         pageScreenshot = Image.open(pageScreenshotpath)   #打开截图
         imageScreen = pageScreenshot.crop(coderange)   #使用Image的crop函数，从截图中再次截取我们需要的区域,即验证码区域
         tStr = self.getTimeStr()
-        path = "../imagefile/%s_code.png"%tStr
+        path = "%s/imagefile/%s_code.png"%(str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),tStr)
         imageScreen.save(path)   #保存验证码图片
         return tStr
 
     #获取验证码文字信息
     def getcodetext(self,path):
         imagecodestr = self.getCodeImage(path)
-        imagecode = Image.open("../imagefile/%s_code.png" % imagecodestr)  # 打开验证码图片
+        imagecode = Image.open("%s/imagefile/%s_code.png" % (str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),imagecodestr)) # 打开验证码图片
         pixtongji = []
         for x in range(imagecode.size[1]):
             for y in range(imagecode.size[0]):
@@ -443,7 +444,7 @@ class  ActiveWeb:
                     if (pix[0] == getkey[i][0] and pix[1] == getkey[i][1] and pix[2] == getkey[i][2]):
                         # 把遍历的结果放到新图片上，0为透明度，不透明
                         img_new.putpixel((y, x), 0)
-        newpath = "../imagefile/%s_codegary.png" % imagecodestr
+        newpath = "%s/imagefile/%s_codegary.png" % (str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),imagecodestr)
         img_new.save(newpath, format='png')
 
         imagecode = Image.open(newpath)   #打开验证码图片
