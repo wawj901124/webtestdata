@@ -42,7 +42,7 @@ class RunAllTest(unittest.TestCase):
 
         print('Running the tests...')
         gettime = GetTimeStr()
-        filename = '../report/%s_report.html' % gettime.getTimeStr()
+        filename = '%s/report/%s_report.html' % (str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),gettime.getTimeStr())
         fp = open(filename, 'wb')
 
         # 定义测试报告
@@ -64,7 +64,7 @@ class RunAllTest(unittest.TestCase):
         gettime = GetTimeStr()
         timestr = gettime.getTimeStr()
         # define the log file that receives your log info
-        logpath = "../log/%s_message.txt" % timestr
+        logpath = "%s/log/%s_message.txt" % (str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),timestr)
         log_file = open(logpath, "w", encoding="utf-8")
         print("Now all print info will be written to message.log")
         # redirect print output to log file
