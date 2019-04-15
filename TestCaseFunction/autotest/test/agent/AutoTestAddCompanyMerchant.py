@@ -15,10 +15,10 @@ from TestCaseFunction.base.activebase import ActiveWeb
 from TestCaseFunction.util.operation_json import OperationJson
 
 from autotest.config.page.agent.loginPage import LoginPage
-from autotest.config.page.agent.addMerchantPage import AddMerchantPage
+from autotest.config.page.agent.addCompanyMerchantPage import AddCompanyMerchantPage
 
 
-class TestAddMerchantClass(unittest.TestCase):  # 创建测试类
+class TestAddCompanyMerchantClass(unittest.TestCase):  # 创建测试类
 
 
     @classmethod  # 类方法，只执行一次，但必须要加注解@classmethod,且名字固定为setUpClass
@@ -57,7 +57,7 @@ class TestAddMerchantClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndInput(LoginPage().password,"abc123456")
         self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
         self.activeweb.delayTime(3)
-        self.testpage = AddMerchantPage()
+        self.testpage = AddCompanyMerchantPage()
         self.testpageurl =self.testpage.pageurl   #测试页面url
         self.testpagemerchantinfo = self.testpage.merchantinfo   #Merchant info中 元素
         self.testpagebrandnameinput = self.testpage.brandnameinput
@@ -73,19 +73,23 @@ class TestAddMerchantClass(unittest.TestCase):  # 创建测试类
         self.testpagevillageinput = self.testpage.villageinput
         self.testpagepostcodeinput = self.testpage.postcodeinput
         self.testpageaddressinput = self.testpage.addressinput
-        self.testpagephotosiupimage = self.testpage.photosiupimage
-        self.testpagephotonpwpcompanyimage = self.testpage.photonpwpcompanyimage
-        self.testpagephototdpimage = self.testpage.phototdpimage
+        self.testpagecompanynameinput = self.testpage.companynameinput   #新加
+        self.testpageofficialwebsiteinput = self.testpage.officialwebsiteinput   #新加
+        self.testpagenpwptaxidinput = self.testpage.npwptaxidinput   #新加
+        self.testpagephotosiupimage = self.testpage.photosiupimage   #更换
+        self.testpagephotonpwpcompanyimage = self.testpage.photonpwpcompanyimage   #更换
+        self.testpagephototdpimage = self.testpage.phototdpimage   #更换
         self.testpageownerpersoninchargeinfo = self.testpage.ownerpersoninchangeinfo #Owner / Person in Charge info中 元素
         self.testpagenameinput = self.testpage.nameinput
-        self.testpagenpwpinput = self.testpage.npwpinput
-        self.testpagetypeidselect = self.testpage.typeidselect
-        self.testpageidentitynumberinput = self.testpage.identitynumberinput
-        self.testpageaddress2input = self.testpage.address2input
-        self.testpagenationalityselect = self.testpage.nationalityselect
-        self.testpagephoneinput = self.testpage.phoneinput
-        self.testpageemail2input = self.testpage.email2input
-        self.testpagephotofullfacebustimage = self.testpage.photofullfacebustimage
+        self.testpagepositioninput = self.testpage.positioninput   #新加
+        # self.testpagenpwpinput = self.testpage.npwpinput   #去掉
+        # self.testpagetypeidselect = self.testpage.typeidselect   #去掉
+        # self.testpageidentitynumberinput = self.testpage.identitynumberinput   #去掉
+        # self.testpageaddress2input = self.testpage.address2input   #去掉
+        # self.testpagenationalityselect = self.testpage.nationalityselect   #去掉
+        self.testpagephoneinput = self.testpage.phoneinput   #更换
+        self.testpageemail2input = self.testpage.email2input   #更换
+        self.testpagephotofullfacebustimage = self.testpage.photofullfacebustimage   #更换
         self.testpageprofilephotos = self.testpage.profilephotos    #Profile Photos中 元素
         self.testpagelocationphotoimage = self.testpage.locationphotoimage
         self.testpagephotoofthecashiersdeskimage = self.testpage.photoofthecashiersdeskimage
@@ -107,14 +111,17 @@ class TestAddMerchantClass(unittest.TestCase):  # 创建测试类
         # pass
 
     #定义搜索查找函数
-    def defineaddmerchantindividu(self, num, brandnameinputtext=None, emailinputtext=None, contactnumberinputtext=None,  #添加个人商户
+    def defineaddmerchantcompany(self, num, brandnameinputtext=None, emailinputtext=None, contactnumberinputtext=None,  #添加公司商户
                           merchanttypeselectoptionxpath=None, categoryselectoptionxpath=None, criteriaselectoptionxpath=None,
                           siupinputtext=None, provinceselectoptionxpath=None, cityselectoptionxpath=None,
                           districtinputtext=None, villageinputtext=None, postcodeinputtext=None,addressinputtext=None,
-                          photosiupimagefilepath=None, photonpwpcompanyimagefilepath=None, phototdpimagefilepath=None,
-                          nameinputtext=None, npwpinputtext=None, typeidselectoptionxpath=None,
-                          identitynumberinputtext=None, address2inputtext=None, nationalityselectoptionxpath=None,
-                          phoneinputtext=None, email2inputtext=None, photofullfacebustimagefilepath=None,
+                          companynameinputtext=None,officialwebsiteinputtext=None,npwptaxidinputtext=None,   #新加
+                          photosiupimagefilepath=None, photonpwpcompanyimagefilepath=None, phototdpimagefilepath=None,   #更换xpath
+                          nameinputtext=None,
+                          positioninputtext=None,   #新加
+                          # npwpinputtext=None, typeidselectoptionxpath=None,   #去掉
+                          # identitynumberinputtext=None, address2inputtext=None, nationalityselectoptionxpath=None,   #去掉
+                          phoneinputtext=None, email2inputtext=None, photofullfacebustimagefilepath=None,   #更换
                           locationphotoimagefilepath=None, photoofthecashiersdeskimagefilepath=None, otherphotoimagefilepath=None,
                           bankselectoptionxpath=None, accountnameinputtext=None, accountnumberinputtext=None,
                           qrindoaccountinputtext=None):
@@ -136,22 +143,28 @@ class TestAddMerchantClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndInputNum(num,self.testpagevillageinput,villageinputtext)  # 输入Village
         self.activeweb.findElementByXpathAndInputNum(num,self.testpagepostcodeinput, postcodeinputtext)  # 输入Postcode
         self.activeweb.findElementByXpathAndInputNum(num,self.testpageaddressinput, addressinputtext)  # 输入Address
-        self.activeweb.findElementByXpathAndAndFileNumVue(num,self.testpagephotosiupimage, photosiupimagefilepath) #添加Photo SIUP图片
-        self.activeweb.findElementByXpathAndAndFileNumVue(num,self.testpagephotonpwpcompanyimage,photonpwpcompanyimagefilepath)  # 添加Photo NPWP Company图片
-        self.activeweb.findElementByXpathAndAndFileNumVue(num,self.testpagephototdpimage,phototdpimagefilepath)  # 添加Photo TDP图片
+        self.activeweb.findElementByXpathAndInputNum(num,self.testpagecompanynameinput,companynameinputtext)  # 输入Company name   #新加
+        self.activeweb.findElementByXpathAndInputNum(num,self.testpageofficialwebsiteinput, officialwebsiteinputtext)  # 输入Official Website   #新加
+        self.activeweb.findElementByXpathAndInputNum(num,self.testpagenpwptaxidinput, npwptaxidinputtext)  # 输入NPWP/TAX ID   #新加
+
+        self.activeweb.findElementByXpathAndAndFileNumVue(num,self.testpagephotosiupimage, photosiupimagefilepath) #添加Photo SIUP图片   #更换
+        self.activeweb.findElementByXpathAndAndFileNumVue(num,self.testpagephotonpwpcompanyimage,photonpwpcompanyimagefilepath)  # 添加Photo NPWP Company图片   #更换
+        self.activeweb.findElementByXpathAndAndFileNumVue(num,self.testpagephototdpimage,phototdpimagefilepath)  # 添加Photo TDP图片   #更换
 
         self.activeweb.findElementByXpathAndScriptClickNum(num,self.testpagemerchantinfo)  #点击Merchant info
         self.activeweb.findElementByXpathAndScriptClickNum(num, self.testpageownerpersoninchargeinfo)  # 点击Owner / Person in Charge info
 
         self.activeweb.findElementByXpathAndInputNum(num,self.testpagenameinput, nameinputtext)  # 输入Name
-        self.activeweb.findElementByXpathAndInputNum(num,self.testpagenpwpinput, npwpinputtext)  # 输入NPWP
-        self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.testpagetypeidselect,typeidselectoptionxpath)  # 选择Type ID
-        self.activeweb.findElementByXpathAndInputNum(num,self.testpageidentitynumberinput, identitynumberinputtext)  # 输入Identity number
-        self.activeweb.findElementByXpathAndInputNum(num,self.testpageaddress2input, address2inputtext)  # 输入Address
-        self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.testpagenationalityselect,nationalityselectoptionxpath)  # 选择Nationality
-        self.activeweb.findElementByXpathAndInputNum(num,self.testpagephoneinput, phoneinputtext)  # 输入Phone
-        self.activeweb.findElementByXpathAndInputNum(num,self.testpageemail2input, email2inputtext)  # 输入Email
-        self.activeweb.findElementByXpathAndAndFileNumVue(num,self.testpagephotofullfacebustimage,photofullfacebustimagefilepath)  # 添加Photo Full-faceBust图片
+        self.activeweb.findElementByXpathAndInputNum(num, self.testpagepositioninput, positioninputtext)  # 输入Position   #新加
+
+        # self.activeweb.findElementByXpathAndInputNum(num,self.testpagenpwpinput, npwpinputtext)  # 输入NPWP   #去掉
+        # self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.testpagetypeidselect,typeidselectoptionxpath)  # 选择Type ID   #去掉
+        # self.activeweb.findElementByXpathAndInputNum(num,self.testpageidentitynumberinput, identitynumberinputtext)  # 输入Identity number   #去掉
+        # self.activeweb.findElementByXpathAndInputNum(num,self.testpageaddress2input, address2inputtext)  # 输入Address   #去掉
+        # self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.testpagenationalityselect,nationalityselectoptionxpath)  # 选择Nationality   #去掉
+        self.activeweb.findElementByXpathAndInputNum(num,self.testpagephoneinput, phoneinputtext)  # 输入Phone   #更换
+        self.activeweb.findElementByXpathAndInputNum(num,self.testpageemail2input, email2inputtext)  # 输入Email   #更换
+        self.activeweb.findElementByXpathAndAndFileNumVue(num,self.testpagephotofullfacebustimage,photofullfacebustimagefilepath)  # 添加Photo Full-faceBust图片   #更换
 
         self.activeweb.findElementByXpathAndScriptClickNum(num, self.testpageownerpersoninchargeinfo)  # 点击Owner / Person in Charge info
         self.activeweb.findElementByXpathAndScriptClickNum(num,self.testpageprofilephotos)  # 点击Profile Photos
@@ -262,25 +275,31 @@ class TestAddMerchantClass(unittest.TestCase):  # 创建测试类
         #     self.activeweb.findElementByXpathAndClick(self.addmerchantdonepage.merchantlistbutton)
 
     @staticmethod    #根据不同的参数生成测试用例
-    def getTestFunc( num,brandnameinputtext, emailinputtext, contactnumberinputtext,  #添加个人商户
-                          merchanttypeselectoptionxpath, categoryselectoptionxpath, criteriaselectoptionxpath,
-                          siupinputtext, provinceselectoptionxpath, cityselectoptionxpath,
-                          districtinputtext, villageinputtext, postcodeinputtext,addressinputtext,
-                          photosiupimagefilepath, photonpwpcompanyimagefilepath, phototdpimagefilepath,
-                          nameinputtext, npwpinputtext, typeidselectoptionxpath,
-                          identitynumberinputtext, address2inputtext, nationalityselectoptionxpath,
-                          phoneinputtext, email2inputtext, photofullfacebustimagefilepath,
-                          locationphotoimagefilepath, photoofthecashiersdeskimagefilepath, otherphotoimagefilepath,
-                          bankselectoptionxpath, accountnameinputtext, accountnumberinputtext,
-                            qrindoaccountinputtext):
+    def getTestFunc(num, brandnameinputtext, emailinputtext, contactnumberinputtext,  #添加公司商户
+                    merchanttypeselectoptionxpath, categoryselectoptionxpath, criteriaselectoptionxpath,
+                    siupinputtext, provinceselectoptionxpath, cityselectoptionxpath,
+                    districtinputtext, villageinputtext, postcodeinputtext, addressinputtext,
+                    companynameinputtext, officialwebsiteinputtext, npwptaxidinputtext,  # 新加
+                    photosiupimagefilepath, photonpwpcompanyimagefilepath, phototdpimagefilepath,  #更换xpath
+                    nameinputtext,
+                    positioninputtext,  # 新加
+                    # npwpinputtext, typeidselectoptionxpath,   #去掉
+                    # identitynumberinputtext, address2inputtext, nationalityselectoptionxpath,   #去掉
+                    phoneinputtext, email2inputtext, photofullfacebustimagefilepath,   #更换
+                    locationphotoimagefilepath, photoofthecashiersdeskimagefilepath, otherphotoimagefilepath,
+                    bankselectoptionxpath, accountnameinputtext, accountnumberinputtext,
+                    qrindoaccountinputtext):
         def func(self):
-            self.defineaddmerchantindividu(num,brandnameinputtext, emailinputtext, contactnumberinputtext,  #添加个人商户
+            self.defineaddmerchantcompany(num,brandnameinputtext, emailinputtext, contactnumberinputtext,  #添加公司商户
                           merchanttypeselectoptionxpath, categoryselectoptionxpath, criteriaselectoptionxpath,
                           siupinputtext, provinceselectoptionxpath, cityselectoptionxpath,
                           districtinputtext, villageinputtext, postcodeinputtext,addressinputtext,
-                          photosiupimagefilepath, photonpwpcompanyimagefilepath, phototdpimagefilepath,
-                          nameinputtext, npwpinputtext, typeidselectoptionxpath,
-                          identitynumberinputtext, address2inputtext, nationalityselectoptionxpath,
+                          companynameinputtext, officialwebsiteinputtext, npwptaxidinputtext,  # 新加
+                          photosiupimagefilepath, photonpwpcompanyimagefilepath, phototdpimagefilepath,  #更换xpath
+                          nameinputtext,
+                          positioninputtext,  # 新加
+                          # npwpinputtext, typeidselectoptionxpath,   #去掉
+                          # identitynumberinputtext, address2inputtext, nationalityselectoptionxpath,   #去掉
                           phoneinputtext, email2inputtext, photofullfacebustimagefilepath,
                           locationphotoimagefilepath, photoofthecashiersdeskimagefilepath, otherphotoimagefilepath,
                           bankselectoptionxpath, accountnameinputtext, accountnumberinputtext,
@@ -290,7 +309,7 @@ class TestAddMerchantClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from addmerchant.models import AddMerchant
 
-    addmerchant_all = AddMerchant.objects.all().order_by('id')
+    addmerchant_all = AddMerchant.objects.filter(iscompany=True).order_by('id')
     rows_count = addmerchant_all.count()
 
     for addmerchant in addmerchant_all:
@@ -324,18 +343,22 @@ def __generateTestCases():
         args.append(addmerchant.villageinputtext)
         args.append(addmerchant.postcodeinputtext)
         args.append(addmerchant.addressinputtext)
-        args.append(addmerchant.photosiupimagefilepath)
-        args.append(addmerchant.photonpwpcompanyimagefilepath)
-        args.append(addmerchant.phototdpimagefilepath)
+        args.append(addmerchant.companynameinputtext)  # 新加
+        args.append(addmerchant.officialwebsiteinputtext)  # 新加
+        args.append(addmerchant.npwptaxidinputtext)  # 新加
+        args.append(addmerchant.photosiupimagefilepath)   #更换
+        args.append(addmerchant.photonpwpcompanyimagefilepath)   #更换
+        args.append(addmerchant.phototdpimagefilepath)   #更换
         args.append(addmerchant.nameinputtext)
-        args.append(addmerchant.npwpinputtext)
-        args.append(addmerchant.typeidselectoptionxpath)
-        args.append(addmerchant.identitynumberinputtext)
-        args.append(addmerchant.address2inputtext)
-        args.append(addmerchant.nationalityselectoptionxpath)
-        args.append(addmerchant.phoneinputtext)
-        args.append(addmerchant.email2inputtext)
-        args.append(addmerchant.photofullfacebustimagefilepath)
+        args.append(addmerchant.positioninputtext)   # 新加
+        # args.append(addmerchant.npwpinputtext)   #去掉
+        # args.append(addmerchant.typeidselectoptionxpath)   #去掉
+        # args.append(addmerchant.identitynumberinputtext)   #去掉
+        # args.append(addmerchant.address2inputtext)   #去掉
+        # args.append(addmerchant.nationalityselectoptionxpath)   #去掉
+        args.append(addmerchant.phoneinputtext)   #更换
+        args.append(addmerchant.email2inputtext)   #更换
+        args.append(addmerchant.photofullfacebustimagefilepath)   #更换
         args.append(addmerchant.locationphotoimagefilepath)
         args.append(addmerchant.photoofthecashiersdeskimagefilepath)
         args.append(addmerchant.otherphotoimagefilepath)
@@ -345,8 +368,8 @@ def __generateTestCases():
         args.append(addmerchant.qrindoaccountinputtext)
 
 
-        setattr(TestAddMerchantClass, 'test_func_%s_%s' % (addmerchantid,addmerchant.testcasetitle),
-                TestAddMerchantClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
+        setattr(TestAddCompanyMerchantClass, 'test_func_%s_%s' % (addmerchantid,addmerchant.testcasetitle),
+                TestAddCompanyMerchantClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
 
     # file_name = "D:\\Users\\Administrator\\PycharmProjects\\seleniumweb\\sele\\dataconfig\\assertselectsearchmanager.xls"
     # sheet_id = 0

@@ -13,26 +13,32 @@ from .models import  AddMerchant
 
 
 class AddMerchantAdmin(object):
-    ziduan = ['webproject','brandnameinputtext', 'emailinputtext', 'contactnumberinputtext',  #添加个人商户
+    ziduan = ['webproject','testcasetitle','iscompany','brandnameinputtext', 'emailinputtext', 'contactnumberinputtext',  #添加个人商户(和公司商户)
                           'merchanttypeselectoptionxpath', 'categoryselectoptionxpath', 'criteriaselectoptionxpath',
                           'siupinputtext', 'provinceselectoptionxpath', 'cityselectoptionxpath',
                           'districtinputtext', 'villageinputtext', 'postcodeinputtext','addressinputtext',
-                          'photosiupimagefilepath', 'photonpwpcompanyimagefilepath', 'phototdpimagefilepath',
-                          'nameinputtext', 'npwpinputtext', 'typeidselectoptionxpath',
-                          'identitynumberinputtext', 'address2inputtext', 'nationalityselectoptionxpath',
-                          'phoneinputtext', 'email2inputtext', 'photofullfacebustimagefilepath',
+                          'companynameinputtext', 'officialwebsiteinputtext', 'npwptaxidinputtext',  # 新加(公司商户))
+                          'photosiupimagefilepath', 'photonpwpcompanyimagefilepath', 'phototdpimagefilepath',  #更换（个人商户和公司商户）
+                          'nameinputtext',
+                          'positioninputtext',  # 新加(公司商户)
+                          'npwpinputtext', 'typeidselectoptionxpath',   #(个人商户)
+                          'identitynumberinputtext', 'address2inputtext', 'nationalityselectoptionxpath',   #(个人商户)
+                          'phoneinputtext', 'email2inputtext', 'photofullfacebustimagefilepath',   #更换（个人商户和公司商户）
                           'locationphotoimagefilepath', 'photoofthecashiersdeskimagefilepath', 'otherphotoimagefilepath',
                           'bankselectoptionxpath', 'accountnameinputtext', 'accountnumberinputtext',
                           'qrindoaccountinputtext']
 
-    list_display =['id','webproject','brandnameinputtext', 'emailinputtext', 'contactnumberinputtext',  #添加个人商户
+    list_display =['id','webproject','testcasetitle','iscompany','brandnameinputtext', 'emailinputtext', 'contactnumberinputtext',  #添加个人商户
                           'merchanttypeselectoptionxpath', 'categoryselectoptionxpath', 'criteriaselectoptionxpath',
-                          'siupinputtext', 'provinceselectoptionxpath', 'cityselectoptionxpath',
+                          'siupinputtext','provinceselectoptionxpath', 'cityselectoptionxpath',
                           'districtinputtext', 'villageinputtext', 'postcodeinputtext','addressinputtext',
-                          'photosiupimagefilepath', 'photonpwpcompanyimagefilepath', 'phototdpimagefilepath',
-                          'nameinputtext', 'npwpinputtext', 'typeidselectoptionxpath',
-                          'identitynumberinputtext', 'address2inputtext', 'nationalityselectoptionxpath',
-                          'phoneinputtext', 'email2inputtext', 'photofullfacebustimagefilepath',
+                          'companynameinputtext', 'officialwebsiteinputtext', 'npwptaxidinputtext',   # 新加(公司商户))
+                          'photosiupimagefilepath', 'photonpwpcompanyimagefilepath', 'phototdpimagefilepath',  #更换（个人商户和公司商户）
+                          'nameinputtext',
+                          'positioninputtext',  # 新加(公司商户)
+                          'npwpinputtext', 'typeidselectoptionxpath',   #(个人商户)
+                          'identitynumberinputtext', 'address2inputtext', 'nationalityselectoptionxpath',   #(个人商户)
+                          'phoneinputtext', 'email2inputtext', 'photofullfacebustimagefilepath',   #更换（个人商户和公司商户）
                           'locationphotoimagefilepath', 'photoofthecashiersdeskimagefilepath', 'otherphotoimagefilepath',
                           'bankselectoptionxpath', 'accountnameinputtext', 'accountnumberinputtext',
                           'qrindoaccountinputtext','add_time']#定义显示的字段
