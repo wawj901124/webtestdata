@@ -13,9 +13,13 @@ django.setup()
 
 from TestCaseFunction.base.activebase import ActiveWeb
 from TestCaseFunction.util.operation_json import OperationJson
+from TestCaseFunction.util.gettimestr import GetTimeStr
 
 from autotest.config.page.agent.loginPage import LoginPage
 from autotest.config.page.agent.addCompanyMerchantPage import AddCompanyMerchantPage
+from autotest.config.page.agent.addMerchantSuccessPage import AddMerchantSuccessPage
+from autotest.config.page.agent.addMerchantDonePage import AddMerchantDonePage
+from autotest.config.page.agent.merchantListPage import MerchantListPage
 
 
 class TestAddCompanyMerchantClass(unittest.TestCase):  # 创建测试类
@@ -129,7 +133,7 @@ class TestAddCompanyMerchantClass(unittest.TestCase):  # 创建测试类
         self.activeweb.getUrl(self.testpageurl)
         self.activeweb.delayTime(3)
 
-        #添加个人商户
+        #添加个人商户和公司商户
         self.activeweb.findElementByXpathAndInputNum(num,self.testpagebrandnameinput, brandnameinputtext)   #输入Brand name
         self.activeweb.findElementByXpathAndInputNum(num,self.testpageemailinput, emailinputtext)  #输入Email
         self.activeweb.findElementByXpathAndInputNum(num,self.testpagecontactnumberinput, contactnumberinputtext)   #输入Contact number
@@ -187,92 +191,46 @@ class TestAddCompanyMerchantClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndClickNum(num,self.testpagecheckbutton)   #点击check按钮
 
         self.activeweb.findElementByXpathAndClickNum(num,self.testpagesubmitbutton)  # 点击submit按钮
-        self.activeweb.delayTime(1000)
+        # self.activeweb.delayTime(1000)
+
+        #断言是否有“Success”
+        self.defineasserttextnum(num,AddMerchantSuccessPage().success,AddMerchantSuccessPage().successtext)
+        self.activeweb.findElementByXpathAndClickNum(num,AddMerchantSuccessPage().okbutton)
+
+        #断言是否有“Done”
+        self.defineasserttextnum(num, AddMerchantDonePage().done, AddMerchantDonePage().donetext)
+
+        # 断言是否有“Waiting for approval”
+        self.defineasserttextnum(num, AddMerchantDonePage().waitingforapproval, AddMerchantDonePage().waitingforapprovaltext)
+
+        # 断言是否有brandnameinputtext（添加的商户名）
+        self.defineasserttextnum(num, AddMerchantDonePage().merchantnamevalue, brandnameinputtext)
+
+
+        self.activeweb.findElementByXpathAndClickNum(num,AddMerchantDonePage().merchantlistbutton)
+        #断言商户列表中是否有新增加的商户名
+        self.defineisintable(num,MerchantListPage().searchtableresult,brandnameinputtext,1)
+
+        # self.activeweb.delayTime(1000)
         # self.activeweb.findElementByXpathAndClickNum(num,self.testpageresetbutton)  # 点击reset按钮
 
-        # def test_02(self):  # 添加公司商户
-        #     """
-        #     添加页面元素
-        #     :return:
-        #     """
-        #     self.addmerchantpage = self.addmerchantpagecompany
-        #     writebrandname = "123456"
-        #     writeremail = "xiangkaizheng@iapppay.com"
-        #     writercontactnumber = "abc123456"
-        #     writermerchanttype = "Company"
-        #     writercategory = "TAXICABS & LIMOUSINES"
-        #     writercriteria = "Medium"
-        #     writersiup = "abc123456"
-        #     writerprovince = "JAMBI"
-        #     writercity = "Kab. Bungo"
-        #     writerdistrict = "abc123456"
-        #     writervillage = "abc123456"
-        #     writerpostcode = "abc123456"
-        #     writeraddress = "abc123456"
-        #     writercompany = "abc123456"
-        #     writernpwptaxid = "abc123456"
-        #     writerofficialwebsite = "abc123456"
-        #     writerphotosiup = "D:\\pic\\1.png"
-        #     writerphotonpwpcompany = "D:\\pic\\1.png"
-        #     writerphototdp = "D:\\pic\\1.png"
-        #
-        #     writername = "abc123456"
-        #     writerposition = "abc123456"
-        #     writerphone = "abc123456"
-        #     writeremailtwo = "xiangkaizheng@iapppay.com"
-        #     writerphotofullfacebust = "D:\\pic\\1.png"
-        #
-        #     writerlocationphoto = "D:\\pic\\1.png"
-        #     writerphotoofthecashiersdesk = "D:\\pic\\1.png"
-        #     writerotherphoto = "D:\\pic\\1.png"
-        #
-        #     writerbank = "BCA"
-        #     writeraccountname = "abc123456"
-        #     writeraccountnumber = "abc123456"
-        #
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.brandnameinput, writebrandname)
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.emailinput, writeremail)
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.contactnumberinput, writercontactnumber)
-        #     self.activeweb.findElementByXpathAndReturnOptions(self.addmerchantpage.merchanttypeselect,
-        #                                                       writermerchanttype)
-        #     self.activeweb.findElementByXpathAndReturnOptions(self.addmerchantpage.categoryselect, writercategory)
-        #     self.activeweb.findElementByXpathAndReturnOptions(self.addmerchantpage.criteriaselect, writercriteria)
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.siupinput, writersiup)
-        #     self.activeweb.findElementByXpathAndReturnOptions(self.addmerchantpage.provinceselect, writerprovince)
-        #     self.activeweb.findElementByXpathAndReturnOptions(self.addmerchantpage.cityselect, writercity)
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.districtinput, writerdistrict)
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.villageinput, writervillage)
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.postcodeinput, writerpostcode)
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.addressinput, writeraddress)
-        #
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.companyinput, writercompany)
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.officialwebsiteinput, writerofficialwebsite)
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.npwptaxidinput, writernpwptaxid)
-        #
-        #     self.activeweb.findElementByXpathAndAndFile(self.addmerchantpage.photosiupimage, writerphotosiup)
-        #     self.activeweb.findElementByXpathAndAndFile(self.addmerchantpage.photonpwpcompanyimage,
-        #                                                 writerphotonpwpcompany)
-        #     self.activeweb.findElementByXpathAndAndFile(self.addmerchantpage.phototdpimage, writerphototdp)
-        #
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.nameinput, writername)
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.positioninput, writerposition)
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.phoneinput, writerphone)
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.emailtwoinput, writeremailtwo)
-        #     self.activeweb.findElementByXpathAndAndFile(self.addmerchantpage.photofullfacebustimage,
-        #                                                 writerphotofullfacebust)
-        #
-        #     self.activeweb.findElementByXpathAndAndFile(self.addmerchantpage.locationphotoimage, writerlocationphoto)
-        #     self.activeweb.findElementByXpathAndAndFile(self.addmerchantpage.photoofthecashiersdeskimage,
-        #                                                 writerphotoofthecashiersdesk)
-        #     self.activeweb.findElementByXpathAndAndFile(self.addmerchantpage.otherphotoimage, writerotherphoto)
-        #
-        #     self.activeweb.findElementByXpathAndReturnOptions(self.addmerchantpage.bankselect, writerbank)
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.accountnameinput, writeraccountname)
-        #     self.activeweb.findElementByXpathAndInput(self.addmerchantpage.accountnumberinput, writeraccountnumber)
-        #
-        #     self.activeweb.findElementByXpathAndClick(self.addmerchantpage.submitbutton)
-        #     self.activeweb.delayTime(3)
-        #     self.activeweb.findElementByXpathAndClick(self.addmerchantdonepage.merchantlistbutton)
+    def defineasserttextnum(self,num,testelexpath,expecttext):
+        #断言是否存在某个文本
+        testtext = self.activeweb.findElementByXpathAndReturnText(num,testelexpath)
+        self.assertEqual(expecttext,testtext)
+        self.activeweb.outPutMyLog("存在text:%s"%testtext)
+
+    def defineisintable(self,num,testtablexpath,expecttext,tablecolnum):
+        tabledic = self.activeweb.findElementByXpathAndReturnTableNum(num, testtablexpath)
+        for value in tabledic.values():
+            self.activeweb.outPutMyLog("%s"% value[int(tablecolnum)])
+            if str(expecttext).lower() in value[int(tablecolnum)].lower():
+                self.assertTrue(True)
+                self.activeweb.outPutMyLog("在%s中存在text:%s"% (value[int(tablecolnum)],expecttext))
+                break
+            else:
+                self.activeweb.outPutMyLog("在%s不存在：%s"% (value[int(tablecolnum)],expecttext))
+                self.assertTrue(False)
 
     @staticmethod    #根据不同的参数生成测试用例
     def getTestFunc(num, brandnameinputtext, emailinputtext, contactnumberinputtext,  #添加公司商户
@@ -330,7 +288,7 @@ def __generateTestCases():
 
         args = []
         args.append(addmerchant.id)
-        args.append(addmerchant.brandnameinputtext)
+        args.append("%s_%s"%(addmerchant.brandnameinputtext,GetTimeStr().getTimeStr()))
         args.append(addmerchant.emailinputtext)
         args.append(addmerchant.contactnumberinputtext)
         args.append(addmerchant.merchanttypeselectoptionxpath)
