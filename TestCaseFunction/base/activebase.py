@@ -92,10 +92,10 @@ class  ActiveWeb:
             except Exception as e:
                 self.printredword()
                 self.getScreenshot()
-                self.outPutMyLog("停顿5秒后再次查找依然未找到元素，关闭驱动.问题描述：%s"% e)
+                self.outPutMyLog("停顿5秒后再次查找依然未找到元素.问题描述：%s"% e)
                 # print("停顿5秒后再次查找依然未找到元素，关闭驱动.问题描述：",e)
                 self.printnormalword()
-                self.closeBrowse()
+                # self.closeBrowse()
         return ele
 
     #获取控件截图
@@ -381,7 +381,8 @@ class  ActiveWeb:
         driver.get_screenshot_as_file(path)
         self.outPutMyLog("*****")
         # print("*****")
-        print(path)
+        self.outPutMyLog(path)
+        # print(path)
         self.outPutMyLog("*****")
         # print("*****")
         return path

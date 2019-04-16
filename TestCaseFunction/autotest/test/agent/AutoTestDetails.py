@@ -43,6 +43,9 @@ testdata = (
     (testpage.village, testpage.villagetext),
     (testpage.postcode, testpage.postcodetext),
     (testpage.address, testpage.addresstext),
+    (testpage.photosiup, testpage.photosiuptext),
+    (testpage.photonpwpcompany, testpage.photonpwpcompanytext),
+    (testpage.phototdp, testpage.phototdptext),
     (testpage.brandnamevalue, testpage.brandnamevaluetext),    # ---value---#
     (testpage.emailvalue, testpage.emailvaluetext),
     (testpage.contactnumbervalue, testpage.contactnumbervaluetext),
@@ -79,11 +82,12 @@ testdata = (
     (testpage.profilephotos, testpage.profilephotostext),      #---Profile Photos---#
     (testpage.locationphoto, testpage.locationphototext),  # ---key---#
     (testpage.photoofthecashiersdesk, testpage.photoofthecashiersdesktext),
+    (testpage.otherphoto, testpage.otherphototext),
 
 )
 
 
-class TestCheckContractClass(unittest.TestCase):  # 创建测试类
+class TestDetailsClass(unittest.TestCase):  # 创建测试类
 
 
     @classmethod  # 类方法，只执行一次，但必须要加注解@classmethod,且名字固定为setUpClass
@@ -153,8 +157,8 @@ def __generateTestCases():
         args.append(testdataone[0])
         args.append(testdataone[1])
 
-        setattr(TestCheckContractClass, 'test_func_%s_%s' % (casenum,testdataone[1]),
-                TestCheckContractClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
+        setattr(TestDetailsClass, 'test_func_%s_%s' % (casenum,testdataone[1]),
+                TestDetailsClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
         i=i+1
 
 

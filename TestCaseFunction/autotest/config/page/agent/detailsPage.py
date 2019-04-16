@@ -55,12 +55,12 @@ class DetailsPage:
     officialwebsite = ""
     npwptaxid = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/div/div[2]/div[2]/div/form/div[16]/label"
 
-    photosiup = ""
-    photosiuptext = "Photo SIUP"
-    photonpwpcompany = ""
-    photonpwpcompanytext = "Photo NPWP Company"
-    phototdp = ""
-    phototdptext = "Photo TDP"
+    photosiup = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/div/div[2]/div[2]/div/form/div[14]/label"
+    photosiuptext = "Photo SIUP:"
+    photonpwpcompany = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/div/div[2]/div[2]/div/form/div[15]/label"
+    photonpwpcompanytext = "Photo NPWP Company:"
+    phototdp = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/div/div[2]/div[2]/div/form/div[16]/label"
+    phototdptext = "Photo TDP:"
 
     # ---value---#
     brandnamevalue = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/div/div[2]/div[2]/div/form/div[1]/div/div"
@@ -150,8 +150,8 @@ class DetailsPage:
     locationphototext = "Location Photo:"
     photoofthecashiersdesk = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/div/div[4]/div[2]/div/form/div[2]/label"
     photoofthecashiersdesktext = "Photo of the cashiers desk:"
-    otherphoto = ""
-
+    otherphoto = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/div/div[4]/div[2]/div/form/div[3]/label"
+    otherphototext = "Other Photo:"
 
 
 

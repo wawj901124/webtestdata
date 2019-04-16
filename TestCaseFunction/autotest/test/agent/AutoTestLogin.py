@@ -20,10 +20,17 @@ class TestLoginClass(unittest.TestCase):  # 创建测试类
 
     @classmethod  # 类方法，只执行一次，但必须要加注解@classmethod,且名字固定为setUpClass
     def setUpClass(cls):
+        # cls.activeweb = ActiveWeb()  # 实例化
+        # cls.loginpage = LoginPage()  # 实例化
+        #
+        # url = "%s/nereus/agent/v/#/login" % WEB_URL_TITLE  # 代理商后台
+        # # url = "https://m-mbmpay.ahdipay.com/nereus/agent/index"   #现网
+        # cls.activeweb.getUrl(url)  # 打开网址
         pass
 
     @classmethod  # 类方法，只执行一次，但必须要加注解@classmethod,且名字固定为tearDownClass
     def tearDownClass(cls):
+        # cls.activeweb.closeBrowse()
         pass
 
     def setUp(self):  # 每条用例执行测试之前都要执行此方法
@@ -33,11 +40,12 @@ class TestLoginClass(unittest.TestCase):  # 创建测试类
         url = "%s/nereus/agent/v/#/login" % WEB_URL_TITLE  # 代理商后台
         # url = "https://m-mbmpay.ahdipay.com/nereus/agent/index"   #现网
         self.activeweb.getUrl(url)  # 打开网址
+        pass
 
 
     def tearDown(self):  # 每条用例执行测试之后都要执行此方法
         self.activeweb.closeBrowse()
-        # pass
+        pass
 
     # 定义登录函数
     def definelogin(self,num,accountinput=None,passwordinput=None,vercodeinput=None,assertaccounttiptext=None,
