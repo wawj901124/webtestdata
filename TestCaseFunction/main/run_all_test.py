@@ -12,11 +12,11 @@ sys.path.extend([rootpath + i for i in os.listdir(rootpath) if i[0] != "."])  # 
 sys.path.extend(syspath)
 # 追加完成
 
-from htmltest import HTMLTestRunner_jietuxiugai as HTMLTestRunner
+from TestCaseFunction.htmltest import HTMLTestRunner_jietuxiugai as HTMLTestRunner
 from test import *
 from TestCaseFunction.test.alltest_list import caselist  #调用数组文件
-from util.gettimestr import GetTimeStr
-from util.send_attach_email import SendEmail
+from TestCaseFunction.util.gettimestr import GetTimeStr
+from TestCaseFunction.util.send_attach_email import SendEmail
 
 from TestCaseFunction.log.my_log import UserLog
 
