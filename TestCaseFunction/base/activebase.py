@@ -120,10 +120,8 @@ class  ActiveWeb:
     def findElementByXpathAndReturnText(self,num,path):
         ele = self.getEleImage(num,path)
         eletext = ele.text
+        self.outPutMyLog("元素的Xpath路径为：%s;对应的文本信息为：%s"%(path,eletext))
         return eletext
-
-
-
 
     #通过xpath查找元素，然后返回元素的标签名(例如input)
     def findElementByXpathAndReturnTagName(self,path):
