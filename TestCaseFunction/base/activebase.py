@@ -148,6 +148,8 @@ class  ActiveWeb:
         ele = self.getEleImage(num, path)
         ele.clear()   #清除输入框内容
         ele.send_keys(inputcontent)   #输入内容
+        displaytext = ele.value
+        self.outPutMyLog("输入内容：%s;显示内容：%s"% (inputcontent,displaytext))
 
     #通过xpath查找元素，然后点击
     def findElementByXpathAndClick(self,path):
