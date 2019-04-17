@@ -137,29 +137,6 @@ def __generateTestCases():
         setattr(TestMerchantListClass, 'test_func_%s_%s_%s' % (searchdataid,searchdata.testpage,searchdata.testcasetitle),
                 TestMerchantListClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
 
-    # file_name = "D:\\Users\\Administrator\\PycharmProjects\\seleniumweb\\sele\\dataconfig\\assertselectsearchmanager.xls"
-    # sheet_id = 0
-    # datasheet = GetData(file_name,sheet_id)   #实例化
-    # # rows_count = datasheet.get_case_lines()   #获取表的行数
-    # for i in range(1, rows_count):  # 循环，但去掉第一
-    #     args = []
-    #     args.append(i)
-    #     args.append(datasheet.is_cookie(i))
-    #     args.append(datasheet.get_url(i))
-    #     args.append(datasheet.get_selectxpath(i))
-    #     args.append(datasheet.get_selectoptiontext(i))
-    #     args.append(datasheet.get_selectinputxpath(i))
-    #     args.append(datasheet.get_selectinputtext(i))
-    #     args.append(datasheet.get_searchbuttonxpath(i))
-    #     args.append(datasheet.get_searchtableresultxpath(i))
-    #     args.append(datasheet.get_colnum(i))
-    #     args.append(datasheet.get_checktext(i))
-    #
-    #
-    #     setattr(TestSearchClass, 'test_func_%s_%s' % (datasheet.get_id(i),datasheet.get_title(i)),
-    #             TestSearchClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
-
-
 __generateTestCases()
 
 if __name__ == '__main__':
