@@ -7,6 +7,11 @@ class MerchantListPage:
     searchtableresult = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[2]/table/tbody"
     searchtableresult2 = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[3]/table/tbody"
 
+    keywordselectxpath = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[1]/div/form/div/div[1]/div/div/div[1]/div/span"
+    keywordoption_merchantname_xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[1]/div/form/div/div[1]/div/div/div[2]/ul[2]/li[1]"
+    keywordselectinputxpath = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[1]/div/form/div/div[2]/div/div/input"
+
+
 
 
 

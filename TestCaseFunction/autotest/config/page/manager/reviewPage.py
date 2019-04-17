@@ -1,10 +1,7 @@
 from webtestdata.settings import WEB_URL_TITLE,AGENT_REVISE_MERCHANTID
 
-class RevisePage:
-    pageurl = "%s/nereus/agent/v/#/merchant/revice/%s" % (WEB_URL_TITLE,AGENT_REVISE_MERCHANTID)
-
-    auditnotapprovedtext = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div/p[2]"
-    submitagainbutton = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div/button"
+class ReviewPage:
+    pageurl = "%s/nereus/manager/index#/merchant/list" % WEB_URL_TITLE
 
     # ---Merchant info---#
     merchantinfo = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/div[1]/div[1]/span"
@@ -83,3 +80,6 @@ class RevisePage:
     qrindoaccountinput = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/div[5]/div[2]/div/div/div/div/input"
     qrindoaccounttip = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/div[5]/div[2]/div/div/div/div[2]"
     checkbutton = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/div[5]/div[2]/div/div/div/div/div[2]/button"
+
+    reviewnoteinput = "/html/body/div[3]/div[2]/ui-view/ui-view/div[2]/div/form[1]/div[11]/p/span[2]/input"
+    turndownbutton = "/html/body/div[3]/div[2]/ui-view/ui-view/div[2]/div/form[1]/div[12]/p[2]/button"

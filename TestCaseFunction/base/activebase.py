@@ -121,6 +121,7 @@ class  ActiveWeb:
         ele = self.getEleImage(num,path)
         eletext = ele.text
         self.outPutMyLog("元素的Xpath路径为：%s;对应的文本信息为：%s"%(path,eletext))
+        self.delayTime(3)
         return eletext
 
     #通过xpath查找元素，然后返回元素的标签名(例如input)
@@ -135,6 +136,13 @@ class  ActiveWeb:
         eletext = ele.get_attribute(valuename)
         return eletext
 
+    #通过xpath查找元素，然后返回元素的默认显示文字
+    def findElementByXpathAndReturnValueNum(self,num,path,valuename):
+        ele = self.getEleImage(num,path)
+        eletext = ele.get_attribute(valuename)
+        self.outPutMyLog("得到的元素属性【%s】的值为：%s"%(valuename,eletext))
+        return eletext
+
     #通过xpath查找元素，然后输入内容
     def findElementByXpathAndInput(self,path,inputcontent):
         ele = self.findElementByXpath(path)
@@ -146,8 +154,10 @@ class  ActiveWeb:
         ele = self.getEleImage(num, path)
         ele.clear()   #清除输入框内容
         ele.send_keys(inputcontent)   #输入内容
+        # self.delayTime(3)
         displaytext = ele.value
         self.outPutMyLog("输入内容：%s;显示内容：%s"% (inputcontent,displaytext))
+        # self.delayTime(3000)
 
     #通过xpath查找元素，然后点击
     def findElementByXpathAndClick(self,path):
@@ -267,6 +277,18 @@ class  ActiveWeb:
     #通过xpath查找到select元素,选择要选择的项
     def findElementByXpathAndReturnOptions(self,path,optiontext):
         ele = Select(self.findElementByXpath(path))
+        try:
+            selectoption = ele.select_by_visible_text(optiontext)
+            self.delayTime(2)
+        except Exception as e:
+            self.printredword()
+            self.outPutMyLog("填写内容与选项内容对不上，关闭驱动.问题描述：%s"% e)
+            # print("填写内容与选项内容对不上，关闭驱动.问题描述：",e)
+            self.printnormalword()
+            self.closeBrowse()
+    #通过xpath查找到select元素,选择要选择的项
+    def findElementByXpathAndReturnOptionsNum(self,num,path,optiontext):
+        ele = Select(self.getEleImage(num,path))
         try:
             selectoption = ele.select_by_visible_text(optiontext)
             self.delayTime(2)
