@@ -162,7 +162,7 @@ class  ActiveWeb:
         ele.clear()   #清除输入框内容
         ele.send_keys(inputcontent)   #输入内容
         # self.delayTime(3)
-        displaytext = ele.value
+        displaytext = self.findElementByXpathAndReturnValueNum(num,path,'value')
         self.outPutMyLog("输入内容：%s;显示内容：%s"% (inputcontent,displaytext))
         # self.delayTime(3000)
 
