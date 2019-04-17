@@ -9,6 +9,7 @@ from TestCaseFunction.autotest.test.agent.AutoTestMerchantList import TestMercha
 from TestCaseFunction.autotest.test.agent.AutoTestRevise import TestReviseClass
 from TestCaseFunction.autotest.test.manager.AutoTestReview import TestReviewClass
 from TestCaseFunction.autotest.test.agent.AutoTestMerchantListElementCheck import TestMerchantListClass
+from TestCaseFunction.autotest.test.agent.AutoTestLogout import TestLogoutClass
 
 def caselist():
     alltestnames = [
@@ -22,6 +23,7 @@ def caselist():
         'TestCaseFunction.autotest.test.agent.AutoTestAddCompanyMerchant.TestAddCompanyMerchantClass',
         'TestCaseFunction.autotest.test.agent.AutoTestRevise.TestReviseClass',
         'TestCaseFunction.autotest.test.manager.AutoTestReview.TestReviewClass',
+        'TestCaseFunction.autotest.test.agent.AutoTestLogout.TestLogoutClass',
 
 
 
