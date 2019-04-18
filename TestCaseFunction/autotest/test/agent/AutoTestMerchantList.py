@@ -91,7 +91,9 @@ class TestMerchantListClass(unittest.TestCase):  # 创建测试类
         for value in tabledic.values():
             if str(checktext).lower() in value[int(colnum)].lower():
                 self.assertTrue(True)
+                self.activeweb.outPutMyLog("在%s中存在text:%s" % (value[int(colnum)], checktext))
             else:
+                self.activeweb.outPutMyLog("在%s中不存在text:%s" % (value[int(colnum)], checktext))
                 self.assertTrue(False)
 
 
