@@ -74,6 +74,7 @@ class  ActiveWeb:
     def findElementByXpath(self,path):
         try:
             ele = self.driver.find_element_by_xpath(path)
+            self.outPutMyLog("找到Xpath为【%s】的元素" % path)
             self.driver.execute_script("arguments[0].scrollIntoView();", ele)  # 拖动到可见的元素去，影响截取特定区域的截图，不影响整个页面截图
             self.driver.execute_script("arguments[0].setAttribute('style',arguments[1]);", ele,"background:green;border:2px solid red")   #高亮显示操作的元素
             #使用JavaScript代码将传入的页面元素对象的背景颜色和边框颜分别设置为绿色和红色
@@ -85,6 +86,7 @@ class  ActiveWeb:
         finally:
             try:
                 ele = self.driver.find_element_by_xpath(path)
+                self.outPutMyLog("再次找到Xpath为【%s】的元素" % path)
                 self.driver.execute_script("arguments[0].scrollIntoView();", ele)  # 拖动到可见的元素去，影响截取特定区域的截图，不影响整个页面截图
                 self.driver.execute_script("arguments[0].setAttribute('style',arguments[1]);", ele,"background:green;border:2px solid red")  # 高亮显示操作的元素
                 # 使用JavaScript代码将传入的页面元素对象的背景颜色和边框颜分别设置为绿色和红色
@@ -111,7 +113,7 @@ class  ActiveWeb:
         tStr = self.getTimeStr()
         eleimage = "%s/imagefile/ele/%s_%s_ele.png" % (str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),num,tStr)
         imageScreen.save(eleimage)   #保存控件截图
-        self.outPutMyLog('找到的ele的截图：%s'% eleimage)
+        self.outPutMyLog('获取到的元素的截图路径为：%s'% eleimage)
         # print('找到的ele的截图：', eleimage)
         return ele
 

@@ -206,16 +206,18 @@ class TestAddMerchantClass(unittest.TestCase):  # 创建测试类
         self.activeweb.outPutMyLog("存在text:%s"%testtext)
 
     def defineisintable(self,num,testtablexpath,expecttext,tablecolnum):
+        notexsitflag = True
         tabledic = self.activeweb.findElementByXpathAndReturnTableNum(num, testtablexpath)
         for value in tabledic.values():
             self.activeweb.outPutMyLog("%s"% value[int(tablecolnum)])
             if str(expecttext).lower() in value[int(tablecolnum)].lower():
                 self.assertTrue(True)
                 self.activeweb.outPutMyLog("在%s中存在text:%s"% (value[int(tablecolnum)],expecttext))
+                notexsitflag = False
                 break
-            else:
-                self.activeweb.outPutMyLog("在%s不存在：%s"% (value[int(tablecolnum)],expecttext))
-                self.assertTrue(False)
+        if notexsitflag:
+            self.activeweb.outPutMyLog("在%s不存在：%s"% (tabledic,expecttext))
+            self.assertTrue(False)
 
 
 
