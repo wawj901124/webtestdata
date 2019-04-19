@@ -114,8 +114,15 @@ class TestAddCompanyMerchantClass(unittest.TestCase):  # 创建测试类
         self.activeweb.closeBrowse()
         # pass
 
+    def writexunicookie(self):
+        addcookie = {'name': '.nereus.manager.settle.banks', 'value': 'QCK9GvKG8OEOh6lRUyyLlmKnHl8i3w'}
+        self.activeweb.driver.add_cookie(addcookie)
+        self.activeweb.driver.refresh()
+        self.activeweb.delayTime(5)
+        self.activeweb.outPutMyLog("写入虚拟银行cookie完成")
+
     #定义搜索查找函数
-    def defineaddmerchantcompany(self, num, brandnameinputtext=None, emailinputtext=None, contactnumberinputtext=None,  #添加公司商户
+    def defineaddmerchantcompany(self, num,isfictitious=False, brandnameinputtext=None, emailinputtext=None, contactnumberinputtext=None,  #添加公司商户
                           merchanttypeselectoptionxpath=None, categoryselectoptionxpath=None, criteriaselectoptionxpath=None,
                           siupinputtext=None, provinceselectoptionxpath=None, cityselectoptionxpath=None,
                           districtinputtext=None, villageinputtext=None, postcodeinputtext=None,addressinputtext=None,
@@ -130,6 +137,8 @@ class TestAddCompanyMerchantClass(unittest.TestCase):  # 创建测试类
                           bankselectoptionxpath=None, accountnameinputtext=None, accountnumberinputtext=None,
                           qrindoaccountinputtext=None):
         # self.activeweb.writerCookies(self.cookie, LoginPage().pageurl,MerchantListPage().pageurl)
+        if isfictitious:
+            self.writexunicookie()
         self.activeweb.getUrl(self.testpageurl)
         self.activeweb.delayTime(3)
 
@@ -187,7 +196,7 @@ class TestAddCompanyMerchantClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndScriptClickNum(num, self.testpagebankaccount)  # 点击Bank account
         self.activeweb.findElementByXpathAndScriptClickNum(num, self.testpageqrindoaccount)  # 点击QRindo account
 
-        self.activeweb.findElementByXpathAndInputNum(num,self.testpageqrindoaccountinput, qrindoaccountinputtext)  # 输入QRindo account
+        self.activeweb.findElementByXpathAndInputNum(num,self.testpageqrindoaccountinput, AGENT_LOGIN_ACCOUNT)  # 输入QRindo account
         self.activeweb.findElementByXpathAndClickNum(num,self.testpagecheckbutton)   #点击check按钮
 
         self.activeweb.findElementByXpathAndClickNum(num,self.testpagesubmitbutton)  # 点击submit按钮
@@ -224,7 +233,7 @@ class TestAddCompanyMerchantClass(unittest.TestCase):  # 创建测试类
         notexsitflag = True
         tabledic = self.activeweb.findElementByXpathAndReturnTableNum(num, testtablexpath)
         for value in tabledic.values():
-            self.activeweb.outPutMyLog("%s"% value[int(tablecolnum)])
+            # self.activeweb.outPutMyLog("%s"% value[int(tablecolnum)])
             if str(expecttext).lower() in value[int(tablecolnum)].lower():
                 self.assertTrue(True)
                 self.activeweb.outPutMyLog("在%s中存在text:%s"% (value[int(tablecolnum)],expecttext))
@@ -236,7 +245,7 @@ class TestAddCompanyMerchantClass(unittest.TestCase):  # 创建测试类
 
 
     @staticmethod    #根据不同的参数生成测试用例
-    def getTestFunc(num, brandnameinputtext, emailinputtext, contactnumberinputtext,  #添加公司商户
+    def getTestFunc(num, isfictitious,brandnameinputtext, emailinputtext, contactnumberinputtext,  #添加公司商户
                     merchanttypeselectoptionxpath, categoryselectoptionxpath, criteriaselectoptionxpath,
                     siupinputtext, provinceselectoptionxpath, cityselectoptionxpath,
                     districtinputtext, villageinputtext, postcodeinputtext, addressinputtext,
@@ -251,7 +260,7 @@ class TestAddCompanyMerchantClass(unittest.TestCase):  # 创建测试类
                     bankselectoptionxpath, accountnameinputtext, accountnumberinputtext,
                     qrindoaccountinputtext):
         def func(self):
-            self.defineaddmerchantcompany(num,brandnameinputtext, emailinputtext, contactnumberinputtext,  #添加公司商户
+            self.defineaddmerchantcompany(num,isfictitious,brandnameinputtext, emailinputtext, contactnumberinputtext,  #添加公司商户
                           merchanttypeselectoptionxpath, categoryselectoptionxpath, criteriaselectoptionxpath,
                           siupinputtext, provinceselectoptionxpath, cityselectoptionxpath,
                           districtinputtext, villageinputtext, postcodeinputtext,addressinputtext,
@@ -291,6 +300,7 @@ def __generateTestCases():
 
         args = []
         args.append(addmerchant.id)
+        args.append(addmerchant.isfictitious)
         args.append("%s_%s"%(addmerchant.brandnameinputtext,GetTimeStr().getTimeStr()))
         args.append(addmerchant.emailinputtext)
         args.append(addmerchant.contactnumberinputtext)

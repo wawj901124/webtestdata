@@ -13,7 +13,7 @@ from .models import  AddMerchant
 
 
 class AddMerchantAdmin(object):
-    ziduan = ['webproject','testcasetitle','iscompany','brandnameinputtext', 'emailinputtext', 'contactnumberinputtext',  #添加个人商户(和公司商户)
+    ziduan = ['webproject','testcasetitle','iscompany','isfictitious','brandnameinputtext', 'emailinputtext', 'contactnumberinputtext',  #添加个人商户(和公司商户)
                           'merchanttypeselectoptionxpath', 'categoryselectoptionxpath', 'criteriaselectoptionxpath',
                           'siupinputtext', 'provinceselectoptionxpath', 'cityselectoptionxpath',
                           'districtinputtext', 'villageinputtext', 'postcodeinputtext','addressinputtext',
@@ -28,7 +28,7 @@ class AddMerchantAdmin(object):
                           'bankselectoptionxpath', 'accountnameinputtext', 'accountnumberinputtext',
                           'qrindoaccountinputtext']
 
-    list_display =['id','webproject','testcasetitle','iscompany','brandnameinputtext', 'emailinputtext', 'contactnumberinputtext',  #添加个人商户
+    list_display =['id','webproject','testcasetitle','iscompany','isfictitious','brandnameinputtext', 'emailinputtext', 'contactnumberinputtext',  #添加个人商户
                           'merchanttypeselectoptionxpath', 'categoryselectoptionxpath', 'criteriaselectoptionxpath',
                           'siupinputtext','provinceselectoptionxpath', 'cityselectoptionxpath',
                           'districtinputtext', 'villageinputtext', 'postcodeinputtext','addressinputtext',

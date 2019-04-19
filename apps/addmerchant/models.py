@@ -6,6 +6,7 @@ class AddMerchant(models.Model):
     webproject = models.CharField(max_length=100, default="", verbose_name=u"web后台项目")
     testcasetitle = models.CharField(max_length=100, default="", verbose_name=u"测试内容的名称")
     iscompany = models.BooleanField(default=False,verbose_name=u"是否公司商户")
+    isfictitious = models.BooleanField(default=False,verbose_name=u"是否虚拟商户")
     brandnameinputtext = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入Brand name的内容")
     emailinputtext = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入Email的内容")
     contactnumberinputtext = models.CharField(max_length=100, default="", null=True, blank=True,verbose_name=u"输入Contact number的内容")

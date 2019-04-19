@@ -180,10 +180,11 @@ class  ActiveWeb:
     #通过xpath查找元素，然后点击
     def findElementByXpathAndClickNum(self,num,path):
         ele = self.getEleImage(num,path)
+        self.delayTime(1)
         ele.click()   #点击
-        self.outPutMyLog("点击元素的Xpath路径为：%s" % path)
+        self.outPutMyLog("点击Xpath路径为[%s]的元素" % path)
         # print("点击元素的Xpath路径为：%s" % path)
-        self.delayTime(3)
+        self.delayTime(2)
         return ele
 
     #通过xpath查找元素，然后点击
@@ -196,8 +197,10 @@ class  ActiveWeb:
     #通过xpath查找元素，然后点击
     def findElementByXpathAndScriptClickNum(self,num,path):
         ele = self.getEleImage(num,path)
+        self.delayTime(1)
         self.driver.execute_script("arguments[0].click();", ele)
-        self.delayTime(3)
+        self.outPutMyLog("点击xpath为[%s]的元素" % path )
+        self.delayTime(2)
         return ele
 
     #通过xpath查找到要输入文件的input元素，然后上传文件

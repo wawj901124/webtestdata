@@ -1,6 +1,7 @@
 import  logging   #导入logging
 from datetime import datetime
 import os
+import ctypes
 
 class UserLog(object):
     def __init__(self,context):
@@ -58,10 +59,8 @@ class UserLog(object):
         self.closeopenFileOutputLog()
 
 
-
-
-
 if __name__ == "__main__":
     userlog = UserLog("mylogtest")
     userlog.runMyLog()
+
 
