@@ -166,7 +166,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]   #将static加入python跟搜索路径
 
-
+#---------------------------测试环境------------------------------------
 #Web元素URL域名配置
 #测试环境域名
 # WEB_URL_TITLE = 'https://bjw.halodigit.com:9090'
@@ -181,5 +181,16 @@ AGENT_LOGIN_PASSWORD = "abc123456"
 MANAGER_REVIEW_MERCHANTID = AGENT_REVISE_MERCHANTID
 MANAGER_LOGIN_ACCOUNT = "admin@iapppay.com"
 MANAGER_LOGIN_PASSWORD = "123456"
-#现网域名
-# WEB_URL_TITLE = 'https://m-mbmpay.ahdipay.com'
+# #---------------------------现网------------------------------------
+# #现网域名
+# # WEB_URL_TITLE = 'https://m-mbmpay.ahdipay.com'
+# #代理后台配置
+# AGENT_REVISE_MERCHANTID = "1002209"
+# AGENT_DETAILS_MERCHANTID = "1002213"
+# AGENT_CONTRAT_MERCHANID = "1002213"
+# AGENT_LOGIN_ACCOUNT = "81285610481"
+# AGENT_LOGIN_PASSWORD = "abc123456"
+# #管理后台配置
+# MANAGER_REVIEW_MERCHANTID = AGENT_REVISE_MERCHANTID
+# MANAGER_LOGIN_ACCOUNT = "xiangkaizheng@iapppay.com"
+# MANAGER_LOGIN_PASSWORD = "123456"
