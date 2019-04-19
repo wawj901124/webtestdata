@@ -179,8 +179,8 @@ class  ActiveWeb:
 
     #通过xpath查找元素，然后点击
     def findElementByXpathAndClickNum(self,num,path):
-        ele = self.getEleImage(num,path)
         self.delayTime(1)
+        ele = self.getEleImage(num,path)
         ele.click()   #点击
         self.outPutMyLog("点击Xpath路径为[%s]的元素" % path)
         # print("点击元素的Xpath路径为：%s" % path)
@@ -196,8 +196,8 @@ class  ActiveWeb:
 
     #通过xpath查找元素，然后点击
     def findElementByXpathAndScriptClickNum(self,num,path):
-        ele = self.getEleImage(num,path)
         self.delayTime(1)
+        ele = self.getEleImage(num,path)
         self.driver.execute_script("arguments[0].click();", ele)
         self.outPutMyLog("点击xpath为[%s]的元素" % path )
         self.delayTime(2)
