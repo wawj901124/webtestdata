@@ -94,10 +94,26 @@ class AddressInfo(models.Model): #coures_addressinfo
         app_label = 'courses'  #表示是哪个应用下的表，表示为courses应用下的表
         db_tablespace = 'addr'   #定义数据库表空间的名字
 
+class Teacher(models.Model):
+    """教师信息表"""
+    nickname =  models.CharField(max_length=30,primary_key=True,null=True,blank=True,verbose_name="昵称")
+    fans =  models.BigIntegerField(verbose_name="粉丝数")
+    created_at = models.DateTimeField(auto_now_add=True,verbose_name="创建时间")
+    updated_at = models.DateTimeField(auto_now=True,verbose_name="更新时间")
+
+    class Meta:
+        verbose_name = "教师信息表"
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return self.nickname
+
+
 
 class Course(models.Model):
     """课程信息表"""
     title = models.CharField(max_length=200,null=True,blank=True,verbose_name="地址")
+    teacher = models.ForeignKey(Teacher,verbose_name='教师',related_name='teacher')
     type = models.CharField(choices=((1,'实战课'),(2,'免费课'),(0,'其它')),max_length=1,default=0,verbose_name="课程类型")
     price = models.PositiveSmallIntegerField(verbose_name="价格")
     volume = models.BigIntegerField(verbose_name="销量")
@@ -108,19 +124,23 @@ class Course(models.Model):
     class Meta:
         verbose_name = "课程信息表"
         verbose_name_plural = verbose_name
+        get_latest_by = ['created_at']   #按照某个字段，获取最近和最开始的数据
 
     def __str__(self):
         return f"{self.get_type_display()}-{self.title}"   #使用f表示格式化数据，python6的心特性，低版本不能使用
         # return "{}-{}" .format(self.get_type_display(),self.title)  #示例：实战课-Django零基础入门到实战
 
+
+
 class Student(models.Model):
     """学生信息表"""
-    nickname =  models.CharField(max_length=30,primary_key=True,null=True,blank=True,verbose_name="昵称")
+    nickname = models.CharField(max_length=30, primary_key=True, null=True, blank=True, verbose_name="昵称")
+    course = models.ManyToManyField(Course,related_name='course',verbose_name='课程')
     age = models.PositiveSmallIntegerField(verbose_name="年龄")
-    gender = models.CharField(choices=((1,'男'),(2,'女'),(0,'保密')),max_length=1,default=0,verbose_name="性别")
-    study_time = models.PositiveIntegerField(default='0',verbose_name="学习时长（h）")
-    created_at = models.DateTimeField(auto_now_add=True,verbose_name="创建时间")
-    updated_at = models.DateTimeField(auto_now=True,verbose_name="更新时间")
+    gender = models.CharField(choices=((1, '男'), (2, '女'), (0, '保密')), max_length=1, default=0, verbose_name="性别")
+    study_time = models.PositiveIntegerField(default='0', verbose_name="学习时长（h）")
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
+    updated_at = models.DateTimeField(auto_now=True, verbose_name="更新时间")
 
     class Meta:
         verbose_name = "学生信息表"
@@ -129,18 +149,7 @@ class Student(models.Model):
     def __str__(self):
         return self.nickname
 
-class Teacher(models.Model):
-    """教师信息表"""
-    nickname =  models.CharField(max_length=30,primary_key=True,null=True,blank=True,verbose_name="昵称")
-    created_at = models.DateTimeField(auto_now_add=True,verbose_name="创建时间")
-    updated_at = models.DateTimeField(auto_now=True,verbose_name="更新时间")
 
-    class Meta:
-        verbose_name = "教师信息表"
-        verbose_name_plural = verbose_name
-
-    def __str__(self):
-        return self.nickname
 
 class TeacherAssistant(models.Model):
     """助教信息表"""
@@ -171,6 +180,19 @@ class TeacherAssistant(models.Model):
 #导出数据
     #1.使用数据库层面的导出数据
 
+class GroupConcat(models.Aggregate):
+    """自定义实现聚合功能，实现GROUP_CONCAT功能，继承models.Aggregate"""
+
+    function = 'GROUP_CONCAT'   #函数名字
+    template = '%(function)s(%(distinct)s%(expressions)s%(ordering)s%(separator)s)'
+
+    def __init__(self,expression, distinct=False,ordering=None,separator='',**extra):
+        super(GroupConcat,self).__init__(expression,
+                                         distinct='DISTINCT' if distinct else '',
+                                         ordering=' ORDER BY %s' % ordering if ordering is not None else '',
+                                         separator=' SEPARATOR "%s"'% separator,
+                                         output_field=models.CharField(), **extra
+                                         )
 
 
 
