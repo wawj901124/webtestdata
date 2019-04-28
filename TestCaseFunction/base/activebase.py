@@ -36,8 +36,8 @@ class  ActiveWeb:
     def getFirefoxDriver(self):
         # binary = FirefoxBinary(r'D:\Program Files (x86)\Mozilla Firefox\firefox.exe')
         # firefoxdriver = webdriver.Firefox(firefox_binary=binary)
-        fire_options = webdriver.FirefoxOptions()
-        fire_options.add_argument('--headless')
+        fire_options = webdriver.FirefoxOptions()   #为驱动加入无界面配置
+        fire_options.add_argument('--headless')   #为驱动加入无界面配置
         # browser = webdriver.Chrome(chrome_options=chrome_options)
 
         firefoxdriver = webdriver.Firefox(firefox_options=fire_options)  # 需要把驱动所在路径配置到系统环境变量里
