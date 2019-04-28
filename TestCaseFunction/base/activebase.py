@@ -36,13 +36,21 @@ class  ActiveWeb:
     def getFirefoxDriver(self):
         # binary = FirefoxBinary(r'D:\Program Files (x86)\Mozilla Firefox\firefox.exe')
         # firefoxdriver = webdriver.Firefox(firefox_binary=binary)
-        firefoxdriver = webdriver.Firefox()  # 需要把驱动所在路径配置到系统环境变量里
+        fire_options = webdriver.FirefoxOptions()
+        fire_options.add_argument('--headless')
+        # browser = webdriver.Chrome(chrome_options=chrome_options)
+
+        firefoxdriver = webdriver.Firefox(firefox_options=fire_options)  # 需要把驱动所在路径配置到系统环境变量里
         firefoxdriver.maximize_window()   #窗口最大化
         return  firefoxdriver
 
     #使用谷歌浏览器
     def getChromeDriver(self):
-        chromedriver = webdriver.Chrome()  # 需要把驱动所在路径配置到系统环境变量里
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument('--headless')
+        chromedriver = webdriver.Chrome(chrome_options=chrome_options)
+
+        # chromedriver = webdriver.Chrome()  # 需要把驱动所在路径配置到系统环境变量里
         return  chromedriver
 
     #使用IE浏览器
