@@ -46,8 +46,8 @@ class  ActiveWeb:
 
     #使用谷歌浏览器
     def getChromeDriver(self):
-        chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument('--headless')
+        chrome_options = webdriver.ChromeOptions()   #为驱动加入无界面配置
+        chrome_options.add_argument('--headless')   #为驱动加入无界面配置
         chromedriver = webdriver.Chrome(chrome_options=chrome_options)
 
         # chromedriver = webdriver.Chrome()  # 需要把驱动所在路径配置到系统环境变量里
