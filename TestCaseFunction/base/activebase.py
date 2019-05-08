@@ -80,6 +80,7 @@ class  ActiveWeb:
 
     #通过xpath查找元素
     def findElementByXpath(self,path):
+        issecond = False
         try:
             ele = self.driver.find_element_by_xpath(path)
             self.outPutMyLog("找到Xpath为【%s】的元素" % path)
@@ -91,7 +92,8 @@ class  ActiveWeb:
             # print(e)
             self.getScreenshotNormal()
             self.delayTime(5)
-        finally:
+            issecond = True
+        if issecond:
             try:
                 ele = self.driver.find_element_by_xpath(path)
                 self.outPutMyLog("再次找到Xpath为【%s】的元素" % path)
