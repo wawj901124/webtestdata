@@ -38,9 +38,9 @@ class  ActiveWeb:
         # firefoxdriver = webdriver.Firefox(firefox_binary=binary)
         fire_options = webdriver.FirefoxOptions()   #为驱动加入无界面配置
         fire_options.add_argument('--headless')   #为驱动加入无界面配置
-        # browser = webdriver.Chrome(chrome_options=chrome_options)
+        firefoxdriver = webdriver.Firefox()
 
-        firefoxdriver = webdriver.Firefox(firefox_options=fire_options)  # 需要把驱动所在路径配置到系统环境变量里
+        # firefoxdriver = webdriver.Firefox(firefox_options=fire_options)  # 需要把驱动所在路径配置到系统环境变量里
         firefoxdriver.maximize_window()   #窗口最大化
         return  firefoxdriver
 
@@ -176,6 +176,23 @@ class  ActiveWeb:
         # self.delayTime(3)
         displaytext = self.findElementByXpathAndReturnValueNum(num,path,'value')
         self.outPutMyLog("输入内容：%s;显示内容：%s"% (inputcontent,displaytext))
+        # self.delayTime(3000)
+
+    #通过xpath查找元素，移除其Readonly属性然后输入内容
+    def findElementByXpathAndInputNumRemoveReadonly(self,num,path,inputcontent):
+        ele = self.getEleImage(num, path)
+        self.removeReadonly(ele)
+        ele.clear()   #清除输入框内容
+        ele.send_keys(inputcontent)   #输入内容
+        # self.delayTime(3)
+        displaytext = self.findElementByXpathAndReturnValueNum(num,path,'value')
+        self.outPutMyLog("输入内容：%s;显示内容：%s"% (inputcontent,displaytext))
+        # self.delayTime(3000)
+
+    #通过xpath查找元素，然后通过js直接设置输入框的value值为inputcontent
+    def findElementByXpathAndInputNumJsSetValue(self,num,path,inputcontent):
+        ele = self.getEleImage(num, path)
+        self.jsSetValue(ele,inputcontent)
         # self.delayTime(3000)
 
     #通过xpath查找元素，然后点击
@@ -569,7 +586,10 @@ class  ActiveWeb:
         self.outPutMyLog("等待%s秒---"% dalaytime)
         # print("等待%s秒---"% dalaytime)
 
-
+    #使用js去掉input框中的readonly（只读）属性，设置为可输入状态，主要处理日期输入
+    def removeReadonly(self,ele):
+        self.driver.execute_script("arguments[0].removeAttribute('readonly')", ele)  # 使用js去掉元素中的readonly属性
+        self.outPutMyLog("移除input元素中readonly属性，使其可编辑")
 
     #关闭浏览器
     def closeBrowse(self):
@@ -578,12 +598,24 @@ class  ActiveWeb:
 
 if __name__ == "__main__":
     activeweb = ActiveWeb() #实例化
-    url = "https://bjw.halodigit.com:9090/nereus/manager/index"
+
+    url = "https://bjw.halodigit.com:9060/nereus/manager/index#/login"
     activeweb.getUrl(url)
-    # activeweb.delaytime(30)
-    # activeweb.findElementByXpathAndInput("/html/body/div[1]/div[2]/form/div/div[1]/input","xiangkaizheng@iapppay.com")   #输入账号名
-    # activeweb.findElementByXpathAndInput("/html/body/div[1]/div[2]/form/div/div[2]/input","123456")   #输入密码
-    # activeweb.findElementByXpathAndClick("/html/body/div[1]/div[2]/form/div/a[1]/span")   #点击登录
+    account = "/html/body/div[1]/div[2]/form/div/div[1]/input"
+    password = "/html/body/div[1]/div[2]/form/div/div[2]/input"
+    loginbutton = "/html/body/div[1]/div[2]/form/div/a[1]/span"
+    activeweb.findElementByXpathAndInput(account, 'admin@iapppay.com')
+    activeweb.findElementByXpathAndInput(password, '123456')
+    activeweb.findElementByXpathAndClick(loginbutton)
+    activeweb.delayTime(3)
+
+    activeweb.getUrl("https://bjw.halodigit.com:9060/nereus/manager/index#/settle/settle/settle/list")
+    activeweb.driver.refresh()
+    activeweb.delayTime(3)
+    locaxpath = "/html/body/div[3]/div[2]/ui-view/div[2]/div/div/div[1]/div[1]/form/div[1]/p/span[1]/input"
+    # activeweb.findElementByXpathAndInputNum(0,locaxpath,"2019-04-25")
+    activeweb.findElementByXpathAndInputNumRemoveReadonly(0,locaxpath,"2019-04-25")
+
 
 
 
