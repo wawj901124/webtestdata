@@ -106,7 +106,7 @@ class TestMerchantListClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from searchdata.models import SearchData
 
-    searchdata_all = SearchData.objects.all().order_by('id')
+    searchdata_all = SearchData.objects.filter(webproject=u"Vue代理商web后台").filter(testpage=u"MerchantList").order_by('id')
     rows_count = searchdata_all.count()
 
     for searchdata in searchdata_all:
