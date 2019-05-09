@@ -181,19 +181,66 @@ class  ActiveWeb:
     #通过xpath查找元素，移除其Readonly属性然后输入内容
     def findElementByXpathAndInputNumRemoveReadonly(self,num,path,inputcontent):
         ele = self.getEleImage(num, path)
+        #移除Readonly属型
         self.removeReadonly(ele)
         ele.clear()   #清除输入框内容
         ele.send_keys(inputcontent)   #输入内容
-        # self.delayTime(3)
+        # 设置Readonly属型为空
+        self.setReadonly(ele)
+        # 点击使日期谈框消失
+        self.mockClickBlank(0,0)
         displaytext = self.findElementByXpathAndReturnValueNum(num,path,'value')
         self.outPutMyLog("输入内容：%s;显示内容：%s"% (inputcontent,displaytext))
         # self.delayTime(3000)
 
-    #通过xpath查找元素，然后通过js直接设置输入框的value值为inputcontent
+    #通过xpath查找元素，使用JS直接设置Input框属性值（value=）
     def findElementByXpathAndInputNumJsSetValue(self,num,path,inputcontent):
         ele = self.getEleImage(num, path)
         self.jsSetValue(ele,inputcontent)
+        displaytext = self.findElementByXpathAndReturnValueNum(num,path,'value')
+        self.outPutMyLog("输入内容：%s;显示内容：%s"% (inputcontent,displaytext))
         # self.delayTime(3000)
+
+    # 通过xpath查找元素，然后点击日期input框，点击选择日期路径
+    #日期控件路径path1，日期路径path2，日期左移月路径path3,日期右移月路径path4
+    def findElementByXpathAndClickAbountData(self, num, path1,path2,pathleft=None,pathright=None):
+        #点击日期input框
+        self.findElementByXpathAndClickNum(num,path1)
+        if pathleft != None:
+            #点击日期左移月按钮
+            self.findElementByXpathAndClickNum(num, pathleft)
+        if pathright != None:
+            #点击日期右移月按钮
+            self.findElementByXpathAndClickNum(num, pathright)
+        #点击日期日路径
+        self.findElementByXpathAndClickNum(num,path2)
+        displaytext = self.findElementByXpathAndReturnValueNum(num, path1, 'value')
+        self.outPutMyLog("日期显示内容：%s" % displaytext)
+        self.mockClickBlank(0,0)
+
+    # 通过xpath查找元素，然后点击日期input框，点击选择日期路径,选择时分秒（预留）
+    #日期控件路径path1，日期路径path2，日期左移月路径path3,日期右移月路径path4
+    def findElementByXpathAndClickAbountDataToSecound(self, num, path1,path2,pathleft=None,pathright=None):
+        #点击日期input框
+        self.findElementByXpathAndClickNum(num,path1)
+        if pathleft != None:
+            #点击日期左移月按钮
+            self.findElementByXpathAndClickNum(num, pathleft)
+        if pathright != None:
+            #点击日期右移月按钮
+            self.findElementByXpathAndClickNum(num, pathright)
+        #点击日期日路径
+        self.findElementByXpathAndClickNum(num,path2)
+        displaytext = self.findElementByXpathAndReturnValueNum(num, path1, 'value')
+        self.outPutMyLog("日期显示内容：%s" % displaytext)
+        self.mockClickBlank(0,0)
+
+    #通过xpath查找元素，设置其Readonly属性值为空
+    def findElementByXpathAndInputNumSetReadonly(self,num,path):
+        ele = self.getEleImage(num, path)
+        self.setReadonly(ele)
+        # self.delayTime(3000)
+
 
     #通过xpath查找元素，然后点击
     def findElementByXpathAndClick(self,path):
@@ -591,6 +638,24 @@ class  ActiveWeb:
         self.driver.execute_script("arguments[0].removeAttribute('readonly')", ele)  # 使用js去掉元素中的readonly属性
         self.outPutMyLog("移除input元素中readonly属性，使其可编辑")
 
+    def setReadonly(self,ele):
+        self.driver.execute_script("arguments[0].setAttribute('readOnly','')", ele)  # 使用js去掉元素中的readonly属性
+        self.outPutMyLog("设置input元素中readonly属性值为true，使其不可编辑")
+
+    #用js方法输入日期
+    def jsSetValue(self,ele,value):
+        self.driver.execute_script("arguments[0].value='%s'" % value, ele)  # 使用js去掉元素中的readonly属性
+        self.outPutMyLog("设置input元素中value属性值为%s" % value)
+        self.delayTime(1)
+
+    #模拟鼠标点击空白处
+    def mockClickBlank(self,xoffset, yoffset):
+        action = ActionChains(self.driver)
+        action.move_by_offset(xoffset, yoffset).click().perform()  #点击空白区域：坐标（0，0）
+        self.outPutMyLog("模拟点击空白区域（点击坐标（%s，%s））" % (xoffset, yoffset))
+        self.delayTime(1)
+
+
     #关闭浏览器
     def closeBrowse(self):
         self.driver.quit()
@@ -613,8 +678,22 @@ if __name__ == "__main__":
     activeweb.driver.refresh()
     activeweb.delayTime(3)
     locaxpath = "/html/body/div[3]/div[2]/ui-view/div[2]/div/div/div[1]/div[1]/form/div[1]/p/span[1]/input"
-    # activeweb.findElementByXpathAndInputNum(0,locaxpath,"2019-04-25")
-    activeweb.findElementByXpathAndInputNumRemoveReadonly(0,locaxpath,"2019-04-25")
+
+    # #点击选择日期
+    # dataxpath = "/html/body/div[3]/div[2]/ui-view/div[2]/div/div/div[1]/div[1]/form/div[1]/p/span[1]/div/div/div/div/div/table/tbody/tr[5]/td[3]/span"
+    xpathright = "/html/body/div[3]/div[2]/ui-view/div[2]/div/div/div[1]/div[1]/form/div[1]/p/span[1]/div/div/div/div/div/table/thead/tr[1]/th[3]"
+    dataxpath = "/html/body/div[3]/div[2]/ui-view/div[2]/div/div/div[1]/div[1]/form/div[1]/p/span[1]/div/div/div/div/div/table/tbody/tr[2]/td[4]/span"
+    activeweb.findElementByXpathAndClickAbountData(0,locaxpath,dataxpath,pathright=xpathright)
+
+
+    #使用js直接设置Input框的属性值
+    # activeweb.findElementByXpathAndInputNumJsSetValue(0,locaxpath,"2019-05-08")
+    # activeweb.findElementByXpathAndInputNumRemoveReadonly(0,locaxpath,"2019-05-08")
+
+
+    #点击search
+    search = "/html/body/div[3]/div[2]/ui-view/div[2]/div/div/div[1]/div[1]/form/div[3]/p/span/a/span"
+    activeweb.findElementByXpathAndScriptClick(search)
 
 
 
