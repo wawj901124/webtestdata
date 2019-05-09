@@ -219,8 +219,8 @@ class  ActiveWeb:
         self.mockClickBlank(0,0)
 
     # 通过xpath查找元素，然后点击日期input框，点击选择日期路径,选择时分秒（预留）
-    #日期控件路径path1，日期路径path2，日期左移月路径path3,日期右移月路径path4
-    def findElementByXpathAndClickAbountDataToSecound(self, num, path1,path2,pathleft=None,pathright=None):
+    #日期控件路径path1，日期路径path2，分路径path3，日期左移月路径pathleft,日期右移月路径pathright
+    def findElementByXpathAndClickAbountDataToSecound(self, num, path1,path2,path3,pathleft=None,pathright=None):
         #点击日期input框
         self.findElementByXpathAndClickNum(num,path1)
         if pathleft != None:
@@ -231,6 +231,8 @@ class  ActiveWeb:
             self.findElementByXpathAndClickNum(num, pathright)
         #点击日期日路径
         self.findElementByXpathAndClickNum(num,path2)
+        #点击日期时分秒路径
+        self.findElementByXpathAndClickNum(num,path3)
         displaytext = self.findElementByXpathAndReturnValueNum(num, path1, 'value')
         self.outPutMyLog("日期显示内容：%s" % displaytext)
         self.mockClickBlank(0,0)

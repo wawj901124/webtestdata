@@ -29,15 +29,24 @@ class ActivityCreatePage:
     tfqd_select_wbqd_option = ""
     tfqd_select_nbqd_option_text = u"内部渠道"
     tfqd_select_wbqd_option_text = u"外部渠道"
-    tfqd_fxk_app_checkbox = ""
-    tfqd_fxk_web_checkbox = ""
-    tfqd_fxk_sdk_checkbox = ""
-    tfqd_fxk_app = ""
-    tfqd_fxk_web = ""
-    tfqd_fxk_sdk = ""
-    tfqd_fxk_app_text = "APP"
-    tfqd_fxk_web_text = "Web"
-    tfqd_fxk_sdk_text = "SDK"
+    tfqd_select_nbqd_fxk_app_checkbox = ""
+    tfqd_select_nbqd_fxk_web_checkbox = ""
+    tfqd_select_nbqd_fxk_sdk_checkbox = ""
+    tfqd_select_nbqd_fxk_app = ""
+    tfqd_select_nbqd_fxk_web = ""
+    tfqd_select_nbqd_fxk_sdk = ""
+    tfqd_select_nbqd_fxk_app_text = "APP"
+    tfqd_select_nbqd_fxk_web_text = "Web"
+    tfqd_select_nbqd_fxk_sdk_text = "SDK"
+    tfqd_select_wbqd_fxk_app_checkbox = ""
+    tfqd_select_wbqd_fxk_web_checkbox = ""
+    tfqd_select_wbqd_fxk_sdk_checkbox = ""
+    tfqd_select_wbqd_fxk_app = ""
+    tfqd_select_wbqd_fxk_web = ""
+    tfqd_select_wbqd_fxk_sdk = ""
+    tfqd_select_wbqd_fxk_app_text = "APP"
+    tfqd_select_wbqd_fxk_web_text = "Web"
+    tfqd_select_wbqd_fxk_sdk_text = "SDK"
 
     hdbz = ""
     hdbz_text = ""
@@ -68,11 +77,14 @@ class ActivityCreatePage:
 
     tjxz = ""
     tjxz_text = u"添加限制"
-    tjxz_select = ""
-    rwmb_select_one_option = ""
-    rwmb_select_two_option = ""
-    rwmb_select_one_option_text = u""
-    rwmb_select_two_option_text = u""
+    # ---添加限制弹框中选项---#
+    rwmb_popup_jylx_option = ""
+    rwmb_popup_zffs_option = ""
+    rwmb_popup_yhhdcycs_option = ""
+    rwmb_popup_jylx_option_text = u"交易类型"
+    rwmb_popup_zffs_option_text = u"支付方式"
+    rwmb_popup_yhhdcycs_option_text = u"用户活动参与次数"
+
 
     # ---注册-完成注册-任务限制---#
     zc_zcwc_yh = ""
@@ -142,9 +154,9 @@ class ActivityCreatePage:
     jy_wcjy_yhhdcycs_mgyhmrcycs_text = u"每个用户每日参与次数"
     jy_wcjy_yhhdcycs_mgyhmrcycs_input = ""
 
-    # ---奖励信息---#
+    # ---活动奖励---#
     jlxx = ""
-    jlxx_text = u"奖励信息"
+    jlxx_text = u"活动奖励"
 
     jllx = ""
     jllx_text = u"奖励类型"
