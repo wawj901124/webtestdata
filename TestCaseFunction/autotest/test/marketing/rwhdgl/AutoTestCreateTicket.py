@@ -188,9 +188,9 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
             self.activeweb.findElementByXpathAndClickNum(num, self.testpagecancelbutton)  # 点击取消按钮
         else:
             self.activeweb.findElementByXpathAndClickNum(num, self.testpageconfirmbutton)   #点击确定按钮
+            # 断言添加礼品列表中是否有新增加的礼品
+            self.defineisintable(num, self.activitylistpage_searchtableresult, yhqmcinputtext, 1)
         ################################优惠券创建完成#########################################
-
-
 
 
     def defineasserttextnum(self,num,testelexpath,expecttext):
@@ -212,7 +212,6 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
         if notexsitflag:
             self.activeweb.outPutMyLog("在%s不存在：%s"% (tabledic,expecttext))
             self.assertTrue(False)
-
 
 
     @staticmethod    #根据不同的参数生成测试用例
