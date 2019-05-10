@@ -265,65 +265,44 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
         return func
 
 def __generateTestCases():
-    from addmerchant.models import AddMerchant
+    from addactivity.models import AddActivity
 
-    addmerchant_all = AddMerchant.objects.filter(iscompany=False).order_by('id')
-    rows_count = addmerchant_all.count()
+    addactivity_all = AddActivity.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="创建活动").order_by('id')
+    rows_count = addactivity_all.count()
 
-    for addmerchant in addmerchant_all:
+    for addactivity in addactivity_all:
 
-        if len(str(addmerchant.id)) == 1:
-            addmerchantid = '0000%s'% addmerchant.id
-        elif len(str(addmerchant.id)) == 2:
-            addmerchantid = '000%s' % addmerchant.id
-        elif len(str(addmerchant.id)) == 3:
-            addmerchantid = '00%s' % addmerchant.id
-        elif len(str(addmerchant.id)) == 4:
-            addmerchantid = '0%s' % addmerchant.id
-        elif len(str(addmerchant.id)) == 5:
-            addmerchantid = '%s' % addmerchant.id
+        if len(str(addactivity.id)) == 1:
+            addactivityid = '0000%s'% addactivity.id
+        elif len(str(addactivity.id)) == 2:
+            addactivityid = '000%s' % addactivity.id
+        elif len(str(addactivity.id)) == 3:
+            addactivityid = '00%s' % addactivity.id
+        elif len(str(addactivity.id)) == 4:
+            addactivityid = '0%s' % addactivity.id
+        elif len(str(addactivity.id)) == 5:
+            addactivityid = '%s' % addactivity.id
         else:
-            addmerchantid ='Id已经超过5位数，请重新定义'
+            addactivityid ='Id已经超过5位数，请重新定义'
 
 
         args = []
-        args.append(addmerchant.id)
-        args.append(addmerchant.isfictitious)
-        args.append("%s_%s"%(addmerchant.brandnameinputtext,GetTimeStr().getTimeStr()))
-        args.append(addmerchant.emailinputtext)
-        args.append(addmerchant.contactnumberinputtext)
-        args.append(addmerchant.merchanttypeselectoptionxpath)
-        args.append(addmerchant.categoryselectoptionxpath)
-        args.append(addmerchant.criteriaselectoptionxpath)
-        args.append(addmerchant.siupinputtext)
-        args.append(addmerchant.provinceselectoptionxpath)
-        args.append(addmerchant.cityselectoptionxpath)
-        args.append(addmerchant.districtinputtext)
-        args.append(addmerchant.villageinputtext)
-        args.append(addmerchant.postcodeinputtext)
-        args.append(addmerchant.addressinputtext)
-        args.append(addmerchant.photosiupimagefilepath)
-        args.append(addmerchant.photonpwpcompanyimagefilepath)
-        args.append(addmerchant.phototdpimagefilepath)
-        args.append(addmerchant.nameinputtext)
-        args.append(addmerchant.npwpinputtext)
-        args.append(addmerchant.typeidselectoptionxpath)
-        args.append(addmerchant.identitynumberinputtext)
-        args.append(addmerchant.address2inputtext)
-        args.append(addmerchant.nationalityselectoptionxpath)
-        args.append(addmerchant.phoneinputtext)
-        args.append(addmerchant.email2inputtext)
-        args.append(addmerchant.photofullfacebustimagefilepath)
-        args.append(addmerchant.locationphotoimagefilepath)
-        args.append(addmerchant.photoofthecashiersdeskimagefilepath)
-        args.append(addmerchant.otherphotoimagefilepath)
-        args.append(addmerchant.bankselectoptionxpath)
-        args.append(addmerchant.accountnameinputtext)
-        args.append(addmerchant.accountnumberinputtext)
-        args.append(addmerchant.qrindoaccountinputtext)
+        args.append(addactivity.id)
+        args.append("%s_%s"%(addactivity.hdmcinputtext,GetTimeStr().getTimeStr()))
+        args.append(addactivity.hdysinputtext)
+        args.append(addactivity.tfqdyj)
+        args.append(addactivity.tfqdej)
+        args.append(addactivity.hdbztextareainputtext)
+        args.append(addactivity.rwlx)
+        args.append(addactivity.tjrwxz)
+        args.append(addactivity.jyjylx)
+        args.append(addactivity.jyzffs)
+        args.append(addactivity.jymgyhzdcycsinputtext)
+        args.append(addactivity.jymgyhmrcycsinputtext)
+        args.append(addactivity.jllx)
+        args.append(addactivity.iscancel)
 
-
-        setattr(TestCreateActivityClass, 'test_func_%s_%s' % (addmerchantid,addmerchant.testcasetitle),
+        setattr(TestCreateActivityClass, 'test_func_%s_%s' % (addactivityid,addactivity.testcasetitle),
                 TestCreateActivityClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
 
     # file_name = "D:\\Users\\Administrator\\PycharmProjects\\seleniumweb\\sele\\dataconfig\\assertselectsearchmanager.xls"

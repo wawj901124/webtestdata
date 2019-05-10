@@ -12,7 +12,7 @@ class AddActivity(models.Model):
     hdysinputtext= models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入活动预算的内容")
     tfqdyj= models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入投放渠道一级的选项的内容",help_text=u"投放渠道一级为1表示内部渠道，为2表示外部渠道")
     tfqdej= models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入投放渠道二级的复选的内容",help_text=u"投放渠道二级为0表示全选，为1，2，等表示选一项和选多项组合，程序中只有全选和选择一项的情况")
-    hdbztextareainputtext= models.CharField(max_length=2000, default="",null=True, blank=True, verbose_name=u"输入活动备注的内容")
+    hdbztextareainputtext= models.TextField(max_length=1025 ,default="",null=True, blank=True, verbose_name=u"输入活动备注的内容")
     rwlx= models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入任务类型的选项的内容",help_text=u"任务类型为1表示注册，为2表示交易类型")
     tjrwxz= models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入点击添加任务弹窗中的选项的内容",help_text=u"1表示选择交易类型，2表示选择支付方式，3表示选择用户活动参与次数")
     jyjylx= models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入交易类型的复选的内容",help_text=u"0表示选择所有项，1表示只选择消费，2表示只选择充值，3表示只选择转账")
@@ -25,7 +25,7 @@ class AddActivity(models.Model):
     add_time = models.DateTimeField(null=True, blank=True,auto_now_add=True,
                                     verbose_name=u"添加时间")  # datetime.now记录实例化时间，datetime.now()记录模型创建时间,auto_now_add=True是指定在数据新增时, 自动写入时间
     update_time = models.DateTimeField(default=datetime.now, null=True, blank=True,
-                                    verbose_name=u"添加时间")  # datetime.now记录实例化时间，datetime.now()记录模型创建时间，auto_now=True是无论新增还是更新数据, 此字段都会更新为当前时间
+                                    verbose_name=u"更新时间")  # datetime.now记录实例化时间，datetime.now()记录模型创建时间，auto_now=True是无论新增还是更新数据, 此字段都会更新为当前时间
 
     class Meta:
         verbose_name = u"添加活动测试数据"
