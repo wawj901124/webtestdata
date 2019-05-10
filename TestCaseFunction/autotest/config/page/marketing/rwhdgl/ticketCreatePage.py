@@ -31,7 +31,12 @@ class TicketCreatePage:
 
     qyxq_select_option_jdsj = ""
     qyxq_select_option_jdsj_starttime = ""
+    qyxq_select_option_jdsj_starttime_pathright = ""
+    qyxq_select_option_jdsj_starttime_daytime = ""
+
     qyxq_select_option_jdsj_endtime = ""
+    qyxq_select_option_jdsj_endtime_pathright = ""
+    qyxq_select_option_jdsj_endtime_daytime = ""
     qyxq_select_option_jdsj_down_text = ""
     qyxq_select_option_jdsj_down_text_text = u"绝对时间，通过时间段筛选控件选择固定时段内有效"
 

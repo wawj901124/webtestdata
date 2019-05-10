@@ -99,17 +99,17 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
     #优惠类型为1表示代金券
     #优惠模式为1表示固定金额，否则为随机金额
     #支付渠道限制为1表示不限，为2表示钱包余额，为3表示银行卡支付
-    #使用平台为1表示QRindo，为2表示PaySDK
+    #使用平台为0表示两个都点选，1表示点选QRindo，为2表示点选PaySDK
     #使用范围为1表示不限，为2表示指定行业，为3表示指定商户
     #是否支持退券为1表示可退，为2表示不可退
 
     def definecreateticket(self,num,ffzt,kcslinputtext,qyxq,
-                           xdsjtsinputtext,jdsjstarttimexpath,jdsjendtimexpath,
+                           xdsjtsinputtext,
                            yxcbcdf,yhqmcinputtext,yhlx,
                            yhms,gdjemzinputtext,sjjemzmiminputtext,sjjemzmimaxinputtext,
-                           zdxfinputtext,zfqdxz,sypt,
+                           zdxfinputtext,sypt,
                            syfw,zdhyoptionxpath,zdshinputtext,isplsh,plfilepath,
-                           sfzctq):
+                           sfzctq,iscancel):
         self.activeweb.getUrl(self.activitycreatepage_pageurl)
         self.activeweb.delayTime(3)
 
@@ -128,8 +128,10 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
             self.activeweb.findElementByXpathAndInputNum(num, self.testpage.qyxq_select_option_xdsj_ts_input, xdsjtsinputtext)  # 输入相对时间
         else:
             self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.testpageqyxqselect,self.testpage.qyxq_select_option_jdsj)  # 选择券有效期选项为绝对时间
-            self.activeweb.findElementByXpathAndClickAbountData(num, self.testpage.qyxq_select_option_jdsj_starttime,jdsjstarttimexpath)  # 点选活动时间开始时间
-            self.activeweb.findElementByXpathAndClickAbountData(num, self.testpage.qyxq_select_option_jdsj_endtime,jdsjendtimexpath)  # 点选活动时间结束时间
+            self.activeweb.findElementByXpathAndClickAbountData(num, self.testpage.qyxq_select_option_jdsj_starttime,self.testpage.qyxq_select_option_jdsj_starttime_daytime,
+                                                                pathright=self.testpage.qyxq_select_option_jdsj_starttime_pathright)  # 点选活动时间开始时间
+            self.activeweb.findElementByXpathAndClickAbountData(num, self.testpage.qyxq_select_option_jdsj_endtime,self.testpage.qyxq_select_option_jdsj_endtime_daytime,
+                                                                pathright=self.testpage.qyxq_select_option_jdsj_endtime_pathright)  # 点选活动时间结束时间
         if yxcbcdf == "1":
              self.activeweb.findElementByXpathAndClickNum(num, self.testpage.yxcbcdf_pt_checkbox)  # 点击营销成本承担方中的平台前的选项框
         else:
@@ -154,7 +156,10 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
 
         self.activeweb.findElementByXpathAndInputNum(num, self.testpage.zdxf_input,zdxfinputtext) # 输入最低消费金额
 
-        if sypt == "1":
+        if sypt == "0":
+            self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
+            self.activeweb.findElementByXpathAndClickNum(num, self.testpage.sypt_PaySDK_checkbox)  # 使用平台点选PaySDK
+        elif sypt == "1":
             self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
         elif sypt == "2":
             self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_PaySDK_checkbox)  # 使用平台点选PaySDK
@@ -179,8 +184,10 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
             self.activeweb.findElementByXpathAndClickNum(num, self.testpage.sfzctq_kt_checkbox)  # 是否支持退券点选可退
         elif sfzctq == "2":
             self.activeweb.findElementByXpathAndClickNum(num, self.testpage.sfzctq_bkt_checkbox)  # 是否支持退券点选不可退
-
-        self.activeweb.findElementByXpathAndClickNum(num, self.testpageconfirmbutton)   #点击确定按钮
+        if iscancel:
+            self.activeweb.findElementByXpathAndClickNum(num, self.testpagecancelbutton)  # 点击取消按钮
+        else:
+            self.activeweb.findElementByXpathAndClickNum(num, self.testpageconfirmbutton)   #点击确定按钮
         ################################优惠券创建完成#########################################
 
 
@@ -209,79 +216,69 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
 
 
     @staticmethod    #根据不同的参数生成测试用例
-    def getTestFunc(num,tfqd,rwlx,jllx,ishaspresent,
-                             hdmcinputtext,hdsjstarttimedataxpath,hdsjstarttimesecondsxpath,
-                             hdsjendtimedataxpath,hdsjendtimesecondsxpath,
-                             hdysinputtext,tfqdselectoptionxpath,hdbztextareainputtext,
-                             rwlxselectoptionxpath,jllxselectoptionxpath):
+    def getTestFunc(num,ffzt,kcslinputtext,qyxq,
+                           xdsjtsinputtext,
+                           yxcbcdf,yhqmcinputtext,yhlx,
+                           yhms,gdjemzinputtext,sjjemzmiminputtext,sjjemzmimaxinputtext,
+                           zdxfinputtext,sypt,
+                           syfw,zdhyoptionxpath,zdshinputtext,isplsh,plfilepath,
+                           sfzctq,iscancel):
         def func(self):
-            self.defineaddmerchantindividu(num,tfqd,rwlx,jllx,ishaspresent,
-                             hdmcinputtext,hdsjstarttimedataxpath,hdsjstarttimesecondsxpath,
-                             hdsjendtimedataxpath,hdsjendtimesecondsxpath,
-                             hdysinputtext,tfqdselectoptionxpath,hdbztextareainputtext,
-                             rwlxselectoptionxpath,jllxselectoptionxpath)
+            self.definecreateticket(num,ffzt,kcslinputtext,qyxq,
+                           xdsjtsinputtext,
+                           yxcbcdf,yhqmcinputtext,yhlx,
+                           yhms,gdjemzinputtext,sjjemzmiminputtext,sjjemzmimaxinputtext,
+                           zdxfinputtext,sypt,
+                           syfw,zdhyoptionxpath,zdshinputtext,isplsh,plfilepath,
+                           sfzctq,iscancel)
         return func
 
 def __generateTestCases():
-    from addmerchant.models import AddMerchant
+    from addticket.models import AddTicket
 
-    addmerchant_all = AddMerchant.objects.filter(iscompany=False).order_by('id')
-    rows_count = addmerchant_all.count()
+    addticket_all = AddTicket.objects.filter(iscompany=False).order_by('id')
+    rows_count = addticket_all.count()
 
-    for addmerchant in addmerchant_all:
+    for addticket in addticket_all:
 
-        if len(str(addmerchant.id)) == 1:
-            addmerchantid = '0000%s'% addmerchant.id
-        elif len(str(addmerchant.id)) == 2:
-            addmerchantid = '000%s' % addmerchant.id
-        elif len(str(addmerchant.id)) == 3:
-            addmerchantid = '00%s' % addmerchant.id
-        elif len(str(addmerchant.id)) == 4:
-            addmerchantid = '0%s' % addmerchant.id
-        elif len(str(addmerchant.id)) == 5:
-            addmerchantid = '%s' % addmerchant.id
+        if len(str(addticket.id)) == 1:
+            addticketid = '0000%s'% addticket.id
+        elif len(str(addticket.id)) == 2:
+            addticketid = '000%s' % addticket.id
+        elif len(str(addticket.id)) == 3:
+            addticketid = '00%s' % addticket.id
+        elif len(str(addticket.id)) == 4:
+            addticketid = '0%s' % addticket.id
+        elif len(str(addticket.id)) == 5:
+            addticketid = '%s' % addticket.id
         else:
-            addmerchantid ='Id已经超过5位数，请重新定义'
+            addticketid ='Id已经超过5位数，请重新定义'
 
 
         args = []
-        args.append(addmerchant.id)
-        args.append(addmerchant.isfictitious)
-        args.append("%s_%s"%(addmerchant.brandnameinputtext,GetTimeStr().getTimeStr()))
-        args.append(addmerchant.emailinputtext)
-        args.append(addmerchant.contactnumberinputtext)
-        args.append(addmerchant.merchanttypeselectoptionxpath)
-        args.append(addmerchant.categoryselectoptionxpath)
-        args.append(addmerchant.criteriaselectoptionxpath)
-        args.append(addmerchant.siupinputtext)
-        args.append(addmerchant.provinceselectoptionxpath)
-        args.append(addmerchant.cityselectoptionxpath)
-        args.append(addmerchant.districtinputtext)
-        args.append(addmerchant.villageinputtext)
-        args.append(addmerchant.postcodeinputtext)
-        args.append(addmerchant.addressinputtext)
-        args.append(addmerchant.photosiupimagefilepath)
-        args.append(addmerchant.photonpwpcompanyimagefilepath)
-        args.append(addmerchant.phototdpimagefilepath)
-        args.append(addmerchant.nameinputtext)
-        args.append(addmerchant.npwpinputtext)
-        args.append(addmerchant.typeidselectoptionxpath)
-        args.append(addmerchant.identitynumberinputtext)
-        args.append(addmerchant.address2inputtext)
-        args.append(addmerchant.nationalityselectoptionxpath)
-        args.append(addmerchant.phoneinputtext)
-        args.append(addmerchant.email2inputtext)
-        args.append(addmerchant.photofullfacebustimagefilepath)
-        args.append(addmerchant.locationphotoimagefilepath)
-        args.append(addmerchant.photoofthecashiersdeskimagefilepath)
-        args.append(addmerchant.otherphotoimagefilepath)
-        args.append(addmerchant.bankselectoptionxpath)
-        args.append(addmerchant.accountnameinputtext)
-        args.append(addmerchant.accountnumberinputtext)
-        args.append(addmerchant.qrindoaccountinputtext)
+        args.append(addticket.id)
+        args.append(addticket.ffzt)
+        args.append(addticket.kcslinputtext)
+        args.append(addticket.qyxq)
+        args.append(addticket.xdsjtsinputtext)
+        args.append(addticket.yxcbcdf)
+        args.append("%s_%s"%(addticket.yhqmcinputtext,GetTimeStr().getTimeStr()))
+        args.append(addticket.yhlx)
+        args.append(addticket.yhms)
+        args.append(addticket.gdjemzinputtext)
+        args.append(addticket.sjjemzmiminputtext)
+        args.append(addticket.sjjemzmimaxinputtext)
+        args.append(addticket.zdxfinputtext)
+        args.append(addticket.sypt)
+        args.append(addticket.syfw)
+        args.append(addticket.zdhyoptionxpath)
+        args.append(addticket.zdshinputtext)
+        args.append(addticket.isplsh)
+        args.append(addticket.plfilepath)
+        args.append(addticket.sfzctq)
+        args.append(addticket.iscancel)
 
-
-        setattr(TestCreateTicketClass, 'test_func_%s_%s' % (addmerchantid,addmerchant.testcasetitle),
+        setattr(TestCreateTicketClass, 'test_func_%s_%s' % (addticketid,addticket.testcasetitle),
                 TestCreateTicketClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
 
     # file_name = "D:\\Users\\Administrator\\PycharmProjects\\seleniumweb\\sele\\dataconfig\\assertselectsearchmanager.xls"

@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'searchdata.apps.SearchdataConfig',   #注册searchdata
     'addmerchant.apps.AddmerchantConfig',  # 注册addmerchant
     'addactivity.apps.AddactivityConfig',  #注册addactivity
+    'addticket.apps.AddticketConfig',  #注册addticket
 
 
 ]
