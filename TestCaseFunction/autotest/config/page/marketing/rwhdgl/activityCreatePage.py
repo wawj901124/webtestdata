@@ -16,7 +16,9 @@ class ActivityCreatePage:
     hdsj = ""
     hdsj_text = u"活动时间"
     hdsj_starttime = ""
+    hdsj_starttime_rightmove = ""
     hdsj_endtime = ""
+    hdsj_endtime_rightmove = ""
 
     hdys = ""
     hdys_text = u"活动预算"
@@ -147,9 +149,9 @@ class ActivityCreatePage:
     jy_wcjy_yhhdcycs_text = u"用户活动参与次数"
     jy_wcjy_yhhdcycs_delete_icon = ""
 
-    jy_wcjy_yhhdcycs_mgyhzzcycs = ""
-    jy_wcjy_yhhdcycs_mgyhzzcycs_text = u"每个用户最多参与次数"
-    jy_wcjy_yhhdcycs_mgyhzzcycs_input = ""
+    jy_wcjy_yhhdcycs_mgyhzdcycs = ""
+    jy_wcjy_yhhdcycs_mgyhzdcycs_text = u"每个用户最多参与次数"
+    jy_wcjy_yhhdcycs_mgyhzdcycs_input = ""
     jy_wcjy_yhhdcycs_mgyhmrcycs = ""
     jy_wcjy_yhhdcycs_mgyhmrcycs_text = u"每个用户每日参与次数"
     jy_wcjy_yhhdcycs_mgyhmrcycs_input = ""

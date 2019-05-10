@@ -3,6 +3,8 @@ from webtestdata.settings import WEB_URL_TITLE,AGENT_REVISE_MERCHANTID
 class ActivityListPage:
     pageurl = "%s/nereus/manager/index#/merchant/list" % WEB_URL_TITLE
 
+    searchtableresult = ""
+
     hdlb = ""
     hdlb_text = u"活动列表"
     # ---筛选字段---#
