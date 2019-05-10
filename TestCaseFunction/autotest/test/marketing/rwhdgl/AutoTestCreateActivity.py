@@ -108,12 +108,11 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
 
     #定义创建活动,
     #投放渠道一级为1表示内部渠道，为2表示外部渠道
-    #投放渠道为1表示内部渠道，否则为外部渠道
+    #投放渠道二级为0表示全选，为1，2，等表示选一项和选多项组合，程序中只有全选和选择一项的情况
     # 任务类型为1表示注册，为2表示交易类型
     #奖励类型1表示固定奖励
     def definecreateactivity(self,num,
-                             hdmcinputtext,hdsjstarttimedataxpath,hdsjstarttimesecondsxpath,
-                             hdsjendtimedataxpath,hdsjendtimesecondsxpath,hdysinputtext,
+                             hdmcinputtext,hdysinputtext,
                              tfqdyj, tfqdej,hdbztextareainputtext,
                              rwlx,tjrwxz,
                              jyjylx, jyzffs,
@@ -125,8 +124,8 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
         #创建活动
         #填入基础信息部分
         self.activeweb.findElementByXpathAndInputNum(num,self.testpagehdmcinput, hdmcinputtext)   #输入活动名称
-        self.activeweb.findElementByXpathAndClickAbountDataToSecound(num,self.testpagehdsjstarttime,hdsjstarttimedataxpath,hdsjstarttimesecondsxpath,pathright=self.testpage.hdsj_starttime_rightmove)   #点选活动时间开始时间
-        self.activeweb.findElementByXpathAndClickAbountDataToSecound(num,self.testpagehdsjendtime ,hdsjendtimedataxpath, hdsjendtimesecondsxpath,pathright=self.testpage.hdsj_endtime_rightmove)   #点选活动时间结束时间
+        self.activeweb.findElementByXpathAndClickAbountDataToSecound(num,self.testpagehdsjstarttime,self.testpage.hdsj_starttime_daytime,self.testpage.hdsj_starttime_secondtime,pathright=self.testpage.hdsj_starttime_rightmove)   #点选活动时间开始时间
+        self.activeweb.findElementByXpathAndClickAbountDataToSecound(num,self.testpagehdsjendtime ,self.testpage.hdsj_endtime_daytime, self.testpage.hdsj_endtime_secondtime,pathright=self.testpage.hdsj_endtime_rightmove)   #点选活动时间结束时间
         self.activeweb.findElementByXpathAndInputNum(num,self.testpagehdysinput, hdysinputtext)   #输入活动预算
         if tfqdyj =="1":
             self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.testpagetfqdselect,self.testpage.tfqd_select_nbqd_option)  # 投放渠道一级渠道选择内部渠道
@@ -249,17 +248,15 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
 
 
     @staticmethod    #根据不同的参数生成测试用例
-    def getTestFunc(num,hdmcinputtext,hdsjstarttimedataxpath,hdsjstarttimesecondsxpath,
-                             hdsjendtimedataxpath,hdsjendtimesecondsxpath,hdysinputtext,
-                             tfqdyj, tfqdej,hdbztextareainputtext,
-                             rwlx,tjrwxz,
-                             jyjylx, jyzffs,
-                             jymgyhzdcycsinputtext,jymgyhmrcycsinputtext,
-                             jllx,iscancel):
+    def getTestFunc(num,hdmcinputtext,hdysinputtext,
+                    tfqdyj, tfqdej,hdbztextareainputtext,
+                    rwlx,tjrwxz,
+                    jyjylx, jyzffs,
+                    jymgyhzdcycsinputtext,jymgyhmrcycsinputtext,
+                    jllx,iscancel):
         def func(self):
             self.definecreateactivity(num,
-                             hdmcinputtext,hdsjstarttimedataxpath,hdsjstarttimesecondsxpath,
-                             hdsjendtimedataxpath,hdsjendtimesecondsxpath,hdysinputtext,
+                             hdmcinputtext,hdysinputtext,
                              tfqdyj, tfqdej,hdbztextareainputtext,
                              rwlx,tjrwxz,
                              jyjylx, jyzffs,

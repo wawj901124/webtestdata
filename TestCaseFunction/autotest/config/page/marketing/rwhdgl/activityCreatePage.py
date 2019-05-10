@@ -17,8 +17,12 @@ class ActivityCreatePage:
     hdsj_text = u"活动时间"
     hdsj_starttime = ""
     hdsj_starttime_rightmove = ""
+    hdsj_starttime_daytime = ""
+    hdsj_starttime_secondtime = ""
     hdsj_endtime = ""
     hdsj_endtime_rightmove = ""
+    hdsj_endtime_daytime = ""
+    hdsj_endtime_secondtime = ""
 
     hdys = ""
     hdys_text = u"活动预算"
