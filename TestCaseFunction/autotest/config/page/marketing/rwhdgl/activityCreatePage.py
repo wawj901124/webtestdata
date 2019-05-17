@@ -1,7 +1,7 @@
 from webtestdata.settings import WEB_URL_TITLE,AGENT_REVISE_MERCHANTID
 
 class ActivityCreatePage:
-    pageurl = "%s/nereus/manager/index#/merchant/list" % WEB_URL_TITLE
+    pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/add" % WEB_URL_TITLE
 
     yxhdcj = ""
     yxhdcj_text = u"营销活动创建"
@@ -11,33 +11,38 @@ class ActivityCreatePage:
 
     hdmc = ""
     hdmc_text = u"活动名称"
-    hdmc_input = ""
+    hdmc_input = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[1]/div/div/input"
 
     hdsj = ""
     hdsj_text = u"活动时间"
-    hdsj_starttime = ""
-    hdsj_starttime_rightmove = ""
-    hdsj_starttime_daytime = ""
+    hdsj_starttime = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[2]/div/div[1]/div[1]/div/input"
+    hdsj_starttime_rightmove = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/div/div/div/div[1]/span[5]/i"
+    hdsj_starttime_daytime = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/span[22]/em"
     hdsj_starttime_secondtime = ""
-    hdsj_endtime = ""
-    hdsj_endtime_rightmove = ""
-    hdsj_endtime_daytime = ""
+    hdsj_starttime_queding = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/div/div/div/div[4]/button[3]"
+    hdsj_endtime = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[3]/div/div/div[1]/div/input"
+    hdsj_endtime_rightmove = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[3]/div/div/div[2]/div/div/div/div[1]/span[5]/i"
+    hdsj_endtime_daytime = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[3]/div/div/div[2]/div/div/div/div[2]/div/span[24]/em"
     hdsj_endtime_secondtime = ""
+    hdsj_endtime_queding = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[3]/div/div/div[2]/div/div/div/div[4]/button[3]"
 
     hdys = ""
     hdys_text = u"活动预算"
-    hdys_input = ""
+    hdys_input = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[4]/div/div/input"
 
     tfqd = ""
     tfqd_text = u"投放渠道"
-    tfqd_select = ""
-    tfqd_select_nbqd_option = ""
+    tfqd_select = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[5]/div/div/div[1]/div/span"
+    tfqd_select_nbqd_option = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[5]/div/div/div[2]/ul[2]/li"
     tfqd_select_wbqd_option = ""
     tfqd_select_nbqd_option_text = u"内部渠道"
     tfqd_select_wbqd_option_text = u"外部渠道"
-    tfqd_select_nbqd_fxk_app_checkbox = ""
-    tfqd_select_nbqd_fxk_web_checkbox = ""
-    tfqd_select_nbqd_fxk_sdk_checkbox = ""
+    tfqd_select_nbqd_fxk_mbmpay_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[6]/div/div/label[1]/span/input"
+    tfqd_select_nbqd_fxk_mydisrupto_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[6]/div/div/label[2]/span/input"
+    tfqd_select_nbqd_fxk_qrindo_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[6]/div/div/label[3]/span/input"
+    tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[6]/div/div/label[4]/span/input"
+    tfqd_select_nbqd_fxk_paysdk_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[6]/div/div/label[5]/span/input"
+
     tfqd_select_nbqd_fxk_app = ""
     tfqd_select_nbqd_fxk_web = ""
     tfqd_select_nbqd_fxk_sdk = ""
@@ -56,7 +61,7 @@ class ActivityCreatePage:
 
     hdbz = ""
     hdbz_text = ""
-    hdbz_textarea = ""
+    hdbz_textarea = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[7]/div/div/textarea"
 
     # ---活动任务规则---#
     hdrwgz = ""
@@ -64,15 +69,15 @@ class ActivityCreatePage:
 
     rwlx = ""
     rwlx_text = u"任务类型"
-    rwlx_select = ""
-    rwlx_select_zc_option = ""
-    rwlx_select_jx_option = ""
+    rwlx_select = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[1]/div/div/div[1]/div/span"
+    rwlx_select_zc_option = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[1]"
+    rwlx_select_jx_option = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[2]"
     rwlx_select_zc_option_text = u"注册"
     rwlx_select_jx_option_text = u"交易"
 
     rwmb = ""
     rwmb_text = u"任务目标"
-    rwmb_select = ""
+    rwmb_select = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[2]/div/div/div[1]/div/span"
     rwmb_select_wczc_option = ""
     rwmb_select_wcjx_option = ""
     rwmb_select_wczc_option_text = u"完成注册"
@@ -81,12 +86,12 @@ class ActivityCreatePage:
     rwxz = ""
     rwxz_text = u"任务限制"
 
-    tjxz = ""
+    tjxz = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[1]/div/div[1]/button"
     tjxz_text = u"添加限制"
     # ---添加限制弹框中选项---#
     rwmb_popup_jylx_option = ""
-    rwmb_popup_zffs_option = ""
-    rwmb_popup_yhhdcycs_option = ""
+    rwmb_popup_zffs_option = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[1]/div/div[2]/ul/li[1]"
+    rwmb_popup_yhhdcycs_option = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[1]/div/div[2]/ul/li[2]"
     rwmb_popup_jylx_option_text = u"交易类型"
     rwmb_popup_zffs_option_text = u"支付方式"
     rwmb_popup_yhhdcycs_option_text = u"用户活动参与次数"
@@ -122,43 +127,43 @@ class ActivityCreatePage:
     # ---交易类型---#
     jy_wcjy_jylx = ""
     jy_wcjy_jylx_text = u"交易类型"
-    jy_wcjy_jylx_checkbox = ""
+    jy_wcjy_jylx_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[2]/span/label/label/span/input"
 
     jy_wcjy_jylx_fxk_xf = ""
     jy_wcjy_jylx_fxk_xf_text = u"消费"
-    jy_wcjy_jylx_fxk_xf_checkbox = ""
+    jy_wcjy_jylx_fxk_xf_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[2]/div/div/label[1]/span/input"
     jy_wcjy_jylx_fxk_cz = ""
     jy_wcjy_jylx_fxk_cz_text = u"充值"
-    jy_wcjy_jylx_fxk_cz_checkbox = ""
+    jy_wcjy_jylx_fxk_cz_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[2]/div/div/label[2]/span/input"
     jy_wcjy_jylx_fxk_zz = ""
     jy_wcjy_jylx_fxk_zz_text = u"转账"
-    jy_wcjy_jylx_fxk_zz_checkbox = ""
+    jy_wcjy_jylx_fxk_zz_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[2]/div/div/label[3]/span/input"
 
     # ---支付方式---#
     jy_wcjy_zffs = ""
     jy_wcjy_zffs_text = u"支付方式"
-    jy_wcjy_zffs_checkbox = ""
-    jy_wcjy_zffs_delete_icon = ""
+    jy_wcjy_zffs_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/span/label/label/span/input"
+    jy_wcjy_zffs_delete_icon = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/span/i"
 
     jy_wcjy_zffs_fxk_qbye = ""
     jy_wcjy_zffs_fxk_qbye_text = u"钱包余额"
-    jy_wcjy_zffs_fxk_qbye_checkbox = ""
+    jy_wcjy_zffs_fxk_qbye_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/div/div/label[2]/span/input"
 
     jy_wcjy_zffs_fxk_yhk = ""
     jy_wcjy_zffs_fxk_yhk_text = u"银行卡"
-    jy_wcjy_zffs_fxk_yhk_checkbox = ""
+    jy_wcjy_zffs_fxk_yhk_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/div/div/label[1]/span/input"
 
     # ---用户活动参与次数---#
     jy_wcjy_yhhdcycs = ""
     jy_wcjy_yhhdcycs_text = u"用户活动参与次数"
-    jy_wcjy_yhhdcycs_delete_icon = ""
+    jy_wcjy_yhhdcycs_delete_icon = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[4]/span[1]/i"
 
     jy_wcjy_yhhdcycs_mgyhzdcycs = ""
     jy_wcjy_yhhdcycs_mgyhzdcycs_text = u"每个用户最多参与次数"
-    jy_wcjy_yhhdcycs_mgyhzdcycs_input = ""
+    jy_wcjy_yhhdcycs_mgyhzdcycs_input = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[4]/span[2]/div[1]/div/div/input"
     jy_wcjy_yhhdcycs_mgyhmrcycs = ""
     jy_wcjy_yhhdcycs_mgyhmrcycs_text = u"每个用户每日参与次数"
-    jy_wcjy_yhhdcycs_mgyhmrcycs_input = ""
+    jy_wcjy_yhhdcycs_mgyhmrcycs_input = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[4]/span[2]/div[2]/div/div/input"
 
     # ---活动奖励---#
     jlxx = ""
@@ -166,15 +171,15 @@ class ActivityCreatePage:
 
     jllx = ""
     jllx_text = u"奖励类型"
-    jllx_select = ""
-    jllx_select_gdjl_option = ""
+    jllx_select = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[1]/div/div/div[1]/div/span"
+    jllx_select_gdjl_option = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[1]/div/div/div[2]/ul[2]/li"
     jllx_select_gdjl_option_text = u"固定奖励"
 
     # ---未添加奖励礼品时添加礼品---#
     w_jllp = ""
     w_jllp_text = u"奖励礼品"
 
-    w_tjlp = ""
+    w_tjlp = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[2]/div/button"
     w_tjlp_text = u"添加礼品"
 
     # ---已添加奖励礼品时添加礼品---#
@@ -196,8 +201,8 @@ class ActivityCreatePage:
     y_tjlp = ""
     y_tjlp_text = u"添加礼品"
 
-    cancelbutton = ""
-    submitbutton = ""
+    cancelbutton = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/span[1]"
+    submitbutton = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/span[2]"
 
 
 

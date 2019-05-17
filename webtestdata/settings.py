@@ -183,6 +183,8 @@ AGENT_LOGIN_PASSWORD = "abc123456"
 MANAGER_REVIEW_MERCHANTID = AGENT_REVISE_MERCHANTID
 MANAGER_LOGIN_ACCOUNT = "admin@iapppay.com"
 MANAGER_LOGIN_PASSWORD = "123456"
+
+
 # #---------------------------现网------------------------------------
 # #现网域名
 # # WEB_URL_TITLE = 'https://m-mbmpay.ahdipay.com'

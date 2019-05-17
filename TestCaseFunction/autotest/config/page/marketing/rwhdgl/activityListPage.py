@@ -1,9 +1,10 @@
 from webtestdata.settings import WEB_URL_TITLE,AGENT_REVISE_MERCHANTID
 
 class ActivityListPage:
-    pageurl = "%s/nereus/manager/index#/merchant/list" % WEB_URL_TITLE
+    pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/list" % WEB_URL_TITLE
 
-    searchtableresult = ""
+    searchtableresult = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[2]/table/tbody"
+    searchtableresult2 = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[3]/table/tbody"
 
     hdlb = ""
     hdlb_text = u"活动列表"

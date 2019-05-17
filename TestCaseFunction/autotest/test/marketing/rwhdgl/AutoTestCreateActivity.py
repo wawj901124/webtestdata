@@ -1,6 +1,6 @@
 import unittest
 
-from webtestdata.settings import WEB_URL_TITLE,AGENT_LOGIN_ACCOUNT,AGENT_LOGIN_PASSWORD
+from webtestdata.settings import WEB_URL_TITLE,MANAGER_LOGIN_ACCOUNT,MANAGER_LOGIN_PASSWORD
 
 
 # ----------------------------------------------------------------------
@@ -54,8 +54,8 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
         self.activeweb = ActiveWeb()  # 实例化
         self.loginurl = LoginPage().pageurl
         self.activeweb.getUrl(self.loginurl)  # 打开网址
-        self.activeweb.findElementByXpathAndInput(LoginPage().account,AGENT_LOGIN_ACCOUNT)
-        self.activeweb.findElementByXpathAndInput(LoginPage().password,AGENT_LOGIN_PASSWORD)
+        self.activeweb.findElementByXpathAndInput(LoginPage().account,MANAGER_LOGIN_ACCOUNT)
+        self.activeweb.findElementByXpathAndInput(LoginPage().password,MANAGER_LOGIN_PASSWORD)
         self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
         self.activeweb.delayTime(3)
         self.testpage = ActivityCreatePage()
@@ -124,34 +124,40 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
         #创建活动
         #填入基础信息部分
         self.activeweb.findElementByXpathAndInputNum(num,self.testpagehdmcinput, hdmcinputtext)   #输入活动名称
-        self.activeweb.findElementByXpathAndClickAbountDataToSecound(num,self.testpagehdsjstarttime,self.testpage.hdsj_starttime_daytime,self.testpage.hdsj_starttime_secondtime,pathright=self.testpage.hdsj_starttime_rightmove)   #点选活动时间开始时间
-        self.activeweb.findElementByXpathAndClickAbountDataToSecound(num,self.testpagehdsjendtime ,self.testpage.hdsj_endtime_daytime, self.testpage.hdsj_endtime_secondtime,pathright=self.testpage.hdsj_endtime_rightmove)   #点选活动时间结束时间
+        self.activeweb.findElementByXpathAndClickAbountData(num,self.testpagehdsjstarttime,self.testpage.hdsj_starttime_daytime,pathright=self.testpage.hdsj_starttime_rightmove,pathconfirm=self.testpage.hdsj_starttime_queding)   #点选活动时间开始时间
+        self.activeweb.findElementByXpathAndClickAbountData(num,self.testpagehdsjendtime ,self.testpage.hdsj_endtime_daytime,pathright=self.testpage.hdsj_endtime_rightmove,pathconfirm=self.testpage.hdsj_endtime_queding)   #点选活动时间结束时间
         self.activeweb.findElementByXpathAndInputNum(num,self.testpagehdysinput, hdysinputtext)   #输入活动预算
         if tfqdyj =="1":
             self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.testpagetfqdselect,self.testpage.tfqd_select_nbqd_option)  # 投放渠道一级渠道选择内部渠道
             if tfqdej == "0":  # 点击投放渠道二级渠道所有项复选框
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_app_checkbox)
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_web_checkbox)
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_sdk_checkbox)
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox)
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindo_checkbox)
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox )
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_paysdk_checkbox)
             elif tfqdej == "1":
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_app_checkbox)   #点选投放渠道二级渠道app项复选框
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)   #点选投放渠道二级渠道mbmpay项复选框
             elif tfqdej == "2":
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_web_checkbox)   #点选投放渠道二级渠道web项复选框
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox)   #点选投放渠道二级渠道mydisrupto项复选框
             elif tfqdej == "3":
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_sdk_checkbox)   #点选投放渠道二级渠道sdk项复选框
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindo_checkbox)   #点选投放渠道二级渠道qrindo项复选框
+            elif tfqdej == "4":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox)   #点选投放渠道二级渠道qrindomerchantcashier项复选框
+            elif tfqdej == "5":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_paysdk_checkbox)   #点选投放渠道二级渠道paysdk项复选框
 
-        elif tfqdyj =="2":
-            self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.testpagetfqdselect,self.testpage.tfqd_select_wbqd_option)  # 投放渠道一级渠道选择外部渠道
-            if tfqdej == '0':# 点击投放渠道二级渠道所有项复选框
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_app_checkbox)
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_web_checkbox)
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_sdk_checkbox)
-            elif tfqdej == "1":
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_app_checkbox)   #点选投放渠道二级渠道app项复选框
-            elif tfqdej == "2":
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_web_checkbox)   #点选投放渠道二级渠道web项复选框
-            elif tfqdej == "3":
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_web_checkbox)   #点选投放渠道二级渠道sdk项复选框
+        # elif tfqdyj =="2":
+        #     self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.testpagetfqdselect,self.testpage.tfqd_select_wbqd_option)  # 投放渠道一级渠道选择外部渠道
+        #     if tfqdej == '0':# 点击投放渠道二级渠道所有项复选框
+        #         self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_app_checkbox)
+        #         self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_web_checkbox)
+        #         self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_sdk_checkbox)
+        #     elif tfqdej == "1":
+        #         self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_app_checkbox)   #点选投放渠道二级渠道app项复选框
+        #     elif tfqdej == "2":
+        #         self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_web_checkbox)   #点选投放渠道二级渠道web项复选框
+        #     elif tfqdej == "3":
+        #         self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_web_checkbox)   #点选投放渠道二级渠道sdk项复选框
 
         self.activeweb.findElementByXpathAndInputNum(num,self.testpagehdbztextarea, hdbztextareainputtext)   #输入活动备注
 
@@ -187,9 +193,11 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
                 self.activeweb.findElementByXpathAndClickNum(num, self.testpage.jy_wcjy_zffs_fxk_qbye_checkbox)  # 点击支付方式-钱包余额前选择框
             elif jyzffs == "2":
                 self.activeweb.findElementByXpathAndClickNum(num, self.testpage.jy_wcjy_zffs_fxk_yhk_checkbox)  # 点击支付方式-银行卡前选择框
-
-            self.activeweb.findElementByXpathAndInputNum(num, self.testpage.jy_wcjy_yhhdcycs_mgyhzdcycs_input, jymgyhzdcycsinputtext)  # 输入每个用户最多参与次数
-            self.activeweb.findElementByXpathAndInputNum(num, self.testpage.jy_wcjy_yhhdcycs_mgyhmrcycs_input, jymgyhmrcycsinputtext)  # 输入每个用户每日参与次数
+            print("jymgyhzdcycsinputtext:%s" % jymgyhzdcycsinputtext)
+            if jymgyhzdcycsinputtext != None:
+                self.activeweb.findElementByXpathAndInputNum(num, self.testpage.jy_wcjy_yhhdcycs_mgyhzdcycs_input, jymgyhzdcycsinputtext)  # 输入每个用户最多参与次数
+            if jymgyhmrcycsinputtext != None:
+                self.activeweb.findElementByXpathAndInputNum(num, self.testpage.jy_wcjy_yhhdcycs_mgyhmrcycs_input, jymgyhmrcycsinputtext)  # 输入每个用户每日参与次数
 
         #填入活动奖励部分
         if jllx =="1":
@@ -208,18 +216,25 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.ticketcreatepage_yhlx_select,self.ticketcreatepage.yhlx_option_djq)   #优惠类型选择代金券
         self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.ticketcreatepage_yhms_select,self.ticketcreatepage.yhms_select_option_gdje)   #优惠模式选择固定金额
         self.activeweb.findElementByXpathAndInputNum(num, self.ticketcreatepage.yhms_select_option_gdje_mz_input,"2000")  # 面值输入2000
+        self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_mbmpay_checkbox)  # 使用平台点选mbmpay
+        self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_mydisrupto_checkbox)  # 使用平台点选mydisrupto
         self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
+        self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_qrindomerchantcashier_checkbox)  # 使用平台点选qrindomerchantcashier
+        self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_PaySDK_checkbox)  # 使用平台点选PaySDK
         self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.ticketcreatepage_syfw_select,self.ticketcreatepage.syfw_select_option_bx)   #使用范围选择不限
         # self.activeweb.findElementByXpathAndClickNum(num, self.ticketcreatepage.kfyqthddj_bkdjsy_checkbox)  # 可否与其他活动叠加点选不可叠加使用
         self.activeweb.findElementByXpathAndClickNum(num, self.ticketcreatepage.sfzctq_kt_checkbox)  # 是否支持退券点选可退
 
-        self.activeweb.findElementByXpathAndClickNum(num, self.ticketcreatepage_confirm_button)   #点击确定按钮
+        self.activeweb.findElementByXpathAndScriptClickNum(num, self.ticketcreatepage.confirm_button)   #点击确定按钮
         ################################优惠券创建完成#########################################
 
+        # self.activeweb.delayTime(1000)
+
+
         if iscancel:
-            self.activeweb.findElementByXpathAndClickNum(num, self.testpagecancelbutton)  # 点击取消按钮
+            self.activeweb.findElementByXpathAndScriptClickNum(num, self.testpagecancelbutton)  # 点击取消按钮
         else:
-            self.activeweb.findElementByXpathAndClickNum(num, self.testpagesubmitbutton)  # 点击提交按钮
+            self.activeweb.findElementByXpathAndScriptClickNum(num, self.testpagesubmitbutton)  # 点击提交按钮
             # 断言活动列表中是否有新增加的活动
             self.defineisintable(num, self.activitylistpage_searchtableresult, hdmcinputtext, 1)
 
