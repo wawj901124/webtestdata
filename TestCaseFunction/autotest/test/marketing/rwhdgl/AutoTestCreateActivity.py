@@ -177,6 +177,11 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
             elif tjrwxz == "3":
                 self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tjxz)  # 点击添加限制文字链接
                 self.activeweb.findElementByXpathAndClickNum(num, self.testpage.rwmb_popup_yhhdcycs_option)  # 点击添加限制弹框中的用户活动参与次数
+            elif tjrwxz == "4":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tjxz)  # 点击添加限制文字链接
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.rwmb_popup_zffs_option)  # 点击添加限制弹框中的支付方式
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tjxz)  # 点击添加限制文字链接
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.rwmb_popup_yhhdcycs_option)  # 点击添加限制弹框中的用户活动参与次数
 
             if jyjylx == "0":
                 self.activeweb.findElementByXpathAndClickNum(num, self.testpage.jy_wcjy_jylx_checkbox)  #点击交易类型全选框
@@ -193,6 +198,13 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
                 self.activeweb.findElementByXpathAndClickNum(num, self.testpage.jy_wcjy_zffs_fxk_qbye_checkbox)  # 点击支付方式-钱包余额前选择框
             elif jyzffs == "2":
                 self.activeweb.findElementByXpathAndClickNum(num, self.testpage.jy_wcjy_zffs_fxk_yhk_checkbox)  # 点击支付方式-银行卡前选择框
+            elif jyzffs == "3":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.jy_wcjy_zffs_fxk_yhkhq_checkbox)  # 点击支付方式-银行卡+券前选择框
+            elif jyzffs == "4":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.jy_wcjy_zffs_fxk_yehq_checkbox)  # 点击支付方式-余额+券前选择框
+            elif jyzffs == "5":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.jy_wcjy_zffs_fxk_vahspg_checkbox)  # 点击支付方式-VA或SPG支付前选择框
+
             print("jymgyhzdcycsinputtext:%s" % jymgyhzdcycsinputtext)
             if jymgyhzdcycsinputtext != None:
                 self.activeweb.findElementByXpathAndInputNum(num, self.testpage.jy_wcjy_yhhdcycs_mgyhzdcycs_input, jymgyhzdcycsinputtext)  # 输入每个用户最多参与次数

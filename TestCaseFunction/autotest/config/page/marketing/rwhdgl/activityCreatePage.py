@@ -149,6 +149,9 @@ class ActivityCreatePage:
     jy_wcjy_zffs_fxk_qbye_text = u"钱包余额"
     jy_wcjy_zffs_fxk_qbye_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/div/div/label[2]/span/input"
 
+    jy_wcjy_zffs_fxk_yhkhq_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/div/div/label[3]/span/input"
+    jy_wcjy_zffs_fxk_yehq_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/div/div/label[4]/span/input"
+    jy_wcjy_zffs_fxk_vahspg_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/div/div/label[5]/span/input"
     jy_wcjy_zffs_fxk_yhk = ""
     jy_wcjy_zffs_fxk_yhk_text = u"银行卡"
     jy_wcjy_zffs_fxk_yhk_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/div/div/label[1]/span/input"
