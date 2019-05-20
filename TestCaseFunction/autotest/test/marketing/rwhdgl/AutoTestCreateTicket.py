@@ -1,6 +1,6 @@
 import unittest
 
-from webtestdata.settings import WEB_URL_TITLE,AGENT_LOGIN_ACCOUNT,AGENT_LOGIN_PASSWORD
+from webtestdata.settings import WEB_URL_TITLE,MANAGER_LOGIN_ACCOUNT,MANAGER_LOGIN_PASSWORD
 
 
 # ----------------------------------------------------------------------
@@ -18,6 +18,7 @@ from TestCaseFunction.util.gettimestr import GetTimeStr
 from TestCaseFunction.autotest.config.page.manager.loginPage import LoginPage   #导入登录页
 from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityCreatePage import ActivityCreatePage   #导入创建活动页
 from TestCaseFunction.autotest.config.page.marketing.rwhdgl.ticketCreatePage import TicketCreatePage   #导入创建优惠券页
+from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityListPage import ActivityListPage   #导入活动列表页
 
 class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
 
@@ -53,8 +54,8 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
         self.activeweb = ActiveWeb()  # 实例化
         self.loginurl = LoginPage().pageurl
         self.activeweb.getUrl(self.loginurl)  # 打开网址
-        self.activeweb.findElementByXpathAndInput(LoginPage().account,AGENT_LOGIN_ACCOUNT)
-        self.activeweb.findElementByXpathAndInput(LoginPage().password,AGENT_LOGIN_PASSWORD)
+        self.activeweb.findElementByXpathAndInput(LoginPage().account,MANAGER_LOGIN_ACCOUNT)
+        self.activeweb.findElementByXpathAndInput(LoginPage().password,MANAGER_LOGIN_PASSWORD)
         self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
         self.activeweb.delayTime(3)
 
@@ -79,6 +80,9 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
         self.activitycreatepage_w_tjlp = self.activitycreatepage.w_tjlp    # ---活动奖励---# 未添加礼品时，“添加礼品”文字链接路径
 
         #pass
+        ######################活动列表页###############################
+        self.activitylistpage = ActivityListPage()   #活动列表页
+        self.activitylistpage_searchtableresult = self.activitylistpage.searchtableresult
 
 
     def tearDown(self):  # 每条用例执行测试之后都要执行此方法
@@ -112,6 +116,24 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
                            sfzctq,iscancel):
         self.activeweb.getUrl(self.activitycreatepage_pageurl)
         self.activeweb.delayTime(3)
+        #创建活动
+        #填入基础信息部分
+        self.activeweb.findElementByXpathAndInputNum(num,self.activitycreatepage.hdmc_input, yhqmcinputtext)   #输入活动名称
+        self.activeweb.findElementByXpathAndClickAbountData(num,self.activitycreatepage.hdsj_starttime,self.activitycreatepage.hdsj_starttime_daytime,pathright=self.activitycreatepage.hdsj_starttime_rightmove,pathconfirm=self.activitycreatepage.hdsj_starttime_queding)   #点选活动时间开始时间
+        self.activeweb.findElementByXpathAndClickAbountData(num,self.activitycreatepage.hdsj_endtime ,self.activitycreatepage.hdsj_endtime_daytime,pathright=self.activitycreatepage.hdsj_endtime_rightmove,pathconfirm=self.activitycreatepage.hdsj_endtime_queding)   #点选活动时间结束时间
+        self.activeweb.findElementByXpathAndInputNum(num,self.activitycreatepage.hdys_input, "2000")   #输入活动预算
+
+        self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.activitycreatepage.tfqd_select,self.activitycreatepage.tfqd_select_nbqd_option)  # 投放渠道一级渠道选择内部渠道
+
+        # 点选投放渠道二级渠道全部项复选框
+        self.activeweb.findElementByXpathAndClickNum(num, self.activitycreatepage.tfqd_select_nbqd_fxk_mbmpay_checkbox)
+        self.activeweb.findElementByXpathAndClickNum(num, self.activitycreatepage.tfqd_select_nbqd_fxk_mydisrupto_checkbox)
+        self.activeweb.findElementByXpathAndClickNum(num, self.activitycreatepage.tfqd_select_nbqd_fxk_qrindo_checkbox)
+        self.activeweb.findElementByXpathAndClickNum(num, self.activitycreatepage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox )
+        self.activeweb.findElementByXpathAndClickNum(num, self.activitycreatepage.tfqd_select_nbqd_fxk_paysdk_checkbox)
+
+        #填入活动任务规则部分
+        self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.activitycreatepage.rwlx_select,self.activitycreatepage.rwlx_select_jx_option)  # 任务类型选择交易
 
         #创建活动页，点击“添加礼品”文字链接
         self.activeweb.findElementByXpathAndClickNum(num, self.activitycreatepage_w_tjlp)  # 点击添加礼品文字链接(还未添加礼品)
@@ -122,7 +144,8 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
             self.activeweb.findElementByXpathAndClickNum(num, self.testpage.ffzt_kq_checkbox)  # 点击发放状态开始对应的选项框
         else:
             self.activeweb.findElementByXpathAndClickNum(num, self.testpage.ffzt_gb_checkbox)  # 点击发放状态关闭对应的选项框
-        self.activeweb.findElementByXpathAndInputNum(num, self.testpagekcslinput,kcslinputtext) # 输入库存数量
+        if kcslinputtext !=None:
+            self.activeweb.findElementByXpathAndInputNum(num, self.testpagekcslinput,kcslinputtext) # 输入库存数量
         if qyxq == "1":
             self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.testpageqyxqselect,self.testpage.qyxq_select_option_xdsj)  # 选择券有效期选项为相对时间
             self.activeweb.findElementByXpathAndInputNum(num, self.testpage.qyxq_select_option_xdsj_ts_input, xdsjtsinputtext)  # 输入相对时间
@@ -153,8 +176,8 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
             self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.testpageyhmsselect,self.testpage.yhms_select_option_sjje)  # 优惠模式选择随机金额
             self.activeweb.findElementByXpathAndInputNum(num, self.testpage.yhms_select_option_sjje_mz_min_input,sjjemzmiminputtext)  # 面值最小值输入
             self.activeweb.findElementByXpathAndInputNum(num, self.testpage.yhms_select_option_sjje_mz_max_input,sjjemzmimaxinputtext)  # 面值最大值输入
-
-        self.activeweb.findElementByXpathAndInputNum(num, self.testpage.zdxf_input,zdxfinputtext) # 输入最低消费金额
+        if zdxfinputtext != None:
+            self.activeweb.findElementByXpathAndInputNum(num, self.testpage.zdxf_input,zdxfinputtext) # 输入最低消费金额
 
         if sypt == "0":
             self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
@@ -189,8 +212,15 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
         else:
             self.activeweb.findElementByXpathAndClickNum(num, self.testpageconfirmbutton)   #点击确定按钮
             # 断言添加礼品列表中是否有新增加的礼品
-            self.defineisintable(num, self.activitylistpage_searchtableresult, yhqmcinputtext, 1)
+            self.defineisintable(num, self.activitycreatepage.y_jllp_table, yhqmcinputtext, 1)
         ################################优惠券创建完成#########################################
+
+        if iscancel:
+            self.activeweb.findElementByXpathAndScriptClickNum(num, self.activitycreatepage.cancelbutton)  # 点击取消按钮
+        else:
+            self.activeweb.findElementByXpathAndScriptClickNum(num, self.activitycreatepage.submitbutton)  # 点击提交按钮
+            # 断言活动列表中是否有新增加的活动
+            self.defineisintable(num, self.activitylistpage_searchtableresult,yhqmcinputtext , 1)
 
 
     def defineasserttextnum(self,num,testelexpath,expecttext):
@@ -235,7 +265,7 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from addticket.models import AddTicket
 
-    addticket_all = AddTicket.objects.filter(iscompany=False).order_by('id')
+    addticket_all = AddTicket.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="创建代金券").order_by('id')
     rows_count = addticket_all.count()
 
     for addticket in addticket_all:

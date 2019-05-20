@@ -188,6 +188,8 @@ class ActivityCreatePage:
     # ---已添加奖励礼品时添加礼品---#
     y_jllp = ""
     y_jllp_text = u"奖励礼品"
+    y_jllp_table = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[2]/div/div/div/div[2]/table/tbody"
+
 
     y_jllp_table_xh = ""
     y_jllp_table_xh_text = u"序号"
