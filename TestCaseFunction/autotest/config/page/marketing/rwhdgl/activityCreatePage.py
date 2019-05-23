@@ -1,4 +1,4 @@
-from webtestdata.settings import WEB_URL_TITLE,AGENT_REVISE_MERCHANTID
+from webtestdata.settings import WEB_URL_TITLE
 
 class ActivityCreatePage:
     pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/add" % WEB_URL_TITLE
@@ -127,17 +127,17 @@ class ActivityCreatePage:
     # ---交易类型---#
     jy_wcjy_jylx = ""
     jy_wcjy_jylx_text = u"交易类型"
-    jy_wcjy_jylx_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[2]/span/label/label/span/input"
+    jy_wcjy_jylx_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div/span/label/label/span/input"
 
     jy_wcjy_jylx_fxk_xf = ""
     jy_wcjy_jylx_fxk_xf_text = u"消费"
-    jy_wcjy_jylx_fxk_xf_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[2]/div/div/label[1]/span/input"
+    jy_wcjy_jylx_fxk_xf_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div/div/div/label[1]/span/input"
     jy_wcjy_jylx_fxk_cz = ""
     jy_wcjy_jylx_fxk_cz_text = u"充值"
-    jy_wcjy_jylx_fxk_cz_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[2]/div/div/label[2]/span/input"
+    jy_wcjy_jylx_fxk_cz_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div/div/div/label[2]/span/input"
     jy_wcjy_jylx_fxk_zz = ""
     jy_wcjy_jylx_fxk_zz_text = u"转账"
-    jy_wcjy_jylx_fxk_zz_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[2]/div/div/label[3]/span/input"
+    jy_wcjy_jylx_fxk_zz_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div/div/div/label[3]/span/input"
 
     # ---支付方式---#
     jy_wcjy_zffs = ""

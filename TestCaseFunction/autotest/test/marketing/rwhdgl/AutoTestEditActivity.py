@@ -16,11 +16,12 @@ from TestCaseFunction.util.operation_json import OperationJson
 from TestCaseFunction.util.gettimestr import GetTimeStr
 
 from TestCaseFunction.autotest.config.page.manager.loginPage import LoginPage   #导入登录页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityCreatePage import ActivityCreatePage   #导入创建活动页
+# from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityCreatePage import ActivityCreatePage   #导入创建活动页
+from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityEditPage import ActivityEditPage  #导入未上线活动编辑页
 from TestCaseFunction.autotest.config.page.marketing.rwhdgl.ticketCreatePage import TicketCreatePage   #导入创建优惠券页
 from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityListPage import ActivityListPage   #导入活动列表页
 
-class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
+class TestEditActivityClass(unittest.TestCase):  # 创建测试类
 
     @classmethod  # 类方法，只执行一次，但必须要加注解@classmethod,且名字固定为setUpClass
     def setUpClass(cls):
@@ -58,7 +59,7 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndInput(LoginPage().password,MANAGER_LOGIN_PASSWORD)
         self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
         self.activeweb.delayTime(3)
-        self.testpage = ActivityCreatePage()
+        self.testpage = ActivityEditPage()
         self.testpageurl =self.testpage.pageurl   #测试页面url
         self.testpagehdmcinput = self.testpage.hdmc_input       # ---基础信息---#   活动名称输入框路劲
         self.testpagehdsjstarttime = self.testpage.hdsj_starttime # ---基础信息---#   活动时间开始时间输入框路径
@@ -111,7 +112,7 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
     #投放渠道二级为0表示全选，为1，2，等表示选一项和选多项组合，程序中只有全选和选择一项的情况
     # 任务类型为1表示注册，为2表示交易类型
     #奖励类型1表示固定奖励
-    def definecreateactivity(self,num,
+    def defineeditactivity(self,num,
                              hdmcinputtext,hdysinputtext,
                              tfqdyj, tfqdej,hdbztextareainputtext,
                              rwlx,tjrwxz,
@@ -130,21 +131,38 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
         if tfqdyj =="1":
             self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.testpagetfqdselect,self.testpage.tfqd_select_nbqd_option)  # 投放渠道一级渠道选择内部渠道
             if tfqdej == "0":  # 点击投放渠道二级渠道所有项复选框
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox)
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindo_checkbox)
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox )
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_paysdk_checkbox)
-            elif tfqdej == "1":
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)   #点选投放渠道二级渠道mbmpay项复选框
-            elif tfqdej == "2":
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox)   #点选投放渠道二级渠道mydisrupto项复选框
-            elif tfqdej == "3":
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindo_checkbox)   #点选投放渠道二级渠道qrindo项复选框
-            elif tfqdej == "4":
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox)   #点选投放渠道二级渠道qrindomerchantcashier项复选框
-            elif tfqdej == "5":
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_paysdk_checkbox)   #点选投放渠道二级渠道paysdk项复选框
+                if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num,self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)
+                if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox)
+                if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_qrindo_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindo_checkbox)
+                if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox)
+                if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_paysdk_checkbox)
+            else:
+                if self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num,self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)
+                if self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox)
+                if self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_qrindo_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindo_checkbox)
+                if self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox)
+                if self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_paysdk_checkbox)
+
+                if tfqdej == "1":
+                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)   #点选投放渠道二级渠道mbmpay项复选框
+                elif tfqdej == "2":
+                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox)   #点选投放渠道二级渠道mydisrupto项复选框
+                elif tfqdej == "3":
+                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindo_checkbox)   #点选投放渠道二级渠道qrindo项复选框
+                elif tfqdej == "4":
+                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox)   #点选投放渠道二级渠道qrindomerchantcashier项复选框
+                elif tfqdej == "5":
+                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_paysdk_checkbox)   #点选投放渠道二级渠道paysdk项复选框
 
         # elif tfqdyj =="2":
         #     self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.testpagetfqdselect,self.testpage.tfqd_select_wbqd_option)  # 投放渠道一级渠道选择外部渠道
@@ -284,7 +302,7 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
                     jymgyhzdcycsinputtext,jymgyhmrcycsinputtext,
                     jllx,iscancel):
         def func(self):
-            self.definecreateactivity(num,
+            self.defineeditactivity(num,
                              hdmcinputtext,hdysinputtext,
                              tfqdyj, tfqdej,hdbztextareainputtext,
                              rwlx,tjrwxz,
@@ -296,7 +314,7 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from addactivity.models import AddActivity
 
-    addactivity_all = AddActivity.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="创建活动").filter(id=1).order_by('id')
+    addactivity_all = AddActivity.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="创建活动").filter(id=2).order_by('id')
     rows_count = addactivity_all.count()
 
     for addactivity in addactivity_all:
@@ -331,8 +349,8 @@ def __generateTestCases():
         args.append(addactivity.jllx)
         args.append(addactivity.iscancel)
 
-        setattr(TestCreateActivityClass, 'test_func_%s_%s' % (addactivityid,addactivity.testcasetitle),
-                TestCreateActivityClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
+        setattr(TestEditActivityClass, 'test_func_%s_%s' % (addactivityid,addactivity.testcasetitle),
+                TestEditActivityClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
 
     # file_name = "D:\\Users\\Administrator\\PycharmProjects\\seleniumweb\\sele\\dataconfig\\assertselectsearchmanager.xls"
     # sheet_id = 0

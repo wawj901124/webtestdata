@@ -184,6 +184,10 @@ MANAGER_REVIEW_MERCHANTID = AGENT_REVISE_MERCHANTID
 MANAGER_LOGIN_ACCOUNT = "admin@iapppay.com"
 MANAGER_LOGIN_PASSWORD = "123456"
 
+#营销后台配置
+MARKETING_CREATE_ACTIVITYID = ""
+MARKETING_EDIT_ACTIVITYID = "10679"
+
 
 # #---------------------------现网------------------------------------
 # #现网域名
