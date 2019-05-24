@@ -3,7 +3,9 @@
 __author__ = 'bobby'
 __date__ = '2018/7/30 17:46'
 import datetime
+import os
 from TestCaseFunction.log.my_log import UserLog
+
 
 class GetTimeStr:
     def getTimeStr(self):
@@ -20,6 +22,21 @@ class GetTimeStr:
         mylog.runMyLog()
 
 
+    def writeText(self,filename,var):
+        with open(filename, 'w') as f:  # 打开test.txt   如果文件不存在，创建该文件。
+            f.write(str(var))  # 把变量getid写入createactivityid.txt。这里var必须是str格式，如果不是，则可以转一下。
+            self.outPutMyLog("将[%s]写入文件[%s]" % (var,filename))
+
+    def readText(self,filename):
+        with open(filename,"r+") as f1:
+            for line in f1:
+                sxhdmcinputtext =line
+                self.outPutMyLog("将文件[%s]中第一行内容【%s】返回" % (filename,sxhdmcinputtext))
+                return sxhdmcinputtext
+
+
+
 if __name__  == '__main__':
     gettimestr = GetTimeStr()
-    gettimestr.getTimeStr()
+    gettimestr.writeText("1.txt",'1')
+    gettimestr.readText("1.txt")

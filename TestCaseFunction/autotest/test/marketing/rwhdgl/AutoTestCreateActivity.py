@@ -1,6 +1,6 @@
 import unittest
 
-from webtestdata.settings import WEB_URL_TITLE,MANAGER_LOGIN_ACCOUNT,MANAGER_LOGIN_PASSWORD
+from webtestdata.settings import WEB_URL_TITLE,MANAGER_LOGIN_ACCOUNT,MANAGER_LOGIN_PASSWORD,MARKETING_CREATE_ACTIVITYID
 
 
 # ----------------------------------------------------------------------
@@ -19,8 +19,13 @@ from TestCaseFunction.autotest.config.page.manager.loginPage import LoginPage   
 from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityCreatePage import ActivityCreatePage   #导入创建活动页
 from TestCaseFunction.autotest.config.page.marketing.rwhdgl.ticketCreatePage import TicketCreatePage   #导入创建优惠券页
 from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityListPage import ActivityListPage   #导入活动列表页
+from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityDetailsPage import ActivityDetialsPage #导入活动详情页
+
+
+
 
 class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
+
 
     @classmethod  # 类方法，只执行一次，但必须要加注解@classmethod,且名字固定为setUpClass
     def setUpClass(cls):
@@ -90,6 +95,10 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
         ######################活动列表页###############################
         self.activitylistpage = ActivityListPage()   #活动列表页
         self.activitylistpage_searchtableresult = self.activitylistpage.searchtableresult
+
+        ######################待上线活动详情页###############################
+        self.activitydetialspage = ActivityDetialsPage()   #活动列表页
+
 
 
         #pass
@@ -251,6 +260,21 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
             self.activeweb.findElementByXpathAndScriptClickNum(num, self.testpagesubmitbutton)  # 点击提交按钮
             # 断言活动列表中是否有新增加的活动
             self.defineisintable(num, self.activitylistpage_searchtableresult, hdmcinputtext, 1)
+
+            #获取活动ID
+            self.activeweb.findElementByXpathAndScriptClickNum(num, self.activitylistpage.table_justone_content_dsx_xq)  # 点击列表中第一行中的"详情"
+            getid = self.activeweb.findElementByXpathAndReturnText(num,self.activitydetialspage.hdid)
+            self.activeweb.outPutMyLog("新建活动id：%s"% getid)
+            #保存活动id
+            filename = "createactivityid.txt"
+            GetTimeStr().writeText(filename,getid)
+
+
+
+            # filename = 'createactivityid.txt'
+            # GetTimeStr().writeText(filename,getid)
+
+
 
 
 

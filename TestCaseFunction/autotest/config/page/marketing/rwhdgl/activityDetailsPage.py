@@ -1,7 +1,7 @@
-from webtestdata.settings import WEB_URL_TITLE,AGENT_REVISE_MERCHANTID
+from webtestdata.settings import WEB_URL_TITLE,MARKETING_DETAIL_ACTIVITYID
 
 class ActivityDetialsPage:
-    pageurl = "%s/nereus/manager/index#/merchant/list" % WEB_URL_TITLE
+    pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/missionDetail/%s" % (WEB_URL_TITLE,MARKETING_DETAIL_ACTIVITYID)
 
     hdbj = ""
     hdbj_text = u"活动编辑"
@@ -9,7 +9,7 @@ class ActivityDetialsPage:
     jcxx  = ""
     jcxx_text = u"基础信息"
 
-    hdid = ""
+    hdid = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/div/div[1]/div[2]/div/form/div[1]/div/span"
     hdid_text = u"活动ID"
 
     hdmc = ""

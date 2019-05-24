@@ -11,7 +11,8 @@ class ActivityListPage:
     # ---筛选字段---#
     sx_hdmc = ""
     sx_hdmc_text = u"活动名称"
-    sx_hdmc_input = ""
+    sx_hdmc_input = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[1]/div/div/div[1]/div/div[1]/div/input"
+    sx_hdmc_input_list_one = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[1]/div/div/div[1]/div/div[2]/ul[2]/li[1]"
 
     sx_cjsj = ""
     sx_cjsj_text = u"创建时间"
@@ -42,7 +43,7 @@ class ActivityListPage:
     sx_rwlx_select_wszlhd_option_text = u"完善资料活动"
     sx_rwlx_select_lxhd_option_text = u"拉新活动"
 
-    cx_button = ""
+    cx_button = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[1]/div/div/button[1]"
 
     xjhd_button = ""
 
@@ -66,12 +67,17 @@ class ActivityListPage:
     bg_cz = ""
     bg_cz_text = u"操作"
 
-    content_sx = ""
-    content_sx_text = u"上线"
-    content_xx = ""
-    content_xx_text = u"下线"
-    content_xq = ""
-    content_xq_text = u"详情"
-    content_bj = ""
-    content_bj_text = u"编辑"
+    table_justone_content_sx = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[2]/table/tbody/tr/td[9]/div/div/a[1]"
+    table_justone_content_sx_text = u"上线"
+    first_sx_popup_qd = "/html/body/div[5]/div/div/div/span[1]"
+    table_justone_content_dsx_xq = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[2]/table/tbody/tr[1]/td[9]/div/div/a[2]"
+    table_justone_content_dsx_bj = ""
+
+    table_justone_content_xx = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[2]/table/tbody/tr/td[9]/div/div/a[1]"
+    table_justone_content_xx_text = u"下线"
+
+    table_justone_content_xq = ""
+    table_justone_content_xq_text = u"详情"
+    table_justone_content_bj = ""
+    table_justone_content_bj_text = u"编辑"
 

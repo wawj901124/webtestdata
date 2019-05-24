@@ -1,7 +1,11 @@
-from webtestdata.settings import WEB_URL_TITLE,MARKETING_EDIT_ACTIVITYID
+from webtestdata.settings import WEB_URL_TITLE
+
+from TestCaseFunction.util.gettimestr import GetTimeStr
 
 class ActivityEditPage:
-    pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/modifyOnLine/%s" % (WEB_URL_TITLE,MARKETING_EDIT_ACTIVITYID)
+    filename = "createactivityid.txt"
+    editactivityid = GetTimeStr().readText(filename)
+    pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/modifyOnLine/%s" % (WEB_URL_TITLE,editactivityid )
 
     yxhdcj = ""
     yxhdcj_text = u"营销活动创建"
