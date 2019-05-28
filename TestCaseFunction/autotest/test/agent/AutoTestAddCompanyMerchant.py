@@ -203,8 +203,8 @@ class TestAddCompanyMerchantClass(unittest.TestCase):  # 创建测试类
         # self.activeweb.delayTime(1000)
 
         #断言是否有“Success”
-        self.defineasserttextnum(num,AddMerchantSuccessPage().success,AddMerchantSuccessPage().successtext)
-        self.activeweb.findElementByXpathAndClickNum(num,AddMerchantSuccessPage().okbutton)
+        # self.defineasserttextnum(num,AddMerchantSuccessPage().success,AddMerchantSuccessPage().successtext)
+        # self.activeweb.findElementByXpathAndClickNum(num,AddMerchantSuccessPage().okbutton)
 
         #断言是否有“Done”
         self.defineasserttextnum(num, AddMerchantDonePage().done, AddMerchantDonePage().donetext)

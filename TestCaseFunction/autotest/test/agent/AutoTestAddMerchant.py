@@ -194,8 +194,8 @@ class TestAddMerchantClass(unittest.TestCase):  # 创建测试类
 
         # self.activeweb.findElementByXpathAndClickNum(num,self.testpageresetbutton)  # 点击reset按钮
         #断言是否有“Success”
-        self.defineasserttextnum(num,AddMerchantSuccessPage().successindividu,AddMerchantSuccessPage().successtext)
-        self.activeweb.findElementByXpathAndClickNum(num,AddMerchantSuccessPage().okbuttonindividu)
+        # self.defineasserttextnum(num,AddMerchantSuccessPage().successindividu,AddMerchantSuccessPage().successtext)
+        # self.activeweb.findElementByXpathAndClickNum(num,AddMerchantSuccessPage().okbuttonindividu)
 
         #断言是否有“Done”
         self.defineasserttextnum(num, AddMerchantDonePage().done, AddMerchantDonePage().donetext)

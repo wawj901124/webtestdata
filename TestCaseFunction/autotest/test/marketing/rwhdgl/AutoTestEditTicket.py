@@ -17,10 +17,13 @@ from TestCaseFunction.util.gettimestr import GetTimeStr
 
 from TestCaseFunction.autotest.config.page.manager.loginPage import LoginPage   #导入登录页
 from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityCreatePage import ActivityCreatePage   #导入创建活动页
+from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityEditPage import ActivityEditPage  #导入未上线活动编辑页
 from TestCaseFunction.autotest.config.page.marketing.rwhdgl.ticketCreatePage import TicketCreatePage   #导入创建优惠券页
 from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityListPage import ActivityListPage   #导入活动列表页
+from TestCaseFunction.autotest.config.page.marketing.rwhdgl.ticketEditPage import TicketEditPage #导入未上线活动优惠券编辑页
 
-class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
+
+class TestEditTicketClass(unittest.TestCase):  # 创建测试类
 
     @classmethod  # 类方法，只执行一次，但必须要加注解@classmethod,且名字固定为setUpClass
     def setUpClass(cls):
@@ -59,7 +62,7 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
         self.activeweb.delayTime(3)
 
-        self.testpage = TicketCreatePage()
+        self.testpage = TicketEditPage()
         self.testpageurl =self.testpage.pageurl   #测试页面url
         self.testpagekcslinput  = self.testpage.kcsl_input   #第一部分# 库存数量输入框路径
         self.testpageqyxqselect = self.testpage.qyxq_select   #第一部分# 券有效期选择框路径
@@ -74,10 +77,10 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
         self.testpagecancelbutton = self.testpage.cancel_button # 页面取消按钮
         self.testpageconfirmbutton = self.testpage.confirm_button  # 页面确定按钮
 
-        ######################创建活动页面###############################
-        self.activitycreatepage = ActivityCreatePage()
-        self.activitycreatepage_pageurl = self.activitycreatepage.pageurl
-        self.activitycreatepage_w_tjlp = self.activitycreatepage.w_tjlp    # ---活动奖励---# 未添加礼品时，“添加礼品”文字链接路径
+        ######################编辑活动页面###############################
+        self.activityeditpage = ActivityEditPage()
+        self.activityeditpage_pageurl = self.activityeditpage.pageurl
+        self.activityeditpage_w_tjlp = self.activityeditpage.w_tjlp    # ---活动奖励---# 未添加礼品时，“添加礼品”文字链接路径
 
         #pass
         ######################活动列表页###############################
@@ -114,30 +117,26 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
                            zdxfinputtext,sypt,
                            syfw,zdhyoptionxpath,zdshinputtext,isplsh,plfilepath,
                            sfzctq,iscancel):
-        self.activeweb.getUrl(self.activitycreatepage_pageurl)
+        self.activeweb.getUrl(self.activityeditpage_pageurl)
         self.activeweb.delayTime(3)
         #创建活动
         #填入基础信息部分
-        self.activeweb.findElementByXpathAndInputNum(num,self.activitycreatepage.hdmc_input, yhqmcinputtext)   #输入活动名称
-        self.activeweb.findElementByXpathAndClickAbountData(num,self.activitycreatepage.hdsj_starttime,self.activitycreatepage.hdsj_starttime_daytime,pathright=self.activitycreatepage.hdsj_starttime_rightmove,pathconfirm=self.activitycreatepage.hdsj_starttime_queding)   #点选活动时间开始时间
-        self.activeweb.findElementByXpathAndClickAbountData(num,self.activitycreatepage.hdsj_endtime ,self.activitycreatepage.hdsj_endtime_daytime,pathright=self.activitycreatepage.hdsj_endtime_rightmove,pathconfirm=self.activitycreatepage.hdsj_endtime_queding)   #点选活动时间结束时间
-        self.activeweb.findElementByXpathAndInputNum(num,self.activitycreatepage.hdys_input, "2000")   #输入活动预算
+        self.activeweb.findElementByXpathAndInputNum(num,self.activityeditpage.hdmc_input, yhqmcinputtext)   #输入活动名称
+        self.activeweb.findElementByXpathAndClickAbountData(num,self.activityeditpage.hdsj_starttime,self.activityeditpage.hdsj_starttime_daytime,pathright=self.activityeditpage.hdsj_starttime_rightmove,pathconfirm=self.activityeditpage.hdsj_starttime_queding)   #点选活动时间开始时间
+        self.activeweb.findElementByXpathAndClickAbountData(num,self.activityeditpage.hdsj_endtime ,self.activityeditpage.hdsj_endtime_daytime,pathright=self.activityeditpage.hdsj_endtime_rightmove,pathconfirm=self.activityeditpage.hdsj_endtime_queding)   #点选活动时间结束时间
+        self.activeweb.findElementByXpathAndInputNum(num,self.activityeditpage.hdys_input, "2000")   #输入活动预算
 
-        self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.activitycreatepage.tfqd_select,self.activitycreatepage.tfqd_select_nbqd_option)  # 投放渠道一级渠道选择内部渠道
+        self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.activityeditpage.tfqd_select,self.activityeditpage.tfqd_select_nbqd_option)  # 投放渠道一级渠道选择内部渠道
 
         # 点选投放渠道二级渠道全部项复选框
-        self.activeweb.findElementByXpathAndClickNum(num, self.activitycreatepage.tfqd_select_nbqd_fxk_mbmpay_checkbox)
-        self.activeweb.findElementByXpathAndClickNum(num, self.activitycreatepage.tfqd_select_nbqd_fxk_mydisrupto_checkbox)
-        self.activeweb.findElementByXpathAndClickNum(num, self.activitycreatepage.tfqd_select_nbqd_fxk_qrindo_checkbox)
-        self.activeweb.findElementByXpathAndClickNum(num, self.activitycreatepage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox )
-        self.activeweb.findElementByXpathAndClickNum(num, self.activitycreatepage.tfqd_select_nbqd_fxk_paysdk_checkbox)
+        self.activeweb.findElementByXpathAndClickNum(num, self.activityeditpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)
 
         #填入活动任务规则部分
-        self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.activitycreatepage.rwlx_select,self.activitycreatepage.rwlx_select_jx_option)  # 任务类型选择交易
-        self.activeweb.findElementByXpathAndClickNum(num, self.activitycreatepage.jy_wcjy_jylx_checkbox)  # 点击交易类型全选框
+        self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.activityeditpage.rwlx_select,self.activityeditpage.rwlx_select_zc_option)  # 任务类型选择注册
+
 
         #创建活动页，点击“添加礼品”文字链接
-        self.activeweb.findElementByXpathAndClickNum(num, self.activitycreatepage_w_tjlp)  # 点击添加礼品文字链接(还未添加礼品)
+        self.activeweb.findElementByXpathAndClickNum(num, self.activityeditpage.y_jllp_table_cz_just_one_edit)  # 点击只有一个奖品时，奖品对应的编辑
 
         #进入创建优惠券页，新建优惠券
         #第一部分
@@ -222,14 +221,14 @@ class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
             elif syfw =="3":
                 self.activeweb.findElementByXpathAndClickNum(num, self.testpage.confirm_button_zdsh)   #点击确定按钮
             # 断言添加礼品列表中是否有新增加的礼品
-            self.defineisintable(num, self.activitycreatepage.y_jllp_table, yhqmcinputtext, 1)
+            self.defineisintable(num, self.activityeditpage.y_jllp_table, yhqmcinputtext, 1)
         ################################优惠券创建完成#########################################
 
         if iscancel:
-            self.activeweb.findElementByXpathAndScriptClickNum(num, self.activitycreatepage.cancelbutton)  # 点击取消按钮
+            self.activeweb.findElementByXpathAndScriptClickNum(num, self.activityeditpage.cancelbutton)  # 点击取消按钮
         else:
 
-            self.activeweb.findElementByXpathAndScriptClickNum(num, self.activitycreatepage.submitbutton)  # 点击提交按钮
+            self.activeweb.findElementByXpathAndScriptClickNum(num, self.activityeditpage.submitbutton)  # 点击提交按钮
             # 断言活动列表中是否有新增加的活动
             self.defineisintable(num, self.activitylistpage_searchtableresult,yhqmcinputtext , 1)
 
@@ -318,8 +317,8 @@ def __generateTestCases():
         args.append(addticket.sfzctq)
         args.append(addticket.iscancel)
 
-        setattr(TestCreateTicketClass, 'test_func_%s_%s' % (addticketid,addticket.testcasetitle),
-                TestCreateTicketClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
+        setattr(TestEditTicketClass, 'test_func_%s_%s' % (addticketid,addticket.testcasetitle),
+                TestEditTicketClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
 
     # file_name = "D:\\Users\\Administrator\\PycharmProjects\\seleniumweb\\sele\\dataconfig\\assertselectsearchmanager.xls"
     # sheet_id = 0
