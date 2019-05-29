@@ -135,7 +135,7 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.activityeditpage.rwlx_select,self.activityeditpage.rwlx_select_zc_option)  # 任务类型选择注册
 
 
-        #创建活动页，点击“添加礼品”文字链接
+        #编辑活动页，点击奖励礼品列表中的“edit”进入券编辑页
         self.activeweb.findElementByXpathAndClickNum(num, self.activityeditpage.y_jllp_table_cz_just_one_edit)  # 点击只有一个奖品时，奖品对应的编辑
 
         #进入创建优惠券页，新建优惠券
