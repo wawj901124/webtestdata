@@ -209,6 +209,9 @@ class ActivityEditPage:
 
     y_jllp_table_cz_just_one_edit = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[2]/div/div/div/div[2]/table/tbody/tr/td[5]/div/div/a[2]"
     y_jllp_table_cz_just_one_detail = ""
+    y_jllp_table_cz_just_two_first_delete = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[2]/div/div/div/div[2]/table/tbody/tr[1]/td[5]/div/div/a[3]"
+    delete_popup_confirm = "/html/body/div[5]/div/div/div/span[1]"
+
 
 
     y_tjlp = ""
