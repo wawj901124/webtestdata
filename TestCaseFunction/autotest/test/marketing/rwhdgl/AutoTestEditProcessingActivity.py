@@ -187,44 +187,36 @@ class TestEditProcessingActivityClass(unittest.TestCase):  # 创建测试类
         return func
 
 def __generateTestCases():
-    from addactivity.models import AddActivity
+    from processingActivity.models import ProcessActivity
 
-    addactivity_all = AddActivity.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="创建活动").filter(id=2).order_by('id')
-    rows_count = addactivity_all.count()
+    processactivity_all = ProcessActivity.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="编辑活动").filter(id=1).order_by('id')
+    rows_count = processactivity_all.count()
 
-    for addactivity in addactivity_all:
+    for processactivity in processactivity_all:
 
-        if len(str(addactivity.id)) == 1:
-            addactivityid = '0000%s'% addactivity.id
-        elif len(str(addactivity.id)) == 2:
-            addactivityid = '000%s' % addactivity.id
-        elif len(str(addactivity.id)) == 3:
-            addactivityid = '00%s' % addactivity.id
-        elif len(str(addactivity.id)) == 4:
-            addactivityid = '0%s' % addactivity.id
-        elif len(str(addactivity.id)) == 5:
-            addactivityid = '%s' % addactivity.id
+        if len(str(processactivity.id)) == 1:
+            processactivityid = '0000%s'% processactivity.id
+        elif len(str(processactivity.id)) == 2:
+            processactivityid = '000%s' % processactivity.id
+        elif len(str(processactivity.id)) == 3:
+            processactivityid = '00%s' % processactivity.id
+        elif len(str(processactivity.id)) == 4:
+            processactivityid = '0%s' % processactivity.id
+        elif len(str(processactivity.id)) == 5:
+            processactivityid = '%s' % processactivity.id
         else:
-            addactivityid ='Id已经超过5位数，请重新定义'
+            processactivityid ='Id已经超过5位数，请重新定义'
 
 
         args = []
-        args.append(addactivity.id)
-        args.append("%s_%s"%(addactivity.hdmcinputtext,GetTimeStr().getTimeStr()))
-        args.append(addactivity.hdysinputtext)
-        args.append(addactivity.tfqdyj)
-        args.append(addactivity.tfqdej)
-        args.append(addactivity.hdbztextareainputtext)
-        args.append(addactivity.rwlx)
-        args.append(addactivity.tjrwxz)
-        args.append(addactivity.jyjylx)
-        args.append(addactivity.jyzffs)
-        args.append(addactivity.jymgyhzdcycsinputtext)
-        args.append(addactivity.jymgyhmrcycsinputtext)
-        args.append(addactivity.jllx)
-        args.append(addactivity.iscancel)
+        args.append(processactivity.id)
+        args.append(processactivity.zjysinputtext)
+        args.append(processactivity.ffzt)
+        args.append(processactivity.zjkcinputtext)
+        args.append(processactivity.isqcancel)
+        args.append(processactivity.iscancel)
 
-        setattr(TestEditProcessingActivityClass, 'test_func_%s_%s' % (addactivityid,addactivity.testcasetitle),
+        setattr(TestEditProcessingActivityClass, 'test_func_%s_%s' % (processactivityid,processactivity.testcasetitle),
                 TestEditProcessingActivityClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
 
     # file_name = "D:\\Users\\Administrator\\PycharmProjects\\seleniumweb\\sele\\dataconfig\\assertselectsearchmanager.xls"

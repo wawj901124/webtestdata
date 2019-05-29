@@ -6,8 +6,7 @@ class ProcesingActivityEditPage:
     filename = "createactivityid.txt"
     editactivityid = GetTimeStr().readText(filename)
     # pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/modifyOnLine/%s" % (WEB_URL_TITLE,editactivityid )
-    pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/modifyOnLine/%s" % (WEB_URL_TITLE, MARKETING_EDIT_PROCESSING_ACTIVITYID)
-
+    pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/modifyOffLine/%s" % (WEB_URL_TITLE, MARKETING_EDIT_PROCESSING_ACTIVITYID)
     yxhdcj = ""
     yxhdcj_text = u"营销活动创建"
     # ---基础信息---#
