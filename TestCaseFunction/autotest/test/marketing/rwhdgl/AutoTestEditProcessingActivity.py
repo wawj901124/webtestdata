@@ -111,8 +111,11 @@ class TestEditProcessingActivityClass(unittest.TestCase):  # 创建测试类
 
         #创建活动
         #填入基础信息部分
-        self.activeweb.findElementByXpathAndClickAbountData(num,self.testpagehdsjendtime ,self.testpage.hdsj_endtime_daytime,pathright=self.testpage.hdsj_endtime_rightmove,pathconfirm=self.testpage.hdsj_endtime_queding)   #点选活动时间结束时间
+        self.activeweb.delayTime(3)
+        self.activeweb.findElementByXpathAndClickAbountData(num,self.testpagehdsjendtime,self.testpage.hdsj_endtime_daytime,pathright=self.testpage.hdsj_endtime_rightmove,pathconfirm=self.testpage.hdsj_endtime_queding)   #点选活动时间结束时间
+
         self.activeweb.findElementByXpathAndInputNum(num,self.testpagehdyszjysinput, zjysinputtext)   #输入活动增加预算
+
 
         #填入活动奖励部分
         self.activeweb.findElementByXpathAndClickNum(num, self.testpagejllpedit)  # 点击添加礼品中的“编辑”文字按钮
@@ -125,14 +128,12 @@ class TestEditProcessingActivityClass(unittest.TestCase):  # 创建测试类
 
         self.activeweb.findElementByXpathAndInputNum(num, self.processingticketeditpage.kcsl_zjkc_input, zjkcinputtext)  # 输入增加库存
 
-        syfw_text = self.activeweb.findElementByXpathAndReturnText(num,self.processingticketeditpage.syfw_select_text)
-        print("syfw_text:%s" % syfw_text)
-        if syfw_text == "指定商户":
-            if isqcancel:
-                self.activeweb.findElementByXpathAndScriptClickNum(num,
+
+        if isqcancel:
+            self.activeweb.findElementByXpathAndScriptClickNum(num,
                                                                    self.processingticketeditpage.cancel_button_zdsh)  # 点击取消按钮
-            else:
-                self.activeweb.findElementByXpathAndScriptClickNum(num, self.processingticketeditpage.confirm_button_zdsh)   #点击确定按钮
+        else:
+            self.activeweb.findElementByXpathAndScriptClickNum(num, self.processingticketeditpage.confirm_button_zdsh)   #点击确定按钮
 
         ################################优惠券创建完成#########################################
 
@@ -154,6 +155,7 @@ class TestEditProcessingActivityClass(unittest.TestCase):  # 创建测试类
             # 断言处于活动列表页
             xjhd_text = self.activeweb.findElementByXpathAndReturnText(num,self.activitylistpage.xjhd_button_text)
             self.assertEqual(self.activitylistpage.xjhd_button_text_text, xjhd_text)
+
 
 
 
@@ -189,7 +191,7 @@ class TestEditProcessingActivityClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from processingActivity.models import ProcessActivity
 
-    processactivity_all = ProcessActivity.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="编辑活动").filter(id=1).order_by('id')
+    processactivity_all = ProcessActivity.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="编辑活动").filter(id=2).order_by('id')
     rows_count = processactivity_all.count()
 
     for processactivity in processactivity_all:

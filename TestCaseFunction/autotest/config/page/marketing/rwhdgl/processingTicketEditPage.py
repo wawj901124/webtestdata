@@ -159,11 +159,10 @@ class ProcessingTicketEditPage:
     sfzctq_bkt_text = u"不可退"
     sfzctq_bkt_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[3]/form/div[2]/div[16]/div/div/label[2]/span/input"
 
-    cancel_button = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[3]/form/div[2]/div[17]/span[1]"
-    confirm_button = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[3]/form/div[2]/div[17]/span[2]"
 
-    cancel_button_zdsh =  "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/form/div[2]/div/div[2]/form/div[2]/div[19]/span[1]"
-    confirm_button_zdsh = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/form/div[2]/div/div[2]/form/div[2]/div[19]/span[2]"
+
+    cancel_button =  "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/form/div[2]/div/div[2]/form/div[2]/div[19]/span[1]"
+    confirm_button = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/form/div[2]/div/div[2]/form/div[2]/div[19]/span[2]"
 
 
 
