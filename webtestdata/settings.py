@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'addmerchant.apps.AddmerchantConfig',  # 注册addmerchant
     'addactivity.apps.AddactivityConfig',  #注册addactivity
     'addticket.apps.AddticketConfig',  #注册addticket
+    'processingActivity.apps.ProcessingactivityConfig',   #注册processingActivity
 
 
 ]

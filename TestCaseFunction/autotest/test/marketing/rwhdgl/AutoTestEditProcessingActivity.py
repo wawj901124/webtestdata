@@ -130,7 +130,7 @@ class TestEditProcessingActivityClass(unittest.TestCase):  # 创建测试类
         if syfw_text == "指定商户":
             if isqcancel:
                 self.activeweb.findElementByXpathAndScriptClickNum(num,
-                                                                   self.processingticketeditpage.cancel_button_zdsh)  # 点击确定按钮
+                                                                   self.processingticketeditpage.cancel_button_zdsh)  # 点击取消按钮
             else:
                 self.activeweb.findElementByXpathAndScriptClickNum(num, self.processingticketeditpage.confirm_button_zdsh)   #点击确定按钮
 
