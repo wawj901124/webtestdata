@@ -1,4 +1,4 @@
-from TestCaseFunction.autotest.test.marketing.rwhdgl.AutoTestEditProcessingActivity import TestEditProcessingActivityClass
+
 def caselist():
     alltestnames = [
         # 'TestCaseFunction.autotest.test.agent.AutoTestLogin.TestLoginClass',
@@ -14,6 +14,7 @@ def caselist():
         # 'TestCaseFunction.autotest.test.agent.AutoTestLogout.TestLogoutClass',
 
         'TestCaseFunction.autotest.test.marketing.rwhdgl.AutoTestEditActivity.TestEditActivityClass',
+        'TestCaseFunction.autotest.test.marketing.rwhdgl.AutoTestDeleteTicket.TestDeleteTicketClass'
         'TestCaseFunction.autotest.test.marketing.rwhdgl.AutoTestHighLinesActivity.TestHighLinesActivityClass',
         'TestCaseFunction.autotest.test.marketing.rwhdgl.AutoTestEditProcessingActivity.TestEditProcessingActivityClass',
         'TestCaseFunction.autotest.test.marketing.rwhdgl.AutoTestDownLinesActivity.TestDownLinesActivityClass',

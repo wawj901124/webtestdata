@@ -24,7 +24,7 @@ from TestCaseFunction.autotest.config.page.marketing.rwhdgl.ticketCreatePage imp
 from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityListPage import ActivityListPage   #导入活动列表页
 
 
-class TestEditActivityClass(unittest.TestCase):  # 创建测试类
+class TestDeleteTicketClass(unittest.TestCase):  # 创建测试类
 
     @classmethod  # 类方法，只执行一次，但必须要加注解@classmethod,且名字固定为setUpClass
     def setUpClass(cls):
@@ -115,7 +115,7 @@ class TestEditActivityClass(unittest.TestCase):  # 创建测试类
     #投放渠道二级为0表示全选，为1，2，等表示选一项和选多项组合，程序中只有全选和选择一项的情况
     # 任务类型为1表示注册，为2表示交易类型
     #奖励类型1表示固定奖励
-    def defineeditactivity(self,num,
+    def definedeleteticket(self,num,
                              hdmcinputtext,hdysinputtext,
                              tfqdyj, tfqdej,hdbztextareainputtext,
                              rwlx,tjrwxz,
@@ -284,7 +284,7 @@ class TestEditActivityClass(unittest.TestCase):  # 创建测试类
                     jymgyhzdcycsinputtext,jymgyhmrcycsinputtext,
                     jllx,iscancel):
         def func(self):
-            self.defineeditactivity(num,
+            self.definedeleteticket(num,
                              hdmcinputtext,hdysinputtext,
                              tfqdyj, tfqdej,hdbztextareainputtext,
                              rwlx,tjrwxz,
@@ -331,8 +331,8 @@ def __generateTestCases():
         args.append(addactivity.jllx)
         args.append(addactivity.iscancel)
 
-        setattr(TestEditActivityClass, 'test_func_%s_%s' % (addactivityid,addactivity.testcasetitle),
-                TestEditActivityClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
+        setattr(TestDeleteTicketClass, 'test_func_%s_%s' % (addactivityid,addactivity.testcasetitle),
+                TestDeleteTicketClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
 
     # file_name = "D:\\Users\\Administrator\\PycharmProjects\\seleniumweb\\sele\\dataconfig\\assertselectsearchmanager.xls"
     # sheet_id = 0
