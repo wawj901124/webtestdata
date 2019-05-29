@@ -263,7 +263,7 @@ class TestEditActivityClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndScriptClickNum(num, self.ticketcreatepage.confirm_button)   #点击确定按钮
         ################################优惠券创建完成#########################################
 
-        # self.activeweb.delayTime(1000)
+        self.activeweb.delayTime(5000)
 
 
         if iscancel:
@@ -272,6 +272,8 @@ class TestEditActivityClass(unittest.TestCase):  # 创建测试类
             self.activeweb.findElementByXpathAndScriptClickNum(num, self.testpagesubmitbutton)  # 点击提交按钮
             # 断言活动列表中是否有新增加的活动
             self.defineisintable(num, self.activitylistpage_searchtableresult, hdmcinputtext, 1)
+
+
 
 
 

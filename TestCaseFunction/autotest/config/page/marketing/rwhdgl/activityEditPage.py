@@ -214,11 +214,18 @@ class ActivityEditPage:
     y_tjlp = ""
     y_tjlp_text = u"添加礼品"
 
-    # cancelbutton = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/span[1]"
-    # submitbutton = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/span[2]"
 
-    cancelbutton ="/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/div/div/button[1]"
-    submitbutton ="/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/div/div/button[2]"
+    cancelbutton ="/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/span[1]"
+    submitbutton ="/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/span[2]"
+
+
+
+
+
+
+
+
+
 
 
 
