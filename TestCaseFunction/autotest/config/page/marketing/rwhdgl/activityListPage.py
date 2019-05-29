@@ -6,6 +6,9 @@ class ActivityListPage:
     searchtableresult = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[2]/table/tbody"
     searchtableresult2 = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[3]/table/tbody"
 
+    xjhd_button = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[1]/div/div/button[2]"
+    xjhd_button_text = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[1]/div/div/button[2]/span"
+    xjhd_button_text_text = "新建活动"
     hdlb = ""
     hdlb_text = u"活动列表"
     # ---筛选字段---#
