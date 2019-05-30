@@ -83,3 +83,7 @@ class ReviewPage:
 
     reviewnoteinput = "/html/body/div[3]/div[2]/ui-view/ui-view/div[2]/div/form[1]/div[11]/p/span[2]/input"
     turndownbutton = "/html/body/div[3]/div[2]/ui-view/ui-view/div[2]/div/form[1]/div[12]/p[2]/button"
+    approvedbutton = "/html/body/div[3]/div[2]/ui-view/ui-view/div[2]/div/form[1]/div[12]/p[1]/button"
+
+    ##########################################审核第二页##########################################################################################
+    confirmbutton = "/html/body/div[3]/div[2]/ui-view/ui-view/div[2]/div/form[2]/div[5]/button"

@@ -14,6 +14,10 @@ class MerchantListPage:
     keywordselectinputxpath = "/html/body/div[3]/div[2]/ui-view/ui-view/div[2]/div[1]/div[1]/div[1]/form/div[1]/input"
     firstdatareview = "/html/body/div[3]/div[2]/ui-view/ui-view/div[2]/div[1]/div[1]/div[2]/table/tbody[1]/tr/td[7]/a[2]"
 
+    statusselectxpath = "/html/body/div[3]/div[2]/ui-view/ui-view/div[2]/div[1]/div[1]/div[1]/form/div[2]/select"
+    reviewtextlinkxpath = "/html/body/div[3]/div[2]/ui-view/ui-view/div[2]/div[1]/div[1]/div[2]/table/tbody[1]/tr[1]/td[7]/a[2]"
+
+
 
 
 
