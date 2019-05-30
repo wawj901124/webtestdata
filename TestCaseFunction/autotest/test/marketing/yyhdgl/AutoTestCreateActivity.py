@@ -254,7 +254,7 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from addactivity.models import AddActivity
 
-    addactivity_all = AddActivity.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="创建活动").filter(id=1).order_by('id')
+    addactivity_all = AddActivity.objects.filter(testproject="营销系统").filter(testmodule="运营活动管理").filter(testpage="创建活动").filter(id=16).order_by('id')
     rows_count = addactivity_all.count()
 
     for addactivity in addactivity_all:
@@ -276,7 +276,7 @@ def __generateTestCases():
         args = []
         args.append(addactivity.id)
         args.append("%s_%s"%(addactivity.hdmcinputtext,GetTimeStr().getTimeStr()))
-
+        args.append(addactivity.hdlx)
         args.append(addactivity.hdysinputtext)
         args.append(addactivity.tfqdyj)
         args.append(addactivity.tfqdej)

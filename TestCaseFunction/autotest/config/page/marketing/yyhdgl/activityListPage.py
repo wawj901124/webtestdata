@@ -73,7 +73,7 @@ class ActivityListPage:
     table_justone_content_sx = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[2]/table/tbody/tr/td[9]/div/div/a[1]"
     table_justone_content_sx_text = u"上线"
     first_sx_popup_qd = "/html/body/div[5]/div/div/div/span[1]"
-    table_justone_content_dsx_xq = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[2]/table/tbody/tr[1]/td[9]/div/div/a[2]"
+    table_justone_content_dsx_xq = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[2]/table/tbody/tr[1]/td[8]/div/div/a[2]"
     table_justone_content_dsx_bj = ""
 
     table_justone_content_xx = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[2]/table/tbody/tr/td[9]/div/div/a[1]"

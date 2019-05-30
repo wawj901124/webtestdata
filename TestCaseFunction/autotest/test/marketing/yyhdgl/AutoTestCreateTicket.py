@@ -16,9 +16,9 @@ from TestCaseFunction.util.operation_json import OperationJson
 from TestCaseFunction.util.gettimestr import GetTimeStr
 
 from TestCaseFunction.autotest.config.page.manager.loginPage import LoginPage   #导入登录页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityCreatePage import ActivityCreatePage   #导入创建活动页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.ticketCreatePage import TicketCreatePage   #导入创建优惠券页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityListPage import ActivityListPage   #导入活动列表页
+from TestCaseFunction.autotest.config.page.marketing.yyhdgl.activityCreatePage import ActivityCreatePage   #导入创建活动页
+from TestCaseFunction.autotest.config.page.marketing.yyhdgl.ticketCreatePage import TicketCreatePage   #导入创建优惠券页
+from TestCaseFunction.autotest.config.page.marketing.yyhdgl.activityListPage import ActivityListPage   #导入活动列表页
 
 class TestCreateTicketClass(unittest.TestCase):  # 创建测试类
 
