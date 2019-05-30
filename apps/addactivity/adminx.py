@@ -14,7 +14,7 @@ from .models import  AddActivity
 
 class AddActivityAdmin(object):
     ziduan = ['testproject', 'testmodule','testpage','testcasetitle',
-              'hdmcinputtext','hdysinputtext',
+              'hdmcinputtext','hdlx','hdysinputtext',
               'tfqdyj', 'tfqdej','hdbztextareainputtext',
               'rwlx','tjrwxz',
               'jyjylx', 'jyzffs',
@@ -22,7 +22,7 @@ class AddActivityAdmin(object):
               'jllx','iscancel']
 
     list_display =['id','testproject', 'testmodule','testpage','testcasetitle',
-              'hdmcinputtext','hdysinputtext',
+              'hdmcinputtext','hdlx','hdysinputtext',
               'tfqdyj', 'tfqdej','hdbztextareainputtext',
               'rwlx','tjrwxz',
               'jyjylx', 'jyzffs',

@@ -9,6 +9,7 @@ class AddActivity(models.Model):
     testcasetitle = models.CharField(max_length=100, default="", verbose_name=u"测试内容的名称")
 
     hdmcinputtext= models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入活动名称的内容")
+    hdlx = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入活动类型的选项的内容",help_text=u"1表示选择拉新类型，2表示选择促活方式，3表示选择留存类型，4表示选择转化方式类型，5表示选择投诉补偿类型")
     hdysinputtext= models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入活动预算的内容")
     tfqdyj= models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入投放渠道一级的选项的内容",help_text=u"投放渠道一级为1表示内部渠道，为2表示外部渠道")
     tfqdej= models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入投放渠道二级的复选的内容",help_text=u"投放渠道二级为0表示全选，为1，2，等表示选一项和选多项组合，程序中只有全选和选择一项的情况")
