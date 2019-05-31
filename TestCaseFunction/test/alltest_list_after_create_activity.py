@@ -13,7 +13,7 @@ def caselist():
         # 'TestCaseFunction.autotest.test.manager.AutoTestReview.TestReviewClass',
         # 'TestCaseFunction.autotest.test.agent.AutoTestLogout.TestLogoutClass',
 
-        # 'TestCaseFunction.autotest.test.marketing.rwhdgl.AutoTestEditActivity.TestEditActivityClass',
+        'TestCaseFunction.autotest.test.marketing.rwhdgl.AutoTestEditActivity.TestEditActivityClass',
         'TestCaseFunction.autotest.test.marketing.rwhdgl.AutoTestDeleteTicket.TestDeleteTicketClass',
         'TestCaseFunction.autotest.test.marketing.rwhdgl.AutoTestHighLinesActivity.TestHighLinesActivityClass',
         'TestCaseFunction.autotest.test.marketing.rwhdgl.AutoTestEditProcessingActivity.TestEditProcessingActivityClass',
