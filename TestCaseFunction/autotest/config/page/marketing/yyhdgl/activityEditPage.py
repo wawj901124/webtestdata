@@ -74,14 +74,14 @@ class ActivityEditPage:
     w_jllp = ""
     w_jllp_text = u"奖励礼品"
 
-    w_tjlp = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[2]/div/button"
+    w_tjlp = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[2]/div/button"
 
     w_tjlp_text = u"添加礼品"
 
     # ---已添加奖励礼品时添加礼品---#
     y_jllp = ""
     y_jllp_text = u"奖励礼品"
-    y_jllp_table = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[2]/div/div/div/div[2]/table/tbody"
+    y_jllp_table = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[2]/div/div/div/div[2]/table/tbody"
 
 
     y_jllp_table_xh = ""
@@ -96,9 +96,10 @@ class ActivityEditPage:
     y_jllp_table_cz = ""
     y_jllp_table_cz_text = u"操作"
 
-    y_jllp_table_cz_just_one_edit = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[2]/div/div/div/div[2]/table/tbody/tr/td[5]/div/div/a[2]"
+    y_jllp_table_cz_just_one_edit = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[2]/div/div/div/div[2]/table/tbody/tr/td[5]/div/div/a[2]"
+
     y_jllp_table_cz_just_one_detail = ""
-    y_jllp_table_cz_just_two_first_delete = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[2]/div/div/div/div[2]/table/tbody/tr[1]/td[5]/div/div/a[3]"
+    y_jllp_table_cz_just_two_first_delete = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[2]/div/div/div/div[2]/table/tbody/tr[1]/td[5]/div/div/a[3]"
     delete_popup_confirm = "/html/body/div[5]/div/div/div/span[1]"
 
 

@@ -98,7 +98,7 @@ class TestHighLinesActivityClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndScriptClickNum(num, self.testpage.table_justone_content_sx)  # 点击上线按钮
         self.activeweb.findElementByXpathAndScriptClickNum(num, self.testpage.first_sx_popup_qd)  # 点击上线弹框中确定
         #断言待上线活动变为进行中
-        self.defineisintable(num, self.testpage.searchtableresult, hdmcinputtext, 5)
+        self.defineisintable(num, self.testpage.searchtableresult, hdmcinputtext,4)
 
 
     def defineasserttextnum(self,num,testelexpath,expecttext):

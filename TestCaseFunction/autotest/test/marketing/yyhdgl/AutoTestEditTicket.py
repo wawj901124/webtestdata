@@ -80,7 +80,6 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
         ######################编辑活动页面###############################
         self.activityeditpage = ActivityEditPage()
         self.activityeditpage_pageurl = self.activityeditpage.pageurl
-        self.activityeditpage_w_tjlp = self.activityeditpage.w_tjlp    # ---活动奖励---# 未添加礼品时，“添加礼品”文字链接路径
 
         #pass
         ######################活动列表页###############################
@@ -125,15 +124,6 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndClickAbountData(num,self.activityeditpage.hdsj_starttime,self.activityeditpage.hdsj_starttime_daytime,pathright=self.activityeditpage.hdsj_starttime_rightmove,pathconfirm=self.activityeditpage.hdsj_starttime_queding)   #点选活动时间开始时间
         self.activeweb.findElementByXpathAndClickAbountData(num,self.activityeditpage.hdsj_endtime ,self.activityeditpage.hdsj_endtime_daytime,pathright=self.activityeditpage.hdsj_endtime_rightmove,pathconfirm=self.activityeditpage.hdsj_endtime_queding)   #点选活动时间结束时间
         self.activeweb.findElementByXpathAndInputNum(num,self.activityeditpage.hdys_input, "2000")   #输入活动预算
-
-        self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.activityeditpage.tfqd_select,self.activityeditpage.tfqd_select_nbqd_option)  # 投放渠道一级渠道选择内部渠道
-
-        # 点选投放渠道二级渠道全部项复选框
-        self.activeweb.findElementByXpathAndClickNum(num, self.activityeditpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)
-
-        #填入活动任务规则部分
-        self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.activityeditpage.rwlx_select,self.activityeditpage.rwlx_select_zc_option)  # 任务类型选择注册
-
 
         #编辑活动页，点击奖励礼品列表中的“edit”进入券编辑页
         self.activeweb.findElementByXpathAndClickNum(num, self.activityeditpage.y_jllp_table_cz_just_one_edit)  # 点击只有一个奖品时，奖品对应的编辑
@@ -220,8 +210,10 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
                 self.activeweb.findElementByXpathAndClickNum(num, self.testpage.confirm_button_zdsh)  # 点击确定按钮
             elif syfw =="3":
                 self.activeweb.findElementByXpathAndClickNum(num, self.testpage.confirm_button_zdsh)   #点击确定按钮
-            # 断言添加礼品列表中是否有新增加的礼品
-            self.defineisintable(num, self.activityeditpage.y_jllp_table, yhqmcinputtext, 1)
+
+            # self.activeweb.delayTime(5000)
+            # 断言进入活动编辑页
+            self.activeweb.findElementByXpathAndReturnText(num,self.activityeditpage.y_jllp_table_cz_just_one_edit)  # 查找到“编辑”
         ################################优惠券创建完成#########################################
 
         if iscancel:

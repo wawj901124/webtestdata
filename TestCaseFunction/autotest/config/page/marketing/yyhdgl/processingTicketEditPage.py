@@ -23,6 +23,9 @@ class ProcessingTicketEditPage:
     kscl_input_down_text_text = u"不填写数量代表不限制发放数量"
     kcsl_zjkc_input = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/form/div[2]/div/div[2]/form/div[2]/div[4]/div/div/input"
 
+    cancel_button = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/span[1]"
+    confirm_button = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/span[2]"
+
 
 
 

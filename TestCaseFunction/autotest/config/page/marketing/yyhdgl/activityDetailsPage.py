@@ -9,6 +9,9 @@ class ActivityDetialsPage:
     jcxx  = ""
     jcxx_text = u"基础信息"
 
+    hdid = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/div/div[1]/div[2]/div/form/div[1]/div/span"
+
+
     hdmc = ""
     hdmc_text = u"活动名称"
     hdmc_input = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[1]/div/div/input"

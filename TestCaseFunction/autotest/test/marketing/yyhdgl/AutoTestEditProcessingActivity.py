@@ -128,15 +128,15 @@ class TestEditProcessingActivityClass(unittest.TestCase):  # 创建测试类
 
         self.activeweb.findElementByXpathAndInputNum(num, self.processingticketeditpage.kcsl_zjkc_input, zjkcinputtext)  # 输入增加库存
 
-
+        self.activeweb.delayTime(3)
         if isqcancel:
             self.activeweb.findElementByXpathAndScriptClickNum(num,
-                                                                   self.processingticketeditpage.cancel_button_zdsh)  # 点击取消按钮
+                                                                   self.processingticketeditpage.cancel_button)  # 点击取消按钮
         else:
-            self.activeweb.findElementByXpathAndScriptClickNum(num, self.processingticketeditpage.confirm_button_zdsh)   #点击确定按钮
-
+            self.activeweb.findElementByXpathAndScriptClickNum(num, self.processingticketeditpage.confirm_button)   #点击确定按钮
+        self.activeweb.delayTime(3)
         ################################优惠券创建完成#########################################
-
+        # self.activeweb.delayTime(5000)
         #断言优惠券编辑后的发放状态
         ffzt_text = self.activeweb.findElementByXpathAndReturnText(num,self.testpage.y_jllp_table_ffzt_result_just_one)
         print("ffzt_text:%s" % ffzt_text)
