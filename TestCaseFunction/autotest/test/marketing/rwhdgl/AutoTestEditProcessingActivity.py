@@ -134,9 +134,9 @@ class TestEditProcessingActivityClass(unittest.TestCase):  # 创建测试类
 
         if isqcancel:
             self.activeweb.findElementByXpathAndScriptClickNum(num,
-                                                                   self.processingticketeditpage.cancel_button)  # 点击取消按钮
+                                                                   self.processingticketeditpage.cancel_button_zdhy)  # 点击取消按钮
         else:
-            self.activeweb.findElementByXpathAndScriptClickNum(num, self.processingticketeditpage.confirm_button)   #点击确定按钮
+            self.activeweb.findElementByXpathAndScriptClickNum(num, self.processingticketeditpage.confirm_button_zdhy)   #点击确定按钮
 
         ################################优惠券创建完成#########################################
 
