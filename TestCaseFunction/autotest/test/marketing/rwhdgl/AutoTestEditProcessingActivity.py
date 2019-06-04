@@ -128,6 +128,9 @@ class TestEditProcessingActivityClass(unittest.TestCase):  # 创建测试类
 
         self.activeweb.findElementByXpathAndInputNum(num, self.processingticketeditpage.kcsl_zjkc_input, zjkcinputtext)  # 输入增加库存
 
+        # self.activeweb.delayTime(5000)
+
+
 
         if isqcancel:
             self.activeweb.findElementByXpathAndScriptClickNum(num,
@@ -143,7 +146,7 @@ class TestEditProcessingActivityClass(unittest.TestCase):  # 创建测试类
         if ffzt == "1":
             self.assertEqual("开启",ffzt_text)
         else:
-            self.assertEqual("停止", ffzt_text)
+            self.assertEqual("关闭", ffzt_text)
 
         # self.activeweb.delayTime(1000)
 
