@@ -144,18 +144,23 @@ class TicketEditPage:
     kfyqthddj_bkdjsy = ""
     kfyqthddj_bkdjsy_text = u"不可叠加使用"
     kfyqthddj_bkdjsy_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[3]/form/div[2]/div[15]/div/div/label[1]/span/input"
+    kfyqthddj_bkdjsy_checkbox_zdhy = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[3]/form/div[2]/div[16]/div/div/label[1]/span/input"
+
     kfyqthddj_kydjsy = ""
     kfyqthddj_kydjsy_text = u"可以叠加使用"
     kfyqthddj_kydjsy_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[3]/form/div[2]/div[15]/div/div/label[2]/span/input"
+    kfyqthddj_kydjsy_checkbox_zdhy = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[3]/form/div[2]/div[16]/div/div/label[2]/span/input"
 
     sfzctq = ""
     sfzctq_text = u"是否支持退券"
     sfzctq_kt = ""
     sfzctq_kt_text = u"可退"
     sfzctq_kt_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[3]/form/div[2]/div[16]/div/div/label[1]/span/input"
+    sfzctq_kt_checkbox_zdhy  = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[3]/form/div[2]/div[17]/div/div/label[1]/span/input"
     sfzctq_bkt = ""
     sfzctq_bkt_text = u"不可退"
     sfzctq_bkt_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[3]/form/div[2]/div[16]/div/div/label[2]/span/input"
+    sfzctq_bkt_checkbox_zdhy = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[3]/form/div[2]/div[17]/div/div/label[2]/span/input"
 
     cancel_button = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[3]/form/div[2]/div[17]/span[1]"
     confirm_button = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[3]/form/div[2]/div[17]/span[2]"

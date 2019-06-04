@@ -187,6 +187,7 @@ class ActivityEditPage:
     w_jllp_text = u"奖励礼品"
 
     w_tjlp = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/div[2]/div/button"
+
     w_tjlp_text = u"添加礼品"
 
     # ---已添加奖励礼品时添加礼品---#

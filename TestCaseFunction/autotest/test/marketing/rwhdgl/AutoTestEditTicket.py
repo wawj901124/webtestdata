@@ -207,33 +207,47 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
                                                              self.testpage.syfw_select_option_zdsh_input_option_one)  # 点击商户输入框下拉列表第一项
                 self.activeweb.findElementByXpathAndClickNum(num, self.testpage.syfw_select_option_zdsh_tjsh_button)  # 点击添加商户按钮
 
-        if kfyqthddj == "1":
-            self.activeweb.findElementByXpathAndClickNum(num, self.testpage.kfyqthddj_bkdjsy_checkbox)  # 是否与其他活动叠加，点选不可叠加使用
-        elif sfzctq == "2":
-            self.activeweb.findElementByXpathAndClickNum(num, self.testpage.kfyqthddj_kydjsy_checkbox)  # 是否与其他活动叠加，点选可以叠加使用
+        # self.activeweb.delayTime(5000)
 
+        if syfw == "1": #使用范围选择不限
+            if kfyqthddj == "1":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.kfyqthddj_bkdjsy_checkbox)  # 是否与其他活动叠加，点选不可叠加使用
+            elif sfzctq == "2":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.kfyqthddj_kydjsy_checkbox)  # 是否与其他活动叠加，点选可以叠加使用
+            if sfzctq == "1":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.sfzctq_kt_checkbox)  # 是否支持退券点选可退
+            elif sfzctq == "2":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.sfzctq_bkt_checkbox)  # 是否支持退券点选不可退
 
-        if sfzctq == "1":
-            self.activeweb.findElementByXpathAndClickNum(num, self.testpage.sfzctq_kt_checkbox)  # 是否支持退券点选可退
-        elif sfzctq == "2":
-            self.activeweb.findElementByXpathAndClickNum(num, self.testpage.sfzctq_bkt_checkbox)  # 是否支持退券点选不可退
-        if iscancel:
-            self.activeweb.findElementByXpathAndClickNum(num, self.testpagecancelbutton)  # 点击取消按钮
-        else:
-            if syfw == "1":
+            if iscancel:
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpagecancelbutton)  # 点击取消按钮
+                self.activeweb.findElementByXpathAndReturnText(num,self.activityeditpage.w_tjlp) #确保有添加礼品按钮
+            else:
                 self.activeweb.findElementByXpathAndClickNum(num, self.testpageconfirmbutton)  # 点击确定按钮
-            elif syfw == "2":
+                # 断言添加礼品列表中是否有新增加的礼品
+                self.defineisintable(num, self.activityeditpage.y_jllp_table, yhqmcinputtext, 1)
+        else: #使用范围选择指定行业或者指定商户
+            if kfyqthddj == "1":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.kfyqthddj_bkdjsy_checkbox_zdhy)  # 是否与其他活动叠加，点选不可叠加使用
+            elif sfzctq == "2":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.kfyqthddj_kydjsy_checkbox_zdhy)  # 是否与其他活动叠加，点选可以叠加使用
+            if sfzctq == "1":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.sfzctq_kt_checkbox_zdhy)  # 是否支持退券点选可退
+            elif sfzctq == "2":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.sfzctq_bkt_checkbox_zdhy)  # 是否支持退券点选不可退
+
+            if iscancel:
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.cancel_button_zdsh)  # 点击取消按钮
+                self.activeweb.findElementByXpathAndReturnText(num, self.activityeditpage.w_tjlp)  #确保有添加礼品按钮
+            else:
                 self.activeweb.findElementByXpathAndClickNum(num, self.testpage.confirm_button_zdsh)  # 点击确定按钮
-            elif syfw =="3":
-                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.confirm_button_zdsh)   #点击确定按钮
-            # 断言添加礼品列表中是否有新增加的礼品
-            self.defineisintable(num, self.activityeditpage.y_jllp_table, yhqmcinputtext, 1)
-        ################################优惠券创建完成#########################################
+                # 断言添加礼品列表中是否有新增加的礼品
+                self.defineisintable(num, self.activityeditpage.y_jllp_table, yhqmcinputtext, 1)
+        ################################优惠券编辑完成#########################################
 
         if iscancel:
             self.activeweb.findElementByXpathAndScriptClickNum(num, self.activityeditpage.cancelbutton)  # 点击取消按钮
         else:
-
             self.activeweb.findElementByXpathAndScriptClickNum(num, self.activityeditpage.submitbutton)  # 点击提交按钮
             # 断言活动列表中是否有新增加的活动
             self.defineisintable(num, self.activitylistpage_searchtableresult,yhqmcinputtext , 1)
@@ -283,7 +297,7 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from addticket.models import AddTicket
 
-    addticket_all = AddTicket.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="创建代金券").filter(id=4).order_by('id')
+    addticket_all = AddTicket.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="编辑代金券").order_by('id')
     rows_count = addticket_all.count()
 
     for addticket in addticket_all:
