@@ -26,6 +26,7 @@ class AddTicket(models.Model):
     zdshinputtext = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入指定商户的商户名称或ID的内容")
     isplsh = models.BooleanField(default=False,verbose_name=u"是否使用批量导入商户功能")
     plfilepath = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入导入批量商户的文件的路径")
+    kfyqthddj = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入可否与其他活动叠加的单选的内容",help_text=u"1表示不可以叠加使用，为2表示可以叠加使用")
     sfzctq = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"输入是否支持退券的单选的内容",help_text=u"1表示可退，为2表示不可退")
     iscancel = models.BooleanField(default=False, verbose_name=u"是否点击取消按钮")
     add_time = models.DateTimeField(null=True, blank=True,auto_now_add=True,

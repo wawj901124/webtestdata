@@ -116,6 +116,7 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
                            yhms,gdjemzinputtext,sjjemzmiminputtext,sjjemzmimaxinputtext,
                            zdxfinputtext,sypt,
                            syfw,zdhyoptionxpath,zdshinputtext,isplsh,plfilepath,
+                           kfyqthddj,
                            sfzctq,iscancel):
         self.activeweb.getUrl(self.activityeditpage_pageurl)
         self.activeweb.delayTime(3)
@@ -206,6 +207,11 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
                                                              self.testpage.syfw_select_option_zdsh_input_option_one)  # 点击商户输入框下拉列表第一项
                 self.activeweb.findElementByXpathAndClickNum(num, self.testpage.syfw_select_option_zdsh_tjsh_button)  # 点击添加商户按钮
 
+        if kfyqthddj == "1":
+            self.activeweb.findElementByXpathAndClickNum(num, self.testpage.kfyqthddj_bkdjsy_checkbox)  # 是否与其他活动叠加，点选不可叠加使用
+        elif sfzctq == "2":
+            self.activeweb.findElementByXpathAndClickNum(num, self.testpage.kfyqthddj_kydjsy_checkbox)  # 是否与其他活动叠加，点选可以叠加使用
+
 
         if sfzctq == "1":
             self.activeweb.findElementByXpathAndClickNum(num, self.testpage.sfzctq_kt_checkbox)  # 是否支持退券点选可退
@@ -261,15 +267,17 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
                            yhms,gdjemzinputtext,sjjemzmiminputtext,sjjemzmimaxinputtext,
                            zdxfinputtext,sypt,
                            syfw,zdhyoptionxpath,zdshinputtext,isplsh,plfilepath,
+                           kfyqthddj,
                            sfzctq,iscancel):
         def func(self):
             self.definecreateticket(num,ffzt,kcslinputtext,qyxq,
-                           xdsjtsinputtext,
-                           yxcbcdf,yhqmcinputtext,yhlx,
-                           yhms,gdjemzinputtext,sjjemzmiminputtext,sjjemzmimaxinputtext,
-                           zdxfinputtext,sypt,
-                           syfw,zdhyoptionxpath,zdshinputtext,isplsh,plfilepath,
-                           sfzctq,iscancel)
+                                    xdsjtsinputtext,
+                                    yxcbcdf,yhqmcinputtext,yhlx,
+                                    yhms,gdjemzinputtext,sjjemzmiminputtext,sjjemzmimaxinputtext,
+                                    zdxfinputtext,sypt,
+                                    syfw,zdhyoptionxpath,zdshinputtext,isplsh,plfilepath,
+                                    kfyqthddj,
+                                    sfzctq,iscancel)
         return func
 
 def __generateTestCases():
@@ -314,6 +322,7 @@ def __generateTestCases():
         args.append(addticket.zdshinputtext)
         args.append(addticket.isplsh)
         args.append(addticket.plfilepath)
+        args.append(addticket.kfyqthddj)
         args.append(addticket.sfzctq)
         args.append(addticket.iscancel)
 

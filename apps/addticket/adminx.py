@@ -20,6 +20,7 @@ class AddTicketAdmin(object):
               'yhms', 'gdjemzinputtext', 'sjjemzmiminputtext', 'sjjemzmimaxinputtext',
               'zdxfinputtext', 'sypt',
               'syfw', 'zdhyoptionxpath', 'zdshinputtext', 'isplsh', 'plfilepath',
+              'kfyqthddj',
               'sfzctq','iscancel']
 
     list_display =['id','testproject', 'testmodule','testpage','testcasetitle',
@@ -29,6 +30,7 @@ class AddTicketAdmin(object):
               'yhms', 'gdjemzinputtext', 'sjjemzmiminputtext', 'sjjemzmimaxinputtext',
               'zdxfinputtext', 'sypt',
               'syfw', 'zdhyoptionxpath', 'zdshinputtext', 'isplsh', 'plfilepath',
+              'kfyqthddj',
               'sfzctq','iscancel','add_time','update_time']#定义显示的字段
     search_fields =  ['testproject',]   #定义搜索字段
     list_filter =  ['testproject',] #定义筛选的字段
