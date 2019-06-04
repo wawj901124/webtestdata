@@ -143,7 +143,7 @@ class TestEditProcessingActivityClass(unittest.TestCase):  # 创建测试类
         if ffzt == "1":
             self.assertEqual("开启",ffzt_text)
         else:
-            self.assertEqual("停止", ffzt_text)
+            self.assertEqual("关闭", ffzt_text)
 
         # self.activeweb.delayTime(1000)
 

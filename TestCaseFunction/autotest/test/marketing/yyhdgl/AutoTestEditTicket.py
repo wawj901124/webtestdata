@@ -267,7 +267,7 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from addticket.models import AddTicket
 
-    addticket_all = AddTicket.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="创建代金券").filter(id=4).order_by('id')
+    addticket_all = AddTicket.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="编辑代金券").order_by('id')
     rows_count = addticket_all.count()
 
     for addticket in addticket_all:
