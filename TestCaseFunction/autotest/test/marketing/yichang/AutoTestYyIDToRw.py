@@ -24,7 +24,7 @@ from TestCaseFunction.autotest.config.page.manager.loginPage import LoginPage   
 
 
 
-class TestCreateStatusCheckClass(unittest.TestCase):  # 创建测试类
+class TestStatusCheckClass(unittest.TestCase):  # 创建测试类
 
 
     @classmethod  # 类方法，只执行一次，但必须要加注解@classmethod,且名字固定为setUpClass
