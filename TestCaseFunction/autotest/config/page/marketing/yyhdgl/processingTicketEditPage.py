@@ -25,8 +25,8 @@ class ProcessingTicketEditPage:
     kcsl_zjkc_input = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/form/div[2]/div/div[2]/form/div[2]/div[4]/div/div/input"
 
 
-    cancel_button = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/form/div[2]/div/div[2]/form/div[2]/div[19]/span[2]"
-    confirm_button = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/form/div[2]/div/div[2]/form/div[2]/div[19]/span[1]"
+    cancel_button = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/form/div[2]/div/div[2]/form/div[2]/div[19]/span[1]"
+    confirm_button = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/form/div[2]/div/div[2]/form/div[2]/div[19]/span[2]"
 
 
 
