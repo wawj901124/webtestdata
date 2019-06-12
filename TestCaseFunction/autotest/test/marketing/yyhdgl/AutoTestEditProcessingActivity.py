@@ -116,10 +116,11 @@ class TestEditProcessingActivityClass(unittest.TestCase):  # 创建测试类
 
         self.activeweb.findElementByXpathAndInputNum(num,self.testpagehdyszjysinput, zjysinputtext)   #输入活动增加预算
 
-
+        # self.activeweb.delayTime(5000)
         #填入活动奖励部分
         self.activeweb.findElementByXpathAndClickNum(num, self.testpagejllpedit)  # 点击添加礼品中的“编辑”文字按钮
 
+        # self.activeweb.delayTime(5000)
         #进入编辑优惠券页，编辑优惠券
         if ffzt == "1":
             self.activeweb.findElementByXpathAndClickNum(num, self.processingticketeditpage.ffzt_kq_checkbox)  # 点击发放状态开始对应的选项框

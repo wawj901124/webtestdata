@@ -78,6 +78,12 @@ class  ActiveWeb:
         self.outPutMyLog("进入网址：%s"% url)
         # print("进入网址：%s"% url)
 
+    #获取当前页面的url
+    def getNowPageUrl(self):
+        NowPageUrl = self.driver.current_url
+        self.outPutMyLog("当前页面的URL为：%s" %  NowPageUrl)
+        return NowPageUrl
+
     #通过xpath查找元素
     def findElementByXpath(self,path):
         issecond = False

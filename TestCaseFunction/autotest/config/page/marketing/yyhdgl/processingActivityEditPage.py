@@ -55,13 +55,14 @@ class ProcesingActivityEditPage:
     y_jllp_table_ffzt = ""
     y_jllp_table_ffzt_text = u"发放状态"
 
-    y_jllp_table_ffzt_result_just_one = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/form/div[2]/div/div/div/div[2]/table/tbody/tr/td[4]/div/div/span"
+    y_jllp_table_ffzt_result_just_one = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/form/div[2]/div/div/div/div[2]/table/tbody/tr/td[4]/div/div/span"
+
 
 
     y_jllp_table_cz = ""
     y_jllp_table_cz_text = u"操作"
 
-    y_jllp_table_cz_just_one_edit = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[3]/div[2]/div/form/div[2]/div/div/div/div[2]/table/tbody/tr/td[5]/div/div/a[2]"
+    y_jllp_table_cz_just_one_edit = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/form/div[2]/div/div/div/div[2]/table/tbody/tr/td[5]/div/div/a[2]"
 
 
     y_jllp_table_cz_just_one_detail = ""
