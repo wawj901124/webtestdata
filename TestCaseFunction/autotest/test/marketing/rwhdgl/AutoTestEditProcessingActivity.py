@@ -130,8 +130,6 @@ class TestEditProcessingActivityClass(unittest.TestCase):  # 创建测试类
 
         # self.activeweb.delayTime(5000)
 
-
-
         if isqcancel:
             self.activeweb.findElementByXpathAndScriptClickNum(num,
                                                                    self.processingticketeditpage.cancel_button_zdhy)  # 点击取消按钮
