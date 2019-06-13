@@ -86,12 +86,14 @@ class ActivityCreatePage:
     rwxz = ""
     rwxz_text = u"任务限制"
 
-    tjxz = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[1]/div/div[1]/button"
+    tjxz = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[4]/div/div[1]/div/div[1]/button"
+
     tjxz_text = u"添加限制"
     # ---添加限制弹框中选项---#
     rwmb_popup_jylx_option = ""
-    rwmb_popup_zffs_option = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[1]/div/div[2]/ul/li[1]"
-    rwmb_popup_yhhdcycs_option = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[1]/div/div[2]/ul/li[2]"
+    rwmb_popup_zffs_option = ""
+    rwmb_popup_yhhdcycs_option = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[4]/div/div[1]/div/div[2]/ul/li"
+
     rwmb_popup_jylx_option_text = u"交易类型"
     rwmb_popup_zffs_option_text = u"支付方式"
     rwmb_popup_yhhdcycs_option_text = u"用户活动参与次数"
@@ -142,19 +144,20 @@ class ActivityCreatePage:
     # ---支付方式---#
     jy_wcjy_zffs = ""
     jy_wcjy_zffs_text = u"支付方式"
-    jy_wcjy_zffs_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/span/label/label/span/input"
-    jy_wcjy_zffs_delete_icon = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/span/i"
+    jy_wcjy_zffs_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[4]/div/div[2]/span/label/label/span/input"
+    jy_wcjy_zffs_delete_icon = ""
 
     jy_wcjy_zffs_fxk_qbye = ""
     jy_wcjy_zffs_fxk_qbye_text = u"钱包余额"
-    jy_wcjy_zffs_fxk_qbye_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/div/div/label[2]/span/input"
+    jy_wcjy_zffs_fxk_qbye_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[4]/div/div[2]/div/div/label[2]/span/input"
 
-    jy_wcjy_zffs_fxk_yhkhq_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/div/div/label[3]/span/input"
-    jy_wcjy_zffs_fxk_yehq_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/div/div/label[4]/span/input"
-    jy_wcjy_zffs_fxk_vahspg_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/div/div/label[5]/span/input"
+
+    jy_wcjy_zffs_fxk_yhkhq_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[4]/div/div[2]/div/div/label[3]/span/input"
+    jy_wcjy_zffs_fxk_yehq_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[4]/div/div[2]/div/div/label[4]/span/input"
+    jy_wcjy_zffs_fxk_vahspg_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[4]/div/div[2]/div/div/label[5]/span/input"
     jy_wcjy_zffs_fxk_yhk = ""
     jy_wcjy_zffs_fxk_yhk_text = u"银行卡"
-    jy_wcjy_zffs_fxk_yhk_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[3]/div/div/label[1]/span/input"
+    jy_wcjy_zffs_fxk_yhk_checkbox = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[4]/div/div[2]/div/div/label[1]/span/input"
 
     # ---用户活动参与次数---#
     jy_wcjy_yhhdcycs = ""
@@ -163,10 +166,11 @@ class ActivityCreatePage:
 
     jy_wcjy_yhhdcycs_mgyhzdcycs = ""
     jy_wcjy_yhhdcycs_mgyhzdcycs_text = u"每个用户最多参与次数"
-    jy_wcjy_yhhdcycs_mgyhzdcycs_input = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[4]/span[2]/div[1]/div/div/input"
+    jy_wcjy_yhhdcycs_mgyhzdcycs_input = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[4]/div/div[3]/span[2]/div[1]/div/div/input"
+
     jy_wcjy_yhhdcycs_mgyhmrcycs = ""
     jy_wcjy_yhhdcycs_mgyhmrcycs_text = u"每个用户每日参与次数"
-    jy_wcjy_yhhdcycs_mgyhmrcycs_input = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[4]/span[2]/div[2]/div/div/input"
+    jy_wcjy_yhhdcycs_mgyhmrcycs_input = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[4]/div/div[3]/span[2]/div[2]/div/div/input"
 
     # ---活动奖励---#
     jlxx = ""
