@@ -186,6 +186,7 @@ MANAGER_LOGIN_ACCOUNT = "admin@iapppay.com"
 MANAGER_LOGIN_PASSWORD = "123456"
 
 #营销后台配置
+ISXIANGWANG = False
 #任务活动常量
 MARKETING_CREATE_ACTIVITYID = ""
 MARKETING_DETAIL_ACTIVITYID = ""
@@ -203,7 +204,6 @@ YY_YJS_EDIT_ACTIVITYID = "10778"
 
 
 
-
 # #---------------------------现网------------------------------------
 # #现网域名
 # # WEB_URL_TITLE = 'https://m-mbmpay.ahdipay.com'
@@ -217,3 +217,5 @@ YY_YJS_EDIT_ACTIVITYID = "10778"
 # MANAGER_REVIEW_MERCHANTID = AGENT_REVISE_MERCHANTID
 # MANAGER_LOGIN_ACCOUNT = "xiangkaizheng@iapppay.com"
 # MANAGER_LOGIN_PASSWORD = "123456"
+# #营销后台配置
+# ISXIANGWANG = True

@@ -13,10 +13,10 @@ from .models import SearchData
 
 
 class SearchDataAdmin(object):
-    ziduan = ['webproject','testpage','testcasetitle','selectxpath','selectoptiontextxpath','selectinputxpath','selectinputtext',
+    ziduan = ['webproject','testpage','testcasetitle','selectxpath','selectoptiontextxpath','selectinputxpath','selectinputselectonexpath','selectinputtext',
               'isfind','colnum','checktext']
 
-    list_display =['id','webproject','testpage','testcasetitle','selectxpath','selectoptiontextxpath','selectinputxpath','selectinputtext',
+    list_display =['id','webproject','testpage','testcasetitle','selectxpath','selectoptiontextxpath','selectinputxpath','selectinputselectonexpath','selectinputtext',
                    'isfind','colnum','checktext','add_time']#定义显示的字段
 
     # list_display =[ 'test_project','test_module',

@@ -9,6 +9,7 @@ class SearchData(models.Model):
     selectxpath = models.CharField(max_length=1000, default="",null=True, blank=True, verbose_name=u"筛选字段选项Xpath路径")
     selectoptiontextxpath = models.CharField(max_length=1000, default="",null=True, blank=True, verbose_name=u"筛选字段选项内容Xpath路径")
     selectinputxpath = models.CharField(max_length=1000, default="",null=True, blank=True, verbose_name=u"筛选字段选项对应输入框的Xpath路径")
+    selectinputselectonexpath = models.CharField(max_length=1000, default="",null=True, blank=True, verbose_name=u"筛选字段选项对应输入框输入内容后下拉列表第一项的Xpath路径")
     selectinputtext = models.CharField(max_length=500, default="",null=True, blank=True, verbose_name=u"筛选字段选项对应输入框的输入内容")
     isfind = models.BooleanField(default=False,verbose_name=u"筛选结果是否有相应内容")
     colnum = models.CharField(max_length=100, default="0",verbose_name=u"搜索结果表格的列数")
