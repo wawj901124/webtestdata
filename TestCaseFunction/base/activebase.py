@@ -449,6 +449,7 @@ class  ActiveWeb:
     #通过xpath查找到tbody并打印表格里所有内容
     def findElementByXpathAndReturnTableNum(self,num,path):
         ele = self.getEleImage(num,path)
+        # ele = self.findElementByXpath(path)
         # print('tagname:',ele.tag_name)
         tabledic = {}
         try:

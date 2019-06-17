@@ -4,7 +4,9 @@ class ActivityListPage:
     pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/list" % WEB_URL_TITLE
 
     searchtableresult = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[2]/table/tbody"
+
     searchtableresult2 = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[3]/table/tbody"
+
 
     xjhd_button = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[1]/div/div/button[2]"
     xjhd_button_text = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[1]/div/div/button[2]/span"
