@@ -279,7 +279,7 @@ class TestAddCompanyMerchantClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from addmerchant.models import AddMerchant
 
-    addmerchant_all = AddMerchant.objects.filter(iscompany=True).order_by('id')
+    addmerchant_all = AddMerchant.objects.filter(iscompany=True).filter(id=2).order_by('id')
     rows_count = addmerchant_all.count()
 
     for addmerchant in addmerchant_all:
