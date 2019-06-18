@@ -64,4 +64,5 @@ class AwardRequestListPage:
     bg_wcsj = ""
     bg_wcsj_text = u"完成时间"
 
+    last_page = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[2]/div/ul/li[6]/a"
 

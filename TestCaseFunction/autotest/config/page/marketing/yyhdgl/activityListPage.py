@@ -84,3 +84,5 @@ class ActivityListPage:
     table_justone_content_bj = ""
     table_justone_content_bj_text = u"编辑"
 
+    last_page = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[2]/div/ul/li[6]/a"
+

@@ -16,10 +16,10 @@ from TestCaseFunction.util.operation_json import OperationJson
 from TestCaseFunction.util.gettimestr import GetTimeStr
 
 from TestCaseFunction.autotest.config.page.manager.loginPage import LoginPage   #导入登录页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityCreatePage import ActivityCreatePage   #导入创建活动页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.ticketCreatePage import TicketCreatePage   #导入创建优惠券页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityListPage import ActivityListPage   #导入活动列表页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityDetailsPage import ActivityDetialsPage #导入活动详情页
+from TestCaseFunction.autotest.config.page.marketing.yyhdgl.activityCreatePage import ActivityCreatePage   #导入创建活动页
+from TestCaseFunction.autotest.config.page.marketing.yyhdgl.ticketCreatePage import TicketCreatePage   #导入创建优惠券页
+from TestCaseFunction.autotest.config.page.marketing.yyhdgl.activityListPage import ActivityListPage   #导入活动列表页
+from TestCaseFunction.autotest.config.page.marketing.yyhdgl.activityDetailsPage import ActivityDetialsPage #导入活动详情页
 
 
 
@@ -148,7 +148,7 @@ class TestActivityListSearchClass(unittest.TestCase):  # 创建测试类
     def getTestFunc(num,isclicklastpage, selectxpath, selectoptiontextxpath, selectinputxpath,selectinputselectonexpath, selectinputtext, isfind, colnum,
                     checktext):
         def func(self):
-            self.definesearch(num, isclicklastpage,selectxpath, selectoptiontextxpath, selectinputxpath,selectinputselectonexpath, selectinputtext, isfind,
+            self.definesearch(num,isclicklastpage, selectxpath, selectoptiontextxpath, selectinputxpath,selectinputselectonexpath, selectinputtext, isfind,
                               colnum, checktext)
 
         return func
@@ -156,7 +156,7 @@ class TestActivityListSearchClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from searchdata.models import SearchData
 
-    searchdata_all = SearchData.objects.filter(webproject=u"营销系统").filter(testpage=u"任务活动列表").filter(isclicklastpage=True).order_by(
+    searchdata_all = SearchData.objects.filter(webproject=u"营销系统").filter(testpage=u"运营活动列表").filter(isclicklastpage=True).order_by(
         'id')
     rows_count = searchdata_all.count()
 

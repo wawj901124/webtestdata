@@ -16,16 +16,13 @@ from TestCaseFunction.util.operation_json import OperationJson
 from TestCaseFunction.util.gettimestr import GetTimeStr
 
 from TestCaseFunction.autotest.config.page.manager.loginPage import LoginPage   #导入登录页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityCreatePage import ActivityCreatePage   #导入创建活动页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.ticketCreatePage import TicketCreatePage   #导入创建优惠券页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityListPage import ActivityListPage   #导入活动列表页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityDetailsPage import ActivityDetialsPage #导入活动详情页
+from TestCaseFunction.autotest.config.page.marketing.ffjlqqlb.IssueTheAwardRequestListPage import AwardRequestListPage   #导入发放奖励请求列表页
 
 
 
 
 
-class TestActivityListSearchClass(unittest.TestCase):  # 创建测试类
+class TestAwardRequestListSearchClass(unittest.TestCase):  # 创建测试类
 
 
     @classmethod  # 类方法，只执行一次，但必须要加注解@classmethod,且名字固定为setUpClass
@@ -64,7 +61,7 @@ class TestActivityListSearchClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndInput(LoginPage().password,MANAGER_LOGIN_PASSWORD)
         self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
         self.activeweb.delayTime(3)
-        self.testpage = ActivityListPage()
+        self.testpage = AwardRequestListPage()
         self.testpageurl =self.testpage.pageurl   #测试页面url
         self.testpagesearchbutton = self.testpage.cx_button
         self.testpagesearchresultxpathtrue = self.testpage.searchtableresult
@@ -148,7 +145,7 @@ class TestActivityListSearchClass(unittest.TestCase):  # 创建测试类
     def getTestFunc(num,isclicklastpage, selectxpath, selectoptiontextxpath, selectinputxpath,selectinputselectonexpath, selectinputtext, isfind, colnum,
                     checktext):
         def func(self):
-            self.definesearch(num, isclicklastpage,selectxpath, selectoptiontextxpath, selectinputxpath,selectinputselectonexpath, selectinputtext, isfind,
+            self.definesearch(num,isclicklastpage, selectxpath, selectoptiontextxpath, selectinputxpath,selectinputselectonexpath, selectinputtext, isfind,
                               colnum, checktext)
 
         return func
@@ -156,7 +153,7 @@ class TestActivityListSearchClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from searchdata.models import SearchData
 
-    searchdata_all = SearchData.objects.filter(webproject=u"营销系统").filter(testpage=u"任务活动列表").filter(isclicklastpage=True).order_by(
+    searchdata_all = SearchData.objects.filter(webproject=u"营销系统").filter(testpage=u"发放奖励请求列表").filter(isclicklastpage=True).order_by(
         'id')
     rows_count = searchdata_all.count()
 
@@ -187,9 +184,9 @@ def __generateTestCases():
         args.append(searchdata.colnum)
         args.append(searchdata.checktext)
 
-        setattr(TestActivityListSearchClass,
+        setattr(TestAwardRequestListSearchClass,
                 'test_func_%s_%s_%s' % (searchdataid, searchdata.testpage, searchdata.testcasetitle),
-                TestActivityListSearchClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
+                TestAwardRequestListSearchClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
 
 __generateTestCases()
 

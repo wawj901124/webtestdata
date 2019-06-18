@@ -152,7 +152,7 @@ class TestActivityListSearchClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from searchdata.models import SearchData
 
-    searchdata_all = SearchData.objects.filter(webproject=u"营销系统").filter(testpage=u"运营活动列表").order_by(
+    searchdata_all = SearchData.objects.filter(webproject=u"营销系统").filter(testpage=u"运营活动列表").filter(isclicklastpage=False).order_by(
         'id')
     rows_count = searchdata_all.count()
 
