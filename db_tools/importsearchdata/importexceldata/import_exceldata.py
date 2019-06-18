@@ -34,6 +34,7 @@ class ReadData:
             searchdata = SearchData()    #数据库的对象等于SearchData,实例化
             searchdata.webproject = self.exceldata.get_webproject(i)   #填写web后台项目
             searchdata.testpage = self.exceldata.get_testpage(i)    #填写测试页面
+            searchdata.testcasetitle = self.exceldata.get_testcasetitle(i)  # 填写测试内容的名称
             searchdata.isclicklastpage = self.exceldata.get_isclicklastpage(i)   #填写是否点击最后一页页码
             searchdata.selectxpath = self.exceldata.get_selectxpath(i)   #填写筛选字段选项Xpath路径
             searchdata.selectoptiontextxpath = self.exceldata.get_selectoptiontextxpath(i)   #填写筛选字段选项内容Xpath路径
