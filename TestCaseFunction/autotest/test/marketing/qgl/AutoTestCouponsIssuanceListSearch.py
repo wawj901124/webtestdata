@@ -16,13 +16,13 @@ from TestCaseFunction.util.operation_json import OperationJson
 from TestCaseFunction.util.gettimestr import GetTimeStr
 
 from TestCaseFunction.autotest.config.page.manager.loginPage import LoginPage   #导入登录页
-from TestCaseFunction.autotest.config.page.marketing.ffjlqqlb.IssueTheAwardRequestListPage import AwardRequestListPage   #导入发放奖励请求列表页
+from TestCaseFunction.autotest.config.page.marketing.qgl.couponsIssuanceListPage import CouponsIssuanceListPage   #导入优惠券发放查询列表页
 
 
 
 
 
-class TestAwardRequestListSearchClass(unittest.TestCase):  # 创建测试类
+class TestCouponsIssuanceListSearchClass(unittest.TestCase):  # 创建测试类
 
 
     @classmethod  # 类方法，只执行一次，但必须要加注解@classmethod,且名字固定为setUpClass
@@ -61,7 +61,7 @@ class TestAwardRequestListSearchClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndInput(LoginPage().password,MANAGER_LOGIN_PASSWORD)
         self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
         self.activeweb.delayTime(3)
-        self.testpage = AwardRequestListPage()
+        self.testpage = CouponsIssuanceListPage()
         self.testpageurl =self.testpage.pageurl   #测试页面url
         self.testpagesearchbutton = self.testpage.cx_button
         self.testpagesearchresultxpathtrue = self.testpage.searchtableresult
@@ -149,7 +149,7 @@ class TestAwardRequestListSearchClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from searchdata.models import SearchData
 
-    searchdata_all = SearchData.objects.filter(webproject=u"营销系统").filter(testpage=u"发放奖励请求列表").filter(id=63).order_by(
+    searchdata_all = SearchData.objects.filter(webproject=u"营销系统").filter(testpage=u"优惠券发放查询列表").order_by(
         'id')
     rows_count = searchdata_all.count()
 
@@ -179,9 +179,9 @@ def __generateTestCases():
         args.append(searchdata.colnum)
         args.append(searchdata.checktext)
 
-        setattr(TestAwardRequestListSearchClass,
+        setattr(TestCouponsIssuanceListSearchClass,
                 'test_func_%s_%s_%s' % (searchdataid, searchdata.testpage, searchdata.testcasetitle),
-                TestAwardRequestListSearchClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
+                TestCouponsIssuanceListSearchClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
 
 __generateTestCases()
 
