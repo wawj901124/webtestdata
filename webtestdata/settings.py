@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'addactivity.apps.AddactivityConfig',  #注册addactivity
     'addticket.apps.AddticketConfig',  #注册addticket
     'processingActivity.apps.ProcessingactivityConfig',   #注册processingActivity
+    'inputtip.apps.InputtipConfig',   #注册inputtip
 
 
 ]
