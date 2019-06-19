@@ -20,7 +20,7 @@ class InputTipDataAdmin(object):
                'update_time']
 
     list_display =['id','testproject','testmodule',
-                   'testpage''testcasetitle',
+                   'testpage','testcasetitle',
                    'isinput', 'inputxpath', 'inputtext',
                    'inputtipxpath','inputtiptext', 'add_time',
                    'update_time']#定义显示的字段
