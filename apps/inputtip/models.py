@@ -9,7 +9,7 @@ class InputTipData(models.Model):
     testcasetitle = models.CharField(max_length=100, default="", verbose_name=u"测试内容的名称")
     isinput = models.BooleanField(default=False,verbose_name=u"是否输入内容")
     inputxpath = models.CharField(max_length=1000, default="",null=True, blank=True, verbose_name=u"输入框Xpath路径")
-    inputtext = models.CharField(max_length=500, default="",null=True, blank=True, verbose_name=u"输入框的输入内容")
+    inputtext = models.CharField(max_length=1500, default="",null=True, blank=True, verbose_name=u"输入框的输入内容")
     inputtipxpath = models.CharField(max_length=1000, default="",null=True, blank=True, verbose_name=u"输入框下Tip提示信息Xpath路径")
     inputtiptext = models.CharField(max_length=500, default="",null=True, blank=True, verbose_name=u"输入框下Tip提示信息内容")
     add_time = models.DateTimeField(null=True, blank=True,auto_now_add=True,
