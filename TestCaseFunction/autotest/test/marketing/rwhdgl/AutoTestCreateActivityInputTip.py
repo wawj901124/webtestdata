@@ -145,14 +145,14 @@ class TestInputTipClass(unittest.TestCase):  # 创建测试类
     def getTestFunc(num,isinput,inputxpath,
                        inputtext,inputtipxpath,inputtiptext):
         def func(self):
-            self.definecreateactivity(num,isinput,inputxpath,
+            self.defineinputtip(num,isinput,inputxpath,
                        inputtext,inputtipxpath,inputtiptext)
         return func
 
 def __generateTestCases():
     from inputtip.models import InputTipData
 
-    inputtipdata_all = InputTipData.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="创建活动").filter(id=1).order_by('id')
+    inputtipdata_all = InputTipData.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="创建活动").filter(id=8).order_by('id')
     rows_count = inputtipdata_all.count()
 
     for inputtipdata in inputtipdata_all:
