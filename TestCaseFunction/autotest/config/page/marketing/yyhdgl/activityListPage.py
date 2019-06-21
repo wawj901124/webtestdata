@@ -1,7 +1,13 @@
-from webtestdata.settings import WEB_URL_TITLE,AGENT_REVISE_MERCHANTID
+
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_WEB_URL_TITLE   #导入测试环境参数
+from webtestdata.settings import ONLINE_WEB_URL_TITLE  #导入现网环境参数
 
 class ActivityListPage:
-    pageurl = "%s/nereus/marketing/admin/v/#/activityManage/operation/list" % WEB_URL_TITLE
+    if ISONLINE:
+        pageurl = "%s/nereus/marketing/admin/v/#/activityManage/operation/list" % ONLINE_WEB_URL_TITLE
+    else:
+        pageurl = "%s/nereus/marketing/admin/v/#/activityManage/operation/list" % TEST_WEB_URL_TITLE
 
     searchtableresult = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[2]/table/tbody"
     searchtableresult2 = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[3]/table/tbody"
@@ -48,7 +54,6 @@ class ActivityListPage:
 
     cx_button = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div[1]/div/div/button[1]"
 
-    xjhd_button = ""
 
     # ---表格表头字段---#
     bg_xh = ""

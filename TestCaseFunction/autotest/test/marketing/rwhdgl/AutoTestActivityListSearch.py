@@ -1,6 +1,9 @@
 import unittest
 
-from webtestdata.settings import WEB_URL_TITLE,MANAGER_LOGIN_ACCOUNT,MANAGER_LOGIN_PASSWORD,MARKETING_CREATE_ACTIVITYID
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_WEB_URL_TITLE,TEST_MANAGER_LOGIN_ACCOUNT,TEST_MANAGER_LOGIN_PASSWORD   #导入测试环境参数
+from webtestdata.settings import ONLINE_WEB_URL_TITLE,ONLINE_MANAGER_LOGIN_ACCOUNT,ONLINE_MANAGER_LOGIN_PASSWORD  #导入现网环境参数
+
 
 
 # ----------------------------------------------------------------------
@@ -12,14 +15,9 @@ django.setup()
 
 
 from TestCaseFunction.base.activebase import ActiveWeb
-from TestCaseFunction.util.operation_json import OperationJson
-from TestCaseFunction.util.gettimestr import GetTimeStr
 
 from TestCaseFunction.autotest.config.page.manager.loginPage import LoginPage   #导入登录页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityCreatePage import ActivityCreatePage   #导入创建活动页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.ticketCreatePage import TicketCreatePage   #导入创建优惠券页
 from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityListPage import ActivityListPage   #导入活动列表页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityDetailsPage import ActivityDetialsPage #导入活动详情页
 
 
 
@@ -60,8 +58,12 @@ class TestActivityListSearchClass(unittest.TestCase):  # 创建测试类
         self.activeweb = ActiveWeb()  # 实例化
         self.loginurl = LoginPage().pageurl
         self.activeweb.getUrl(self.loginurl)  # 打开网址
-        self.activeweb.findElementByXpathAndInput(LoginPage().account,MANAGER_LOGIN_ACCOUNT)
-        self.activeweb.findElementByXpathAndInput(LoginPage().password,MANAGER_LOGIN_PASSWORD)
+        if ISONLINE:
+            self.activeweb.findElementByXpathAndInput(LoginPage().account,ONLINE_MANAGER_LOGIN_ACCOUNT)
+            self.activeweb.findElementByXpathAndInput(LoginPage().password,ONLINE_MANAGER_LOGIN_PASSWORD)
+        else:
+            self.activeweb.findElementByXpathAndInput(LoginPage().account,TEST_MANAGER_LOGIN_ACCOUNT)
+            self.activeweb.findElementByXpathAndInput(LoginPage().password,TEST_MANAGER_LOGIN_PASSWORD)
         self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
         self.activeweb.delayTime(3)
         self.testpage = ActivityListPage()
@@ -152,7 +154,10 @@ class TestActivityListSearchClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from searchdata.models import SearchData
 
-    searchdata_all = SearchData.objects.filter(webproject=u"营销系统").filter(testpage=u"任务活动列表").filter(isclicklastpage=False).order_by(
+    if ISONLINE:
+        searchdata_all = SearchData.objects.filter(webproject=u"营销系统_现网").filter(testpage=u"任务活动列表").order_by('id')
+    else:
+        searchdata_all = SearchData.objects.filter(webproject=u"营销系统").filter(testpage=u"任务活动列表").filter(isclicklastpage=False).order_by(
         'id')
     rows_count = searchdata_all.count()
 

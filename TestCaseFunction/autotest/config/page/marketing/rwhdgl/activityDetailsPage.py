@@ -1,7 +1,13 @@
-from webtestdata.settings import WEB_URL_TITLE,MARKETING_DETAIL_ACTIVITYID
+
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_WEB_URL_TITLE,TEST_MARKETING_DETAIL_ACTIVITYID   #导入测试环境参数
+from webtestdata.settings import ONLINE_WEB_URL_TITLE,ONLINE_MARKETING_DETAIL_ACTIVITYID  #导入现网环境参数
 
 class ActivityDetialsPage:
-    pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/missionDetail/%s" % (WEB_URL_TITLE,MARKETING_DETAIL_ACTIVITYID)
+    if ISONLINE:
+        pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/missionDetail/%s" % (ONLINE_WEB_URL_TITLE,ONLINE_MARKETING_DETAIL_ACTIVITYID)
+    else:
+        pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/missionDetail/%s" % (TEST_WEB_URL_TITLE,TEST_MARKETING_DETAIL_ACTIVITYID)
 
     hdbj = ""
     hdbj_text = u"活动编辑"

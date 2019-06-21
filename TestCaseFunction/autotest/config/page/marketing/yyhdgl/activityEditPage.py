@@ -1,11 +1,17 @@
-from webtestdata.settings import WEB_URL_TITLE
+
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_WEB_URL_TITLE   #导入测试环境参数
+from webtestdata.settings import ONLINE_WEB_URL_TITLE  #导入现网环境参数
 
 from TestCaseFunction.util.gettimestr import GetTimeStr
 
 class ActivityEditPage:
     filename = "createactivityid.txt"
     editactivityid = GetTimeStr().readText(filename)
-    pageurl = "%s/nereus/marketing/admin/v/#/activityManage/operation/modifyOnLine/%s" % (WEB_URL_TITLE,editactivityid )
+    if ISONLINE:
+        pageurl = "%s/nereus/marketing/admin/v/#/activityManage/operation/modifyOnLine/%s" % (ONLINE_WEB_URL_TITLE,editactivityid )
+    else:
+        pageurl = "%s/nereus/marketing/admin/v/#/activityManage/operation/modifyOnLine/%s" % (TEST_WEB_URL_TITLE, editactivityid)
 
     yxhdcj = ""
     yxhdcj_text = u"营销活动创建"

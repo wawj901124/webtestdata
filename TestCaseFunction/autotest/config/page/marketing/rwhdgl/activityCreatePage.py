@@ -1,7 +1,13 @@
-from webtestdata.settings import WEB_URL_TITLE
+
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_WEB_URL_TITLE  #导入测试环境参数
+from webtestdata.settings import ONLINE_WEB_URL_TITLE  #导入现网环境参数
 
 class ActivityCreatePage:
-    pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/add" % WEB_URL_TITLE
+    if ISONLINE:
+        pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/add" % ONLINE_WEB_URL_TITLE
+    else:
+        pageurl = "%s/nereus/marketing/admin/v/#/activityManage/missionAct/add" % TEST_WEB_URL_TITLE
 
     yxhdcj = ""
     yxhdcj_text = u"营销活动创建"

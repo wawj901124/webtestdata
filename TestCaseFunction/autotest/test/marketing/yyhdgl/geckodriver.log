@@ -2206,3 +2206,138 @@ JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.
 1560846944979	Marionette	WARN	TLS certificate errors will be ignored for this session
 Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
 JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561105381846	geckodriver	INFO	geckodriver 0.19.0
+1561105381914	geckodriver	INFO	Listening on 127.0.0.1:58154
+1561105384953	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.wQARPwIMhrni"
+1561105397713	Marionette	INFO	Listening on port 58162
+1561105399137	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561105467070	geckodriver	INFO	geckodriver 0.19.0
+1561105467102	geckodriver	INFO	Listening on 127.0.0.1:58275
+1561105470178	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.PAwYbGyvovMM"
+1561105482681	Marionette	INFO	Listening on port 58283
+1561105483004	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561105550487	geckodriver	INFO	geckodriver 0.19.0
+1561105550517	geckodriver	INFO	Listening on 127.0.0.1:58384
+1561105553671	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.A1O1EZ9iz2Ft"
+1561105567426	Marionette	INFO	Listening on port 58392
+1561105567856	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561105622849	geckodriver	INFO	geckodriver 0.19.0
+1561105622881	geckodriver	INFO	Listening on 127.0.0.1:58500
+1561105625956	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.4jzSQNgvhDuv"
+1561105638749	Marionette	INFO	Listening on port 58508
+1561105640160	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561105702928	geckodriver	INFO	geckodriver 0.19.0
+1561105702974	geckodriver	INFO	Listening on 127.0.0.1:58644
+1561105706042	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.aUVZDPtWiw4X"
+1561105720131	Marionette	INFO	Listening on port 58653
+1561105720607	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561105774445	geckodriver	INFO	geckodriver 0.19.0
+1561105774479	geckodriver	INFO	Listening on 127.0.0.1:58780
+1561105777533	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.8KGavYMFyHF0"
+1561105789551	Marionette	INFO	Listening on port 58789
+1561105789783	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 22268, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1561105846547	geckodriver	INFO	geckodriver 0.19.0
+1561105846579	geckodriver	INFO	Listening on 127.0.0.1:58923
+1561105849660	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.YFdmo6DsBBMT"
+1561105865133	Marionette	INFO	Listening on port 58931
+1561105865902	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 22880, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1561105923697	geckodriver	INFO	geckodriver 0.19.0
+1561105923736	geckodriver	INFO	Listening on 127.0.0.1:59080
+1561105926793	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.bs5tSxsck6YC"
+1561105940052	Marionette	INFO	Listening on port 59088
+1561105941811	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561105997269	geckodriver	INFO	geckodriver 0.19.0
+1561105997295	geckodriver	INFO	Listening on 127.0.0.1:59162
+1561106000368	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.ypxj01g5YRwY"
+1561106011027	Marionette	INFO	Listening on port 59170
+1561106012873	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561106142428	geckodriver	INFO	geckodriver 0.19.0
+1561106142436	geckodriver	INFO	Listening on 127.0.0.1:59262
+1561106145493	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.zqQgB5HzQdUN"
+1561106152850	Marionette	INFO	Listening on port 59270
+1561106153011	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1561106604832	geckodriver	INFO	geckodriver 0.19.0
+1561106604840	geckodriver	INFO	Listening on 127.0.0.1:59821
+1561106607907	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.ySLcS5IWg20c"
+1561106613091	Marionette	INFO	Listening on port 59829
+1561106613243	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561106863614	geckodriver	INFO	geckodriver 0.19.0
+1561106863621	geckodriver	INFO	Listening on 127.0.0.1:60177
+1561106866698	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.DzfJxI5vAgmM"
+1561106872430	Marionette	INFO	Listening on port 60185
+1561106872990	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561106961306	geckodriver	INFO	geckodriver 0.19.0
+1561106961315	geckodriver	INFO	Listening on 127.0.0.1:60415
+1561106964379	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.7A9lArtQTnK8"
+1561106971649	Marionette	INFO	Listening on port 60423
+1561106971806	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561107006649	geckodriver	INFO	geckodriver 0.19.0
+1561107006657	geckodriver	INFO	Listening on 127.0.0.1:60492
+1561107009700	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.psmTtXkEW2BV"
+1561107016222	Marionette	INFO	Listening on port 60500
+1561107017104	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561107156485	geckodriver	INFO	geckodriver 0.19.0
+1561107156496	geckodriver	INFO	Listening on 127.0.0.1:60938
+1561107159567	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.75uQhM8EjeCj"
+1561107171393	Marionette	INFO	Listening on port 60948
+1561107171597	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561107442585	geckodriver	INFO	geckodriver 0.19.0
+1561107442595	geckodriver	INFO	Listening on 127.0.0.1:61489
+1561107445662	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.mSlBdZEbq4nK"
+console.error: "Could not write session state file " (new Error("_initWorker called too early! Please read the session file from disk first.", "resource:///modules/sessionstore/SessionFile.jsm", 335)) "_initWorker/<@resource:///modules/sessionstore/SessionFile.jsm:335:15\n_initWorker@resource:///modules/sessionstore/SessionFile.jsm:328:12\n_postToWorker@resource:///modules/sessionstore/SessionFile.jsm:352:11\nwrite@resource:///modules/sessionstore/SessionFile.jsm:392:19\nwrite@resource:///modules/sessionstore/SessionFile.jsm:64:12\n_writeState@resource:///modules/sessionstore/SessionSaver.jsm:357:12\n_saveState@resource:///modules/sessionstore/SessionSaver.jsm:295:12\n_saveStateAsync@resource:///modules/sessionstore/SessionSaver.jsm:341:5\nsaveStateAsyncWhenIdle@resource:///modules/sessionstore/SessionSaver.jsm:192:9\n"
+1561107454226	Marionette	INFO	Listening on port 61497
+1561107455116	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561107782821	geckodriver	INFO	geckodriver 0.19.0
+1561107782829	geckodriver	INFO	Listening on 127.0.0.1:61669
+1561107785913	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.ejvsR5mzILUK"
+1561107791880	Marionette	INFO	Listening on port 61677
+1561107792360	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 19820, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1561107958753	geckodriver	INFO	geckodriver 0.19.0
+1561107958765	geckodriver	INFO	Listening on 127.0.0.1:61853
+1561107961810	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.cFkR6ZIkGEe1"
+1561107968371	Marionette	INFO	Listening on port 61861
+1561107969117	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement

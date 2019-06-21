@@ -1,7 +1,9 @@
 import unittest
 
 from webtestdata.settings import WEB_URL_TITLE,MANAGER_LOGIN_ACCOUNT,MANAGER_LOGIN_PASSWORD,MARKETING_CREATE_ACTIVITYID
-
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_WEB_URL_TITLE,TEST_MANAGER_LOGIN_ACCOUNT,TEST_MANAGER_LOGIN_PASSWORD   #导入测试环境参数
+from webtestdata.settings import ONLINE_WEB_URL_TITLE,ONLINE_MANAGER_LOGIN_ACCOUNT,ONLINE_MANAGER_LOGIN_PASSWORD  #导入现网环境参数
 
 # ----------------------------------------------------------------------
 import os, django
@@ -59,8 +61,14 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
         self.activeweb = ActiveWeb()  # 实例化
         self.loginurl = LoginPage().pageurl
         self.activeweb.getUrl(self.loginurl)  # 打开网址
-        self.activeweb.findElementByXpathAndInput(LoginPage().account,MANAGER_LOGIN_ACCOUNT)
-        self.activeweb.findElementByXpathAndInput(LoginPage().password,MANAGER_LOGIN_PASSWORD)
+
+        if ISONLINE:
+            self.activeweb.findElementByXpathAndInput(LoginPage().account,ONLINE_MANAGER_LOGIN_ACCOUNT)
+            self.activeweb.findElementByXpathAndInput(LoginPage().password,ONLINE_MANAGER_LOGIN_PASSWORD)
+        else:
+            self.activeweb.findElementByXpathAndInput(LoginPage().account,TEST_MANAGER_LOGIN_ACCOUNT)
+            self.activeweb.findElementByXpathAndInput(LoginPage().password,TEST_MANAGER_LOGIN_PASSWORD)
+
         self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
         self.activeweb.delayTime(3)
         self.testpage = ActivityCreatePage()
@@ -167,15 +175,24 @@ class TestCreateActivityClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndClickNum(num, self.ticketcreatepage.yxcbcdf_pt_checkbox)  # 点击营销成本承担方中的平台前的选项框
         self.activeweb.findElementByXpathAndInputNum(num, self.ticketcreatepage_yhqsm_areatext, "开启-不限库存数-相对时间(相对2天)-平台-代金券-固定金额（面值2000）-不限最低消费-使用平台（点选QRindo）-不限使用范围-支持退券")  # 输入优惠券说明
         #第二部分
-        self.activeweb.findElementByXpathAndInputNum(num, self.ticketcreatepage_yhqmc_input,"优惠券_%s" % GetTimeStr().getTimeStr())  # 添加优惠券名称
+        self.activeweb.findElementByXpathAndInputNum(num, self.ticketcreatepage_yhqmc_input,"test_优惠券_%s" % GetTimeStr().getTimeStr())  # 添加优惠券名称
         self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.ticketcreatepage_yhlx_select,self.ticketcreatepage.yhlx_option_djq)   #优惠类型选择代金券
         self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.ticketcreatepage_yhms_select,self.ticketcreatepage.yhms_select_option_gdje)   #优惠模式选择固定金额
         self.activeweb.findElementByXpathAndInputNum(num, self.ticketcreatepage.yhms_select_option_gdje_mz_input,"2000")  # 面值输入2000
-        self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_mbmpay_checkbox)  # 使用平台点选mbmpay
-        self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_mydisrupto_checkbox)  # 使用平台点选mydisrupto
-        self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
-        self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_qrindomerchantcashier_checkbox)  # 使用平台点选qrindomerchantcashier
-        self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_PaySDK_checkbox)  # 使用平台点选PaySDK
+        if ISONLINE:
+            #点击使用平台第一个选项
+            if not self.activeweb.findElementByXpath(self.ticketcreatepage.sypt_mbmpay_checkbox).is_selected():
+                self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_mbmpay_checkbox)  # 使用平台点选mbmpay
+            if self.activeweb.findElementByXpath(self.ticketcreatepage.sypt_mydisrupto_checkbox).is_selected():
+                self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_mydisrupto_checkbox)  # 使用平台点选mydisrupto
+            if self.activeweb.findElementByXpath(self.ticketcreatepage.sypt_QRindo_checkbox).is_selected():
+                self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
+        else:
+            self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_mbmpay_checkbox)  # 使用平台点选mbmpay
+            self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_mydisrupto_checkbox)  # 使用平台点选mydisrupto
+            self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
+            self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_qrindomerchantcashier_checkbox)  # 使用平台点选qrindomerchantcashier
+            self.activeweb.findElementByXpathAndClickNum(num,self.ticketcreatepage.sypt_PaySDK_checkbox)  # 使用平台点选PaySDK
         self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.ticketcreatepage_syfw_select,self.ticketcreatepage.syfw_select_option_bx)   #使用范围选择不限
         # self.activeweb.findElementByXpathAndClickNum(num, self.ticketcreatepage.kfyqthddj_bkdjsy_checkbox)  # 可否与其他活动叠加点选不可叠加使用
         self.activeweb.findElementByXpathAndClickNum(num, self.ticketcreatepage.sfzctq_kt_checkbox)  # 是否支持退券点选可退

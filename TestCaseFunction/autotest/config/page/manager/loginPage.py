@@ -1,7 +1,12 @@
-from webtestdata.settings import WEB_URL_TITLE
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_WEB_URL_TITLE   #导入测试环境参数
+from webtestdata.settings import ONLINE_WEB_URL_TITLE  #导入现网环境参数
 
 class LoginPage:
-    pageurl = "%s/nereus/manager/index#/login" % WEB_URL_TITLE
+    if ISONLINE:
+        pageurl = "%s/nereus/manager/index#/login" % ONLINE_WEB_URL_TITLE
+    else:
+        pageurl = "%s/nereus/manager/index#/login" % TEST_WEB_URL_TITLE
 
     logintitle = "/html/body/div[1]/div[2]/form/div/p"          #登录框的title
 

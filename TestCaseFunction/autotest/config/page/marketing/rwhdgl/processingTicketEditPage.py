@@ -1,7 +1,5 @@
-from webtestdata.settings import WEB_URL_TITLE,AGENT_REVISE_MERCHANTID
 
 class ProcessingTicketEditPage:
-    pageurl = "%s/nereus/manager/index#/merchant/list" % WEB_URL_TITLE
 
     ################第一部分######################
     qid = ""

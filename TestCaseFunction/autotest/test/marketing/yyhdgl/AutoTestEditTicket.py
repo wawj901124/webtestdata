@@ -1,7 +1,8 @@
 import unittest
 
-from webtestdata.settings import WEB_URL_TITLE,MANAGER_LOGIN_ACCOUNT,MANAGER_LOGIN_PASSWORD
-
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_WEB_URL_TITLE,TEST_MANAGER_LOGIN_ACCOUNT,TEST_MANAGER_LOGIN_PASSWORD   #导入测试环境参数
+from webtestdata.settings import ONLINE_WEB_URL_TITLE,ONLINE_MANAGER_LOGIN_ACCOUNT,ONLINE_MANAGER_LOGIN_PASSWORD  #导入现网环境参数
 
 # ----------------------------------------------------------------------
 import os, django
@@ -16,9 +17,7 @@ from TestCaseFunction.util.operation_json import OperationJson
 from TestCaseFunction.util.gettimestr import GetTimeStr
 
 from TestCaseFunction.autotest.config.page.manager.loginPage import LoginPage   #导入登录页
-from TestCaseFunction.autotest.config.page.marketing.yyhdgl.activityCreatePage import ActivityCreatePage   #导入创建活动页
 from TestCaseFunction.autotest.config.page.marketing.yyhdgl.activityEditPage import ActivityEditPage  #导入未上线活动编辑页
-from TestCaseFunction.autotest.config.page.marketing.yyhdgl.ticketCreatePage import TicketCreatePage   #导入创建优惠券页
 from TestCaseFunction.autotest.config.page.marketing.yyhdgl.activityListPage import ActivityListPage   #导入活动列表页
 from TestCaseFunction.autotest.config.page.marketing.yyhdgl.ticketEditPage import TicketEditPage #导入未上线活动优惠券编辑页
 
@@ -57,13 +56,19 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
         self.activeweb = ActiveWeb()  # 实例化
         self.loginurl = LoginPage().pageurl
         self.activeweb.getUrl(self.loginurl)  # 打开网址
-        self.activeweb.findElementByXpathAndInput(LoginPage().account,MANAGER_LOGIN_ACCOUNT)
-        self.activeweb.findElementByXpathAndInput(LoginPage().password,MANAGER_LOGIN_PASSWORD)
+
+        if ISONLINE:
+            self.activeweb.findElementByXpathAndInput(LoginPage().account,ONLINE_MANAGER_LOGIN_ACCOUNT)
+            self.activeweb.findElementByXpathAndInput(LoginPage().password,ONLINE_MANAGER_LOGIN_PASSWORD)
+        else:
+            self.activeweb.findElementByXpathAndInput(LoginPage().account,TEST_MANAGER_LOGIN_ACCOUNT)
+            self.activeweb.findElementByXpathAndInput(LoginPage().password,TEST_MANAGER_LOGIN_PASSWORD)
+
         self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
         self.activeweb.delayTime(3)
 
         self.testpage = TicketEditPage()
-        self.testpageurl =self.testpage.pageurl   #测试页面url
+        # self.testpageurl =self.testpage.pageurl   #测试页面url
         self.testpagekcslinput  = self.testpage.kcsl_input   #第一部分# 库存数量输入框路径
         self.testpageqyxqselect = self.testpage.qyxq_select   #第一部分# 券有效期选择框路径
         self.testpageyhqsmareatext  = self.testpage.yhqsm_areatext    #第一部分# 优惠券说明多行输入框路径
@@ -168,14 +173,22 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
             self.activeweb.findElementByXpathAndInputNum(num, self.testpage.yhms_select_option_sjje_mz_max_input,sjjemzmimaxinputtext)  # 面值最大值输入
         if zdxfinputtext != None:
             self.activeweb.findElementByXpathAndInputNum(num, self.testpage.zdxf_input,zdxfinputtext) # 输入最低消费金额
-
-        if sypt == "0":
-            self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
-            self.activeweb.findElementByXpathAndClickNum(num, self.testpage.sypt_PaySDK_checkbox)  # 使用平台点选PaySDK
-        elif sypt == "1":
-            self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
-        elif sypt == "2":
-            self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_PaySDK_checkbox)  # 使用平台点选PaySDK
+        if ISONLINE:
+            #点击使用平台第一个选项
+            if not self.activeweb.findElementByXpath(self.testpage.sypt_mbmpay_checkbox).is_selected():
+                self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_mbmpay_checkbox)  # 使用平台点选mbmpay
+            if self.activeweb.findElementByXpath(self.testpage.sypt_mydisrupto_checkbox).is_selected():
+                self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_mydisrupto_checkbox)  # 使用平台点选mydisrupto
+            if self.activeweb.findElementByXpath(self.testpage.sypt_QRindo_checkbox).is_selected():
+                self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
+        else:
+            if sypt == "0":
+                self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.sypt_PaySDK_checkbox)  # 使用平台点选PaySDK
+            elif sypt == "1":
+                self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
+            elif sypt == "2":
+                self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_PaySDK_checkbox)  # 使用平台点选PaySDK
 
         if syfw == "1":
             self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.testpagesyfwselect,self.testpage.syfw_select_option_bx)   #使用范围选择不限
@@ -266,8 +279,11 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
 
 def __generateTestCases():
     from addticket.models import AddTicket
-
-    addticket_all = AddTicket.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="编辑代金券").order_by('id')
+    if ISONLINE:
+        addticket_all = AddTicket.objects.filter(testproject="营销系统_现网").filter(testmodule="任务活动管理").filter(
+            testpage="编辑代金券").order_by('id')
+    else:
+        addticket_all = AddTicket.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="编辑代金券").order_by('id')
     rows_count = addticket_all.count()
 
     for addticket in addticket_all:
