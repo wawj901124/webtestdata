@@ -1,6 +1,6 @@
 import unittest
 
-from webtestdata.settings import WEB_URL_TITLE,MANAGER_LOGIN_ACCOUNT,MANAGER_LOGIN_PASSWORD
+from webtestdata.settings import WEB_URL_TITLE,MANAGER_LOGIN_ACCOUNT,MANAGER_LOGIN_PASSWORD,ISXIANGWANG
 
 
 # ----------------------------------------------------------------------
@@ -130,7 +130,16 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.activityeditpage.tfqd_select,self.activityeditpage.tfqd_select_nbqd_option)  # 投放渠道一级渠道选择内部渠道
 
         # 点选投放渠道二级渠道全部项复选框
-        self.activeweb.findElementByXpathAndClickNum(num, self.activityeditpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)
+        if ISXIANGWANG:
+            if not self.activeweb.getEleImage(num, self.activityeditpage.tfqd_select_nbqd_fxk_mbmpay_checkbox).is_selected():
+                self.activeweb.findElementByXpathAndClickNum(num, self.activityeditpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)
+            if self.activeweb.getEleImage(num, self.activityeditpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox).is_selected():
+                self.activeweb.findElementByXpathAndClickNum(num,
+                                                             self.activityeditpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox)
+            if self.activeweb.getEleImage(num, self.activityeditpage.tfqd_select_nbqd_fxk_qrindo_checkbox).is_selected():
+                self.activeweb.findElementByXpathAndClickNum(num, self.activityeditpage.tfqd_select_nbqd_fxk_qrindo_checkbox)
+        else:
+            self.activeweb.findElementByXpathAndClickNum(num, self.activityeditpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)
 
         #填入活动任务规则部分
         self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.activityeditpage.rwlx_select,self.activityeditpage.rwlx_select_zc_option)  # 任务类型选择注册
@@ -181,12 +190,45 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
             self.activeweb.findElementByXpathAndInputNum(num, self.testpage.zdxf_input,zdxfinputtext) # 输入最低消费金额
 
         if sypt == "0":
-            self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
-            self.activeweb.findElementByXpathAndClickNum(num, self.testpage.sypt_PaySDK_checkbox)  # 使用平台点选PaySDK
+            if ISXIANGWANG:
+                if not self.activeweb.getEleImage(num, self.testpage.sypt_mbmpay_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num,
+                                                                 self.testpage.sypt_mbmpay_checkbox)  # 使用平台点选mbmpay
+                if self.activeweb.getEleImage(num, self.testpage.sypt_mydisrupto_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num,
+                                                                 self.testpage.sypt_mydisrupto_checkbox)  # 使用平台点选mydisrupto
+                if self.activeweb.getEleImage(num, self.testpage.sypt_QRindo_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num,
+                                                                 self.testpage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
+            else:
+                self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.sypt_PaySDK_checkbox)  # 使用平台点选PaySDK
         elif sypt == "1":
-            self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
+            if ISXIANGWANG:
+                if not self.activeweb.getEleImage(num, self.testpage.sypt_mbmpay_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num,
+                                                                 self.testpage.sypt_mbmpay_checkbox)  # 使用平台点选mbmpay
+                if self.activeweb.getEleImage(num, self.testpage.sypt_mydisrupto_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num,
+                                                                 self.testpage.sypt_mydisrupto_checkbox)  # 使用平台点选mydisrupto
+                if self.activeweb.getEleImage(num, self.testpage.sypt_QRindo_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num,
+                                                                 self.testpage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
+            else:
+                self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
         elif sypt == "2":
-            self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_PaySDK_checkbox)  # 使用平台点选PaySDK
+            if ISXIANGWANG:
+                if not self.activeweb.getEleImage(num, self.testpage.sypt_mbmpay_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num,
+                                                                 self.testpage.sypt_mbmpay_checkbox)  # 使用平台点选mbmpay
+                if self.activeweb.getEleImage(num, self.testpage.sypt_mydisrupto_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num,
+                                                                 self.testpage.sypt_mydisrupto_checkbox)  # 使用平台点选mydisrupto
+                if self.activeweb.getEleImage(num, self.testpage.sypt_QRindo_checkbox).is_selected():
+                    self.activeweb.findElementByXpathAndClickNum(num,
+                                                                 self.testpage.sypt_QRindo_checkbox)  # 使用平台点选QRindo
+            else:
+                self.activeweb.findElementByXpathAndClickNum(num,self.testpage.sypt_PaySDK_checkbox)  # 使用平台点选PaySDK
 
         if syfw == "1":
             self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.testpagesyfwselect,self.testpage.syfw_select_option_bx)   #使用范围选择不限
@@ -297,7 +339,7 @@ class TestEditTicketClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from addticket.models import AddTicket
 
-    addticket_all = AddTicket.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="编辑代金券").order_by('id')
+    addticket_all = AddTicket.objects.filter(testproject="营销系统_现网").filter(testmodule="任务活动管理").filter(testpage="编辑代金券").order_by('id')
     rows_count = addticket_all.count()
 
     for addticket in addticket_all:

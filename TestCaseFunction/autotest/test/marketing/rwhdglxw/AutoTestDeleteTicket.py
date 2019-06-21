@@ -1,6 +1,6 @@
 import unittest
 
-from webtestdata.settings import WEB_URL_TITLE,MANAGER_LOGIN_ACCOUNT,MANAGER_LOGIN_PASSWORD
+from webtestdata.settings import WEB_URL_TITLE,MANAGER_LOGIN_ACCOUNT,MANAGER_LOGIN_PASSWORD,ISXIANGWANG
 
 
 # ----------------------------------------------------------------------
@@ -134,16 +134,24 @@ class TestDeleteTicketClass(unittest.TestCase):  # 创建测试类
         if tfqdyj =="1":
             self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.testpagetfqdselect,self.testpage.tfqd_select_nbqd_option)  # 投放渠道一级渠道选择内部渠道
             if tfqdej == "0":  # 点击投放渠道二级渠道所有项复选框
-                if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox).is_selected():
-                    self.activeweb.findElementByXpathAndClickNum(num,self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)
-                if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox).is_selected():
-                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox)
-                if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_qrindo_checkbox).is_selected():
-                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindo_checkbox)
-                if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox).is_selected():
-                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox)
-                if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox).is_selected():
-                    self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_paysdk_checkbox)
+                if ISXIANGWANG:
+                    if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox).is_selected():
+                        self.activeweb.findElementByXpathAndClickNum(num,self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)
+                    if self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox).is_selected():
+                        self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox)
+                    if self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_qrindo_checkbox).is_selected():
+                        self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindo_checkbox)
+                else:
+                    if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox).is_selected():
+                        self.activeweb.findElementByXpathAndClickNum(num,self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)
+                    if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox).is_selected():
+                        self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_mydisrupto_checkbox)
+                    if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_qrindo_checkbox).is_selected():
+                        self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindo_checkbox)
+                    if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox).is_selected():
+                        self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox)
+                    if not self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_qrindomerchantcashier_checkbox).is_selected():
+                        self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_paysdk_checkbox)
             else:
                 if self.activeweb.getEleImage(num,self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox).is_selected():
                     self.activeweb.findElementByXpathAndClickNum(num,self.testpage.tfqd_select_nbqd_fxk_mbmpay_checkbox)
@@ -167,18 +175,18 @@ class TestDeleteTicketClass(unittest.TestCase):  # 创建测试类
                 elif tfqdej == "5":
                     self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_nbqd_fxk_paysdk_checkbox)   #点选投放渠道二级渠道paysdk项复选框
 
-        # elif tfqdyj =="2":
-        #     self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.testpagetfqdselect,self.testpage.tfqd_select_wbqd_option)  # 投放渠道一级渠道选择外部渠道
-        #     if tfqdej == '0':# 点击投放渠道二级渠道所有项复选框
-        #         self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_app_checkbox)
-        #         self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_web_checkbox)
-        #         self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_sdk_checkbox)
-        #     elif tfqdej == "1":
-        #         self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_app_checkbox)   #点选投放渠道二级渠道app项复选框
-        #     elif tfqdej == "2":
-        #         self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_web_checkbox)   #点选投放渠道二级渠道web项复选框
-        #     elif tfqdej == "3":
-        #         self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_web_checkbox)   #点选投放渠道二级渠道sdk项复选框
+        elif tfqdyj =="2":
+            self.activeweb.findElementByXpathAndClickOptionXpathNum(num,self.testpagetfqdselect,self.testpage.tfqd_select_wbqd_option)  # 投放渠道一级渠道选择外部渠道
+            if tfqdej == '0':# 点击投放渠道二级渠道所有项复选框
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_app_checkbox)
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_web_checkbox)
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_sdk_checkbox)
+            elif tfqdej == "1":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_app_checkbox)   #点选投放渠道二级渠道app项复选框
+            elif tfqdej == "2":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_web_checkbox)   #点选投放渠道二级渠道web项复选框
+            elif tfqdej == "3":
+                self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tfqd_select_wbqd_fxk_web_checkbox)   #点选投放渠道二级渠道sdk项复选框
 
         self.activeweb.findElementByXpathAndInputNum(num,self.testpagehdbztextarea, hdbztextareainputtext)   #输入活动备注
 

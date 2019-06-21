@@ -67,6 +67,8 @@ class TestInputTipClass(unittest.TestCase):  # 创建测试类
         self.testpageurl =self.testpage.pageurl   #测试页面url
         self.testpagesubmitbutton = self.testpage.submitbutton   #提交按钮
 
+        self.testpagerwlxselect = self.testpage.rwlx_select  # ---活动任务规则---# 任务类型下拉框路径
+
         ######################创建优惠券页面###############################
         self.ticketcreatepage = TicketCreatePage()   #创建优惠券页
         self.ticketcreatepage_kcsl_input  = self.ticketcreatepage.kcsl_input   #第一部分# 库存数量输入框路径
@@ -110,6 +112,12 @@ class TestInputTipClass(unittest.TestCase):  # 创建测试类
         self.activeweb.getUrl(self.testpageurl)
         self.activeweb.delayTime(3)
 
+        self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.testpagerwlxselect,
+                                                                self.testpage.rwlx_select_jx_option)  # 任务类型选择交易
+        self.activeweb.findElementByXpathAndClickNum(num, self.testpage.tjxz)  # 点击添加限制文字链接
+        self.activeweb.findElementByXpathAndClickNum(num,
+                                                     self.testpage.rwmb_popup_yhhdcycs_option)  # 点击添加限制弹框中的用户活动参与次数
+
         #是否输入input内容
         if isinput:
             if inputxpath != None and inputtext !=None:
@@ -152,7 +160,7 @@ class TestInputTipClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from inputtip.models import InputTipData
 
-    inputtipdata_all = InputTipData.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="创建活动").filter(id=14).order_by('id')
+    inputtipdata_all = InputTipData.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="创建活动_交易类型").order_by('id')
     rows_count = inputtipdata_all.count()
 
     for inputtipdata in inputtipdata_all:

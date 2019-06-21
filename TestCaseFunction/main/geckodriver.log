@@ -2114,3 +2114,721 @@ Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr
 Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
 JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
 [GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1560742491034	geckodriver	INFO	geckodriver 0.19.0
+1560742491067	geckodriver	INFO	Listening on 127.0.0.1:54621
+1560742494090	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.WVlGmNBzszPE"
+1560742500336	Marionette	INFO	Listening on port 54629
+1560742501402	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560742713478	geckodriver	INFO	geckodriver 0.19.0
+1560742713486	geckodriver	INFO	Listening on 127.0.0.1:55335
+1560742716595	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.hE7xmK8fNViH"
+1560742724831	Marionette	INFO	Listening on port 55343
+1560742725622	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560742992763	geckodriver	INFO	geckodriver 0.19.0
+1560742992780	geckodriver	INFO	Listening on 127.0.0.1:56117
+1560742995883	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.dwg82homNmLQ"
+1560743004459	Marionette	INFO	Listening on port 56125
+1560743005366	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560743026723	geckodriver	INFO	geckodriver 0.19.0
+1560743026735	geckodriver	INFO	Listening on 127.0.0.1:56190
+1560743029811	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.AaNocskc1EHw"
+1560743042512	Marionette	INFO	Listening on port 56199
+1560743043692	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560743065740	geckodriver	INFO	geckodriver 0.19.0
+1560743065777	geckodriver	INFO	Listening on 127.0.0.1:56284
+1560743068856	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.xkWmG2YgdF3z"
+1560743076033	Marionette	INFO	Listening on port 56292
+1560743076253	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560743100926	geckodriver	INFO	geckodriver 0.19.0
+1560743100933	geckodriver	INFO	Listening on 127.0.0.1:56345
+1560743104018	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.2Gf5HQF6ZA9p"
+1560743112869	Marionette	INFO	Listening on port 56353
+1560743113509	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560743133890	geckodriver	INFO	geckodriver 0.19.0
+1560743133897	geckodriver	INFO	Listening on 127.0.0.1:56413
+1560743136955	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.vY9zalDmP4Iz"
+1560743148772	Marionette	INFO	Listening on port 56421
+1560743149177	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 8036, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560743170629	geckodriver	INFO	geckodriver 0.19.0
+1560743170661	geckodriver	INFO	Listening on 127.0.0.1:56507
+1560743173824	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.19VM5AzP5mOP"
+1560743184889	Marionette	INFO	Listening on port 56517
+1560743188205	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560743209572	geckodriver	INFO	geckodriver 0.19.0
+1560743209627	geckodriver	INFO	Listening on 127.0.0.1:56635
+1560743212737	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.qQ9XZUFw7muK"
+1560743238883	Marionette	INFO	Listening on port 56652
+1560743239915	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560743272066	geckodriver	INFO	geckodriver 0.19.0
+1560743272108	geckodriver	INFO	Listening on 127.0.0.1:56790
+1560743275129	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.nfhAZPHEjIzc"
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 11740, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11740, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 9968, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+1560743292846	Marionette	INFO	Listening on port 56802
+1560743294123	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560743332971	geckodriver	INFO	geckodriver 0.19.0
+1560743333001	geckodriver	INFO	Listening on 127.0.0.1:57006
+1560743336105	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.yDobyVmqILnf"
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 11484, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11484, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560743355291	Marionette	INFO	Listening on port 57034
+1560743355780	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 11344, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560743390811	geckodriver	INFO	geckodriver 0.19.0
+1560743390840	geckodriver	INFO	Listening on 127.0.0.1:57221
+1560743394021	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.qBjQoLTTSajA"
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 10876, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560743415039	Marionette	INFO	Listening on port 57237
+1560743415641	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560743447823	geckodriver	INFO	geckodriver 0.19.0
+1560743447850	geckodriver	INFO	Listening on 127.0.0.1:57327
+1560743451031	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.taJ8rzmsDOBs"
+1560743466840	Marionette	INFO	Listening on port 57336
+1560743467153	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560743537296	geckodriver	INFO	geckodriver 0.19.0
+1560743537335	geckodriver	INFO	Listening on 127.0.0.1:57538
+1560743540638	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.DRIYLIiLLMTO"
+1560743555071	Marionette	INFO	Listening on port 57546
+1560743555874	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560743686288	geckodriver	INFO	geckodriver 0.19.0
+1560743686346	geckodriver	INFO	Listening on 127.0.0.1:57881
+1560743689469	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.8zuX98pwQFmw"
+1560743716141	Marionette	INFO	Listening on port 57908
+1560743716193	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560743973497	geckodriver	INFO	geckodriver 0.19.0
+1560743973547	geckodriver	INFO	Listening on 127.0.0.1:58762
+1560743976815	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.5z8GIgXZaCyx"
+1560743990753	Marionette	INFO	Listening on port 58774
+1560743991167	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 12440, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560744118292	geckodriver	INFO	geckodriver 0.19.0
+1560744118330	geckodriver	INFO	Listening on 127.0.0.1:59152
+1560744121394	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.t5EYuGB8zHf8"
+1560744133205	Marionette	INFO	Listening on port 59189
+1560744133717	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560744175651	geckodriver	INFO	geckodriver 0.19.0
+1560744175690	geckodriver	INFO	Listening on 127.0.0.1:59368
+1560744179694	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.0lEqDM0TqkDF"
+1560744195058	Marionette	INFO	Listening on port 59385
+1560744195867	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560744237383	geckodriver	INFO	geckodriver 0.19.0
+1560744237413	geckodriver	INFO	Listening on 127.0.0.1:59546
+1560744240946	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.DuDiy1vmkBCX"
+1560744254499	Marionette	INFO	Listening on port 59557
+1560744254941	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560744297553	geckodriver	INFO	geckodriver 0.19.0
+1560744297637	geckodriver	INFO	Listening on 127.0.0.1:59690
+1560744301756	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.loS9YvTchoBE"
+1560744317500	Marionette	INFO	Listening on port 59701
+1560744319178	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 13048, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560744358234	geckodriver	INFO	geckodriver 0.19.0
+1560744358241	geckodriver	INFO	Listening on 127.0.0.1:59917
+1560744361286	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.X6QXRJevHauw"
+1560744369850	Marionette	INFO	Listening on port 59928
+1560744370694	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 12068, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560744407463	geckodriver	INFO	geckodriver 0.19.0
+1560744407471	geckodriver	INFO	Listening on 127.0.0.1:60060
+1560744410548	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.HWCUkuNmfn5J"
+1560744419926	Marionette	INFO	Listening on port 60070
+1560744420060	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 10804, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 12140, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12140, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560744455759	geckodriver	INFO	geckodriver 0.19.0
+1560744455766	geckodriver	INFO	Listening on 127.0.0.1:60207
+1560744458846	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.IvkLxpqQ0kYs"
+1560744467445	Marionette	INFO	Listening on port 60217
+1560744468286	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 7900, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7900, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560744507517	geckodriver	INFO	geckodriver 0.19.0
+1560744507525	geckodriver	INFO	Listening on 127.0.0.1:60345
+1560744510602	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.3wh2wO8PrXM1"
+1560744519290	Marionette	INFO	Listening on port 60357
+1560744520201	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1560744559803	geckodriver	INFO	geckodriver 0.19.0
+1560744559810	geckodriver	INFO	Listening on 127.0.0.1:60488
+1560744562956	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.4CB8eYsFVyBR"
+1560744572816	Marionette	INFO	Listening on port 60496
+1560744573693	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560744611970	geckodriver	INFO	geckodriver 0.19.0
+1560744611979	geckodriver	INFO	Listening on 127.0.0.1:60665
+1560744615028	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.phkvjzERoQVJ"
+1560744624794	Marionette	INFO	Listening on port 60673
+1560744625010	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560744662897	geckodriver	INFO	geckodriver 0.19.0
+1560744662904	geckodriver	INFO	Listening on 127.0.0.1:60761
+1560744665948	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.seX4Bw87mO48"
+1560744674784	Marionette	INFO	Listening on port 60769
+1560744675376	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 12852, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12852, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560744712429	geckodriver	INFO	geckodriver 0.19.0
+1560744712436	geckodriver	INFO	Listening on 127.0.0.1:60857
+1560744715479	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.85tolFGrMfR5"
+1560744724638	Marionette	INFO	Listening on port 60865
+1560744724937	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9036, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560744761753	geckodriver	INFO	geckodriver 0.19.0
+1560744761761	geckodriver	INFO	Listening on 127.0.0.1:60952
+1560744764808	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.5sWd6hy548vy"
+1560744773981	Marionette	INFO	Listening on port 60960
+1560744774268	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560744990566	geckodriver	INFO	geckodriver 0.19.0
+1560744990599	geckodriver	INFO	Listening on 127.0.0.1:63633
+1560744993741	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.Z9ABtBr69Dqa"
+1560745006087	Marionette	INFO	Listening on port 63641
+1560745006256	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560745201253	geckodriver	INFO	geckodriver 0.19.0
+1560745201270	geckodriver	INFO	Listening on 127.0.0.1:64301
+1560745204402	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.miZkW7lXQ3CZ"
+1560745215108	Marionette	INFO	Listening on port 64309
+1560745216066	Marionette	WARN	TLS certificate errors will be ignored for this session
+1560745251277	geckodriver	INFO	geckodriver 0.19.0
+1560745251312	geckodriver	INFO	Listening on 127.0.0.1:64399
+1560745254297	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.NkooRC9W1djt"
+1560745261089	Marionette	INFO	Listening on port 64407
+1560745261742	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560745308408	geckodriver	INFO	geckodriver 0.19.0
+1560745308419	geckodriver	INFO	Listening on 127.0.0.1:64523
+1560745311457	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.UZcDTF4JNxz6"
+1560745327831	Marionette	INFO	Listening on port 64531
+1560745328247	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 13100, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560828961895	geckodriver	INFO	geckodriver 0.19.0
+1560828961920	geckodriver	INFO	Listening on 127.0.0.1:49694
+1560828965112	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.FctbmD5JBEqw"
+1560828977647	Marionette	INFO	Listening on port 49722
+1560828977912	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 20988, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560829030744	geckodriver	INFO	geckodriver 0.19.0
+1560829030778	geckodriver	INFO	Listening on 127.0.0.1:50193
+1560829033958	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.21mH3H8eWQMS"
+1560829050261	Marionette	INFO	Listening on port 50202
+1560829050418	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560829100576	geckodriver	INFO	geckodriver 0.19.0
+1560829100632	geckodriver	INFO	Listening on 127.0.0.1:50423
+1560829103749	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.eZz32tBkhepl"
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 21072, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560829123619	Marionette	INFO	Listening on port 50432
+1560829123940	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560829233776	geckodriver	INFO	geckodriver 0.19.0
+1560829233809	geckodriver	INFO	Listening on 127.0.0.1:50654
+1560829236912	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.ulfB3XSQeGx2"
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 24716, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 26560, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+console.error: "Could not write session state file " (new Error("_initWorker called too early! Please read the session file from disk first.", "resource:///modules/sessionstore/SessionFile.jsm", 335)) "_initWorker/<@resource:///modules/sessionstore/SessionFile.jsm:335:15\n_initWorker@resource:///modules/sessionstore/SessionFile.jsm:328:12\n_postToWorker@resource:///modules/sessionstore/SessionFile.jsm:352:11\nwrite@resource:///modules/sessionstore/SessionFile.jsm:392:19\nwrite@resource:///modules/sessionstore/SessionFile.jsm:64:12\n_writeState@resource:///modules/sessionstore/SessionSaver.jsm:357:12\n_saveState@resource:///modules/sessionstore/SessionSaver.jsm:295:12\n_saveStateAsync@resource:///modules/sessionstore/SessionSaver.jsm:341:5\nsaveStateAsyncWhenIdle@resource:///modules/sessionstore/SessionSaver.jsm:192:9\n"
+1560829264754	Marionette	INFO	Listening on port 50670
+1560829265161	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560829354818	geckodriver	INFO	geckodriver 0.19.0
+1560829354845	geckodriver	INFO	Listening on 127.0.0.1:50915
+1560829357992	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.S2fzHX4fMXnO"
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 6276, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6276, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 27008, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+1560829380073	Marionette	INFO	Listening on port 50927
+1560829381081	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 21268, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21268, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560829471809	geckodriver	INFO	geckodriver 0.19.0
+1560829471849	geckodriver	INFO	Listening on 127.0.0.1:51537
+1560829474990	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.xSBB85oKV8vm"
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 27068, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560829491120	Marionette	INFO	Listening on port 51548
+1560829491625	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 26824, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 26824, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560829540172	geckodriver	INFO	geckodriver 0.19.0
+1560829540205	geckodriver	INFO	Listening on 127.0.0.1:51796
+1560829543296	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.6UlDBVpKyXEj"
+1560829556430	Marionette	INFO	Listening on port 51811
+1560829557425	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560829648804	geckodriver	INFO	geckodriver 0.19.0
+1560829648847	geckodriver	INFO	Listening on 127.0.0.1:52569
+1560829651933	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.9yWyqSqj0Wgc"
+1560829674790	Marionette	INFO	Listening on port 52583
+1560829675639	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560829728815	geckodriver	INFO	geckodriver 0.19.0
+1560829728857	geckodriver	INFO	Listening on 127.0.0.1:52807
+1560829731943	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.qa3eLSEAAWcb"
+1560829746017	Marionette	INFO	Listening on port 52818
+1560829746704	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560829810237	geckodriver	INFO	geckodriver 0.19.0
+1560829810334	geckodriver	INFO	Listening on 127.0.0.1:53211
+1560829813449	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.gjmrpyZuNWz5"
+1560829829080	Marionette	INFO	Listening on port 53251
+1560829830117	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560829893324	geckodriver	INFO	geckodriver 0.19.0
+1560829893364	geckodriver	INFO	Listening on 127.0.0.1:53490
+1560829896448	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.80GDcBtG05Zt"
+1560829912416	Marionette	INFO	Listening on port 53502
+1560829912925	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560830015654	geckodriver	INFO	geckodriver 0.19.0
+1560830015715	geckodriver	INFO	Listening on 127.0.0.1:54179
+1560830018413	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.M4wCU6L4JWDy"
+1560830032980	Marionette	INFO	Listening on port 54194
+1560830033401	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560830158768	geckodriver	INFO	geckodriver 0.19.0
+1560830158806	geckodriver	INFO	Listening on 127.0.0.1:55013
+1560830162070	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.HCFzbCT1pRtw"
+1560830181195	Marionette	INFO	Listening on port 55029
+1560830181687	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560830240757	geckodriver	INFO	geckodriver 0.19.0
+1560830240799	geckodriver	INFO	Listening on 127.0.0.1:55301
+1560830243989	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.clADCkYoR3YX"
+1560830261471	Marionette	INFO	Listening on port 55315
+1560830262408	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560830317442	geckodriver	INFO	geckodriver 0.19.0
+1560830317489	geckodriver	INFO	Listening on 127.0.0.1:55529
+1560830319787	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.VGzfqMesw1TE"
+1560830338423	Marionette	INFO	Listening on port 55565
+1560830338520	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560830401893	geckodriver	INFO	geckodriver 0.19.0
+1560830401929	geckodriver	INFO	Listening on 127.0.0.1:55972
+1560830405048	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.IpbvDIRSqyOC"
+[GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+1560830448516	Marionette	INFO	Listening on port 55980
+1560830449358	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560830501807	geckodriver	INFO	geckodriver 0.19.0
+1560830501834	geckodriver	INFO	Listening on 127.0.0.1:56264
+1560830505010	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.db1i5yghruEZ"
+1560830522769	Marionette	INFO	Listening on port 56273
+1560830523197	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560830572855	geckodriver	INFO	geckodriver 0.19.0
+1560830572892	geckodriver	INFO	Listening on 127.0.0.1:56495
+1560830575966	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.bOU6m1oClkme"
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 20352, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20352, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560830596921	Marionette	INFO	Listening on port 56512
+1560830597015	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 28800, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 28800, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560830652624	geckodriver	INFO	geckodriver 0.19.0
+1560830652651	geckodriver	INFO	Listening on 127.0.0.1:56734
+1560830655720	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.bBXFYHU9IvTM"
+1560830666055	Marionette	INFO	Listening on port 56743
+1560830666334	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560830718971	geckodriver	INFO	geckodriver 0.19.0
+1560830719009	geckodriver	INFO	Listening on 127.0.0.1:57188
+1560830722015	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.vppNc71pgTa2"
+1560830730538	Marionette	INFO	Listening on port 57199
+1560830732524	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560830768505	geckodriver	INFO	geckodriver 0.19.0
+1560830768512	geckodriver	INFO	Listening on 127.0.0.1:57436
+1560830771602	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.NvxiiCTjhuuk"
+1560830778582	Marionette	INFO	Listening on port 57451
+1560830779265	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560830830603	geckodriver	INFO	geckodriver 0.19.0
+1560830830631	geckodriver	INFO	Listening on 127.0.0.1:57952
+1560830833179	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.PRZLWXICQoU7"
+[GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+1560830857415	Marionette	INFO	Listening on port 57968
+1560830858280	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560830900031	geckodriver	INFO	geckodriver 0.19.0
+1560830900072	geckodriver	INFO	Listening on 127.0.0.1:58475
+1560830903066	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.ivWpfD5SdVzZ"
+1560830916201	Marionette	INFO	Listening on port 58490
+1560830918374	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560830965216	geckodriver	INFO	geckodriver 0.19.0
+1560830965243	geckodriver	INFO	Listening on 127.0.0.1:58695
+1560830968238	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.2tqIDXzRtRZZ"
+1560830974647	Marionette	INFO	Listening on port 58711
+1560830975653	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560831015637	geckodriver	INFO	geckodriver 0.19.0
+1560831015644	geckodriver	INFO	Listening on 127.0.0.1:58914
+1560831018733	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.2Y0MpjSYz4Ah"
+1560831028892	Marionette	INFO	Listening on port 58929
+1560831029257	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 27944, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 27944, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560831083791	geckodriver	INFO	geckodriver 0.19.0
+1560831083800	geckodriver	INFO	Listening on 127.0.0.1:59449
+1560831086880	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.ehGBDHu6zBRb"
+1560831093963	Marionette	INFO	Listening on port 59464
+1560831094277	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560831142283	geckodriver	INFO	geckodriver 0.19.0
+1560831142295	geckodriver	INFO	Listening on 127.0.0.1:59864
+1560831145324	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.AIpUbxaWoWMm"
+1560831156048	Marionette	INFO	Listening on port 59997
+1560831156977	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560831208931	geckodriver	INFO	geckodriver 0.19.0
+1560831208945	geckodriver	INFO	Listening on 127.0.0.1:60310
+1560831212008	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.abd6OsrvAMqF"
+1560831222216	Marionette	INFO	Listening on port 60336
+1560831222630	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560831268058	geckodriver	INFO	geckodriver 0.19.0
+1560831268095	geckodriver	INFO	Listening on 127.0.0.1:60711
+1560831271161	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.nHlrV2cfwI2u"
+1560831279351	Marionette	INFO	Listening on port 60725
+1560831279989	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560831335720	geckodriver	INFO	geckodriver 0.19.0
+1560831335748	geckodriver	INFO	Listening on 127.0.0.1:61235
+1560831338824	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.zKgzZpHfIOvl"
+1560831348292	Marionette	INFO	Listening on port 61252
+1560831350219	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560831394019	geckodriver	INFO	geckodriver 0.19.0
+1560831394057	geckodriver	INFO	Listening on 127.0.0.1:63711
+1560831397069	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.fB32stu0wxSL"
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 14524, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14524, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560831420732	Marionette	INFO	Listening on port 63724
+1560831422103	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560831466693	geckodriver	INFO	geckodriver 0.19.0
+1560831466701	geckodriver	INFO	Listening on 127.0.0.1:63984
+1560831469749	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.QPMTtuSBfaXl"
+1560831479744	Marionette	INFO	Listening on port 63999
+1560831482770	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 28744, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560831520995	geckodriver	INFO	geckodriver 0.19.0
+1560831521006	geckodriver	INFO	Listening on 127.0.0.1:64183
+1560831524123	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.XT1T1mxB0410"
+1560831532291	Marionette	INFO	Listening on port 64198
+1560831532572	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560831575891	geckodriver	INFO	geckodriver 0.19.0
+1560831575923	geckodriver	INFO	Listening on 127.0.0.1:64436
+1560831578997	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.fTvJhTHCBfT8"
+1560831586109	Marionette	INFO	Listening on port 64456
+1560831586368	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1560831628805	geckodriver	INFO	geckodriver 0.19.0
+1560831628849	geckodriver	INFO	Listening on 127.0.0.1:64750
+1560831631817	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.YSbQTjhd7QXe"
+1560831641250	Marionette	INFO	Listening on port 64811
+1560831641709	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 24428, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560831679709	geckodriver	INFO	geckodriver 0.19.0
+1560831679716	geckodriver	INFO	Listening on 127.0.0.1:65087
+1560831682767	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.wmV6w1bdZOx9"
+1560831696680	Marionette	INFO	Listening on port 65096
+1560831696716	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560831739507	geckodriver	INFO	geckodriver 0.19.0
+1560831739523	geckodriver	INFO	Listening on 127.0.0.1:65335
+1560831742630	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.8GPODJmHFJjx"
+1560831751089	Marionette	INFO	Listening on port 65350
+1560831751098	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560831800632	geckodriver	INFO	geckodriver 0.19.0
+1560831800644	geckodriver	INFO	Listening on 127.0.0.1:49205
+1560831803692	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.pxUhHxZzpAPW"
+1560831814535	Marionette	INFO	Listening on port 49222
+1560831815478	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560831859436	geckodriver	INFO	geckodriver 0.19.0
+1560831859467	geckodriver	INFO	Listening on 127.0.0.1:49388
+1560831862463	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.VCOouOQCWxx2"
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 27404, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 21584, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21584, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560831880265	Marionette	INFO	Listening on port 49405
+1560831880506	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 29560, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 29560, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560831926794	geckodriver	INFO	geckodriver 0.19.0
+1560831926804	geckodriver	INFO	Listening on 127.0.0.1:49639
+1560831929921	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.7luAI9rcINYV"
+1560831939579	Marionette	INFO	Listening on port 49650
+1560831940259	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560831983053	geckodriver	INFO	geckodriver 0.19.0
+1560831983087	geckodriver	INFO	Listening on 127.0.0.1:49862
+1560831986166	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.HjUnKhqHMKZi"
+1560831996397	Marionette	INFO	Listening on port 49877
+1560831996701	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560832041204	geckodriver	INFO	geckodriver 0.19.0
+1560832041215	geckodriver	INFO	Listening on 127.0.0.1:50113
+1560832044257	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.SMxhCK6vKeDO"
+1560832054423	Marionette	INFO	Listening on port 50128
+1560832054878	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1560832107163	geckodriver	INFO	geckodriver 0.19.0
+1560832107206	geckodriver	INFO	Listening on 127.0.0.1:50573
+1560832110250	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.hkbpcWGWrhUd"
+1560832120308	Marionette	INFO	Listening on port 50683
+1560832120931	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 21272, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 23704, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1560832171772	geckodriver	INFO	geckodriver 0.19.0
+1560832171784	geckodriver	INFO	Listening on 127.0.0.1:50825
+1560832174774	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.V9eMPZWgKs8G"
+1560832193633	Marionette	INFO	Listening on port 50841
+1560832193986	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://bjw.halodigit.com:9060/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 27856, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1561019013755	geckodriver	INFO	geckodriver 0.19.0
+1561019013822	geckodriver	INFO	Listening on 127.0.0.1:53853
+1561019016824	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.OrzRc5vVAmMS"
+1561019024644	Marionette	INFO	Listening on port 53861
+1561019024651	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 20908, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20908, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1561019050819	geckodriver	INFO	geckodriver 0.19.0
+1561019050826	geckodriver	INFO	Listening on 127.0.0.1:53954
+1561019053905	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.CyngAN9rHZMq"
+1561019063582	Marionette	INFO	Listening on port 53966
+1561019065437	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561019119010	geckodriver	INFO	geckodriver 0.19.0
+1561019119017	geckodriver	INFO	Listening on 127.0.0.1:54037
+1561019122102	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.2A3prjNu33KZ"
+1561019129402	Marionette	INFO	Listening on port 54045
+1561019129788	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561019160508	geckodriver	INFO	geckodriver 0.19.0
+1561019160517	geckodriver	INFO	Listening on 127.0.0.1:54139
+1561019163583	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.FkOi1oJdMh6h"
+1561019169934	Marionette	INFO	Listening on port 54147
+1561019171038	Marionette	WARN	TLS certificate errors will be ignored for this session
+1561019232681	geckodriver	INFO	geckodriver 0.19.0
+1561019232688	geckodriver	INFO	Listening on 127.0.0.1:54186
+1561019235768	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.BrGhKtkf5LRF"
+1561019241355	Marionette	INFO	Listening on port 54194
+1561019241507	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561019492712	geckodriver	INFO	geckodriver 0.19.0
+1561019492720	geckodriver	INFO	Listening on 127.0.0.1:54344
+1561019495814	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.b3UbPafDrPcC"
+1561019503447	Marionette	INFO	Listening on port 54352
+1561019503674	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 20468, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20468, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1561019742099	geckodriver	INFO	geckodriver 0.19.0
+1561019742107	geckodriver	INFO	Listening on 127.0.0.1:54487
+1561019745149	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.5DiFXFncMxDV"
+1561019753360	Marionette	INFO	Listening on port 54495
+1561019753466	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 20696, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20696, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1561019924716	geckodriver	INFO	geckodriver 0.19.0
+1561019924725	geckodriver	INFO	Listening on 127.0.0.1:55110
+1561019927635	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.flXe3xCuL9Th"
+1561019944208	Marionette	INFO	Listening on port 55119
+1561019944676	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561020297785	geckodriver	INFO	geckodriver 0.19.0
+1561020297793	geckodriver	INFO	Listening on 127.0.0.1:55824
+1561020300818	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.fAbB4t2xMrVx"
+1561020311691	Marionette	INFO	Listening on port 55832
+1561020312493	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 17772, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 20596, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20596, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1561020493028	geckodriver	INFO	geckodriver 0.19.0
+1561020493036	geckodriver	INFO	Listening on 127.0.0.1:56469
+1561020495912	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.tnBMsxsDUpr6"
+1561020506983	Marionette	INFO	Listening on port 56477
+1561020507962	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561020637833	geckodriver	INFO	geckodriver 0.19.0
+1561020637847	geckodriver	INFO	Listening on 127.0.0.1:56943
+1561020640925	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.FrQT8zF2wn2I"
+1561020650243	Marionette	INFO	Listening on port 56951
+1561020650750	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 19508, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1561020831452	geckodriver	INFO	geckodriver 0.19.0
+1561020831465	geckodriver	INFO	Listening on 127.0.0.1:57643
+1561020834587	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.mJXMq0bHez0E"
+1561020846117	Marionette	INFO	Listening on port 57652
+1561020846187	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561021031186	geckodriver	INFO	geckodriver 0.19.0
+1561021031228	geckodriver	INFO	Listening on 127.0.0.1:58307
+1561021034176	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.Y7wcgL6Y5LnZ"
+1561021045632	Marionette	INFO	Listening on port 58318
+1561021046079	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561021101539	geckodriver	INFO	geckodriver 0.19.0
+1561021101549	geckodriver	INFO	Listening on 127.0.0.1:58463
+1561021104692	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.U9i3bm9zSA10"
+1561021112517	Marionette	INFO	Listening on port 58471
+1561021113607	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 16992, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.81MSfGnczzXe"
+1561021162337	Marionette	INFO	Listening on port 58561
+1561021165307	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561021198182	geckodriver	INFO	geckodriver 0.19.0
+1561021198198	geckodriver	INFO	Listening on 127.0.0.1:58769
+1561021201276	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.ZnckZfPpdaXb"
+1561021211171	Marionette	INFO	Listening on port 58798
+1561021211348	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561083768068	geckodriver	INFO	geckodriver 0.19.0
+1561083768085	geckodriver	INFO	Listening on 127.0.0.1:60119
+1561083771148	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.QrpYmKRlD4gL"
+1561083778607	Marionette	INFO	Listening on port 60127
+1561083779509	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 34484, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1561083954365	geckodriver	INFO	geckodriver 0.19.0
+1561083954373	geckodriver	INFO	Listening on 127.0.0.1:60645
+1561083957405	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.0kNP3YLll4ZH"
+1561083968991	Marionette	INFO	Listening on port 60653
+1561083969474	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement
+1561084064159	geckodriver	INFO	geckodriver 0.19.0
+1561084064172	geckodriver	INFO	Listening on 127.0.0.1:60978
+1561084067240	mozrunner::runner	INFO	Running command: "d:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.cop3afGBUXP7"
+1561084074664	Marionette	INFO	Listening on port 60990
+1561084075214	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://s.ahdipay.com/pub/moment/2.10.2/moment.min.js, line 6: unreachable code after return statement

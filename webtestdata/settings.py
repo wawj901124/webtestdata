@@ -170,24 +170,57 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]   #将static加入python跟搜索路径
 
-#---------------------------测试环境------------------------------------
-#Web元素URL域名配置
-#测试环境域名
-# WEB_URL_TITLE = 'https://bjw.halodigit.com:9090'
-WEB_URL_TITLE = 'https://bjw.halodigit.com:9060'
+# #---------------------------测试环境------------------------------------
+# #Web元素URL域名配置
+# #测试环境域名
+# # WEB_URL_TITLE = 'https://bjw.halodigit.com:9090'
+# WEB_URL_TITLE = 'https://bjw.halodigit.com:9060'
+# #代理后台配置
+# AGENT_REVISE_MERCHANTID = "1002209"
+# AGENT_DETAILS_MERCHANTID = "1002213"
+# AGENT_CONTRAT_MERCHANID = "1002213"
+# AGENT_LOGIN_ACCOUNT = "81122336666"
+# AGENT_LOGIN_PASSWORD = "abc123456"
+# #管理后台配置
+# MANAGER_REVIEW_MERCHANTID = AGENT_REVISE_MERCHANTID
+# MANAGER_LOGIN_ACCOUNT = "admin@iapppay.com"
+# MANAGER_LOGIN_PASSWORD = "123456"
+#
+# #营销后台配置
+# ISXIANGWANG = False
+# #任务活动常量
+# MARKETING_CREATE_ACTIVITYID = ""
+# MARKETING_DETAIL_ACTIVITYID = ""
+# MARKETING_EDIT_ACTIVITYID = ""
+# MARKETING_EDIT_PROCESSING_ACTIVITYID = "10747"
+# MARKETING_HIGH_LINES_ACTIVITYID = ""
+# RW_DSX_EDIT_ACTIVITYID = "10754"
+# RW_JXZ_EDIT_ACTIVITYID = "10771"
+# RW_YJS_EDIT_ACTIVITYID = "10824"
+#
+# #运营活动常量
+# YY_DSX_EDIT_ACTIVITYID = "10773"
+# YY_JXZ_EDIT_ACTIVITYID = "10816"
+# YY_YJS_EDIT_ACTIVITYID = "10778"
+
+
+
+#---------------------------现网------------------------------------
+#现网域名
+WEB_URL_TITLE = 'https://m-qrindo.ahdipay.com'
 #代理后台配置
 AGENT_REVISE_MERCHANTID = "1002209"
 AGENT_DETAILS_MERCHANTID = "1002213"
 AGENT_CONTRAT_MERCHANID = "1002213"
-AGENT_LOGIN_ACCOUNT = "81122336666"
+AGENT_LOGIN_ACCOUNT = "81285610481"
 AGENT_LOGIN_PASSWORD = "abc123456"
 #管理后台配置
 MANAGER_REVIEW_MERCHANTID = AGENT_REVISE_MERCHANTID
-MANAGER_LOGIN_ACCOUNT = "admin@iapppay.com"
+MANAGER_LOGIN_ACCOUNT = "xiangkaizheng@iapppay.com"
 MANAGER_LOGIN_PASSWORD = "123456"
-
 #营销后台配置
-ISXIANGWANG = False
+ISXIANGWANG = True
+
 #任务活动常量
 MARKETING_CREATE_ACTIVITYID = ""
 MARKETING_DETAIL_ACTIVITYID = ""
@@ -202,21 +235,3 @@ RW_YJS_EDIT_ACTIVITYID = "10824"
 YY_DSX_EDIT_ACTIVITYID = "10773"
 YY_JXZ_EDIT_ACTIVITYID = "10816"
 YY_YJS_EDIT_ACTIVITYID = "10778"
-
-
-
-# #---------------------------现网------------------------------------
-# #现网域名
-# # WEB_URL_TITLE = 'https://m-mbmpay.ahdipay.com'
-# #代理后台配置
-# AGENT_REVISE_MERCHANTID = "1002209"
-# AGENT_DETAILS_MERCHANTID = "1002213"
-# AGENT_CONTRAT_MERCHANID = "1002213"
-# AGENT_LOGIN_ACCOUNT = "81285610481"
-# AGENT_LOGIN_PASSWORD = "abc123456"
-# #管理后台配置
-# MANAGER_REVIEW_MERCHANTID = AGENT_REVISE_MERCHANTID
-# MANAGER_LOGIN_ACCOUNT = "xiangkaizheng@iapppay.com"
-# MANAGER_LOGIN_PASSWORD = "123456"
-# #营销后台配置
-# ISXIANGWANG = True
