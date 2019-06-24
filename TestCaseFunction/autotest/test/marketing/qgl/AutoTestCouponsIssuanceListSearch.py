@@ -1,7 +1,8 @@
 import unittest
 
-from webtestdata.settings import WEB_URL_TITLE,MANAGER_LOGIN_ACCOUNT,MANAGER_LOGIN_PASSWORD,MARKETING_CREATE_ACTIVITYID
-
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_WEB_URL_TITLE,TEST_MANAGER_LOGIN_ACCOUNT,TEST_MANAGER_LOGIN_PASSWORD   #导入测试环境参数
+from webtestdata.settings import ONLINE_WEB_URL_TITLE,ONLINE_MANAGER_LOGIN_ACCOUNT,ONLINE_MANAGER_LOGIN_PASSWORD  #导入现网环境参数
 
 # ----------------------------------------------------------------------
 import os, django
@@ -57,8 +58,14 @@ class TestCouponsIssuanceListSearchClass(unittest.TestCase):  # 创建测试类
         self.activeweb = ActiveWeb()  # 实例化
         self.loginurl = LoginPage().pageurl
         self.activeweb.getUrl(self.loginurl)  # 打开网址
-        self.activeweb.findElementByXpathAndInput(LoginPage().account,MANAGER_LOGIN_ACCOUNT)
-        self.activeweb.findElementByXpathAndInput(LoginPage().password,MANAGER_LOGIN_PASSWORD)
+
+        if ISONLINE:
+            self.activeweb.findElementByXpathAndInput(LoginPage().account,ONLINE_MANAGER_LOGIN_ACCOUNT)
+            self.activeweb.findElementByXpathAndInput(LoginPage().password,ONLINE_MANAGER_LOGIN_PASSWORD)
+        else:
+            self.activeweb.findElementByXpathAndInput(LoginPage().account,TEST_MANAGER_LOGIN_ACCOUNT)
+            self.activeweb.findElementByXpathAndInput(LoginPage().password,TEST_MANAGER_LOGIN_PASSWORD)
+
         self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
         self.activeweb.delayTime(3)
         self.testpage = CouponsIssuanceListPage()
@@ -149,7 +156,10 @@ class TestCouponsIssuanceListSearchClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from searchdata.models import SearchData
 
-    searchdata_all = SearchData.objects.filter(webproject=u"营销系统").filter(testpage=u"优惠券发放查询列表").filter(isclicklastpage=False).order_by(
+    if ISONLINE:
+        searchdata_all = SearchData.objects.filter(webproject=u"营销系统_现网").filter(testpage=u"优惠券发放查询列表").order_by('id')
+    else:
+        searchdata_all = SearchData.objects.filter(webproject=u"营销系统").filter(testpage=u"优惠券发放查询列表").filter(isclicklastpage=False).order_by(
         'id')
     rows_count = searchdata_all.count()
 
