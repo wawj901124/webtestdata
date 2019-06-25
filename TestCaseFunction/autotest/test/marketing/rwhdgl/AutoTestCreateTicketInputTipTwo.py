@@ -4,7 +4,6 @@ from webtestdata.settings import ISONLINE    #导入是否现网配置标识
 from webtestdata.settings import TEST_WEB_URL_TITLE,TEST_MANAGER_LOGIN_ACCOUNT,TEST_MANAGER_LOGIN_PASSWORD   #导入测试环境参数
 from webtestdata.settings import ONLINE_WEB_URL_TITLE,ONLINE_MANAGER_LOGIN_ACCOUNT,ONLINE_MANAGER_LOGIN_PASSWORD  #导入现网环境参数
 
-
 # ----------------------------------------------------------------------
 import os, django
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "webtestdata.settings")
@@ -21,13 +20,8 @@ from TestCaseFunction.autotest.config.page.manager.loginPage import LoginPage   
 from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityCreatePage import ActivityCreatePage   #导入创建活动页
 from TestCaseFunction.autotest.config.page.marketing.rwhdgl.ticketCreatePage import TicketCreatePage   #导入创建优惠券页
 from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityListPage import ActivityListPage   #导入活动列表页
-from TestCaseFunction.autotest.config.page.marketing.rwhdgl.activityDetailsPage import ActivityDetialsPage #导入活动详情页
-
-
-
 
 class TestInputTipClass(unittest.TestCase):  # 创建测试类
-
 
     @classmethod  # 类方法，只执行一次，但必须要加注解@classmethod,且名字固定为setUpClass
     def setUpClass(cls):
@@ -71,34 +65,17 @@ class TestInputTipClass(unittest.TestCase):  # 创建测试类
 
         self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
         self.activeweb.delayTime(3)
-        self.testpage = ActivityCreatePage()
-        self.testpageurl =self.testpage.pageurl   #测试页面url
-        self.testpagesubmitbutton = self.testpage.submitbutton   #提交按钮
 
-        ######################创建优惠券页面###############################
-        self.ticketcreatepage = TicketCreatePage()   #创建优惠券页
-        self.ticketcreatepage_kcsl_input  = self.ticketcreatepage.kcsl_input   #第一部分# 库存数量输入框路径
-        self.ticketcreatepage_qyxq_select = self.ticketcreatepage.qyxq_select   #第一部分# 券有效期选择框路径
-        self.ticketcreatepage_yhqsm_areatext  = self.ticketcreatepage.yhqsm_areatext    #第一部分# 优惠券说明多行输入框路径
-        self.ticketcreatepage_yhqmc_input = self.ticketcreatepage.yhqmc_input    #第二部分# 优惠券名称输入框路径
-        self.ticketcreatepage_yhlx_select = self.ticketcreatepage.yhlx_select    #第二部分# 优惠类型选择框路径
-        self.ticketcreatepage_yhms_select = self.ticketcreatepage.yhms_select    #第二部分# 优惠模式选择框路径
-        self.ticketcreatepage_zdxf_input = self.ticketcreatepage.zdxf_input    #第二部分# 最低消费输入框路径
-        self.ticketcreatepage_zfqdxz_select  = self.ticketcreatepage.zfqdxz_select     #第二部分# 支付渠道限制选择框路径
-        self.ticketcreatepage_syfw_select   = self.ticketcreatepage.syfw_select     #第二部分# 使用范围选择框路径
+        self.testpage = TicketCreatePage()
+        self.testpageqyxqselect = self.testpage.qyxq_select  # 第一部分# 券有效期选择框路径
+        self.testpageyhmsselect = self.testpage.yhms_select  # 第二部分# 优惠模式选择框路径
+        self.testpagesyfwselect = self.testpage.syfw_select  # 第二部分# 使用范围选择框路径
+        self.testpageconfirmbutton = self.testpage.confirm_button_zdsh  # 页面确定按钮
 
-        self.ticketcreatepage_confirm_button = self.ticketcreatepage.confirm_button   #页面 确定按钮
-
-        ######################活动列表页###############################
-        self.activitylistpage = ActivityListPage()   #活动列表页
-        self.activitylistpage_searchtableresult = self.activitylistpage.searchtableresult
-
-        ######################待上线活动详情页###############################
-        self.activitydetialspage = ActivityDetialsPage()   #活动列表页
-
-
-
-        #pass
+        ######################创建活动页面###############################
+        self.activitycreatepage = ActivityCreatePage()
+        self.activitycreatepage_pageurl = self.activitycreatepage.pageurl
+        self.activitycreatepage_w_tjlp = self.activitycreatepage.w_tjlp    # ---活动奖励---# 未添加礼品时，“添加礼品”文字链接路径
 
 
     def tearDown(self):  # 每条用例执行测试之后都要执行此方法
@@ -115,15 +92,26 @@ class TestInputTipClass(unittest.TestCase):  # 创建测试类
     #定义inputtip函数
     def defineinputtip(self,num,isinput=None,inputxpath=None,
                        inputtext=None,inputtipxpath=None,inputtiptext=None):
-        self.activeweb.getUrl(self.testpageurl)
+        self.activeweb.getUrl(self.activitycreatepage_pageurl)
         self.activeweb.delayTime(3)
 
+        #创建活动页，点击“添加礼品”文字链接
+        self.activeweb.findElementByXpathAndClickNum(num, self.activitycreatepage_w_tjlp)  # 点击添加礼品文字链接(还未添加礼品)
+
+        #进入创建优惠券页，新建优惠券
+
+        self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.testpageqyxqselect,
+                                                                self.testpage.qyxq_select_option_xdsj)   # 选择券有效期选项为相对时间
+        self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.testpageyhmsselect,
+                                                                self.testpage.yhms_select_option_sjje)  # 优惠模式选择随机金额
+        self.activeweb.findElementByXpathAndClickOptionXpathNum(num, self.testpagesyfwselect,
+                                                                self.testpage.syfw_select_option_zdsh)   # 使用范围选择指定商户
         #是否输入input内容
         if isinput:
             if inputxpath != None and inputtext !=None:
                 self.activeweb.findElementByXpathAndInputNum(num, inputxpath, inputtext)  # 输入input内容
 
-        self.activeweb.findElementByXpathAndScriptClickNum(num, self.testpagesubmitbutton)  # 点击提交按钮
+        self.activeweb.findElementByXpathAndClickNum(num, self.testpageconfirmbutton)  # 点击确定按钮
         self.defineasserttextnum(num,inputtipxpath,inputtiptext)   #断言tip实际内容是否与预期内容一致
 
 
@@ -140,13 +128,12 @@ class TestInputTipClass(unittest.TestCase):  # 创建测试类
             # self.activeweb.outPutMyLog("%s"% value[int(tablecolnum)])
             if str(expecttext).lower() in value[int(tablecolnum)].lower():
                 self.assertTrue(True)
-                self.activeweb.outPutMyLog("在【%s】中存在:【%s】"% (value[int(tablecolnum)],expecttext))
+                self.activeweb.outPutMyLog("在%s中存在text:%s"% (value[int(tablecolnum)],expecttext))
                 notexsitflag = False
                 break
         if notexsitflag:
-            self.activeweb.outPutMyLog("在【%s】不存在：【%s】"% (tabledic,expecttext))
+            self.activeweb.outPutMyLog("在%s不存在：%s"% (tabledic,expecttext))
             self.assertTrue(False)
-
 
 
     @staticmethod    #根据不同的参数生成测试用例
@@ -160,7 +147,7 @@ class TestInputTipClass(unittest.TestCase):  # 创建测试类
 def __generateTestCases():
     from inputtip.models import InputTipData
 
-    inputtipdata_all = InputTipData.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="创建活动").order_by('id')
+    inputtipdata_all = InputTipData.objects.filter(testproject="营销系统").filter(testmodule="任务活动管理").filter(testpage="添加优惠券-2").filter(id=98).order_by('id')
     rows_count = inputtipdata_all.count()
 
     for inputtipdata in inputtipdata_all:

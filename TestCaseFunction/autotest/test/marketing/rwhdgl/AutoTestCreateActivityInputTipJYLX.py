@@ -197,7 +197,7 @@ def __generateTestCases():
         args.append(inputtipdata.inputtiptext)
 
         setattr(TestInputTipClass,
-                'test_func_%s_%s_%s_%s' % (inputtipdataid,inputtipdata.testmodule,inputtipdata.testpage, inputtipdata.testcasetitle),
+                'test_func_%s_%s_%s_%s(%s)' % (inputtipdataid,inputtipdata.testmodule,inputtipdata.testpage, inputtipdata.testcasetitle,inputtipdata.inputtiptext),
                 TestInputTipClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
 
     # file_name = "D:\\Users\\Administrator\\PycharmProjects\\seleniumweb\\sele\\dataconfig\\assertselectsearchmanager.xls"

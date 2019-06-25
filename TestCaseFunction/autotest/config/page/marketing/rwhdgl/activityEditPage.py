@@ -22,6 +22,7 @@ class ActivityEditPage:
     hdmc = ""
     hdmc_text = u"活动名称"
     hdmc_input = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[2]/div/div/input"
+    hdmc_input_delect_icon = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[2]/div/div/i[1]"
 
     hdsj = ""
     hdsj_text = u"活动时间"
@@ -30,15 +31,17 @@ class ActivityEditPage:
     hdsj_starttime_daytime = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[3]/div/div[1]/div[2]/div/div/div/div[2]/div/span[22]/em"
     hdsj_starttime_secondtime = ""
     hdsj_starttime_queding = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[3]/div/div[1]/div[2]/div/div/div/div[4]/button[3]"
+    hdsj_starttime_delete_icon = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[3]/div/div/div[1]/div/i"
     hdsj_endtime = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[4]/div/div/div[1]/div/input"
     hdsj_endtime_rightmove = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[4]/div/div/div[2]/div/div/div/div[1]/span[5]/i"
     hdsj_endtime_daytime = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[4]/div/div/div[2]/div/div/div/div[2]/div/span[24]/em"
     hdsj_endtime_secondtime = ""
     hdsj_endtime_queding = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[4]/div/div/div[2]/div/div/div/div[4]/button[3]"
-
+    hdsj_endtime_delete_icon = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[4]/div/div/div[1]/div/i"
     hdys = ""
     hdys_text = u"活动预算"
     hdys_input = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[5]/div/div/input"
+    hdys_input_delete_icon = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[5]/div/div/i[1]"
 
     tfqd = ""
     tfqd_text = u"投放渠道"
@@ -96,14 +99,10 @@ class ActivityEditPage:
     rwxz = ""
     rwxz_text = u"任务限制"
 
-    tjxz = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[1]/div/div[1]/button"
+    tjxz = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[4]/div/div[1]/div/div[1]/button"
     tjxz_text = u"添加限制"
     # ---添加限制弹框中选项---#
-    rwmb_popup_jylx_option = ""
-    rwmb_popup_zffs_option = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[1]/div/div[2]/ul/li[1]"
-    rwmb_popup_yhhdcycs_option = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[3]/div/div[1]/div/div[2]/ul/li[2]"
-    rwmb_popup_jylx_option_text = u"交易类型"
-    rwmb_popup_zffs_option_text = u"支付方式"
+    rwmb_popup_yhhdcycs_option = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[4]/div/div[1]/div/div[2]/ul/li"
     rwmb_popup_yhhdcycs_option_text = u"用户活动参与次数"
 
 
@@ -227,6 +226,9 @@ class ActivityEditPage:
 
     cancelbutton ="/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/span[1]"
     submitbutton ="/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/span[2]"
+
+
+
 
 
 

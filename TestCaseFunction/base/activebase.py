@@ -21,7 +21,7 @@ from selenium.webdriver.common.action_chains import ActionChains   #导入Action
 
 
 from TestCaseFunction.util.gettimestr import GetTimeStr   #导入获取时间串函数
-from log.my_log import UserLog
+from TestCaseFunction.log.my_log import UserLog
 
 
 
@@ -182,6 +182,14 @@ class  ActiveWeb:
         # self.delayTime(3)
         displaytext = self.findElementByXpathAndReturnValueNum(num,path,'value')
         self.outPutMyLog("输入内容：%s;显示内容：%s"% (inputcontent,displaytext))
+        # self.delayTime
+
+    #通过xpath查找元素，然后情况输入框中的内容
+    def findElementByXpathAndDeleteInputContentNum(self,num,path):
+        ele = self.getEleImage(num, path)
+        displaytext = self.findElementByXpathAndReturnValueNum(num,path,'value')
+        ele.clear()   #清除输入框内容
+        self.outPutMyLog("已经删除内容：%s."% displaytext)
         # self.delayTime(3000)
 
     #通过xpath查找元素，移除其Readonly属性然后输入内容
