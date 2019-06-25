@@ -46,6 +46,7 @@ class RunAllTest(unittest.TestCase):
         gettime = GetTimeStr()
         filename = '%s/report/%s_report.html' % (str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),gettime.getTimeStr())
         fp = open(filename, 'wb')
+        self.outPutMyLog('The report path:%s' % filename)
 
         # 定义测试报告
         runner = HTMLTestRunner.HTMLTestRunner(
@@ -98,7 +99,8 @@ class RunAllTest(unittest.TestCase):
 
 if __name__ == '__main__':
     runat = RunAllTest()
-    runat.run()
+    # runat.run()
+    runat.runAllTest()
 
 
 
