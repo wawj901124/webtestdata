@@ -27,9 +27,10 @@ from TestCaseFunction.log.my_log import UserLog
 
 class  ActiveWeb:
     def __init__(self):
-        # self.driver = self.getChromeDriver()
+        self.driver = self.getChromeDriver()
         # self.driver = self.getIeDriver()
-        self.driver = self.getFirefoxDriver()
+        # self.driver = self.getFirefoxDriver()
+
         self.timeStr = GetTimeStr()   #实例化
 
     #使用火狐浏览器
@@ -48,9 +49,13 @@ class  ActiveWeb:
     def getChromeDriver(self):
         chrome_options = webdriver.ChromeOptions()   #为驱动加入无界面配置
         chrome_options.add_argument('--headless')   #为驱动加入无界面配置
-        chromedriver = webdriver.Chrome(chrome_options=chrome_options)
+        # chromedriver = webdriver.Chrome(chrome_options=chrome_options)
 
         # chromedriver = webdriver.Chrome()  # 需要把驱动所在路径配置到系统环境变量里
+        path = r"D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\driver\chromedriver.exe"  #配置驱动路径
+        option = webdriver.ChromeOptions()
+        option.add_argument('--user-data-dir=C:\\Users\\Administrator\\Local\\Google\\Chrome\\User Data\\Default')  # 设置成用户自己的数据目录
+        chromedriver = webdriver.Chrome(executable_path=path,chrome_options=option)
         return  chromedriver
 
     #使用IE浏览器
