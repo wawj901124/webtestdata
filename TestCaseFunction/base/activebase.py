@@ -52,7 +52,9 @@ class  ActiveWeb:
         # chromedriver = webdriver.Chrome(chrome_options=chrome_options)
 
         # chromedriver = webdriver.Chrome()  # 需要把驱动所在路径配置到系统环境变量里
-        path = r"D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\driver\chromedriver.exe"  #配置驱动路径
+        path = r"%s/driver/chromedriver.exe"% str(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))   #配置驱动路径
+        print("path:%s" % path)
+        # path = r"D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\driver\chromedriver.exe"  #配置驱动路径
         option = webdriver.ChromeOptions()
         option.add_argument('--user-data-dir=C:\\Users\\Administrator\\Local\\Google\\Chrome\\User Data\\Default')  # 设置成用户自己的数据目录
         chromedriver = webdriver.Chrome(executable_path=path,chrome_options=option)
