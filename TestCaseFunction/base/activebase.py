@@ -57,6 +57,7 @@ class  ActiveWeb:
         # path = r"D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\driver\chromedriver.exe"  #配置驱动路径
         option = webdriver.ChromeOptions()
         option.add_argument('--user-data-dir=C:\\Users\\Administrator\\Local\\Google\\Chrome\\User Data\\Default')  # 设置成用户自己的数据目录
+                                                                    #浏览器输入chrome://version 下个人资料路径就是自己的数据目录
         chromedriver = webdriver.Chrome(executable_path=path,chrome_options=option)
         return  chromedriver
 
