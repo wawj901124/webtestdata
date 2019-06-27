@@ -27,9 +27,9 @@ from TestCaseFunction.log.my_log import UserLog
 
 class  ActiveWeb:
     def __init__(self):
-        self.driver = self.getChromeDriver()
+        # self.driver = self.getChromeDriver()
         # self.driver = self.getIeDriver()
-        # self.driver = self.getFirefoxDriver()
+        self.driver = self.getFirefoxDriver()
 
         self.timeStr = GetTimeStr()   #实例化
 
@@ -59,6 +59,8 @@ class  ActiveWeb:
         option.add_argument('--user-data-dir=C:\\Users\\Administrator\\Local\\Google\\Chrome\\User Data\\Default')  # 设置成用户自己的数据目录
                                                                     #浏览器输入chrome://version 下个人资料路径就是自己的数据目录
         chromedriver = webdriver.Chrome(executable_path=path,chrome_options=option)
+        chromedriver.maximize_window()   #窗口最大化
+        self.delayTime(5)
         return  chromedriver
 
     #使用IE浏览器
