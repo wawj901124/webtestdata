@@ -1,6 +1,8 @@
 import unittest
 
-from webtestdata.settings import WEB_URL_TITLE,AGENT_LOGIN_ACCOUNT,AGENT_LOGIN_PASSWORD
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_AGENT_LOGIN_ACCOUNT,TEST_AGENT_LOGIN_PASSWORD   #导入测试环境参数
+from webtestdata.settings import ONLINE_AGENT_LOGIN_ACCOUNT,ONLINE_AGENT_LOGIN_PASSWORD  #导入现网环境参数
 
 
 # ----------------------------------------------------------------------
@@ -127,8 +129,14 @@ class TestCheckContractClass(unittest.TestCase):  # 创建测试类
         cls.activeweb = ActiveWeb()  # 实例化
         cls.loginurl = LoginPage().pageurl
         cls.activeweb.getUrl(cls.loginurl)  # 打开网址
-        cls.activeweb.findElementByXpathAndInput(LoginPage().account,AGENT_LOGIN_ACCOUNT)
-        cls.activeweb.findElementByXpathAndInput(LoginPage().password,AGENT_LOGIN_PASSWORD)
+
+        if ISONLINE:
+            cls.activeweb.findElementByXpathAndInput(LoginPage().account,ONLINE_AGENT_LOGIN_ACCOUNT)
+            cls.activeweb.findElementByXpathAndInput(LoginPage().password,ONLINE_AGENT_LOGIN_PASSWORD)
+        else:
+            cls.activeweb.findElementByXpathAndInput(LoginPage().account,TEST_AGENT_LOGIN_ACCOUNT)
+            cls.activeweb.findElementByXpathAndInput(LoginPage().password,TEST_AGENT_LOGIN_PASSWORD)
+
         cls.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
         cls.activeweb.delayTime(3)
         cls.testpage = MerchantContractPage()

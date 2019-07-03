@@ -1,7 +1,13 @@
-from webtestdata.settings import WEB_URL_TITLE
+
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_WEB_URL_TITLE   #导入测试环境参数
+from webtestdata.settings import ONLINE_WEB_URL_TITLE  #导入现网环境参数
 
 class AddCompanyMerchantPage:
-    pageurl = "%s/nereus/agent/v/#/merchant/add" % WEB_URL_TITLE
+    if ISONLINE:
+        pageurl = "%s/nereus/agent/v/#/merchant/add" % ONLINE_WEB_URL_TITLE
+    else:
+        pageurl = "%s/nereus/agent/v/#/merchant/add" % TEST_WEB_URL_TITLE
     #---Merchant info---#
     merchantinfo = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[1]/span"
     brandnameinput = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div[1]/div[2]/div/div[1]/div/div/input"

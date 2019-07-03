@@ -1,6 +1,8 @@
 import unittest
 
-from webtestdata.settings import WEB_URL_TITLE,AGENT_LOGIN_ACCOUNT,AGENT_LOGIN_PASSWORD
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_AGENT_LOGIN_ACCOUNT,TEST_AGENT_LOGIN_PASSWORD   #导入测试环境参数
+from webtestdata.settings import ONLINE_AGENT_LOGIN_ACCOUNT,ONLINE_AGENT_LOGIN_PASSWORD  #导入现网环境参数
 
 
 # ----------------------------------------------------------------------
@@ -59,8 +61,13 @@ class TestAddMerchantClass(unittest.TestCase):  # 创建测试类
         self.activeweb = ActiveWeb()  # 实例化
         self.loginurl = LoginPage().pageurl
         self.activeweb.getUrl(self.loginurl)  # 打开网址
-        self.activeweb.findElementByXpathAndInput(LoginPage().account,AGENT_LOGIN_ACCOUNT)
-        self.activeweb.findElementByXpathAndInput(LoginPage().password,AGENT_LOGIN_PASSWORD)
+        if ISONLINE:
+            self.activeweb.findElementByXpathAndInput(LoginPage().account,ONLINE_AGENT_LOGIN_ACCOUNT)
+            self.activeweb.findElementByXpathAndInput(LoginPage().password,ONLINE_AGENT_LOGIN_PASSWORD)
+        else:
+            self.activeweb.findElementByXpathAndInput(LoginPage().account,TEST_AGENT_LOGIN_ACCOUNT)
+            self.activeweb.findElementByXpathAndInput(LoginPage().password,TEST_AGENT_LOGIN_PASSWORD)
+
         self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
         self.activeweb.delayTime(3)
         self.testpage = AddIndividuMerchantPage()

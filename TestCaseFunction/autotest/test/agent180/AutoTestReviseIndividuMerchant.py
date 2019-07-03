@@ -16,7 +16,7 @@ from TestCaseFunction.util.operation_json import OperationJson
 from TestCaseFunction.util.gettimestr import GetTimeStr
 
 from TestCaseFunction.autotest.config.page.agent180.loginPage import LoginPage
-from TestCaseFunction.autotest.config.page.agent180.revisePage import RevisePage
+from TestCaseFunction.autotest.config.page.agent180.reviseIndividuMerchantPage import ReviseIndividuMerchantPage
 from TestCaseFunction.autotest.config.page.agent180.addMerchantSuccessPage import AddMerchantSuccessPage
 from TestCaseFunction.autotest.config.page.agent180.addMerchantDonePage import AddMerchantDonePage
 from TestCaseFunction.autotest.config.page.agent180.merchantListPage import MerchantListPage
@@ -56,7 +56,7 @@ class TestReviseClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndInput(LoginPage().password,AGENT_LOGIN_PASSWORD)
         self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
         self.activeweb.delayTime(3)
-        self.testpage = RevisePage()
+        self.testpage = ReviseIndividuMerchantPage()
         self.testpageurl =self.testpage.pageurl   #测试页面url
         self.activeweb.getUrl(self.testpageurl)
         self.activeweb.delayTime(3)

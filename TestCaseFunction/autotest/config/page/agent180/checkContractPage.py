@@ -1,7 +1,17 @@
-from webtestdata.settings import WEB_URL_TITLE,AGENT_CONTRAT_MERCHANID
+
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_WEB_URL_TITLE   #导入测试环境参数
+from webtestdata.settings import ONLINE_WEB_URL_TITLE  #导入现网环境参数
+
+from TestCaseFunction.util.gettimestr import GetTimeStr
 
 class MerchantContractPage:
-    pageurl = "%s/nereus/agent/v/#/merchant/contrat/%s" % (WEB_URL_TITLE,AGENT_CONTRAT_MERCHANID)
+    filename = "merchantid.txt"
+    checkcontractmerchantid = GetTimeStr().readText(filename)
+    if ISONLINE:
+        pageurl = "%s/nereus/agent/v/#/merchant/contrat/%s" % (ONLINE_WEB_URL_TITLE,checkcontractmerchantid)
+    else:
+        pageurl = "%s/nereus/agent/v/#/merchant/contrat/%s" % (TEST_WEB_URL_TITLE, checkcontractmerchantid)
 
     #---Bank account---#
     bankaccount = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/div/div[1]/div[1]/span"

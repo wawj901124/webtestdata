@@ -1,7 +1,17 @@
-from webtestdata.settings import WEB_URL_TITLE,AGENT_REVISE_MERCHANTID
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_WEB_URL_TITLE   #导入测试环境参数
+from webtestdata.settings import ONLINE_WEB_URL_TITLE  #导入现网环境参数
 
-class RevisePage:
-    pageurl = "%s/nereus/agent/v/#/merchant/revice/%s" % (WEB_URL_TITLE,AGENT_REVISE_MERCHANTID)
+from TestCaseFunction.util.gettimestr import GetTimeStr
+
+
+class ReviseIndividuMerchantPage:
+    filename = "merchantid.txt"
+    revisemerchantid = GetTimeStr().readText(filename)
+    if ISONLINE:
+        pageurl = "%s/nereus/agent/v/#/merchant/revice/%s" % (ONLINE_WEB_URL_TITLE,revisemerchantid)
+    else:
+        pageurl = "%s/nereus/agent/v/#/merchant/revice/%s" % (TEST_WEB_URL_TITLE, revisemerchantid)
 
     auditnotapprovedtext = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div/p[2]"
     submitagainbutton = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div/button"
