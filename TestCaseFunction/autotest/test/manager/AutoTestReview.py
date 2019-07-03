@@ -1,6 +1,9 @@
 import unittest
 
 from webtestdata.settings import WEB_URL_TITLE,MANAGER_LOGIN_ACCOUNT,MANAGER_LOGIN_PASSWORD,MANAGER_REVIEW_MERCHANTID
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_WEB_URL_TITLE,TEST_MANAGER_LOGIN_ACCOUNT,TEST_MANAGER_LOGIN_PASSWORD   #导入测试环境参数
+from webtestdata.settings import ONLINE_WEB_URL_TITLE,ONLINE_MANAGER_LOGIN_ACCOUNT,ONLINE_MANAGER_LOGIN_PASSWORD  #导入现网环境参数
 
 
 # ----------------------------------------------------------------------
@@ -28,15 +31,18 @@ class TestReviewClass(unittest.TestCase):  # 创建测试类
         # cls.activeweb = ActiveWeb()  # 实例化
         # cls.loginurl = LoginPage().pageurl
         # cls.activeweb.getUrl(cls.loginurl)  # 打开网址
-        # cls.activeweb.findElementByXpathAndInput(LoginPage().account,AGENT_LOGIN_ACCOUNT)
-        # cls.activeweb.findElementByXpathAndInput(LoginPage().password,AGENT_LOGIN_PASSWORD)
-        # cls.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
+        # if ISONLINE:
+        #     cls.activeweb.findElementByXpathAndInput(LoginPage().account, ONLINE_MANAGER_LOGIN_ACCOUNT)
+        #     cls.activeweb.findElementByXpathAndInput(LoginPage().password, ONLINE_MANAGER_LOGIN_PASSWORD)
+        # else:
+        #     cls.activeweb.findElementByXpathAndInput(LoginPage().account, TEST_MANAGER_LOGIN_ACCOUNT)
+        #     cls.activeweb.findElementByXpathAndInput(LoginPage().password, TEST_MANAGER_LOGIN_PASSWORD)
+        #
+        # cls.activeweb.findElementByXpathAndScriptClick(LoginPage().loginbutton)
         # cls.activeweb.delayTime(3)
-        # cls.testpage = RevisePage()
-        # cls.testpageurl =cls.testpage.pageurl   #测试页面url
-        # cls.activeweb.getUrl(cls.testpageurl)
+        # cls.testpage = ReviewPage()
+        # cls.activeweb.getUrl(MerchantListPage().pageurl)
         # cls.activeweb.delayTime(3)
-
         pass
 
     @classmethod  # 类方法，只执行一次，但必须要加注解@classmethod,且名字固定为tearDownClass
@@ -48,8 +54,14 @@ class TestReviewClass(unittest.TestCase):  # 创建测试类
         self.activeweb = ActiveWeb()  # 实例化
         self.loginurl = LoginPage().pageurl
         self.activeweb.getUrl(self.loginurl)  # 打开网址
-        self.activeweb.findElementByXpathAndInput(LoginPage().account,MANAGER_LOGIN_ACCOUNT)
-        self.activeweb.findElementByXpathAndInput(LoginPage().password,MANAGER_LOGIN_PASSWORD)
+
+        if ISONLINE:
+            self.activeweb.findElementByXpathAndInput(LoginPage().account,ONLINE_MANAGER_LOGIN_ACCOUNT)
+            self.activeweb.findElementByXpathAndInput(LoginPage().password,ONLINE_MANAGER_LOGIN_PASSWORD)
+        else:
+            self.activeweb.findElementByXpathAndInput(LoginPage().account,TEST_MANAGER_LOGIN_ACCOUNT)
+            self.activeweb.findElementByXpathAndInput(LoginPage().password,TEST_MANAGER_LOGIN_PASSWORD)
+
         self.activeweb.findElementByXpathAndScriptClick(LoginPage().loginbutton)
         self.activeweb.delayTime(3)
         self.testpage = ReviewPage()

@@ -1,7 +1,17 @@
-from webtestdata.settings import WEB_URL_TITLE,AGENT_REVISE_MERCHANTID
+
+from webtestdata.settings import ISONLINE    #导入是否现网配置标识
+from webtestdata.settings import TEST_WEB_URL_TITLE   #导入测试环境参数
+from webtestdata.settings import ONLINE_WEB_URL_TITLE  #导入现网环境参数
+
+from TestCaseFunction.util.gettimestr import GetTimeStr
 
 class ReviewPage:
-    pageurl = "%s/nereus/manager/index#/merchant/list" % WEB_URL_TITLE
+    filename = "merchantid.txt"
+    reviewmerchantid = GetTimeStr().readText(filename)
+    if ISONLINE:
+        pageurl = "%s/nereus/manager/index#/merchant/aduit/%s" % (ONLINE_WEB_URL_TITLE,reviewmerchantid)
+    else:
+        pageurl = "%s/nereus/manager/index#/merchant/list" % (TEST_WEB_URL_TITLE,reviewmerchantid)
 
     # ---Merchant info---#
     merchantinfo = "/html/body/div[1]/div/div[2]/div[2]/div/div/div[1]/div/form/div[2]/div[1]/div[1]/span"
