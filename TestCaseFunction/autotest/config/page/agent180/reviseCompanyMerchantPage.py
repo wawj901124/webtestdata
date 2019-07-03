@@ -5,7 +5,7 @@ from webtestdata.settings import ONLINE_WEB_URL_TITLE  #导入现网环境参数
 from TestCaseFunction.util.gettimestr import GetTimeStr
 
 
-class ReviseIndividuMerchantPage:
+class ReviseCompanyMerchantPage:
     filename = "merchantid.txt"
     revisemerchantid = GetTimeStr().readText(filename)
     if ISONLINE:
