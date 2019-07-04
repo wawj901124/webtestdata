@@ -16,6 +16,14 @@ class GetTimeStr:
         # print("当前时间：",now_time)
         # print("时间串：",timestr)
         return timestr
+    def getTimeStrNY(self):
+        now_time = datetime.datetime.now()
+        timestr = now_time.strftime('%Y%m')
+        self.outPutMyLog("当前时间年月：%s"% now_time)
+        self.outPutMyLog("时间串年月：%s"% timestr)
+        # print("当前时间：",now_time)
+        # print("时间串：",timestr)
+        return timestr
 
     def outPutMyLog(self,context):
         mylog = UserLog(context)
@@ -33,6 +41,13 @@ class GetTimeStr:
                 sxhdmcinputtext =line
                 self.outPutMyLog("将文件[%s]中第一行内容【%s】返回" % (filename,sxhdmcinputtext))
                 return sxhdmcinputtext
+
+    def createdir(self,filedir):
+        if os.path.exists(filedir):
+            self.outPutMyLog("已经存在目录：%s" % filedir)
+        else:
+            os.mkdir(filedir)
+            self.outPutMyLog("已经创建目录：%s" % filedir)
 
 
 

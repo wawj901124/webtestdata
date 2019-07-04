@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'addticket.apps.AddticketConfig',  #注册addticket
     'processingActivity.apps.ProcessingactivityConfig',   #注册processingActivity
     'inputtip.apps.InputtipConfig',   #注册inputtip
+    'reportrecord.apps.ReportrecordConfig',   #注册reportrecord
 
 
 ]
@@ -81,6 +82,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',   #导入media上下文的处理器，为了使配置的{{MEDIA_URL}}生效
             ],
         },
     },
@@ -170,6 +172,12 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]   #将static加入python跟搜索路径
 
+MEDIA_URL = '/media/'   #配置上传文件跟目录
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')    #MEDIA_ROOT只能设置一个，根目录,把media与根目录BASE_DIR连接起来
+
+DJANGO_SERVER_YUMING = "http://127.0.0.1:8060"
+
+
 # #---------------------------测试环境------------------------------------
 # #Web元素URL域名配置
 # #测试环境域名
@@ -240,8 +248,8 @@ YY_YJS_EDIT_ACTIVITYID = "10778"
 
 ##################################现网和测试环境无需注销版配置#####################################################################################################
 #是否是现网标志配置
-# ISONLINE = False
-ISONLINE = True
+ISONLINE = False
+# ISONLINE = True
 #---------------------------测试环境------------------------------------
 #Web元素URL域名配置
 #测试环境域名

@@ -2,6 +2,14 @@
 
 __author__ = 'bobby'
 __date__ = '2018/7/26 14:59'
+# ----------------------------------------------------------------------
+import os, django
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "webtestdata.settings")
+django.setup()
+# ----------------------------------------------------------------------
+#独运行某一个py文件时会出现如下错误：django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.，以上内容可以解决此问题,加载django中的App
+from webtestdata.settings import MEDIA_ROOT    #导入Settings中配置的MEDIA_ROOT
+
 import time   #导入时间
 import os
 import traceback
@@ -119,7 +127,8 @@ class  ActiveWeb:
                 # print("最终找到元素")
             except Exception as e:
                 self.printredword()
-                self.getScreenshot()
+                self.getScreenshotAboutMySQL()  #截图关联django服务
+                # self.getScreenshot()  #截图不关联django服务
                 self.outPutMyLog("停顿5秒后再次查找依然未找到元素.问题描述：%s"% e)
                 # print("停顿5秒后再次查找依然未找到元素，关闭驱动.问题描述：",e)
                 self.printnormalword()
@@ -512,15 +521,42 @@ class  ActiveWeb:
         self.printredword()
         self.outPutMyLog("调用截取图片函数")
         # print("调用截取图片函数")
-        tStr = self.getTimeStr()
+        tStr = self.getTimeStr()   #获取当前时间串
+        currentny = self.getTimeStrNY()   #获取当前时间的年月
         # path = "../imagefile/%s.png"% tStr
-        path = '%s/screenshots/screenpicture_%s.png' % (
-        str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), tStr)
+        # path = '%s/screenshots/screenpicture_%s.png' % (
+        # str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), tStr)
+        firedir = r'%s/media/report/%s/screenshots/' % (os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),currentny)
+        self.createdir(firedir)
+        path = '%s/screenpicture_%s.png' % (firedir,tStr)
+        print(path)
         self.printnormalword()
         driver.get_screenshot_as_file(path)
         self.outPutMyLog("*****")
         # print("*****")
         self.outPutMyLog(path)
+        # print(path)
+        self.outPutMyLog("*****")
+        # print("*****")
+        return path
+
+    #获取页面截图
+    def getScreenshotAboutMySQL(self):
+        driver = self.driver
+        self.printredword()
+        self.outPutMyLog("调用截取图片函数")
+        # print("调用截取图片函数")
+        tStr = self.getTimeStr()   #获取当前时间串
+        currentny = self.getTimeStrNY()   #获取当前时间的年月
+        firedir = r'%s/media/report/%s/screenshots/' % (os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),currentny)
+        self.createdir(firedir)
+        path = '%s/screenpicture_%s.png' % (firedir,tStr)
+        pathaboutmysql = r'media\report\%s\screenshots\screenpicture_%s.png'%(currentny,tStr)
+        self.printnormalword()
+        driver.get_screenshot_as_file(path)
+        self.outPutMyLog("*****")
+        # print("*****")
+        self.outPutMyLog(pathaboutmysql)  #打印截图路径，供报告截图使用
         # print(path)
         self.outPutMyLog("*****")
         # print("*****")
@@ -611,6 +647,10 @@ class  ActiveWeb:
         tStr = self.timeStr.getTimeStr()
         return tStr
 
+    def getTimeStrNY(self):
+        tStrNY = self.timeStr.getTimeStrNY()
+        return tStrNY
+
 
     #获取cookies
     def getCookies(self):
@@ -685,6 +725,15 @@ class  ActiveWeb:
         action.move_by_offset(xoffset, yoffset).click().perform()  #点击空白区域：坐标（0，0）
         self.outPutMyLog("模拟点击空白区域（点击坐标（%s，%s））" % (xoffset, yoffset))
         self.delayTime(1)
+
+    def createdir(self,filedir):
+        if os.path.exists(filedir):
+            self.outPutMyLog("已经存在目录：%s" % filedir)
+        else:
+            os.mkdir(filedir)
+            self.outPutMyLog("已经创建目录：%s" % filedir)
+
+
 
 
     #关闭浏览器
