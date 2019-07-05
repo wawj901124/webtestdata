@@ -22,10 +22,24 @@ class UserLog(object):
         self.logger.addHandler(consle)   #将日志放到流处理中
         return consle
 
+    def getTimeStrNY(self):
+        now_time = datetime.now()
+        timestrny = now_time.strftime('%Y%m%d')
+        return timestrny
+
+    def createdir(self,filedir):
+        if not os.path.exists(filedir):
+            os.mkdir(filedir)   #创建目录
+
     def createLogFile(self):   #创建日志名称
         base_dir = os.path.dirname(os.path.abspath(__file__))  # 获取当前文件的路径的父路径保存为base_dir
+        logsdir = base_dir+"/"+"logs"
+        self.createdir(logsdir)
+        logsNYdir = base_dir+"/"+"logs"+"/"+self.getTimeStrNY()
+        self.createdir(logsNYdir)
         log_dir = os.path.join(base_dir, "logs")  # 获取log下的logs路径，保存为log_dir(log目录)
-        log_file = datetime.now().strftime("%Y-%m-%d") + ".log"  # 用时间拼接成log文件名
+        log_dir = os.path.join(log_dir, self.getTimeStrNY())  # 获取log下的logs路径，保存为log_dir(log目录)
+        log_file = datetime.now().strftime("%Y-%m-%d-%H") + ".log"  # 用时间拼接成log文件名
         log_name = log_dir + "/" + log_file  # 拼接出整体的log名字
         # print(log_name)
         return log_name
