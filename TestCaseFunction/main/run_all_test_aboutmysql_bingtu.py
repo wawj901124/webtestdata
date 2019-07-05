@@ -32,7 +32,17 @@ from TestCaseFunction.log.my_log import UserLog
 
 class RunAllTest(unittest.TestCase):
 
-    def runAllTest(self):
+    def runAllTest(self,testproject=None,testmodule=None):
+
+        if testproject ==None:
+            testproject = u"测试项目"
+        else:
+            testproject = testproject
+        if testmodule ==None:
+            testmodule = u"测试模块"
+        else:
+            testmodule = testmodule
+
         #将用例组件成数组
         alltestnames = caselist()
         suite=unittest.TestSuite()
@@ -64,7 +74,7 @@ class RunAllTest(unittest.TestCase):
         # 定义测试报告
         runner = HTMLTestRunner.HTMLTestRunner(
             stream=fp,
-            title=u'python 自动化测试_测试报告',
+            title=u'%s_%s 自动化测试_测试报告'% (testproject,testmodule),
             description=u'用例执行情况：',
             verbosity=2)   #verbosity=2,输出测试用例中打印的信息
         runner.run(suite)
@@ -73,6 +83,8 @@ class RunAllTest(unittest.TestCase):
         #保存报告到数据库
         from reportrecord.models import Report
         reportrd = Report()  # 数据库的对象等于Report,实例化
+        reportrd.testproject = testproject
+        reportrd.testmodule = testmodule
         reportrd.reportname = reporttimestr
         print(reportname)
         reportrd.reportfile = reportname
@@ -121,7 +133,7 @@ class RunAllTest(unittest.TestCase):
 if __name__ == '__main__':
     runat = RunAllTest()
     # runat.run()
-    runat.runAllTest()
+    runat.runAllTest(testproject=u"代理商",testmodule=u"登录")
 
 
 

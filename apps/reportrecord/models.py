@@ -4,6 +4,8 @@ from webtestdata.settings import DJANGO_SERVER_YUMING
 
 # Create your models here.
 class Report(models.Model):
+    testproject = models.CharField(max_length=50, default="", verbose_name=u"测试项目")
+    testmodule = models.CharField(max_length=50, default="", verbose_name=u"项目模块")
     reportname = models.CharField(max_length=20, default="", verbose_name=u"测试执行开始时间串")
     reportfile = models.FileField(upload_to="report/%Y%m" , verbose_name=u"报告文件", max_length=1000)
     # reportimage = models.ImageField(upload_to="report/%Y%m/screenshots/",verbose_name=u"报告中错误截图",max_length=1000,height_field="image_height",width_field="image_width")   #图片类型，可以定义宽度（width_field）和高度（height_field）
