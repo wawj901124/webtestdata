@@ -22,10 +22,20 @@ class UserLog(object):
         self.logger.addHandler(consle)   #将日志放到流处理中
         return consle
 
+    def getTimeStrN(self):
+        now_time = datetime.now()
+        timestrn = now_time.strftime('%Y')
+        return timestrn
+
     def getTimeStrNY(self):
         now_time = datetime.now()
-        timestrny = now_time.strftime('%Y%m%d')
+        timestrny = now_time.strftime('%Y%m')
         return timestrny
+
+    def getTimeStrNYR(self):
+        now_time = datetime.now()
+        timestrnyr = now_time.strftime('%Y%m%d')
+        return timestrnyr
 
     def createdir(self,filedir):
         if not os.path.exists(filedir):
@@ -35,10 +45,16 @@ class UserLog(object):
         base_dir = os.path.dirname(os.path.abspath(__file__))  # 获取当前文件的路径的父路径保存为base_dir
         logsdir = base_dir+"/"+"logs"
         self.createdir(logsdir)
-        logsNYdir = base_dir+"/"+"logs"+"/"+self.getTimeStrNY()
+        logsNdir = base_dir+"/"+"logs"+"/"+self.getTimeStrN()
+        self.createdir(logsNdir)
+        logsNYdir = base_dir+"/"+"logs"+"/"+self.getTimeStrN()+"/"+self.getTimeStrNY()
         self.createdir(logsNYdir)
+        logsNYRdir = base_dir+"/"+"logs"+"/"+self.getTimeStrN()+"/"+self.getTimeStrNY()+"/"+self.getTimeStrNYR()
+        self.createdir(logsNYRdir)
         log_dir = os.path.join(base_dir, "logs")  # 获取log下的logs路径，保存为log_dir(log目录)
+        log_dir = os.path.join(log_dir, self.getTimeStrN())  # 获取log下的logs路径，保存为log_dir(log目录)
         log_dir = os.path.join(log_dir, self.getTimeStrNY())  # 获取log下的logs路径，保存为log_dir(log目录)
+        log_dir = os.path.join(log_dir, self.getTimeStrNYR())  # 获取log下的logs路径，保存为log_dir(log目录)
         log_file = datetime.now().strftime("%Y-%m-%d-%H") + ".log"  # 用时间拼接成log文件名
         log_name = log_dir + "/" + log_file  # 拼接出整体的log名字
         # print(log_name)
