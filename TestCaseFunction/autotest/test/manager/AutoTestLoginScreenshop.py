@@ -65,6 +65,31 @@ class TestReviewMerchantClass(unittest.TestCase):  # 创建测试类
         self.activeweb.findElementByXpathAndClick("X")
         self.activeweb.delayTime(3)
 
+    #自动审核商户
+    @unittest.skip("testok")
+    def testok(self):
+        self.activeweb.findElementByXpathAndInput(LoginPage().account,MANAGER_LOGIN_ACCOUNT)
+        self.activeweb.findElementByXpathAndInput(LoginPage().password,MANAGER_LOGIN_PASSWORD)
+        self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
+        self.activeweb.delayTime(3)
+
+    #自动审核商户
+    @unittest.skip("testf")
+    def testf(self):
+        self.activeweb.findElementByXpathAndInput(LoginPage().account,MANAGER_LOGIN_ACCOUNT)
+        self.activeweb.findElementByXpathAndInput(LoginPage().password,MANAGER_LOGIN_PASSWORD)
+        self.activeweb.findElementByXpathAndClick(LoginPage().loginbutton)
+        self.activeweb.delayTime(3)
+        self.assertTrue(False)
+
+    #自动审核商户
+    @unittest.skip("test02")
+    def test02(self):
+        self.activeweb.findElementByXpathAndInput(LoginPage().account,MANAGER_LOGIN_ACCOUNT)
+        self.activeweb.findElementByXpathAndInput(LoginPage().password,MANAGER_LOGIN_PASSWORD)
+        self.activeweb.findElementByXpathAndClick("X")
+        self.activeweb.delayTime(3)
+
 
 
 if __name__ == '__main__':
