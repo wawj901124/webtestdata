@@ -72,7 +72,14 @@ class UserLog(object):
         return file_handle
 
     def printLog(self):   #打印log
-        self.logger.debug(self.context)   #打印日志
+        # self.logger.debug(self.context)   #打印日志
+        self.logger.info(self.context)  # 打印日志
+
+    def printErrorLog(self):   #打印log
+        # self.logger.debug(self.context)   #打印日志
+        self.logger.error(self.context)  # 打印日志
+
+
 
     def closeConsoleOutputLog(self): #关闭控制台日志输出
         self.consle.close()  # 关闭流
@@ -88,9 +95,16 @@ class UserLog(object):
         self.closeConsoleOutputLog()
         self.closeopenFileOutputLog()
 
+    def runErrorLog(self):
+        self.printErrorLog()
+        self.closeConsoleOutputLog()
+        self.closeopenFileOutputLog()
+
 
 if __name__ == "__main__":
     userlog = UserLog("mylogtest")
     userlog.runMyLog()
+    userlog = UserLog("mylogtest")
+    userlog.runErrorLog()
 
 

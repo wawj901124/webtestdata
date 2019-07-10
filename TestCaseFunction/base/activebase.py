@@ -90,6 +90,10 @@ class  ActiveWeb:
         mylog = UserLog(context)
         mylog.runMyLog()
 
+    def outPutErrorMyLog(self,context):
+        mylog = UserLog(context)
+        mylog.runErrorLog()
+
     #打开网址
     def getUrl(self,url):
         self.driver.get(url)
@@ -129,7 +133,8 @@ class  ActiveWeb:
                 self.printredword()
                 self.getScreenshotAboutMySQL()  #截图关联django服务
                 # self.getScreenshot()  #截图不关联django服务
-                self.outPutMyLog("停顿5秒后再次查找依然未找到元素.问题描述：%s"% e)
+                # self.outPutMyLog("停顿5秒后再次查找依然未找到元素.问题描述：%s"% e)
+                self.outPutErrorMyLog("停顿5秒后再次查找依然未找到元素.问题描述：%s" % e)
                 # print("停顿5秒后再次查找依然未找到元素，关闭驱动.问题描述：",e)
                 self.printnormalword()
                 # self.closeBrowse()
