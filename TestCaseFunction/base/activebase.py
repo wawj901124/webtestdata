@@ -96,9 +96,16 @@ class  ActiveWeb:
 
     #打开网址
     def getUrl(self,url):
-        self.driver.get(url)
-        self.outPutMyLog("进入网址：%s"% url)
-        # print("进入网址：%s"% url)
+        try:
+            self.driver.get(url)
+            self.outPutMyLog("进入网址：%s"% url)
+            # print("进入网址：%s"% url)
+        except Exception as e:
+            self.getScreenshotAboutMySQL()  # 截图关联django服务
+            self.outPutErrorMyLog("打开网页失败,关闭驱动.问题描述：[%s]" % e)
+            self.closeBrowse()
+
+
 
     #获取当前页面的url
     def getNowPageUrl(self):
@@ -473,7 +480,7 @@ class  ActiveWeb:
             # print('列表内容为：',option.text)
         except Exception as e:
             self.printredword()
-            self.outPutMyLog("获取表格内容出错，关闭驱动.问题描述：%s"% e)
+            self.outPutErrorMyLog("获取表格内容出错，关闭驱动.问题描述：%s"% e)
             # print("获取表格内容出错，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
@@ -503,7 +510,7 @@ class  ActiveWeb:
             # print('列表内容为：',option.text)
         except Exception as e:
             self.printredword()
-            self.outPutMyLog("获取表格内容出错，关闭驱动.问题描述：%s"% e)
+            self.outPutErrorMyLog("获取表格内容出错，关闭驱动.问题描述：%s"% e)
             # print("获取表格内容出错，关闭驱动.问题描述：",e)
             self.printnormalword()
             self.closeBrowse()
