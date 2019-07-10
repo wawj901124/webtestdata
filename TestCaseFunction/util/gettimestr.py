@@ -19,7 +19,7 @@ class GetTimeStr:
     def getTimeStrNY(self):
         now_time = datetime.datetime.now()
         timestr = now_time.strftime('%Y%m')
-        self.outPutMyLog("当前时间年月：%s"% now_time)
+        self.outPutMyLog("当前时间：%s"% now_time)
         self.outPutMyLog("时间串年月：%s"% timestr)
         # print("当前时间：",now_time)
         # print("时间串：",timestr)
