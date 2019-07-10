@@ -47,8 +47,31 @@ class SendEmail:
         self.send_mail(user_list,sub,content,filenamepath)   #调用本类发送邮件函数
         # print("邮件已发送")
 
+    def send_main_result_num(self,pass_count,fail_count,error_count,filenamepath,userlist=None,emailtitle=None):
+        pass_num = float(pass_count)   #转换为浮点类型
+        fail_num = float(fail_count)   #转换为浮点类型
+        error_num = float(error_count) #转换为浮点类型
+        count_num = pass_num + fail_num +error_num
+        #90%,百分比
+        pass_result = "%.2f%%" %(pass_num/count_num*100)   #%.2f,浮点型数据小数点后保留两位，%%，转义百分号
+        fail_result = "%.2f%%" % (fail_num/count_num*100)   #失败率
+        error_result = "%.2f%%" % (error_num / count_num * 100)  # 失败率
+        if userlist == None:
+            user_list = ['xiangkaizheng@iapppay.com']
+        else:
+            user_list = userlist
+        if emailtitle == None:
+            sub = "自动化测试报告"
+        else:
+            sub = emailtitle
+        content = "此次一共执行用例个数为%s个，成功个数为%s个，失败个数为%s个，错误个数为%s个，通过率为%s，失败率为的%s，错误率为%s." %(count_num,pass_num,fail_num,error_num,pass_result,fail_result,error_result)
+        self.send_mail(user_list,sub,content,filenamepath)   #调用本类发送邮件函数
+
 
 if __name__ == '__main__':
     sen = SendEmail()   #实例化
-    sen.send_main([2,3,4],[5,6,7],'../report/01_report.html')
+    # sen.send_main([2,3,4],[5,6,7],'../report/01_report.html')
+    user_list = ['xiangkaizheng@iapppay.com']
+    emailtitle = "商户后台-登录_自动化测试报告"
+    sen.send_main_result_num(2,0,0,r'D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\log\logs\2019\201907\20190710\2019-07-10-12.log',user_list,emailtitle,)
     print("邮件已发送")

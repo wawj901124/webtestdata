@@ -77,7 +77,7 @@ class RunAllTest(unittest.TestCase):
             title=u'%s_%s 自动化测试_测试报告'% (testproject,testmodule),
             description=u'用例执行情况：',
             verbosity=2)   #verbosity=2,输出测试用例中打印的信息
-        runner.run(suite)
+        runresult = runner.run(suite)
         fp.close()
 
         #保存报告到数据库
@@ -91,8 +91,9 @@ class RunAllTest(unittest.TestCase):
         reportrd.save()
 
         # 发送report至邮箱
+        emailtitle = u'%s_%s 自动化测试_测试报告'% (testproject,testmodule)
         send_e = SendEmail()
-        send_e.send_main([1], [2], filename)
+        send_e.send_main_result_num(runresult.success_count, runresult.failure_count,runresult.error_count,filename,emailtitle=emailtitle)
 
     def outPutMyLog(self, context):
         mylog = UserLog(context)
