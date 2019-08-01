@@ -1,0 +1,5 @@
+1.pip install uiautomator2
+2.pip install weditor
+
+3.python -m uiautomator2 init  初始化
+4.python -m weditor   打开weditor

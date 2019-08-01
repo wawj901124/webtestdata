@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'processingActivity.apps.ProcessingactivityConfig',   #注册processingActivity
     'inputtip.apps.InputtipConfig',   #注册inputtip
     'reportrecord.apps.ReportrecordConfig',   #注册reportrecord
+    'performancestatistics.apps.PerformancestatisticsConfig',#注册performancestatistics
 
 
 ]

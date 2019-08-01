@@ -12,7 +12,7 @@ django.setup()
 
 
 from TestCaseFunction.base.activebase import ActiveWeb
-from autotest.config.page.agent.loginPage import LoginPage
+from TestCaseFunction.autotest.config.page.agent.loginPage import LoginPage
 
 
 

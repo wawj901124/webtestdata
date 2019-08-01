@@ -15,8 +15,8 @@ from TestCaseFunction.base.activebase import ActiveWeb
 from TestCaseFunction.util.operation_json import OperationJson
 from TestCaseFunction.util.gettimestr import GetTimeStr
 
-from autotest.config.page.agent.loginPage import LoginPage
-from autotest.config.page.agent.checkContractPage import MerchantContractPage
+from TestCaseFunction.autotest.config.page.agent.loginPage import LoginPage
+from TestCaseFunction.autotest.config.page.agent.checkContractPage import MerchantContractPage
 
 checkcontract = MerchantContractPage()
 

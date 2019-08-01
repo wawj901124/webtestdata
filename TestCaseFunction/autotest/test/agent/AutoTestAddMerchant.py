@@ -15,11 +15,11 @@ from TestCaseFunction.base.activebase import ActiveWeb
 from TestCaseFunction.util.operation_json import OperationJson
 from TestCaseFunction.util.gettimestr import GetTimeStr
 
-from autotest.config.page.agent.loginPage import LoginPage
-from autotest.config.page.agent.addMerchantPage import AddMerchantPage
-from autotest.config.page.agent.addMerchantSuccessPage import AddMerchantSuccessPage
-from autotest.config.page.agent.addMerchantDonePage import AddMerchantDonePage
-from autotest.config.page.agent.merchantListPage import MerchantListPage
+from TestCaseFunction.autotest.config.page.agent.loginPage import LoginPage
+from TestCaseFunction.autotest.config.page.agent.addMerchantPage import AddMerchantPage
+from TestCaseFunction.autotest.config.page.agent.addMerchantSuccessPage import AddMerchantSuccessPage
+from TestCaseFunction.autotest.config.page.agent.addMerchantDonePage import AddMerchantDonePage
+from TestCaseFunction.autotest.config.page.agent.merchantListPage import MerchantListPage
 
 
 class TestAddMerchantClass(unittest.TestCase):  # 创建测试类
