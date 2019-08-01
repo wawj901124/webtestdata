@@ -209,6 +209,8 @@ def __generateTestCases():
             args = []
             args.append(i)
             args.append(meminfotestcase.currentpagetext)
+            args.append(meminfotestcase.currrentfindstyle)
+            args.append(meminfotestcase.currentstyleparame)
             args.append(meminfotestcase.nextpagetext)
             args.append(meminfotestcase.testproject)
             args.append(meminfotestcase.testmodule)
