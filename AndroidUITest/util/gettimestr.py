@@ -43,11 +43,16 @@ class GetTimeStr:
                 return sxhdmcinputtext
 
     def createdir(self,filedir):
-        if os.path.exists(filedir):
-            self.outPutMyLog("已经存在目录：%s" % filedir)
-        else:
-            os.mkdir(filedir)
-            self.outPutMyLog("已经创建目录：%s" % filedir)
+        filelist = filedir.split("/")
+        long = len(filelist)
+        zuhefiledir = filelist[0]
+        for i in range(1,long):
+            zuhefiledir = zuhefiledir+"/"+filelist[i]
+            if os.path.exists(zuhefiledir):
+                self.outPutMyLog("已经存在目录：%s" % zuhefiledir)
+            else:
+                os.mkdir(zuhefiledir)
+                self.outPutMyLog("已经创建目录：%s" % zuhefiledir)
 
 
 

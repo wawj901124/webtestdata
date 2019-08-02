@@ -15,6 +15,9 @@ from AndroidUITest.autotest.config.page.qrindo.indexPage import IndexPage
 from AndroidUITest.base.performanceFrame import PerformanceFrame
 from AndroidUITest.autotest.config.page.qrindo.myQrCodePage import MyQrCodePage
 from AndroidUITest.util.gettimestr import GetTimeStr
+from AndroidUITest.autotest.config.page.qrindo.loginWithOTP import loginwithotppage_commonfunction
+from AndroidUITest.autotest.config.page.qrindo.loginWithPasswordPage import loginwithpasswordpage_commonfunction
+from AndroidUITest.autotest.config.page.qrindo.globalConfig import globalconfig
 
 
 
@@ -23,9 +26,9 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
 
     @classmethod  # 类方法，只执行一次，但必须要加注解@classmethod,且名字固定为setUpClass
     def setUpClass(cls):
-        cls.devicename = "810EBM32TZ4K"
-        cls.appversion = "QRindo v1.0.4"
-        cls.apppackagename = "com.ahdi.qrindo.wallet"
+        cls.devicename = globalconfig.devicename
+        cls.appversion = globalconfig.appversion
+        cls.apppackagename = globalconfig.apppackagename
         cls.baseframe = BaseFrame(outdevice=cls.devicename,apppacakagename=cls.apppackagename)
         cls.d = cls.baseframe.d
         cls.indexpage = IndexPage()
@@ -44,6 +47,16 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
     def tearDown(self):  # 每条用例执行测试之后都要执行此方法
         pass
 
+    #定义登录函数
+    def definelogin(self):
+        loginwithotppage_commonfunction.define_click_loginwithpassword_function(self.baseframe)
+        if globalconfig.isOnline:
+            loginwithpasswordpage_commonfunction.define_login_function(self.baseframe, globalconfig.online_account,
+                                                                       globalconfig.online_password)
+        else:
+            loginwithpasswordpage_commonfunction.define_login_function(self.baseframe, globalconfig.test_account,
+                                                                       globalconfig.test_password)
+
     #定义搜索查找函数
     def defineclickandback(self,forcount,currentpagetext,currrentfindstyle, currentstyleparame,nextpagetext,testproject,testmodule,testpage,testcasetitle,starttime):
         if forcount == 1:
@@ -54,7 +67,12 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
         if isstartapp==True:
             #启动应用
             self.baseframe.startapp()
-            self.baseframe.delaytime(3)
+            self.baseframe.delaytime(5)
+            Login_isExist = loginwithotppage_commonfunction.define_is_loginwithpassword_exist_function(self.baseframe)
+            # print("Login_isExist:%s" % Login_isExist)
+            if not Login_isExist:
+                self.definelogin()
+
         meminfoarray = []
         #———————————————第一次获取内存———————————————————————————————
         # 获取当前页面占用内存
@@ -106,8 +124,8 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
         #获取当前页面占用内存
         hs3 = self.performanceframe.getCurrentPageMeninfoHeapSize(self.devicename,self.appversion,self.apppackagename)
         meminfoarray.append(hs3)
-        print("当前页内存：%s KB,静置10秒后，内存：%s KB,点击进入下一个页面内存：%s KB,静置10秒后，内存：%s KB,静置10秒后，内存：%s KB,点击返回后内存：%s,静置10秒后，内存：%s,静置10秒后，内存：%s" % (hs10,hs1,hs20,hs21,hs2,hs30,hs31,hs3))
-        print("meminfoarray:%s" % meminfoarray)
+        self.baseframe.outPutMyLog("当前页内存：%s KB,静置10秒后，内存：%s KB,点击进入下一个页面内存：%s KB,静置10秒后，内存：%s KB,静置10秒后，内存：%s KB,点击返回后内存：%s,静置10秒后，内存：%s,静置10秒后，内存：%s" % (hs10,hs1,hs20,hs21,hs2,hs30,hs31,hs3))
+        self.baseframe.outPutMyLog("meminfoarray:%s" % meminfoarray)
         from performancestatistics.models import MeminfoTestResult
         meminfotestresult = MeminfoTestResult()
         meminfotestresult.testproject = testproject
@@ -128,7 +146,7 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
         return meminfoarray
 
     # def test_001(self):
-    #     self.defineclickandback(1,"My QR","Balance")
+    #     self.definelogin()
     # def test_002(self):
     #     self.defineclickandback(3)
     # def test_002(self):
@@ -146,13 +164,13 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
         #断言是否存在某个文本
         testtext = self.baseframe.findbytext_and_return_text(text)
         self.assertEqual(pretext,testtext)
-        print("存在text:%s"%testtext)
+        self.baseframe.outPutMyLog("存在text:%s"%testtext)
 
     def defineasserttextnum(self,num,text,pretext):
         #断言是否存在某个文本
         testtext = self.baseframe.findbytext_and_return_text(text)
         self.assertEqual(pretext,testtext)
-        print("存在text:%s"%testtext)
+        self.baseframe.outPutMyLog("存在text:%s"%testtext)
 
 
     @staticmethod    #根据不同的参数生成测试用例(forcount,currentpagetext,nextpagetext,testproject,testmodule,testpage,testcasetitle,starttime):
@@ -173,7 +191,7 @@ def __generateTestCases():
 
     from performancestatistics.models import MeminfoTestCase
 
-    meminfotestcase_all = MeminfoTestCase.objects.filter(testproject="Qrindo").filter(testpage="主页面").order_by('id')
+    meminfotestcase_all = MeminfoTestCase.objects.filter(testproject="Qrindo").filter(testpage="主页面").filter(id=1).order_by('id')
 
 
     for meminfotestcase in meminfotestcase_all:

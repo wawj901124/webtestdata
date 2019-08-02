@@ -6,6 +6,8 @@ import os
 import uiautomator2 as u2
 import time
 from AndroidUITest.util.gettimestr import GetTimeStr   #导入获取时间串函数
+from AndroidUITest.util.my_log import MyLog
+
 
 
 
@@ -24,44 +26,71 @@ class BaseFrame:
             self.packagename =apppacakagename
         self.timeStr = GetTimeStr()  # 实例化
         self.isstartapp = False
+    
+    def outPutMyLog(self,context):
+        mylog = MyLog(context)
+        mylog.runMyLog()
+
+    def outPutErrorMyLog(self,context):
+        mylog = MyLog(context)
+        mylog.runErrorLog()
 
     #执行shell命令
     def adbshell(self,order):
         d = self.d
         d.adb_shell(order)
-        print('输入shell命令:',order,'。\n')
+        self.outPutMyLog('输入shell命令:',order,'。\n')
 
 
     #启动app
     def startapp(self):
         self.stopapp()
         self.d.app_start(self.packagename)
-        print('启动包名为[%s]的应用---------'% self.packagename)
-        # print('设备信息：', d.device_info)
+        self.outPutMyLog('启动包名为[%s]的应用---------'% self.packagename)
+        # self.outPutMyLog('设备信息：', d.device_info)
         self.delaytime(3)
 
     #关闭app
     def stopapp(self):
         self.d.app_stop(self.packagename)
-        print('关闭包名为[%s]的应用---------'% self.packagename)
+        self.outPutMyLog('关闭包名为[%s]的应用---------'% self.packagename)
 
     #延时
     def delaytime(self,dalaytime):
         dalaytime = int(dalaytime)
         time.sleep(dalaytime)
-        print('等待%d秒...'% dalaytime)
+        self.outPutMyLog('等待%d秒...'% dalaytime)
 
     #点击返回按钮
     def clickback(self):
         self.d.press("back")
-        print('点击返回按键')
+        self.outPutMyLog('点击返回按键')
         self.delaytime(3)
 
     #点击Home按钮
     def clickhome(self):
         self.d.press("home")
-        print('点击Home按键')
+        self.outPutMyLog('点击Home按键')
         self.delaytime(3)
+
+    #元素是否存在
+    def ele_is_exist(self,findstyle,styleparame):
+        try:
+            if findstyle == "resourceId":
+                ele = self.d(resourceId=styleparame)
+                ele.info
+                # self.outPutMyLog("ele.info:%s" % ele.info)
+                # self.outPutMyLog("找到元素")
+            elif findstyle == "text":
+                ele = self.d(text=styleparame)
+                ele.info
+                # self.outPutMyLog("ele.info:%s"% ele.info)
+                # self.outPutMyLog("找到元素")
+        except Exception as e:
+            # self.outPutMyLog("报错：%s"% e)
+            return False
+        else:
+            return True
 
     #查找元素
     def findelement(self,findstyle,styleparame):
@@ -70,37 +99,29 @@ class BaseFrame:
                 ele = self.d(resourceId=styleparame)
                 eletext = self.geteleinfo_text(ele)
                 if eletext == "":
-                    print("定位到resourceId为[%s]的控件。" % styleparame)
+                    self.outPutMyLog("定位到resourceId为[%s]的控件。" % styleparame)
                 else:
-                    print("定位到text为[%s]的控件。" % eletext)
+                    self.outPutMyLog("定位到text为[%s]的控件。" % eletext)
                 return ele
             elif findstyle == "text":
                 ele = self.d(text=styleparame)
                 eletext = self.geteleinfo_text(ele)
                 if eletext == "":
-                    print("没有定位到控件。")
+                    self.outPutMyLog("没有定位到控件。")
                 else:
-                    print("定位到text为[%s]的控件。" % eletext)
+                    self.outPutMyLog("定位到text为[%s]的控件。" % eletext)
                 return ele
-            elif findstyle == "text":
-                ele = self.d(text=styleparame)
-                eletext = self.geteleinfo_text(ele)
-                if eletext == "":
-                    print("没有定位到控件。")
-                else:
-                    print("定位到text为[%s]的控件。" % eletext)
-                return ele
+
         except Exception as e:
-            print("self.isstartappd的值为：%s", self.isstartapp)
+            self.outPutMyLog("self.isstartappd的值为：%s"%self.isstartapp)
             self.isstartapp=True
-            print("self.isstartappd的值为：%s", self.isstartapp)
+            self.outPutMyLog("self.isstartappd的值为：%s"% self.isstartapp)
             self.getScreenshotError()
-            self.printredword()
-            print("出错原因：",e)
-            self.printnormalword()
+            self.outPutErrorMyLog("出错原因：定位控件失败.具体原因：%s"% e)
             self.delaytime(3)
             self.isstartapp=True
-            print("self.isstartappd的值为：%s", self.isstartapp)
+            self.outPutMyLog("self.isstartappd的值为：%s"% self.isstartapp)
+
 
     #查找到元素并且输入内容
     def findelement_and_input(self,findstyle,styleparame,inputtext):
@@ -138,21 +159,19 @@ class BaseFrame:
             ele = d(resourceId=resourceId)
             eletext = self.geteleinfo_text(ele)
             if eletext == "":
-                print("定位到resourceId为[%s]的控件。" % resourceId)
+                self.outPutMyLog("定位到resourceId为[%s]的控件。" % resourceId)
             else:
-                print("定位到text为[%s]的控件。" % eletext)
+                self.outPutMyLog("定位到text为[%s]的控件。" % eletext)
             return ele
         except Exception as e:
-            print("self.isstartappd的值为：%s", self.isstartapp)
+            self.outPutMyLog("self.isstartappd的值为：%s"% self.isstartapp)
             self.isstartapp=True
-            print("self.isstartappd的值为：%s", self.isstartapp)
+            self.outPutMyLog("self.isstartappd的值为：%s"% self.isstartapp)
             self.getScreenshotError()
-            self.printredword()
-            print("出错原因：",e)
-            self.printnormalword()
+            self.outPutErrorMyLog("出错原因：定位控件失败.具体原因：%s"% e)
             self.delaytime(3)
             self.isstartapp=True
-            print("self.isstartappd的值为：%s", self.isstartapp)
+            self.outPutMyLog("self.isstartappd的值为：%s"% self.isstartapp)
 
     #通过ID查找到元素并且输入内容
     def findbyresourceId_and_input(self,resourceId,inputtext):
@@ -190,18 +209,16 @@ class BaseFrame:
             ele = d(text=text)
             eletext = self.geteleinfo_text(ele)
             if eletext == "":
-                print("没有定位到控件。")
+                self.outPutMyLog("没有定位到控件。")
             else:
-                print("定位到text为[%s]的控件。" % eletext)
+                self.outPutMyLog("定位到text为[%s]的控件。" % eletext)
             return ele
         except Exception as e:
-            print("self.isstartappd的值为：%s", self.isstartapp)
+            self.outPutMyLog("self.isstartappd的值为：%s" % self.isstartapp)
             self.isstartapp=True
-            print("self.isstartappd的值为：%s", self.isstartapp)
+            self.outPutMyLog("self.isstartappd的值为：%s"% self.isstartapp)
             self.getScreenshotError()
-            self.printredword()
-            print("出错原因：",e)
-            self.printnormalword()
+            self.outPutErrorMyLog("出错原因：定位控件失败.具体原因：%s"% e)
             self.delaytime(3)
 
 
@@ -238,26 +255,26 @@ class BaseFrame:
     def ele_input(self,ele,inputtext):
         ele.clear_text()
         ele.send_keys(inputtext)
-        print("输入:%s。" % inputtext)
+        self.outPutMyLog("输入:%s。" % inputtext)
         self.delaytime(1)
 
     #点击元素并返回toast提示信息
     def ele_click_and_return_toastmessage(self,ele,outpretoastmessage=None):
         ele.click()
-        print("点击该控件。")
+        self.outPutMyLog("点击该控件。")
         if outpretoastmessage==None:
             self.delaytime(3)
             return None
         else:
             toastmessage = self.getToast()
-            print("pretoastmessage:",outpretoastmessage)
+            self.outPutMyLog("pretoastmessage:",outpretoastmessage)
             return toastmessage
 
     #得到元素enabled属性值
     def geteleinfo_enabled(self,ele):
         value = 'enabled'
         eleinfo_enabled = self.geteleinfo_value(ele,value)
-        print('该控件的enabled属性的值为：',eleinfo_enabled)
+        self.outPutMyLog('该控件的enabled属性的值为：%s'%eleinfo_enabled)
         return eleinfo_enabled
 
     #得到元素text属性值
@@ -265,7 +282,7 @@ class BaseFrame:
         value = 'text'
         eleinfo_text = self.geteleinfo_value(ele,value)
         if eleinfo_text !='':
-            print('该控件的text属性的值为：', eleinfo_text)
+            self.outPutMyLog('该控件的text属性的值为：%s'% eleinfo_text)
         return eleinfo_text
 
     #得到元素selected属性值
@@ -273,26 +290,26 @@ class BaseFrame:
         value = 'selected'
         eleinfo_selected = self.geteleinfo_value(ele,value)
         if eleinfo_selected !='':
-            print('该控件的selected属性的值为：', eleinfo_selected)
+            self.outPutMyLog('该控件的selected属性的值为：%s'% eleinfo_selected)
         return eleinfo_selected
 
     #得到元素属性值
     def geteleinfo_value(self,ele,value):
         eleinfo = ele.info
-        # print('eleinfo:',eleinfo)
+        # self.outPutMyLog('eleinfo:',eleinfo)
         eleinfo_value = eleinfo[value]
         return eleinfo_value
 
     #得到toast提示信息
     def getToast(self):
         toastmessage = self.d.toast.get_message(5.0, default="")
-        print("toastmessage:",toastmessage)
+        self.outPutMyLog("toastmessage:",toastmessage)
         return toastmessage
 
     #得到设备信息
     def getdeviceinfo(self):
         deviceinfo = self.d.device_info
-        print("deviceinfo:",deviceinfo)
+        self.outPutMyLog("deviceinfo:",deviceinfo)
         return deviceinfo
 
     #建立crash监听
@@ -300,52 +317,66 @@ class BaseFrame:
         d = self.d
         d.watcher('crash').when(text='很抱歉，“QRindo MCH”已停止运行。').click(text="确定")
         d.watcher("crash").triggered
-        print('d.watcher:',d.watcher)
+        self.outPutMyLog('d.watcher:',d.watcher)
 
-    #打印红色文字
-    def printredword(self):
-        print('\033[1;31;0m')   #<!--1-高亮显示 31-前景色红色  47-背景色白色-->
-
-    #打印默认文字
-    def printnormalword(self):
-        print('\033[0m')  # <!--采用终端默认设置，即取消颜色设置-->
-
-    #打印绿色文字
-    def printgreenword(self):
-        print('\033[1;32;0m')  # <!--1-高亮显示 32-前景色绿色  40-背景色黑色-->
 
     #获取时间串
     def getTimeStr(self):
         tStr = self.timeStr.getTimeStr()
         return tStr
 
+    def getTimeStrNY(self):
+        tStrNY = self.timeStr.getTimeStrNY()
+        return tStrNY
+
     #出错时，获取页面截图
     def getScreenshotError(self):
         d = self.d
-        self.printredword()
-        print("调用截取图片函数")
+        self.outPutMyLog("调用截取图片函数")
+        currentny = self.getTimeStrNY()   #获取当前时间的年月
         tStr = self.getTimeStr()
         # path = "../screenshots/screenpicture_%s.png"% tStr
-        path = '%s/screenshots/screenpicture_%s.png'%(str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),tStr)
-        self.printnormalword()
+        firedir = r'%s/media/report/%s/screenshots/' % (os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),currentny)
+        self.createdir(firedir)
+        path = '%s/screenpicture_%s.png' % (firedir,tStr)
+        pathaboutmysql = r'media\report\%s\screenshots\screenpicture_%s.png' % (currentny, tStr)
+        # path = '%s/screenshots/screenpicture_%s.png'%(str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),tStr)
         d.screenshot(path)
-        print("*****")
-        print(path)
-        print("*****")
+        self.outPutMyLog("*****")
+        # self.outPutMyLog(path)
+        self.outPutMyLog(pathaboutmysql)
+        self.outPutMyLog("*****")
         return path
 
     #正常，获取页面截图
     def getScreenshotNormal(self):
         d = self.d
-        print("调用截取图片函数")
+        self.outPutMyLog("调用截取图片函数")
         tStr = self.getTimeStr()
         # path = "../screenshots/screenpicture_%s.png"% tStr
         path = '%s/screenshots/screenpicture_%s.png' % (str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), tStr)
         d.screenshot(path)
-        print("*****")
-        print(path)
-        print("*****")
+        self.outPutMyLog("*****")
+        self.outPutMyLog(path)
+        self.outPutMyLog("*****")
         return path
+
+    def createdir(self,filedir):
+        filelist = filedir.split("/")
+        # print(filelist)
+        long = len(filelist)
+        # print(long)
+        zuhefiledir = filelist[0]
+        for i in range(1,long):
+            zuhefiledir = zuhefiledir+"/"+filelist[i]
+            if os.path.exists(zuhefiledir):
+                self.outPutMyLog("已经存在目录：%s" % zuhefiledir)
+            else:
+                os.mkdir(zuhefiledir)
+                self.outPutMyLog("已经创建目录：%s" % zuhefiledir)
+
+
+baseframe = BaseFrame()
 
 
 if __name__ == "__main__":

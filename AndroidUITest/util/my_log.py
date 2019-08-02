@@ -111,9 +111,9 @@ class MyLog(object):
 
 
 if __name__ == "__main__":
-    userlog = UserLog("mylogtest")
+    userlog = MyLog("mylogtest")
     userlog.runMyLog()
-    userlog = UserLog("mylogtest")
+    userlog = MyLog("mylogtest")
     userlog.runErrorLog()
 
 
