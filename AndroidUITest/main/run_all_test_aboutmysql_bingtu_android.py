@@ -21,7 +21,6 @@ sys.path.extend(syspath)
 
 
 from AndroidUITest.htmltest import HTMLTestRunner_jt_bt_server as HTMLTestRunner
-from test import *
 from AndroidUITest.test.alltest_list_aboutmysql_bingtu_android import caselist  #调用数组文件
 from AndroidUITest.util.gettimestr import GetTimeStr
 from AndroidUITest.util.send_attach_email import SendEmail
@@ -77,7 +76,7 @@ class RunAllTest(unittest.TestCase):
             title=u'%s_%s 自动化测试_测试报告'% (testproject,testmodule),
             description=u'用例执行情况：',
             verbosity=2)   #verbosity=2,输出测试用例中打印的信息
-        runner.run(suite)
+        runresult = runner.run(suite)
         fp.close()
 
         #保存报告到数据库
@@ -91,49 +90,20 @@ class RunAllTest(unittest.TestCase):
         reportrd.save()
 
         # 发送report至邮箱
+        emailtitle = u'%s_%s 自动化测试_测试报告'% (testproject,testmodule)
         send_e = SendEmail()
-        send_e.send_main([1], [2], filename)
+        send_e.send_main_result_num(runresult.success_count, runresult.failure_count,runresult.error_count,filename,emailtitle=emailtitle)
 
     def outPutMyLog(self, context):
         mylog = MyLog(context)
         mylog.runMyLog()
-
-    def run(self):
-        self.outPutMyLog('---------------------------')
-        # print('---------------------------')
-        stdout_backup = sys.stdout
-        gettime = GetTimeStr()
-        timestr = gettime.getTimeStr()
-        # define the log file that receives your log info
-        logpath = "%s/log/%s_message.txt" % (str(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),timestr)
-        log_file = open(logpath, "w", encoding="utf-8")
-        self.outPutMyLog('Now all print info will be written to message.log')
-        # print("Now all print info will be written to message.log")
-        # redirect print output to log file
-        sys.stdout = log_file
-        self.outPutMyLog('----------开始打印日志-----------------\n')
-        # print('----------开始打印日志-----------------\n')
-
-        # any command line that you will execute
-        self.runAllTest()
-        self.outPutMyLog('\n----------日志打印结束-----------------')
-        # print('\n----------日志打印结束-----------------')
-        log_file.close()
-        # restore the output to initial pattern
-        sys.stdout = stdout_backup
-        self.outPutMyLog('Now this will be presented on screen')
-        # print("Now this will be presented on screen")
-        # 发送log至邮箱
-        send_e = SendEmail()
-        send_e.send_main([1], [2], logpath)
-
 
 
 
 if __name__ == '__main__':
     runat = RunAllTest()
     # runat.run()
-    runat.runAllTest(testproject=u"Qrindo",testmodule=u"性能模块测试")
+    runat.runAllTest(testproject=u"Qrindo",testmodule=u"内存专项测试")
 
 
 
