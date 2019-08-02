@@ -70,7 +70,7 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
             self.baseframe.delaytime(5)
             Login_isExist = loginwithotppage_commonfunction.define_is_loginwithpassword_exist_function(self.baseframe)
             # print("Login_isExist:%s" % Login_isExist)
-            if not Login_isExist:
+            if Login_isExist:
                 self.definelogin()
 
         meminfoarray = []
@@ -191,7 +191,7 @@ def __generateTestCases():
 
     from performancestatistics.models import MeminfoTestCase
 
-    meminfotestcase_all = MeminfoTestCase.objects.filter(testproject="Qrindo").filter(testpage="主页面").filter(id=1).order_by('id')
+    meminfotestcase_all = MeminfoTestCase.objects.filter(testproject="Qrindo").filter(testpage="主页面").order_by('id')
 
 
     for meminfotestcase in meminfotestcase_all:
