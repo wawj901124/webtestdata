@@ -73,6 +73,16 @@ class MeminfoTestResultAdmin(object):
     list_display_links = ['testproject',]   #设置点击链接进入编辑页面的字段
     # date_hierarchy = 'add_time'   #详细时间分层筛选，未生效
     show_detail_fields = ['testproject',]   #显示数据详情
+    list_export = ('xls',)  #控制列表页导出数据的可选格式
+    show_bookmarks = True   #控制是否显示书签功能
+    # data_charts = ""    #控制显示图标的样式
+    data_charts = {   #使用网址：https://xadmin.readthedocs.io/en/latest/_modules/xadmin/plugins/chart.html
+                      # 插件介绍网址：http://www.mamicode.com/info-detail-2403646.html
+                      #使用网址：https://www.jianshu.com/p/6201e1e9133c
+        "user_count": {'title': u"User Report", "x-field": "forcount", "y-field": ( 'currentpageaftertenmeminfo',),
+                       "order": ('id',)},
+        "avg_count": {'title': u"Avg Report", "x-field": "forcount", "y-field": ('currentpageaftertenmeminfo',), "order": ('id',)}
+    }
 
 
 xadmin.site.register(MeminfoTestCase, MeminfoTestCaseAdmin) #在xadmin中注册MeminfoTestCase
