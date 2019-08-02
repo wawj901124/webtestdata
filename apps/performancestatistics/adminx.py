@@ -79,9 +79,9 @@ class MeminfoTestResultAdmin(object):
     data_charts = {   #使用网址：https://xadmin.readthedocs.io/en/latest/_modules/xadmin/plugins/chart.html
                       # 插件介绍网址：http://www.mamicode.com/info-detail-2403646.html
                       #使用网址：https://www.jianshu.com/p/6201e1e9133c
-        "user_count": {'title': u"User Report", "x-field": "forcount", "y-field": ( 'currentpageaftertenmeminfo',),
+        "user_count": {'title': u"currentpagememinfo Report", "x-field": "forcount", "y-field": (  'currentpagememinfo',),
                        "order": ('id',)},
-        "avg_count": {'title': u"Avg Report", "x-field": "forcount", "y-field": ('currentpageaftertenmeminfo',), "order": ('id',)}
+        "avg_count": {'title': u"currentpageaftertenmeminfo Report", "x-field": "forcount", "y-field": ( 'currentpageaftertenmeminfo',), "order": ('id',)}
     }
 
 
