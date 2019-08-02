@@ -93,6 +93,9 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
         hs20=self.performanceframe.getCurrentPageMeninfoHeapSize(self.devicename,self.appversion,self.apppackagename)
         meminfoarray.append(hs20)
         self.baseframe.delaytime(10)
+        if not self.baseframe.ele_is_exist("text",nextpagetext):
+            self.baseframe.outPutMyLog("页面元素还未加载出来，再次进行10秒等待。")
+            self.baseframe.delaytime(10)
         #找到该页面的某个元素
         # self.baseframe.findbytext(self.myqrcodepage.balance_text)
         self.defineasserttext(nextpagetext,nextpagetext)
