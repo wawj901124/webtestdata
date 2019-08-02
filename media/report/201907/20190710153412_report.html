@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>管理后台_修改密码 自动化测试_测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 120%; }
+table       { font-size: 100%; }
+
+/* -- heading ---------------------------------------------------------------------- */
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- report ------------------------------------------------------------------------ */
+#total_row  { font-weight: bold; }
+.passCase   { color: #5cb85c; }
+.failCase   { color: #d9534f; font-weight: bold; }
+.errorCase  { color: #f0ad4e; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+/* -- 为饼图添加样式------------------------------------------------------------------------ */
+.report_pie{
+    float:right;
+    margin-top:-190px;
+    margin-right:600px;
+    width:300px;
+    height:222px;
+    background-color:#999;
+}
+.report_pie img {
+    width: 100%;
+    height: 100%;
+}
+.big_pie{
+    position:absolute;
+    border: 2px solid #999;
+    top:10px;
+    right:100px;
+    bottom:-20px;
+    width:525px;
+    height:390px;
+    z-index: 2;
+    display: none;
+}
+.big_pie img {
+    width: 100%;
+    height: 100%;
+}
+/* -- 为饼图添加样式结束------------------------------------------------------------------------ */
+
+</style>
+
+</head>
+<body >
+<script language="javascript" type="text/javascript">
+output_list = Array();
+
+/*level 调整增加只显示通过用例的分类 --Findyou
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+*/
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level == 2 || level == 0 ) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level < 2) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+
+    //加入【详细】切换文字变化 --Findyou
+    detail_class=document.getElementsByClassName('detail');
+    //console.log(detail_class.length)
+    if (level == 3) {
+        for (var i = 0; i < detail_class.length; i++){
+            detail_class[i].innerHTML="收起"
+        }
+    }
+    else{
+            for (var i = 0; i < detail_class.length; i++){
+            detail_class[i].innerHTML="详细"
+        }
+    }
+}
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        //ID修改 点 为 下划线 -Findyou
+        tid0 = 't' + cid.substr(1) + '_' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        //修改点击无法收起的BUG，加入【详细】切换文字变化 --Findyou
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+            document.getElementById(cid).innerText = "详细"
+        }
+        else {
+            document.getElementById(tid).className = '';
+            document.getElementById(cid).innerText = "收起"
+        }
+    }
+}
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/*显示饼图的大图*/
+function bigImg() {
+    var big_pie = document.getElementById("big_pie")
+    big_pie.style.display = "block"
+}
+function normalImg() {
+    var big_pie = document.getElementById("big_pie")
+    big_pie.style.display = "none"
+}
+/*显示饼图的大图结束*/
+</script>
+<div class='heading'>
+<h1 style="font-family: Microsoft YaHei">管理后台_修改密码 自动化测试_测试报告</h1>
+<p class='attribute'><strong>测试人员 : </strong> 小贝</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-07-10 15:34:12</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:01:55.122585</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 7，通过 3，失败 3，错误 1，通过率= 42.86%</p>
+
+<p class='description'>用例执行情况：</p>
+</div>
+<!--为饼图设置一个div层，用于存放饼图-->
+<div onmousemove="bigImg(this)" onmouseout="normalImg(this)" class='report_pie'>
+<!--img src='../../result/http://127.0.0.1:8060/media/report/201907/pies/20190710153607_pie.png/pic.png'-->
+<img src='http://127.0.0.1:8060/media/report/201907/pies/20190710153607_pie.png'>
+</div>
+<div id="big_pie" class='big_pie'>
+<!--img src='../../result/http://127.0.0.1:8060/media/report/201907/pies/20190710153607_pie.png/pic.png'-->
+<img src='http://127.0.0.1:8060/media/report/201907/pies/20190710153607_pie.png'>   
+
+</div>
+<!--把饼图放到了heading部分，我们在HEADING_TMPL部分添加红框中的代码，之所以添加了两个div容器，主要是考虑到位置空间大小的问题，我们也知道，图片很大，直接塞到heading里面会让页面变得很丑，实在影响美观，所以我就用鼠标事件来控制，当我们鼠标在小图上时，我们就放大展示这个饼图，否则只能看到缩略图。-->
+
+
+
+<p id='show_detail_line'>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 42.86% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败+错误{ 3 + 1 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 3 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 7 }</a>
+</p>
+<table id='result_table' class="table table-condensed table-bordered table-hover">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 14px;">
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+</tr>
+
+<tr class='errorClass warning'>
+    <td>TestCaseFunction.autotest.test.manager.AutoTestChangePassword.TestChangePasswordClass</td>
+    <td class="text-center">7</td>
+    <td class="text-center">3</td>
+    <td class="text-center">3</td>
+    <td class="text-center">1</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',7)" class="detail" id='c1'>详细</a></td>
+</tr>
+
+    <tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_1___1___None__None__None___This_option_cannot_be_empty____This_option_cannot_be_empty____This_option_cannot_be_empty__</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_1' type="button"  class="btn btn-success btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-success btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in">
+    <pre>
+    
+1_1: 进入网址：https://bjw.halodigit.com:9060/nereus/manager/index#/account/changePwd
+等待3秒---
+等待1秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[2]/button】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:34:40.262495
+时间串：20190710153440
+当前时间：2019-07-10 15:34:40.519510
+时间串：20190710153440
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/1_20190710153440_ele.png
+点击Xpath路径为[/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[2]/button]的元素
+等待2秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/em】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:34:42.872644
+时间串：20190710153442
+当前时间：2019-07-10 15:34:43.067655
+时间串：20190710153443
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/1_20190710153443_ele.png
+元素的Xpath路径为：/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/em;对应的文本信息为：This option cannot be empty
+等待3秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/em】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:34:46.171833
+时间串：20190710153446
+当前时间：2019-07-10 15:34:46.308841
+时间串：20190710153446
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/1_20190710153446_ele.png
+元素的Xpath路径为：/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/em;对应的文本信息为：This option cannot be empty
+等待3秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/em】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:34:49.390017
+时间串：20190710153449
+当前时间：2019-07-10 15:34:49.468021
+时间串：20190710153449
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/1_20190710153449_ele.png
+元素的Xpath路径为：/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/em;对应的文本信息为：This option cannot be empty
+等待3秒---
+测试通过
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+    
+<tr id='ft1_2' class='none'>
+    <td class='failCase'><div class='testcase'>test_2___2___________________This_option_cannot_be_empty____This_option_cannot_be_empty____This_option_cannot_be_empty__</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>失败</button>
+    <div id='div_ft1_2' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>失败</button>
+    <div id='div_ft1_2' class="collapse in">
+    <pre>
+    
+1_2: 进入网址：https://bjw.halodigit.com:9060/nereus/manager/index#/account/changePwd
+等待3秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:34:55.549369
+时间串：20190710153455
+当前时间：2019-07-10 15:34:55.630374
+时间串：20190710153455
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/2_20190710153455_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:34:55.686377
+时间串：20190710153455
+当前时间：2019-07-10 15:34:55.769382
+时间串：20190710153455
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/2_20190710153455_ele.png
+得到的元素属性【value】的值为： 
+输入内容： ;显示内容： 
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:34:55.802384
+时间串：20190710153455
+当前时间：2019-07-10 15:34:55.878388
+时间串：20190710153455
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/2_20190710153455_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:34:55.919390
+时间串：20190710153455
+当前时间：2019-07-10 15:34:55.996395
+时间串：20190710153455
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/2_20190710153455_ele.png
+得到的元素属性【value】的值为： 
+输入内容： ;显示内容： 
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:34:56.024396
+时间串：20190710153456
+当前时间：2019-07-10 15:34:56.100401
+时间串：20190710153456
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/2_20190710153456_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:34:56.139403
+时间串：20190710153456
+当前时间：2019-07-10 15:34:56.215407
+时间串：20190710153456
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/2_20190710153456_ele.png
+得到的元素属性【value】的值为： 
+输入内容： ;显示内容： 
+等待1秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[2]/button】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:34:57.265467
+时间串：20190710153457
+当前时间：2019-07-10 15:34:57.351472
+时间串：20190710153457
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/2_20190710153457_ele.png
+点击Xpath路径为[/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[2]/button]的元素
+等待2秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/em】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:34:59.616602
+时间串：20190710153459
+当前时间：2019-07-10 15:34:59.694606
+时间串：20190710153459
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/2_20190710153459_ele.png
+元素的Xpath路径为：/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/em;对应的文本信息为：The length cannot be less than6
+等待3秒---
+Traceback (most recent call last):
+  File "D:\djangoworkon\webtest\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\autotest\test\manager\AutoTestChangePassword.py", line 104, in test
+    self.definechangepassword(num,currentpasswordinputtext,newpasswordinputtext,confirmpasswordinputtext,precurrentpasswordinputtiptext,prenewpasswordinputtiptext,preconfirmpasswordinputtiptext)
+  File "D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\autotest\test\manager\AutoTestChangePassword.py", line 88, in definechangepassword
+    self.assertEqual(precurrentpasswordinputtiptext,currentpasswordinputtiptext)
+AssertionError: 'This option cannot be empty' != 'The length cannot be less than6'
+- This option cannot be empty
++ The length cannot be less than6
+
+
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+    <tr id='pt1_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_3___3____中____中____中____The_length_cannot_be_less_than6____The_length_cannot_be_less_than6____New_password_entered_inconsistently__</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_3' type="button"  class="btn btn-success btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_3' type="button"  class="btn btn-success btn-xs" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse in">
+    <pre>
+    
+1_3: 进入网址：https://bjw.halodigit.com:9060/nereus/manager/index#/account/changePwd
+等待3秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:05.858959
+时间串：20190710153505
+当前时间：2019-07-10 15:35:05.944964
+时间串：20190710153505
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/3_20190710153505_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:06.001967
+时间串：20190710153506
+当前时间：2019-07-10 15:35:06.083972
+时间串：20190710153506
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/3_20190710153506_ele.png
+得到的元素属性【value】的值为：中
+输入内容：中;显示内容：中
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:06.111973
+时间串：20190710153506
+当前时间：2019-07-10 15:35:06.192978
+时间串：20190710153506
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/3_20190710153506_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:06.244981
+时间串：20190710153506
+当前时间：2019-07-10 15:35:06.336986
+时间串：20190710153506
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/3_20190710153506_ele.png
+得到的元素属性【value】的值为：中
+输入内容：中;显示内容：中
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:06.369988
+时间串：20190710153506
+当前时间：2019-07-10 15:35:06.462994
+时间串：20190710153506
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/3_20190710153506_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:06.526997
+时间串：20190710153506
+当前时间：2019-07-10 15:35:06.623003
+时间串：20190710153506
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/3_20190710153506_ele.png
+得到的元素属性【value】的值为：中
+输入内容：中;显示内容：中
+等待1秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[2]/button】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:07.658062
+时间串：20190710153507
+当前时间：2019-07-10 15:35:07.743067
+时间串：20190710153507
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/3_20190710153507_ele.png
+点击Xpath路径为[/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[2]/button]的元素
+等待2秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/em】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:10.017197
+时间串：20190710153510
+当前时间：2019-07-10 15:35:10.099201
+时间串：20190710153510
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/3_20190710153510_ele.png
+元素的Xpath路径为：/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/em;对应的文本信息为：The length cannot be less than6
+等待3秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/em】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:13.168377
+时间串：20190710153513
+当前时间：2019-07-10 15:35:13.251382
+时间串：20190710153513
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/3_20190710153513_ele.png
+元素的Xpath路径为：/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/em;对应的文本信息为：The length cannot be less than6
+等待3秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/em】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:16.309557
+时间串：20190710153516
+当前时间：2019-07-10 15:35:16.424563
+时间串：20190710153516
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/3_20190710153516_ele.png
+元素的Xpath路径为：/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/em;对应的文本信息为：New password entered inconsistently
+等待3秒---
+测试通过
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+    
+<tr id='ft1_4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_4___4____中国人寿保险公司____中国人寿保险公司____中国人寿保险公司____Original_password_is_incorrect____仅支持字母数字符号____仅支持字母数字符号__</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_4'>错误</button>
+    <div id='div_ft1_4' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_4'>错误</button>
+    <div id='div_ft1_4' class="collapse in">
+    <pre>
+    
+1_4: 进入网址：https://bjw.halodigit.com:9060/nereus/manager/index#/account/changePwd
+等待3秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:22.532913
+时间串：20190710153522
+当前时间：2019-07-10 15:35:22.646919
+时间串：20190710153522
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/4_20190710153522_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:22.713923
+时间串：20190710153522
+当前时间：2019-07-10 15:35:22.787927
+时间串：20190710153522
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/4_20190710153522_ele.png
+得到的元素属性【value】的值为：中国人寿保险公司
+输入内容：中国人寿保险公司;显示内容：中国人寿保险公司
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:22.818929
+时间串：20190710153522
+当前时间：2019-07-10 15:35:22.889933
+时间串：20190710153522
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/4_20190710153522_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:22.935936
+时间串：20190710153522
+当前时间：2019-07-10 15:35:23.008940
+时间串：20190710153523
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/4_20190710153523_ele.png
+得到的元素属性【value】的值为：中国人寿保险公司
+输入内容：中国人寿保险公司;显示内容：中国人寿保险公司
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:23.043942
+时间串：20190710153523
+当前时间：2019-07-10 15:35:23.116946
+时间串：20190710153523
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/4_20190710153523_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:23.157948
+时间串：20190710153523
+当前时间：2019-07-10 15:35:23.229953
+时间串：20190710153523
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/4_20190710153523_ele.png
+得到的元素属性【value】的值为：中国人寿保险公司
+输入内容：中国人寿保险公司;显示内容：中国人寿保险公司
+等待1秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[2]/button】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:24.290013
+时间串：20190710153524
+当前时间：2019-07-10 15:35:24.368018
+时间串：20190710153524
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/4_20190710153524_ele.png
+点击Xpath路径为[/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[2]/button]的元素
+等待2秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/em】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:26.647148
+时间串：20190710153526
+当前时间：2019-07-10 15:35:26.725152
+时间串：20190710153526
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/4_20190710153526_ele.png
+元素的Xpath路径为：/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/em;对应的文本信息为：Original password is incorrect
+等待3秒---
+问题描述：Message: Unable to locate element: /html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/em
+
+调用截取图片函数
+当前时间：2019-07-10 15:35:29.759326
+时间串：20190710153529
+等待5秒---
+[1;31;0m
+[1;31;0m
+调用截取图片函数
+当前时间：2019-07-10 15:35:34.861618
+时间串：20190710153534
+当前时间：2019-07-10 15:35:34.863618
+时间串年月：201907
+已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201907/screenshots/
+[0m
+*****
+media\report\201907\screenshots\screenpicture_20190710153534.png
+*****
+停顿5秒后再次查找依然未找到元素.问题描述：Message: Unable to locate element: /html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/em
+
+[0m
+Traceback (most recent call last):
+  File "D:\djangoworkon\webtest\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\autotest\test\manager\AutoTestChangePassword.py", line 104, in test
+    self.definechangepassword(num,currentpasswordinputtext,newpasswordinputtext,confirmpasswordinputtext,precurrentpasswordinputtiptext,prenewpasswordinputtiptext,preconfirmpasswordinputtiptext)
+  File "D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\autotest\test\manager\AutoTestChangePassword.py", line 90, in definechangepassword
+    newpasswordinputtiptext = self.activeweb.findElementByXpathAndReturnText(num,self.testpage.newpasswordinputtip)
+  File "D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\base\activebase.py", line 170, in findElementByXpathAndReturnText
+    ele = self.getEleImage(num,path)
+  File "D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\base\activebase.py", line 152, in getEleImage
+    ele = self.findElementByXpath(path)   #获取元素控件
+  File "D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\base\activebase.py", line 148, in findElementByXpath
+    return ele
+UnboundLocalError: local variable 'ele' referenced before assignment
+
+<img  src="http://127.0.0.1:8060/
+media\report\201907\screenshots\screenpicture_20190710153534.png
+" alt="picture_shot" height="480" width="270"></img>
+<a    href="http://127.0.0.1:8060/
+media\report\201907\screenshots\screenpicture_20190710153534.png
+">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_5' class='none'>
+    <td class='failCase'><div class='testcase'>test_5___5____qwert____qwert____qwert____The_length_cannot_be_more_than6____The_length_cannot_be_more_than6____The_length_cannot_be_more_than6__</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_5'>失败</button>
+    <div id='div_ft1_5' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_5'>失败</button>
+    <div id='div_ft1_5' class="collapse in">
+    <pre>
+    
+1_5: 进入网址：https://bjw.halodigit.com:9060/nereus/manager/index#/account/changePwd
+等待3秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:37.990797
+时间串：20190710153537
+当前时间：2019-07-10 15:35:38.133805
+时间串：20190710153538
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/5_20190710153538_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:38.207809
+时间串：20190710153538
+当前时间：2019-07-10 15:35:38.287814
+时间串：20190710153538
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/5_20190710153538_ele.png
+得到的元素属性【value】的值为：qwert
+输入内容：qwert;显示内容：qwert
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:38.317815
+时间串：20190710153538
+当前时间：2019-07-10 15:35:38.389820
+时间串：20190710153538
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/5_20190710153538_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:38.438822
+时间串：20190710153538
+当前时间：2019-07-10 15:35:38.521827
+时间串：20190710153538
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/5_20190710153538_ele.png
+得到的元素属性【value】的值为：qwert
+输入内容：qwert;显示内容：qwert
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:38.548829
+时间串：20190710153538
+当前时间：2019-07-10 15:35:38.619833
+时间串：20190710153538
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/5_20190710153538_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:38.662835
+时间串：20190710153538
+当前时间：2019-07-10 15:35:38.735839
+时间串：20190710153538
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/5_20190710153538_ele.png
+得到的元素属性【value】的值为：qwert
+输入内容：qwert;显示内容：qwert
+等待1秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[2]/button】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:39.783899
+时间串：20190710153539
+当前时间：2019-07-10 15:35:39.865904
+时间串：20190710153539
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/5_20190710153539_ele.png
+点击Xpath路径为[/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[2]/button]的元素
+等待2秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/em】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:42.135034
+时间串：20190710153542
+当前时间：2019-07-10 15:35:42.214038
+时间串：20190710153542
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/5_20190710153542_ele.png
+元素的Xpath路径为：/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/em;对应的文本信息为：The length cannot be less than6
+等待3秒---
+Traceback (most recent call last):
+  File "D:\djangoworkon\webtest\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\autotest\test\manager\AutoTestChangePassword.py", line 104, in test
+    self.definechangepassword(num,currentpasswordinputtext,newpasswordinputtext,confirmpasswordinputtext,precurrentpasswordinputtiptext,prenewpasswordinputtiptext,preconfirmpasswordinputtiptext)
+  File "D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\autotest\test\manager\AutoTestChangePassword.py", line 88, in definechangepassword
+    self.assertEqual(precurrentpasswordinputtiptext,currentpasswordinputtiptext)
+AssertionError: 'The length cannot be more than6' != 'The length cannot be less than6'
+- The length cannot be more than6
+?                      ^^^
++ The length cannot be less than6
+?                      ^ ++
+
+
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_6' class='none'>
+    <td class='failCase'><div class='testcase'>test_6___6____qwertyuiop1234567890_________qwertyuiop1234567890_________qwertyuiop1234567890_________The_length_cannot_be_more_than24____The_length_cannot_be_more_than24____The_length_cannot_be_more_than24__</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_6'>失败</button>
+    <div id='div_ft1_6' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_6'>失败</button>
+    <div id='div_ft1_6' class="collapse in">
+    <pre>
+    
+1_6: 进入网址：https://bjw.halodigit.com:9060/nereus/manager/index#/account/changePwd
+等待3秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:48.311387
+时间串：20190710153548
+当前时间：2019-07-10 15:35:48.409393
+时间串：20190710153548
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/6_20190710153548_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:48.485397
+时间串：20190710153548
+当前时间：2019-07-10 15:35:48.559401
+时间串：20190710153548
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/6_20190710153548_ele.png
+得到的元素属性【value】的值为：qwertyuiop1234567890#$%^&amp;
+输入内容：qwertyuiop1234567890#$%^&amp;;显示内容：qwertyuiop1234567890#$%^&amp;
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:48.585403
+时间串：20190710153548
+当前时间：2019-07-10 15:35:48.662407
+时间串：20190710153548
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/6_20190710153548_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:48.743412
+时间串：20190710153548
+当前时间：2019-07-10 15:35:48.814416
+时间串：20190710153548
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/6_20190710153548_ele.png
+得到的元素属性【value】的值为：qwertyuiop1234567890#$%^&amp;
+输入内容：qwertyuiop1234567890#$%^&amp;;显示内容：qwertyuiop1234567890#$%^&amp;
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:48.841417
+时间串：20190710153548
+当前时间：2019-07-10 15:35:48.909421
+时间串：20190710153548
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/6_20190710153548_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:48.969425
+时间串：20190710153548
+当前时间：2019-07-10 15:35:49.046429
+时间串：20190710153549
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/6_20190710153549_ele.png
+得到的元素属性【value】的值为：qwertyuiop1234567890#$%^&amp;
+输入内容：qwertyuiop1234567890#$%^&amp;;显示内容：qwertyuiop1234567890#$%^&amp;
+等待1秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[2]/button】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:50.110490
+时间串：20190710153550
+当前时间：2019-07-10 15:35:50.183494
+时间串：20190710153550
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/6_20190710153550_ele.png
+点击Xpath路径为[/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[2]/button]的元素
+等待2秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/em】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:52.441623
+时间串：20190710153552
+当前时间：2019-07-10 15:35:52.518628
+时间串：20190710153552
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/6_20190710153552_ele.png
+元素的Xpath路径为：/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/em;对应的文本信息为：The length cannot be more than16
+等待3秒---
+Traceback (most recent call last):
+  File "D:\djangoworkon\webtest\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\autotest\test\manager\AutoTestChangePassword.py", line 104, in test
+    self.definechangepassword(num,currentpasswordinputtext,newpasswordinputtext,confirmpasswordinputtext,precurrentpasswordinputtiptext,prenewpasswordinputtiptext,preconfirmpasswordinputtiptext)
+  File "D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction\autotest\test\manager\AutoTestChangePassword.py", line 88, in definechangepassword
+    self.assertEqual(precurrentpasswordinputtiptext,currentpasswordinputtiptext)
+AssertionError: 'The length cannot be more than24' != 'The length cannot be more than16'
+- The length cannot be more than24
+?                               ^^
++ The length cannot be more than16
+?                               ^^
+
+
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+    <tr id='pt1_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_7___9____123456____1234qwer____qwer1234___None__None___New_password_entered_inconsistently__</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_7' type="button"  class="btn btn-success btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_7'>通过</button>
+    <div id='div_pt1_7' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_7' type="button"  class="btn btn-success btn-xs" data-toggle="collapse" data-target='#div_pt1_7'>通过</button>
+    <div id='div_pt1_7' class="collapse in">
+    <pre>
+    
+1_7: 进入网址：https://bjw.halodigit.com:9060/nereus/manager/index#/account/changePwd
+等待3秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:58.608976
+时间串：20190710153558
+当前时间：2019-07-10 15:35:58.688981
+时间串：20190710153558
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/9_20190710153558_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[1]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:58.725983
+时间串：20190710153558
+当前时间：2019-07-10 15:35:58.798987
+时间串：20190710153558
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/9_20190710153558_ele.png
+得到的元素属性【value】的值为：123456
+输入内容：123456;显示内容：123456
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:58.823988
+时间串：20190710153558
+当前时间：2019-07-10 15:35:58.892992
+时间串：20190710153558
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/9_20190710153558_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[2]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:58.944995
+时间串：20190710153558
+当前时间：2019-07-10 15:35:59.016999
+时间串：20190710153559
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/9_20190710153559_ele.png
+得到的元素属性【value】的值为：1234qwer
+输入内容：1234qwer;显示内容：1234qwer
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:59.043001
+时间串：20190710153559
+当前时间：2019-07-10 15:35:59.112005
+时间串：20190710153559
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/9_20190710153559_ele.png
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/span[2]/input】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:35:59.154007
+时间串：20190710153559
+当前时间：2019-07-10 15:35:59.225011
+时间串：20190710153559
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/9_20190710153559_ele.png
+得到的元素属性【value】的值为：qwer1234
+输入内容：qwer1234;显示内容：qwer1234
+等待1秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[2]/button】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:36:00.267071
+时间串：20190710153600
+当前时间：2019-07-10 15:36:00.377077
+时间串：20190710153600
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/9_20190710153600_ele.png
+点击Xpath路径为[/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[2]/button]的元素
+等待2秒---
+找到Xpath为【/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/em】的元素
+调用截取图片函数
+当前时间：2019-07-10 15:36:02.626206
+时间串：20190710153602
+当前时间：2019-07-10 15:36:02.696210
+时间串：20190710153602
+获取到的元素的截图路径为：D:\Users\Administrator\PycharmProjects\webtestdata\TestCaseFunction/imagefile/ele/9_20190710153602_ele.png
+元素的Xpath路径为：/html/body/div[3]/div[2]/ui-view/div[2]/div/form/div[1]/div[3]/p/em;对应的文本信息为：New password entered inconsistently
+等待3秒---
+测试通过
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+    
+<tr id='total_row' class="text-center active">
+    <td>总计</td>
+    <td>7</td>
+    <td>3</td>
+    <td>3</td>
+    <td>1</td>
+    <td>通过率：42.86%</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+Time:2019-08-01 16:06:05,102; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:06:05.102460 
+Time:2019-08-01 16:06:05,103; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801160605 
+Time:2019-08-01 16:08:08,386; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:08:08.386511 
+Time:2019-08-01 16:08:08,387; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801160808 
+Time:2019-08-01 16:22:58,583; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:22:58.582427 
+Time:2019-08-01 16:22:58,584; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801162258 
+Time:2019-08-01 16:22:58,585; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:22:58.584427 
+Time:2019-08-01 16:22:58,586; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801162258 
+Time:2019-08-01 16:34:19,917; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:34:19.915397 
+Time:2019-08-01 16:34:19,921; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801163419 
+Time:2019-08-01 16:35:00,906; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:35:00.905742 
+Time:2019-08-01 16:35:00,911; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801163500 
+Time:2019-08-01 16:35:41,975; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:35:41.973091 
+Time:2019-08-01 16:35:41,979; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801163541 
+Time:2019-08-01 16:36:22,870; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:36:22.867430 
+Time:2019-08-01 16:36:22,875; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801163622 
+Time:2019-08-01 16:37:03,760; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:37:03.758769 
+Time:2019-08-01 16:37:03,765; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801163703 
+Time:2019-08-01 16:37:44,758; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:37:44.755113 
+Time:2019-08-01 16:37:44,765; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801163744 
+Time:2019-08-01 16:38:25,994; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:38:25.991472 
+Time:2019-08-01 16:38:26,000; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801163825 
+Time:2019-08-01 16:39:07,313; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:39:07.311835 
+Time:2019-08-01 16:39:07,316; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801163907 
+Time:2019-08-01 16:39:48,881; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:39:48.880213 
+Time:2019-08-01 16:39:48,903; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801163948 
+Time:2019-08-01 16:40:30,907; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:40:30.905617 
+Time:2019-08-01 16:40:30,912; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801164030 
+Time:2019-08-01 16:50:54,535; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:50:54.533286 
+Time:2019-08-01 16:50:54,539; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801165054 
+Time:2019-08-01 16:50:54,543; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 16:50:54.540287 
+Time:2019-08-01 16:50:54,547; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801165054 

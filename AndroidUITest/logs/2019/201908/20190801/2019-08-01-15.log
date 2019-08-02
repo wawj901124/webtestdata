@@ -1,0 +1,2 @@
+Time:2019-08-01 15:18:14,108; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-01 15:18:14.107248 
+Time:2019-08-01 15:18:14,109; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190801151814 

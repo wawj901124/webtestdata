@@ -1,0 +1,922 @@
+Time:2019-08-02 14:00:54,183; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:00:54.182411 
+Time:2019-08-02 14:00:54,184; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140054 
+Time:2019-08-02 14:00:54,185; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:00:54.184411 
+Time:2019-08-02 14:00:54,185; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140054 
+Time:2019-08-02 14:00:54,186; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:00:54.186411 
+Time:2019-08-02 14:00:54,187; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140054 
+Time:2019-08-02 14:00:54,188; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:00:54.187411 
+Time:2019-08-02 14:00:54,188; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140054 
+Time:2019-08-02 14:00:54,190; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:00:54.190411 
+Time:2019-08-02 14:00:54,191; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140054 
+Time:2019-08-02 14:00:54,192; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:00:54.191411 
+Time:2019-08-02 14:00:54,192; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140054 
+Time:2019-08-02 14:00:54,193; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:00:54.193411 
+Time:2019-08-02 14:00:54,194; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140054 
+Time:2019-08-02 14:00:54,195; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:00:54.194411 
+Time:2019-08-02 14:00:54,196; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140054 
+Time:2019-08-02 14:00:55,188; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:00:58,318; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:01:01,320; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:01:06,324; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:01:18,511; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:01:29,241; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:01:39,893; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:01:50,522; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:02:01,251; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:02:11,957; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:02:22,537; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:02:33,339; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:02:44,075; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:02:48,149; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:02:48.148929 
+Time:2019-08-02 14:02:48,149; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140248 
+Time:2019-08-02 14:02:48,150; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:02:48.150929 
+Time:2019-08-02 14:02:48,151; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140248 
+Time:2019-08-02 14:02:48,152; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:02:48.152929 
+Time:2019-08-02 14:02:48,153; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140248 
+Time:2019-08-02 14:02:48,153; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:02:48.153929 
+Time:2019-08-02 14:02:48,154; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140248 
+Time:2019-08-02 14:02:48,156; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:02:48.155930 
+Time:2019-08-02 14:02:48,157; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140248 
+Time:2019-08-02 14:02:48,158; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:02:48.157930 
+Time:2019-08-02 14:02:48,158; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140248 
+Time:2019-08-02 14:02:48,159; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:02:48.159930 
+Time:2019-08-02 14:02:48,160; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140248 
+Time:2019-08-02 14:02:48,161; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:02:48.160930 
+Time:2019-08-02 14:02:48,161; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140248 
+Time:2019-08-02 14:02:49,009; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:02:51,998; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:02:55,002; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:03:00,005; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:03:12,181; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:03:12,483; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 14:03:12,484; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 14:03:13,590; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:03:16,681; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:03:19,684; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:03:24,689; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:03:36,910; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:03:37,035; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 14:03:37,036; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 14:03:38,013; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:03:41,033; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:03:44,037; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:03:49,039; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:04:01,331; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:04:01,512; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 14:04:01,513; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 14:04:02,302; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:04:05,410; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:04:08,414; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:04:13,417; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:04:25,670; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:04:25,877; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 14:04:25,878; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 14:04:26,816; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:04:29,850; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:04:32,855; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:05:38,935; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:05:38.935698 
+Time:2019-08-02 14:05:38,936; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140538 
+Time:2019-08-02 14:05:38,937; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:05:38.936698 
+Time:2019-08-02 14:05:38,937; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140538 
+Time:2019-08-02 14:05:38,938; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:05:38.938698 
+Time:2019-08-02 14:05:38,939; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140538 
+Time:2019-08-02 14:05:38,940; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:05:38.939698 
+Time:2019-08-02 14:05:38,940; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140538 
+Time:2019-08-02 14:05:38,942; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:05:38.941698 
+Time:2019-08-02 14:05:38,943; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140538 
+Time:2019-08-02 14:05:38,943; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:05:38.943698 
+Time:2019-08-02 14:05:38,944; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140538 
+Time:2019-08-02 14:05:38,945; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:05:38.944698 
+Time:2019-08-02 14:05:38,945; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140538 
+Time:2019-08-02 14:05:38,946; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:05:38.946698 
+Time:2019-08-02 14:05:38,947; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140538 
+Time:2019-08-02 14:05:39,849; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:05:42,888; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:05:45,893; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:05:50,896; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:05:53,258; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63075 kB 
+Time:2019-08-02 14:06:03,265; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:06:03,370; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:06:03,373; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:06:03,501; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:06:03,503; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:06:04,077; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58604 kB 
+Time:2019-08-02 14:06:04,162; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:06:04,165; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:06:04,623; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:06:07,625; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:06:08,196; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：64669 kB 
+Time:2019-08-02 14:06:18,200; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:06:18,282; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:06:18,286; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Balance]的控件。 
+Time:2019-08-02 14:06:18,390; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:06:18,394; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Balance 
+Time:2019-08-02 14:06:19,002; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63113 kB 
+Time:2019-08-02 14:06:29,008; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:06:29,570; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63229 kB 
+Time:2019-08-02 14:06:29,740; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击返回按键 
+Time:2019-08-02 14:06:32,742; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:06:33,301; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63235 kB 
+Time:2019-08-02 14:06:43,305; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:06:43,414; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:06:43,418; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:06:43,530; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:06:43,532; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:06:44,078; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63176 kB 
+Time:2019-08-02 14:06:54,083; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:06:54,724; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63176 kB 
+Time:2019-08-02 14:06:54,726; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前页内存：63075 KB,静置10秒后，内存：58604 KB,点击进入下一个页面内存：64669 KB,静置10秒后，内存：63113 KB,静置10秒后，内存：63229 KB,点击返回后内存：63235,静置10秒后，内存：63176,静置10秒后，内存：63176 
+Time:2019-08-02 14:06:54,728; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:meminfoarray:['63075', '58604', '64669', '63113', '63229', '63235', '63176', '63176'] 
+Time:2019-08-02 14:06:55,322; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63176 kB 
+Time:2019-08-02 14:07:05,326; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:07:05,432; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:07:05,433; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:07:05,530; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:07:05,531; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:07:06,173; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63176 kB 
+Time:2019-08-02 14:07:06,322; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:07:06,327; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:07:06,798; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:07:09,799; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:07:10,397; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63176 kB 
+Time:2019-08-02 14:07:20,401; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:07:20,508; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:07:20,510; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Balance]的控件。 
+Time:2019-08-02 14:07:20,614; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:07:20,618; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Balance 
+Time:2019-08-02 14:07:21,208; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：65845 kB 
+Time:2019-08-02 14:07:31,213; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:07:31,803; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：67306 kB 
+Time:2019-08-02 14:07:31,860; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击返回按键 
+Time:2019-08-02 14:07:34,863; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:07:35,472; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：67305 kB 
+Time:2019-08-02 14:07:45,475; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:07:45,590; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:07:45,594; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:07:45,749; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:07:45,750; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:07:46,270; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63177 kB 
+Time:2019-08-02 14:07:56,275; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:07:56,843; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63177 kB 
+Time:2019-08-02 14:07:56,848; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前页内存：63176 KB,静置10秒后，内存：63176 KB,点击进入下一个页面内存：63176 KB,静置10秒后，内存：65845 KB,静置10秒后，内存：67306 KB,点击返回后内存：67305,静置10秒后，内存：63177,静置10秒后，内存：63177 
+Time:2019-08-02 14:07:56,852; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:meminfoarray:['63176', '63176', '63176', '65845', '67306', '67305', '63177', '63177'] 
+Time:2019-08-02 14:07:57,485; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63178 kB 
+Time:2019-08-02 14:08:07,490; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:08:07,590; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:08:07,592; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:08:07,702; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:08:07,706; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:08:08,314; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63177 kB 
+Time:2019-08-02 14:08:08,454; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:08:08,456; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:08:08,910; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:08:11,913; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:08:12,488; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：68162 kB 
+Time:2019-08-02 14:08:22,492; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:08:22,599; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:08:22,600; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Balance]的控件。 
+Time:2019-08-02 14:08:22,688; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:08:22,689; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Balance 
+Time:2019-08-02 14:08:23,233; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：67294 kB 
+Time:2019-08-02 14:08:33,235; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:08:33,802; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：67296 kB 
+Time:2019-08-02 14:08:33,962; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击返回按键 
+Time:2019-08-02 14:08:36,965; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:08:37,512; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：67296 kB 
+Time:2019-08-02 14:08:47,516; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:08:47,631; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:08:47,632; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:08:47,731; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:08:47,735; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:08:48,293; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63190 kB 
+Time:2019-08-02 14:09:05,969; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:09:05.968539 
+Time:2019-08-02 14:09:05,970; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140905 
+Time:2019-08-02 14:09:05,971; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:09:05.970539 
+Time:2019-08-02 14:09:05,971; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140905 
+Time:2019-08-02 14:09:05,972; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:09:05.972539 
+Time:2019-08-02 14:09:05,973; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140905 
+Time:2019-08-02 14:09:05,973; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:09:05.973539 
+Time:2019-08-02 14:09:05,974; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140905 
+Time:2019-08-02 14:09:05,976; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:09:05.975540 
+Time:2019-08-02 14:09:05,976; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140905 
+Time:2019-08-02 14:09:05,977; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:09:05.977540 
+Time:2019-08-02 14:09:05,978; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140905 
+Time:2019-08-02 14:09:05,979; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:09:05.978540 
+Time:2019-08-02 14:09:05,979; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140905 
+Time:2019-08-02 14:09:05,980; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:09:05.980540 
+Time:2019-08-02 14:09:05,981; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802140905 
+Time:2019-08-02 14:09:06,929; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:09:10,045; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:09:13,048; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:09:18,052; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:09:20,302; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63079 kB 
+Time:2019-08-02 14:09:30,309; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:09:30,559; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:09:30,561; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:09:30,664; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:09:30,665; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:09:31,183; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58600 kB 
+Time:2019-08-02 14:09:31,278; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:09:31,282; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:09:31,648; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:09:34,650; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:09:35,236; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58600 kB 
+Time:2019-08-02 14:09:45,242; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:09:45,348; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:09:45,352; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Balance]的控件。 
+Time:2019-08-02 14:09:45,469; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:09:45,472; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Balance 
+Time:2019-08-02 14:09:46,024; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：61211 kB 
+Time:2019-08-02 14:09:56,031; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:09:56,599; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：67218 kB 
+Time:2019-08-02 14:09:56,759; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击返回按键 
+Time:2019-08-02 14:09:59,761; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:10:00,355; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：67346 kB 
+Time:2019-08-02 14:10:10,361; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:10:10,497; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:10:10,501; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:10:10,615; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:10:10,617; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:10:11,168; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：67328 kB 
+Time:2019-08-02 14:10:21,170; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:10:21,960; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63183 kB 
+Time:2019-08-02 14:10:21,962; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前页内存：63079 KB,静置10秒后，内存：58600 KB,点击进入下一个页面内存：58600 KB,静置10秒后，内存：61211 KB,静置10秒后，内存：67218 KB,点击返回后内存：67346,静置10秒后，内存：67328,静置10秒后，内存：63183 
+Time:2019-08-02 14:10:21,965; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:meminfoarray:['63079', '58600', '58600', '61211', '67218', '67346', '67328', '63183'] 
+Time:2019-08-02 14:10:22,636; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63183 kB 
+Time:2019-08-02 14:10:32,639; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:10:32,904; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:10:32,907; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:10:33,066; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:10:33,069; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:10:33,650; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63183 kB 
+Time:2019-08-02 14:10:33,722; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:10:33,724; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:10:34,094; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:10:37,098; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:10:37,689; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63183 kB 
+Time:2019-08-02 14:10:47,693; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:10:47,792; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:10:47,796; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Balance]的控件。 
+Time:2019-08-02 14:10:47,896; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:10:47,899; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Balance 
+Time:2019-08-02 14:10:48,481; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：65851 kB 
+Time:2019-08-02 14:10:58,485; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:10:59,085; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：67306 kB 
+Time:2019-08-02 14:10:59,240; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击返回按键 
+Time:2019-08-02 14:16:05,795; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:16:05.794552 
+Time:2019-08-02 14:16:05,796; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141605 
+Time:2019-08-02 14:16:05,796; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:16:05.796552 
+Time:2019-08-02 14:16:05,797; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141605 
+Time:2019-08-02 14:16:05,798; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:16:05.798552 
+Time:2019-08-02 14:16:05,799; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141605 
+Time:2019-08-02 14:16:05,799; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:16:05.799552 
+Time:2019-08-02 14:16:05,830; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141605 
+Time:2019-08-02 14:16:05,832; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:16:05.832554 
+Time:2019-08-02 14:16:05,833; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141605 
+Time:2019-08-02 14:16:05,834; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:16:05.833554 
+Time:2019-08-02 14:16:05,834; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141605 
+Time:2019-08-02 14:16:05,835; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:16:05.835554 
+Time:2019-08-02 14:16:05,836; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141605 
+Time:2019-08-02 14:16:05,837; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:16:05.836554 
+Time:2019-08-02 14:16:05,838; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141605 
+Time:2019-08-02 14:16:06,680; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:16:09,811; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:16:12,812; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:16:17,815; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:16:20,228; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63077 kB 
+Time:2019-08-02 14:16:30,235; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:16:30,374; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:16:30,375; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:16:30,483; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:16:30,484; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:16:31,021; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58604 kB 
+Time:2019-08-02 14:16:31,138; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:16:31,141; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:16:31,592; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:16:34,594; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:16:35,201; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58604 kB 
+Time:2019-08-02 14:16:45,205; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:16:46,636; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:16:46,637; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Balance]的控件。 
+Time:2019-08-02 14:16:46,744; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:16:46,747; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Balance 
+Time:2019-08-02 14:16:47,363; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：61473 kB 
+Time:2019-08-02 14:16:57,366; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:16:57,954; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63220 kB 
+Time:2019-08-02 14:16:58,111; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击返回按键 
+Time:2019-08-02 14:17:01,114; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:17:01,731; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：67316 kB 
+Time:2019-08-02 14:17:11,735; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:17:11,834; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:17:11,836; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:17:11,932; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:17:11,933; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:17:12,474; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63177 kB 
+Time:2019-08-02 14:17:22,477; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:17:23,089; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63177 kB 
+Time:2019-08-02 14:17:23,092; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前页内存：63077 KB,静置10秒后，内存：58604 KB,点击进入下一个页面内存：58604 KB,静置10秒后，内存：61473 KB,静置10秒后，内存：63220 KB,点击返回后内存：67316,静置10秒后，内存：63177,静置10秒后，内存：63177 
+Time:2019-08-02 14:17:23,095; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:meminfoarray:['63077', '58604', '58604', '61473', '63220', '67316', '63177', '63177'] 
+Time:2019-08-02 14:17:23,673; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63177 kB 
+Time:2019-08-02 14:17:33,675; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:17:33,799; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:17:33,800; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:17:33,913; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:17:33,915; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:17:34,576; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63177 kB 
+Time:2019-08-02 14:17:34,694; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:17:34,696; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:17:35,121; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:17:38,122; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:17:38,700; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63177 kB 
+Time:2019-08-02 14:17:48,706; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:17:48,848; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:17:48,850; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Balance]的控件。 
+Time:2019-08-02 14:17:48,972; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:17:48,974; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Balance 
+Time:2019-08-02 14:17:49,550; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：65845 kB 
+Time:2019-08-02 14:18:02,463; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:18:02.463225 
+Time:2019-08-02 14:18:02,464; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141802 
+Time:2019-08-02 14:18:02,465; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:18:02.464225 
+Time:2019-08-02 14:18:02,465; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141802 
+Time:2019-08-02 14:18:02,466; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:18:02.466225 
+Time:2019-08-02 14:18:02,467; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141802 
+Time:2019-08-02 14:18:02,468; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:18:02.467225 
+Time:2019-08-02 14:18:02,468; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141802 
+Time:2019-08-02 14:18:02,470; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:18:02.470225 
+Time:2019-08-02 14:18:02,471; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141802 
+Time:2019-08-02 14:18:02,472; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:18:02.471225 
+Time:2019-08-02 14:18:02,472; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141802 
+Time:2019-08-02 14:18:02,473; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:18:02.473226 
+Time:2019-08-02 14:18:02,474; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141802 
+Time:2019-08-02 14:18:02,475; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:18:02.474226 
+Time:2019-08-02 14:18:02,475; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141802 
+Time:2019-08-02 14:18:03,366; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:18:06,336; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:18:09,336; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:18:14,338; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:18:18,333; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63079 kB 
+Time:2019-08-02 14:19:20,760; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:19:20.759703 
+Time:2019-08-02 14:19:20,760; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141920 
+Time:2019-08-02 14:19:20,761; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:19:20.761703 
+Time:2019-08-02 14:19:20,762; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141920 
+Time:2019-08-02 14:19:20,763; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:19:20.762703 
+Time:2019-08-02 14:19:20,763; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141920 
+Time:2019-08-02 14:19:20,764; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:19:20.764704 
+Time:2019-08-02 14:19:20,765; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141920 
+Time:2019-08-02 14:19:20,767; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:19:20.766704 
+Time:2019-08-02 14:19:20,767; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141920 
+Time:2019-08-02 14:19:20,768; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:19:20.768704 
+Time:2019-08-02 14:19:20,769; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141920 
+Time:2019-08-02 14:19:20,770; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:19:20.769704 
+Time:2019-08-02 14:19:20,770; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141920 
+Time:2019-08-02 14:19:20,771; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:19:20.771704 
+Time:2019-08-02 14:19:20,772; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802141920 
+Time:2019-08-02 14:19:21,657; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:19:24,692; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:19:27,694; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:19:32,695; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:19:35,444; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 14:19:35,447; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 14:19:36,381; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:22:56,926; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:22:56.925067 
+Time:2019-08-02 14:22:56,927; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142256 
+Time:2019-08-02 14:22:56,927; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:22:56.927067 
+Time:2019-08-02 14:22:56,928; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142256 
+Time:2019-08-02 14:22:56,929; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:22:56.929067 
+Time:2019-08-02 14:22:56,930; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142256 
+Time:2019-08-02 14:22:56,930; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:22:56.930067 
+Time:2019-08-02 14:22:56,931; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142256 
+Time:2019-08-02 14:22:56,933; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:22:56.932068 
+Time:2019-08-02 14:22:56,933; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142256 
+Time:2019-08-02 14:22:56,934; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:22:56.934068 
+Time:2019-08-02 14:22:56,935; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142256 
+Time:2019-08-02 14:22:56,936; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:22:56.935068 
+Time:2019-08-02 14:22:56,936; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142256 
+Time:2019-08-02 14:22:56,937; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:22:56.937068 
+Time:2019-08-02 14:22:56,938; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142256 
+Time:2019-08-02 14:22:57,832; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:23:00,905; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:23:03,906; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:23:08,908; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:23:12,071; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 14:23:12,072; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 14:23:12,073; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 14:23:12,074; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:23:12.073934 
+Time:2019-08-02 14:23:12,075; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 14:23:12,076; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:23:12.075934 
+Time:2019-08-02 14:23:12,077; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142312 
+Time:2019-08-02 14:23:12,989; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:27:06,581; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:27:06.581347 
+Time:2019-08-02 14:27:06,582; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142706 
+Time:2019-08-02 14:27:06,583; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:27:06.582347 
+Time:2019-08-02 14:27:06,583; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142706 
+Time:2019-08-02 14:27:06,584; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:27:06.584347 
+Time:2019-08-02 14:27:06,585; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142706 
+Time:2019-08-02 14:27:06,586; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:27:06.585347 
+Time:2019-08-02 14:27:06,586; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142706 
+Time:2019-08-02 14:27:06,588; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:27:06.587347 
+Time:2019-08-02 14:27:06,589; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142706 
+Time:2019-08-02 14:27:06,589; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:27:06.589347 
+Time:2019-08-02 14:27:06,590; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142706 
+Time:2019-08-02 14:27:06,591; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:27:06.591347 
+Time:2019-08-02 14:27:06,592; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142706 
+Time:2019-08-02 14:27:06,593; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:27:06.592347 
+Time:2019-08-02 14:27:06,593; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142706 
+Time:2019-08-02 14:27:07,470; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:27:10,337; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:27:13,338; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:27:18,342; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:27:21,459; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 14:27:21,462; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 14:27:21,465; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 14:27:21,467; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:27:21.467198 
+Time:2019-08-02 14:27:21,469; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 14:27:21,471; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:27:21.470198 
+Time:2019-08-02 14:27:21,473; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142721 
+Time:2019-08-02 14:27:22,467; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:28:51,658; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:28:51.657357 
+Time:2019-08-02 14:28:51,659; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142851 
+Time:2019-08-02 14:28:51,660; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:28:51.660357 
+Time:2019-08-02 14:28:51,661; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142851 
+Time:2019-08-02 14:28:51,662; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:28:51.662357 
+Time:2019-08-02 14:28:51,663; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142851 
+Time:2019-08-02 14:28:51,664; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:28:51.664357 
+Time:2019-08-02 14:28:51,665; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142851 
+Time:2019-08-02 14:28:51,667; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:28:51.666357 
+Time:2019-08-02 14:28:51,668; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142851 
+Time:2019-08-02 14:28:51,669; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:28:51.668357 
+Time:2019-08-02 14:28:51,669; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142851 
+Time:2019-08-02 14:28:51,670; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:28:51.670357 
+Time:2019-08-02 14:28:51,671; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142851 
+Time:2019-08-02 14:28:51,672; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:28:51.671358 
+Time:2019-08-02 14:28:51,672; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142851 
+Time:2019-08-02 14:28:52,517; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:28:55,561; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:28:58,563; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:29:03,565; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:29:06,698; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 14:29:06,700; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 14:29:06,702; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 14:29:06,704; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:29:06.703217 
+Time:2019-08-02 14:29:06,706; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 14:29:06,707; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:29:06.707218 
+Time:2019-08-02 14:29:06,708; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802142906 
+Time:2019-08-02 14:29:07,869; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:34:03,102; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:34:03.101170 
+Time:2019-08-02 14:34:03,103; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143403 
+Time:2019-08-02 14:34:03,104; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:34:03.104170 
+Time:2019-08-02 14:34:03,105; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143403 
+Time:2019-08-02 14:34:03,107; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:34:03.106171 
+Time:2019-08-02 14:34:03,108; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143403 
+Time:2019-08-02 14:34:03,109; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:34:03.109171 
+Time:2019-08-02 14:34:03,110; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143403 
+Time:2019-08-02 14:34:03,113; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:34:03.112171 
+Time:2019-08-02 14:34:03,114; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143403 
+Time:2019-08-02 14:34:03,115; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:34:03.115171 
+Time:2019-08-02 14:34:03,116; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143403 
+Time:2019-08-02 14:34:03,117; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:34:03.116171 
+Time:2019-08-02 14:34:03,117; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143403 
+Time:2019-08-02 14:34:03,119; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:34:03.118171 
+Time:2019-08-02 14:34:03,119; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143403 
+Time:2019-08-02 14:34:04,120; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:34:07,100; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:34:10,103; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:34:15,104; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:34:18,277; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 14:34:18,280; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 14:34:18,284; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 14:34:18,289; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:34:18.287039 
+Time:2019-08-02 14:34:18,292; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 14:34:18,296; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:34:18.294039 
+Time:2019-08-02 14:34:18,300; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143418 
+Time:2019-08-02 14:34:18,307; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 14:34:18,311; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 14:34:18,315; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经创建目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 14:34:18,318; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经创建目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 14:34:18,320; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 14:34:20,611; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 14:34:20,612; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots//screenpicture_20190802143418.png 
+Time:2019-08-02 14:34:20,614; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 14:34:20,615; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 14:34:23,618; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:34:23,622; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 14:34:24,543; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:34:27,588; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:37:00,117; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:00.117295 
+Time:2019-08-02 14:37:00,118; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143700 
+Time:2019-08-02 14:37:00,119; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:00.118295 
+Time:2019-08-02 14:37:00,119; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143700 
+Time:2019-08-02 14:37:00,120; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:00.120295 
+Time:2019-08-02 14:37:00,121; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143700 
+Time:2019-08-02 14:37:00,122; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:00.121295 
+Time:2019-08-02 14:37:00,122; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143700 
+Time:2019-08-02 14:37:00,124; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:00.123295 
+Time:2019-08-02 14:37:00,125; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143700 
+Time:2019-08-02 14:37:00,126; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:00.125295 
+Time:2019-08-02 14:37:00,126; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143700 
+Time:2019-08-02 14:37:00,127; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:00.127296 
+Time:2019-08-02 14:37:00,127; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143700 
+Time:2019-08-02 14:37:00,128; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:00.128296 
+Time:2019-08-02 14:37:00,129; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143700 
+Time:2019-08-02 14:37:00,935; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:37:04,039; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:37:07,041; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:37:12,044; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:37:15,177; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 14:37:15,181; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 14:37:15,185; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 14:37:15,188; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:15.187157 
+Time:2019-08-02 14:37:15,192; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 14:37:15,196; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:15.194157 
+Time:2019-08-02 14:37:15,198; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143715 
+Time:2019-08-02 14:37:15,200; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 14:37:15,201; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 14:37:15,203; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 14:37:15,205; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 14:37:15,207; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 14:37:17,426; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 14:37:17,428; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots//screenpicture_20190802143715.png 
+Time:2019-08-02 14:37:17,430; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 14:37:17,433; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 14:37:20,435; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:37:20,440; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 14:37:21,371; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:37:43,985; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:43.985804 
+Time:2019-08-02 14:37:43,986; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143743 
+Time:2019-08-02 14:37:43,987; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:43.986804 
+Time:2019-08-02 14:37:43,987; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143743 
+Time:2019-08-02 14:37:43,988; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:43.988804 
+Time:2019-08-02 14:37:43,989; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143743 
+Time:2019-08-02 14:37:43,990; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:43.989804 
+Time:2019-08-02 14:37:43,990; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143743 
+Time:2019-08-02 14:37:43,992; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:43.992805 
+Time:2019-08-02 14:37:43,993; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143743 
+Time:2019-08-02 14:37:43,994; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:43.993805 
+Time:2019-08-02 14:37:43,994; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143743 
+Time:2019-08-02 14:37:43,995; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:43.995805 
+Time:2019-08-02 14:37:43,996; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143743 
+Time:2019-08-02 14:37:43,996; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:37:43.996805 
+Time:2019-08-02 14:37:43,997; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802143743 
+Time:2019-08-02 14:37:44,977; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:37:48,043; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:37:51,047; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:37:56,050; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:37:58,334; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63058 kB 
+Time:2019-08-02 14:38:08,350; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:38:08,515; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:38:08,516; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:38:08,637; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:38:08,638; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:38:09,169; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58584 kB 
+Time:2019-08-02 14:38:09,245; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:38:09,249; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:38:09,678; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:38:12,681; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:38:13,259; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63827 kB 
+Time:2019-08-02 14:38:23,265; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:38:23,384; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:38:23,386; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Balance]的控件。 
+Time:2019-08-02 14:38:23,531; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:38:23,534; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Balance 
+Time:2019-08-02 14:38:24,109; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63205 kB 
+Time:2019-08-02 14:38:34,112; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:38:34,671; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63214 kB 
+Time:2019-08-02 14:38:34,822; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击返回按键 
+Time:2019-08-02 14:38:37,822; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:38:38,372; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63214 kB 
+Time:2019-08-02 14:38:48,379; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:38:48,528; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:38:48,531; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:38:48,652; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:38:48,658; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:38:49,237; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63181 kB 
+Time:2019-08-02 14:38:59,241; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:38:59,880; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63166 kB 
+Time:2019-08-02 14:38:59,882; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前页内存：63058 KB,静置10秒后，内存：58584 KB,点击进入下一个页面内存：63827 KB,静置10秒后，内存：63205 KB,静置10秒后，内存：63214 KB,点击返回后内存：63214,静置10秒后，内存：63181,静置10秒后，内存：63166 
+Time:2019-08-02 14:38:59,885; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:meminfoarray:['63058', '58584', '63827', '63205', '63214', '63214', '63181', '63166'] 
+Time:2019-08-02 14:39:00,477; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63166 kB 
+Time:2019-08-02 14:50:12,793; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:50:12.792633 
+Time:2019-08-02 14:50:12,794; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145012 
+Time:2019-08-02 14:50:12,794; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:50:12.794634 
+Time:2019-08-02 14:50:12,795; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145012 
+Time:2019-08-02 14:50:12,795; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:50:12.795634 
+Time:2019-08-02 14:50:12,796; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145012 
+Time:2019-08-02 14:50:12,797; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:50:12.796634 
+Time:2019-08-02 14:50:12,797; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145012 
+Time:2019-08-02 14:50:12,798; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:50:12.797634 
+Time:2019-08-02 14:50:12,798; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145012 
+Time:2019-08-02 14:50:12,799; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:50:12.799634 
+Time:2019-08-02 14:50:12,800; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145012 
+Time:2019-08-02 14:50:12,800; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:50:12.800634 
+Time:2019-08-02 14:50:12,801; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145012 
+Time:2019-08-02 14:50:12,801; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:50:12.801634 
+Time:2019-08-02 14:50:12,802; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145012 
+Time:2019-08-02 14:50:12,892; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 14:50:12,894; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:50:12.893639 
+Time:2019-08-02 14:50:12,896; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145012 
+Time:2019-08-02 14:50:12,898; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:50:12.897639 
+Time:2019-08-02 14:50:12,901; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 14:50:12,903; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 14:50:12,906; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802145012_report.html 
+Time:2019-08-02 14:50:13,796; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:50:16,789; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:50:19,792; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:50:24,794; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:50:26,927; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63071 kB 
+Time:2019-08-02 14:50:36,930; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:50:37,158; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:50:37,160; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:50:37,269; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:50:37,272; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:50:37,859; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58613 kB 
+Time:2019-08-02 14:50:37,929; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:50:37,932; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:50:38,368; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:50:41,369; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:50:42,046; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58602 kB 
+Time:2019-08-02 14:50:52,047; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:50:52,126; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:50:52,127; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Balance]的控件。 
+Time:2019-08-02 14:50:52,220; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:50:52,221; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Balance 
+Time:2019-08-02 14:50:52,903; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63116 kB 
+Time:2019-08-02 14:51:02,905; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:51:03,509; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：67333 kB 
+Time:2019-08-02 14:51:03,664; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击返回按键 
+Time:2019-08-02 14:51:06,666; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:51:07,266; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：67330 kB 
+Time:2019-08-02 14:51:17,269; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:51:17,368; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:51:17,369; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:51:17,467; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:51:17,468; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:51:17,989; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63184 kB 
+Time:2019-08-02 14:51:38,317; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:51:38.317525 
+Time:2019-08-02 14:51:38,318; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145138 
+Time:2019-08-02 14:51:38,319; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:51:38.318525 
+Time:2019-08-02 14:51:38,319; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145138 
+Time:2019-08-02 14:51:38,320; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:51:38.319525 
+Time:2019-08-02 14:51:38,320; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145138 
+Time:2019-08-02 14:51:38,321; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:51:38.321525 
+Time:2019-08-02 14:51:38,322; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145138 
+Time:2019-08-02 14:51:38,322; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:51:38.322526 
+Time:2019-08-02 14:51:38,323; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145138 
+Time:2019-08-02 14:51:38,323; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:51:38.323526 
+Time:2019-08-02 14:51:38,324; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145138 
+Time:2019-08-02 14:51:38,324; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:51:38.324526 
+Time:2019-08-02 14:51:38,325; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145138 
+Time:2019-08-02 14:51:38,326; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:51:38.325526 
+Time:2019-08-02 14:51:38,326; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145138 
+Time:2019-08-02 14:51:38,330; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 14:51:38,331; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:51:38.330526 
+Time:2019-08-02 14:51:38,331; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802145138 
+Time:2019-08-02 14:51:38,332; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 14:51:38.332526 
+Time:2019-08-02 14:51:38,333; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 14:51:38,333; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 14:51:38,334; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 14:51:38,334; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 14:51:38,335; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802145138_report.html 
+Time:2019-08-02 14:51:39,116; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:51:42,087; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:51:45,090; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:51:50,093; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:51:52,421; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63084 kB 
+Time:2019-08-02 14:52:02,423; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:52:02,542; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:52:02,545; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:52:02,666; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:52:02,669; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:52:03,216; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58608 kB 
+Time:2019-08-02 14:52:03,293; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:52:03,296; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:52:03,695; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:52:06,697; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:52:07,248; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：64678 kB 
+Time:2019-08-02 14:52:17,250; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:52:17,339; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:52:17,339; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Balance]的控件。 
+Time:2019-08-02 14:52:17,424; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Balance 
+Time:2019-08-02 14:52:17,425; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Balance 
+Time:2019-08-02 14:52:17,963; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63119 kB 
+Time:2019-08-02 14:52:27,966; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:52:28,553; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：67327 kB 
+Time:2019-08-02 14:52:28,705; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击返回按键 
+Time:2019-08-02 14:52:31,707; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:52:32,279; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：67329 kB 
+Time:2019-08-02 14:52:42,283; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:52:42,384; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:52:42,385; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[My QR]的控件。 
+Time:2019-08-02 14:52:42,477; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：My QR 
+Time:2019-08-02 14:52:42,480; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:My QR 
+Time:2019-08-02 14:52:43,014; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63189 kB 
+Time:2019-08-02 14:52:53,015; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:52:53,687; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63179 kB 
+Time:2019-08-02 14:52:53,688; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前页内存：63084 KB,静置10秒后，内存：58608 KB,点击进入下一个页面内存：64678 KB,静置10秒后，内存：63119 KB,静置10秒后，内存：67327 KB,点击返回后内存：67329,静置10秒后，内存：63189,静置10秒后，内存：63179 
+Time:2019-08-02 14:52:53,689; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:meminfoarray:['63084', '58608', '64678', '63119', '67327', '67329', '63189', '63179'] 
+Time:2019-08-02 14:52:54,714; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:52:57,795; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:53:00,797; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:53:05,798; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:53:08,026; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63062 kB 
+Time:2019-08-02 14:53:18,030; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:53:18,266; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Top Up 
+Time:2019-08-02 14:53:18,269; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Top Up]的控件。 
+Time:2019-08-02 14:53:18,395; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Top Up 
+Time:2019-08-02 14:53:18,397; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Top Up 
+Time:2019-08-02 14:53:18,917; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58585 kB 
+Time:2019-08-02 14:53:18,977; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Top Up 
+Time:2019-08-02 14:53:18,978; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Top Up]的控件。 
+Time:2019-08-02 14:53:19,394; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:53:22,396; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:53:23,027; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58581 kB 
+Time:2019-08-02 14:53:33,034; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:53:33,133; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Debit Card 
+Time:2019-08-02 14:53:33,135; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Debit Card]的控件。 
+Time:2019-08-02 14:53:33,248; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Debit Card 
+Time:2019-08-02 14:53:33,248; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Debit Card 
+Time:2019-08-02 14:53:33,841; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：59681 kB 
+Time:2019-08-02 14:53:43,844; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:53:44,462; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：59935 kB 
+Time:2019-08-02 14:53:44,619; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击返回按键 
+Time:2019-08-02 14:53:47,620; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:53:48,192; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：64031 kB 
+Time:2019-08-02 14:53:58,195; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:53:58,310; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Top Up 
+Time:2019-08-02 14:53:58,313; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Top Up]的控件。 
+Time:2019-08-02 14:53:58,413; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Top Up 
+Time:2019-08-02 14:53:58,415; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Top Up 
+Time:2019-08-02 14:53:59,001; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63650 kB 
+Time:2019-08-02 14:54:09,005; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:54:09,693; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63650 kB 
+Time:2019-08-02 14:54:09,695; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前页内存：63062 KB,静置10秒后，内存：58585 KB,点击进入下一个页面内存：58581 KB,静置10秒后，内存：59681 KB,静置10秒后，内存：59935 KB,点击返回后内存：64031,静置10秒后，内存：63650,静置10秒后，内存：63650 
+Time:2019-08-02 14:54:09,697; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:meminfoarray:['63062', '58585', '58581', '59681', '59935', '64031', '63650', '63650'] 
+Time:2019-08-02 14:54:10,817; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:54:13,831; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:54:16,833; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:54:21,835; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:54:23,979; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63066 kB 
+Time:2019-08-02 14:54:33,982; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:54:34,205; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：History 
+Time:2019-08-02 14:54:34,207; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[History]的控件。 
+Time:2019-08-02 14:54:34,320; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：History 
+Time:2019-08-02 14:54:34,321; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:History 
+Time:2019-08-02 14:54:34,877; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：60475 kB 
+Time:2019-08-02 14:54:34,953; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：History 
+Time:2019-08-02 14:54:34,955; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[History]的控件。 
+Time:2019-08-02 14:54:35,371; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:54:38,372; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:54:39,126; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58581 kB 
+Time:2019-08-02 14:54:49,129; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:54:49,228; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Transfer from U2000416 
+Time:2019-08-02 14:54:49,229; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Transfer from U2000416]的控件。 
+Time:2019-08-02 14:54:49,332; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Transfer from U2000416 
+Time:2019-08-02 14:54:49,334; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Transfer from U2000416 
+Time:2019-08-02 14:54:49,916; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：60145 kB 
+Time:2019-08-02 14:54:59,919; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:55:00,494; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：60441 kB 
+Time:2019-08-02 14:55:00,654; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击返回按键 
+Time:2019-08-02 14:55:03,655; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:55:04,222; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：60441 kB 
+Time:2019-08-02 14:55:14,222; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:55:14,335; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：History 
+Time:2019-08-02 14:55:14,336; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[History]的控件。 
+Time:2019-08-02 14:55:14,431; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：History 
+Time:2019-08-02 14:55:14,434; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:History 
+Time:2019-08-02 14:55:15,016; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58838 kB 
+Time:2019-08-02 14:55:25,019; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:55:25,691; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58838 kB 
+Time:2019-08-02 14:55:25,694; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前页内存：63066 KB,静置10秒后，内存：60475 KB,点击进入下一个页面内存：58581 KB,静置10秒后，内存：60145 KB,静置10秒后，内存：60441 KB,点击返回后内存：60441,静置10秒后，内存：58838,静置10秒后，内存：58838 
+Time:2019-08-02 14:55:25,696; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:meminfoarray:['63066', '60475', '58581', '60145', '60441', '60441', '58838', '58838'] 
+Time:2019-08-02 14:55:26,667; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:55:29,479; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:55:32,482; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:55:37,485; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:55:39,782; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63061 kB 
+Time:2019-08-02 14:55:49,783; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:55:49,958; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Scan QR 
+Time:2019-08-02 14:55:49,959; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Scan QR]的控件。 
+Time:2019-08-02 14:55:50,080; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Scan QR 
+Time:2019-08-02 14:55:50,082; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Scan QR 
+Time:2019-08-02 14:55:50,647; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58586 kB 
+Time:2019-08-02 14:55:50,779; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Scan QR 
+Time:2019-08-02 14:55:50,782; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Scan QR]的控件。 
+Time:2019-08-02 14:55:51,207; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:55:54,209; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:55:54,820; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：65288 kB 
+Time:2019-08-02 14:56:04,822; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:56:04,994; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Album 
+Time:2019-08-02 14:56:04,994; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Album]的控件。 
+Time:2019-08-02 14:56:05,186; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Album 
+Time:2019-08-02 14:56:05,187; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Album 
+Time:2019-08-02 14:56:05,780; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：65291 kB 
+Time:2019-08-02 14:56:15,783; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:56:16,428; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：65292 kB 
+Time:2019-08-02 14:56:16,992; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击返回按键 
+Time:2019-08-02 14:56:19,994; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:56:20,532; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：65293 kB 
+Time:2019-08-02 14:56:30,535; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:56:30,636; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Scan QR 
+Time:2019-08-02 14:56:30,637; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Scan QR]的控件。 
+Time:2019-08-02 14:56:30,768; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Scan QR 
+Time:2019-08-02 14:56:30,769; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Scan QR 
+Time:2019-08-02 14:56:31,302; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58714 kB 
+Time:2019-08-02 14:56:41,303; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:56:41,824; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58714 kB 
+Time:2019-08-02 14:56:41,826; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前页内存：63061 KB,静置10秒后，内存：58586 KB,点击进入下一个页面内存：65288 KB,静置10秒后，内存：65291 KB,静置10秒后，内存：65292 KB,点击返回后内存：65293,静置10秒后，内存：58714,静置10秒后，内存：58714 
+Time:2019-08-02 14:56:41,828; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:meminfoarray:['63061', '58586', '65288', '65291', '65292', '65293', '58714', '58714'] 
+Time:2019-08-02 14:56:42,705; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:56:45,793; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:56:48,795; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:56:53,797; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:56:55,778; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63062 kB 
+Time:2019-08-02 14:57:05,780; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:57:06,016; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Show all 
+Time:2019-08-02 14:57:06,018; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Show all]的控件。 
+Time:2019-08-02 14:57:06,171; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Show all 
+Time:2019-08-02 14:57:06,173; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Show all 
+Time:2019-08-02 14:57:06,715; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：60474 kB 
+Time:2019-08-02 14:57:06,808; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Show all 
+Time:2019-08-02 14:57:06,810; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Show all]的控件。 
+Time:2019-08-02 14:57:07,209; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:57:10,210; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:57:10,866; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58581 kB 
+Time:2019-08-02 14:57:20,869; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:57:20,957; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Withdraw 
+Time:2019-08-02 14:57:20,958; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Withdraw]的控件。 
+Time:2019-08-02 14:57:21,046; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Withdraw 
+Time:2019-08-02 14:57:21,047; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Withdraw 
+Time:2019-08-02 14:57:21,581; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58876 kB 
+Time:2019-08-02 14:57:31,582; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:57:32,139; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58876 kB 
+Time:2019-08-02 14:57:32,292; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击返回按键 
+Time:2019-08-02 14:57:35,294; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:57:35,918; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58877 kB 
+Time:2019-08-02 14:57:45,920; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:57:46,031; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Show all 
+Time:2019-08-02 14:57:46,032; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Show all]的控件。 
+Time:2019-08-02 14:57:46,125; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Show all 
+Time:2019-08-02 14:57:46,126; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Show all 
+Time:2019-08-02 14:57:46,695; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：62768 kB 
+Time:2019-08-02 14:57:56,697; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:57:57,308; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：62760 kB 
+Time:2019-08-02 14:57:57,310; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前页内存：63062 KB,静置10秒后，内存：60474 KB,点击进入下一个页面内存：58581 KB,静置10秒后，内存：58876 KB,静置10秒后，内存：58876 KB,点击返回后内存：58877,静置10秒后，内存：62768,静置10秒后，内存：62760 
+Time:2019-08-02 14:57:57,312; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:meminfoarray:['63062', '60474', '58581', '58876', '58876', '58877', '62768', '62760'] 
+Time:2019-08-02 14:57:58,326; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:58:01,293; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:58:04,295; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:58:09,296; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:58:11,527; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63062 kB 
+Time:2019-08-02 14:58:21,529; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:58:21,657; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Show all 
+Time:2019-08-02 14:58:21,658; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Show all]的控件。 
+Time:2019-08-02 14:58:21,789; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Show all 
+Time:2019-08-02 14:58:21,791; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Show all 
+Time:2019-08-02 14:58:22,340; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58582 kB 
+Time:2019-08-02 14:58:22,465; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：None 
+Time:2019-08-02 14:58:22,467; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[None]的控件。 
+Time:2019-08-02 14:58:22,894; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:58:25,895; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:58:26,499; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58582 kB 
+Time:2019-08-02 14:58:36,502; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:58:36,598; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Withdraw 
+Time:2019-08-02 14:58:36,600; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Withdraw]的控件。 
+Time:2019-08-02 14:58:36,697; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Withdraw 
+Time:2019-08-02 14:58:36,699; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Withdraw 
+Time:2019-08-02 14:58:37,282; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：60859 kB 
+Time:2019-08-02 14:58:47,285; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:58:47,872; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58876 kB 
+Time:2019-08-02 14:58:48,016; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击返回按键 
+Time:2019-08-02 14:58:51,018; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:58:51,594; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58877 kB 
+Time:2019-08-02 14:59:01,596; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:59:01,710; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Show all 
+Time:2019-08-02 14:59:01,712; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Show all]的控件。 
+Time:2019-08-02 14:59:01,836; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Show all 
+Time:2019-08-02 14:59:01,838; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Show all 
+Time:2019-08-02 14:59:02,390; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58667 kB 
+Time:2019-08-02 14:59:12,392; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:59:13,047; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58662 kB 
+Time:2019-08-02 14:59:13,048; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前页内存：63062 KB,静置10秒后，内存：58582 KB,点击进入下一个页面内存：58582 KB,静置10秒后，内存：60859 KB,静置10秒后，内存：58876 KB,点击返回后内存：58877,静置10秒后，内存：58667,静置10秒后，内存：58662 
+Time:2019-08-02 14:59:13,048; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:meminfoarray:['63062', '58582', '58582', '60859', '58876', '58877', '58667', '58662'] 
+Time:2019-08-02 14:59:14,085; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:59:17,049; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 14:59:20,050; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:59:25,052; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 14:59:27,282; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63062 kB 
+Time:2019-08-02 14:59:37,285; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:59:37,519; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Show all 
+Time:2019-08-02 14:59:37,521; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Show all]的控件。 
+Time:2019-08-02 14:59:37,653; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Show all 
+Time:2019-08-02 14:59:37,655; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Show all 
+Time:2019-08-02 14:59:38,222; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58586 kB 
+Time:2019-08-02 14:59:38,292; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：None 
+Time:2019-08-02 14:59:38,293; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[None]的控件。 
+Time:2019-08-02 14:59:38,700; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击该控件。 
+Time:2019-08-02 14:59:41,702; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 14:59:42,311; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58587 kB 
+Time:2019-08-02 14:59:52,312; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 14:59:52,435; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Transfer to 
+Time:2019-08-02 14:59:52,437; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Transfer to]的控件。 
+Time:2019-08-02 14:59:52,548; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Transfer to 
+Time:2019-08-02 14:59:52,549; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Transfer to 
+Time:2019-08-02 14:59:53,109; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：58992 kB 

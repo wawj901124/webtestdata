@@ -1,0 +1,530 @@
+Time:2019-08-02 15:00:03,113; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 15:00:03,698; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：59002 kB 
+Time:2019-08-02 15:00:03,850; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:点击返回按键 
+Time:2019-08-02 15:00:06,852; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:00:07,477; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：59002 kB 
+Time:2019-08-02 15:00:17,481; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 15:00:17,599; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Show all 
+Time:2019-08-02 15:00:17,600; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:定位到text为[Show all]的控件。 
+Time:2019-08-02 15:00:17,709; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:该控件的text属性的值为：Show all 
+Time:2019-08-02 15:00:17,710; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:存在text:Show all 
+Time:2019-08-02 15:00:18,247; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：59008 kB 
+Time:2019-08-02 15:00:28,248; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 15:00:28,905; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：59007 kB 
+Time:2019-08-02 15:00:28,908; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前页内存：63062 KB,静置10秒后，内存：58586 KB,点击进入下一个页面内存：58587 KB,静置10秒后，内存：58992 KB,静置10秒后，内存：59002 KB,点击返回后内存：59002,静置10秒后，内存：59008,静置10秒后，内存：59007 
+Time:2019-08-02 15:00:28,910; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:meminfoarray:['63062', '58586', '58587', '58992', '59002', '59002', '59008', '59007'] 
+Time:2019-08-02 15:00:29,788; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:00:32,763; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:00:35,765; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:00:40,766; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:00:42,752; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:获取到内存为：63045 kB 
+Time:2019-08-02 15:00:52,754; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待10秒... 
+Time:2019-08-02 15:00:54,185; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:00:54,187; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:00:54,189; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:00:54,191; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:00:54.190319 
+Time:2019-08-02 15:00:54,193; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:00:54,195; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:00:54.194320 
+Time:2019-08-02 15:00:54,197; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802150054 
+Time:2019-08-02 15:00:54,200; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:00:54,202; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:00:54,204; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:00:54,206; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:00:54,208; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:00:55,972; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:00:55,973; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots//screenpicture_20190802150054.png 
+Time:2019-08-02 15:00:55,974; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:00:55,975; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Show all], method: objInfo 
+Time:2019-08-02 15:00:58,976; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:09:50,413; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:09:50.412990 
+Time:2019-08-02 15:09:50,414; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802150950 
+Time:2019-08-02 15:09:50,418; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 15:09:50,419; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:09:50.418990 
+Time:2019-08-02 15:09:50,419; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802150950 
+Time:2019-08-02 15:09:50,420; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:09:50.420990 
+Time:2019-08-02 15:09:50,421; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:09:50,421; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:09:50,422; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:09:50,422; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:09:50,428; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802150950_report.html 
+Time:2019-08-02 15:09:51,396; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:09:54,457; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:09:57,460; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:10:02,462; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:10:05,629; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:10:05,631; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:10:05,633; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:10:05,635; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:10:05.634860 
+Time:2019-08-02 15:10:05,637; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:10:05,639; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:10:05.638860 
+Time:2019-08-02 15:10:05,642; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802151005 
+Time:2019-08-02 15:10:05,644; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:10:05,647; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:10:05,649; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:10:05,651; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:10:05,653; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:10:07,549; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:10:07,550; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots//screenpicture_20190802151005.png 
+Time:2019-08-02 15:10:07,551; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:10:07,552; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 15:10:10,554; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:10:10,557; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:11:42,581; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:11:42.581405 
+Time:2019-08-02 15:11:42,582; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802151142 
+Time:2019-08-02 15:11:42,586; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 15:11:42,587; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:11:42.586405 
+Time:2019-08-02 15:11:42,588; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802151142 
+Time:2019-08-02 15:11:42,588; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:11:42.588406 
+Time:2019-08-02 15:11:42,589; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:11:42,590; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:11:42,590; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:11:42,591; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:11:42,591; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802151142_report.html 
+Time:2019-08-02 15:11:43,539; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:11:46,505; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:11:49,508; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:11:54,511; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:11:57,554; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:11:57,555; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:11:57,556; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:11:57,557; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:11:57.557262 
+Time:2019-08-02 15:11:57,558; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:11:57,559; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:11:57.559262 
+Time:2019-08-02 15:11:57,560; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802151157 
+Time:2019-08-02 15:11:57,561; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:11:57,562; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:11:57,563; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:11:57,564; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:11:57,565; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:11:59,831; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:11:59,832; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots//screenpicture_20190802151157.png 
+Time:2019-08-02 15:11:59,834; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:11:59,835; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 15:12:02,835; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:12:02,837; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:15:43,738; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:15:43.738199 
+Time:2019-08-02 15:15:43,739; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802151543 
+Time:2019-08-02 15:15:43,743; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 15:15:43,744; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:15:43.744199 
+Time:2019-08-02 15:15:43,745; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802151543 
+Time:2019-08-02 15:15:43,745; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:15:43.745199 
+Time:2019-08-02 15:15:43,746; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:15:43,746; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:15:43,747; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:15:43,748; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:15:43,749; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802151543_report.html 
+Time:2019-08-02 15:15:44,690; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:15:47,647; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:15:50,650; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:15:55,652; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:15:58,906; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:15:58,907; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:15:58,908; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:15:58,909; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:15:58.909066 
+Time:2019-08-02 15:15:58,910; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:15:58,911; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:15:58.910066 
+Time:2019-08-02 15:15:58,911; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802151558 
+Time:2019-08-02 15:15:58,912; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:15:58,913; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:15:58,913; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:15:58,914; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:15:58,914; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:16:01,145; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:16:01,146; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:media\report\201908\screenshots\screenpicture_20190802151558.png 
+Time:2019-08-02 15:16:01,147; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:16:01,149; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 15:16:04,150; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:16:04,155; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:20:18,113; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:20:18.113892 
+Time:2019-08-02 15:20:18,114; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802152018 
+Time:2019-08-02 15:20:18,118; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 15:20:18,119; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:20:18.118892 
+Time:2019-08-02 15:20:18,119; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802152018 
+Time:2019-08-02 15:20:18,120; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:20:18.120892 
+Time:2019-08-02 15:20:18,120; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:20:18,121; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:20:18,122; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:20:18,122; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:20:18,123; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802152018_report.html 
+Time:2019-08-02 15:20:19,039; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:20:22,274; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:20:25,277; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:20:30,281; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:20:33,464; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:20:33,466; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:20:33,469; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:20:33,471; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:20:33.469770 
+Time:2019-08-02 15:20:33,473; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:20:33,475; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:20:33.473770 
+Time:2019-08-02 15:20:33,477; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802152033 
+Time:2019-08-02 15:20:33,479; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:20:33,482; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:20:33,484; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:20:33,486; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:20:33,488; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:20:35,751; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:20:35,752; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:media\report\201908\screenshots\screenpicture_20190802152033.png 
+Time:2019-08-02 15:20:35,754; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:20:35,755; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 15:20:38,757; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:20:38,760; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:24:58,324; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:24:58.323919 
+Time:2019-08-02 15:24:58,325; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802152458 
+Time:2019-08-02 15:24:58,332; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 15:24:58,333; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:24:58.333920 
+Time:2019-08-02 15:24:58,334; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802152458 
+Time:2019-08-02 15:24:58,335; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:24:58.334920 
+Time:2019-08-02 15:24:58,336; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:24:58,337; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:24:58,338; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:24:58,339; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:24:58,340; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802152458_report.html 
+Time:2019-08-02 15:24:59,297; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:25:02,212; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:25:09,197; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:25:09.196541 
+Time:2019-08-02 15:25:09,198; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802152509 
+Time:2019-08-02 15:25:10,043; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:25:13,037; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:25:16,041; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:25:21,045; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:25:24,249; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:25:24,250; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:25:24,252; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:25:24,254; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:25:24.253402 
+Time:2019-08-02 15:25:24,255; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:25:24,257; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:25:24.256402 
+Time:2019-08-02 15:25:24,258; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802152524 
+Time:2019-08-02 15:25:24,260; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:25:24,262; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:25:24,263; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:25:24,265; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:25:24,267; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:25:26,234; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:25:26,236; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:media\report\201908\screenshots\screenpicture_20190802152524.png 
+Time:2019-08-02 15:25:26,238; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:25:26,240; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 15:25:29,242; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:25:29,246; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:29:54,144; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:29:54.143839 
+Time:2019-08-02 15:29:54,146; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802152954 
+Time:2019-08-02 15:29:55,064; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:29:58,068; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:30:01,070; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:30:06,072; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:30:09,197; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:30:09,198; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:30:09,200; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:30:09,201; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:30:09.201700 
+Time:2019-08-02 15:30:09,203; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:30:09,204; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:30:09.204700 
+Time:2019-08-02 15:30:09,206; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802153009 
+Time:2019-08-02 15:30:09,208; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:30:09,210; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:30:09,211; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:30:09,213; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:30:09,215; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:30:11,516; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:30:11,518; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:media\report\201908\screenshots\screenpicture_20190802153009.png 
+Time:2019-08-02 15:30:11,519; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:30:11,521; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 15:30:30,588; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:30:30.587923 
+Time:2019-08-02 15:30:30,589; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802153030 
+Time:2019-08-02 15:30:31,531; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:30:34,521; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:30:37,524; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:30:42,527; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:30:45,667; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:30:45,671; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:30:45,674; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:30:45,678; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:30:45.676786 
+Time:2019-08-02 15:30:45,682; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:30:45,686; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:30:45.684787 
+Time:2019-08-02 15:30:45,689; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802153045 
+Time:2019-08-02 15:30:45,693; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:30:45,697; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:30:45,701; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:30:45,705; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:30:45,707; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:30:47,721; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:30:47,722; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:media\report\201908\screenshots\screenpicture_20190802153045.png 
+Time:2019-08-02 15:30:47,723; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:30:47,724; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 15:30:50,726; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:30:50,727; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:32:49,862; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:32:49.861889 
+Time:2019-08-02 15:32:49,863; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802153249 
+Time:2019-08-02 15:32:49,869; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 15:32:49,870; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:32:49.869890 
+Time:2019-08-02 15:32:49,871; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802153249 
+Time:2019-08-02 15:32:49,872; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:32:49.871890 
+Time:2019-08-02 15:32:49,873; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:32:49,874; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:32:49,875; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:32:49,876; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:32:49,877; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802153249_report.html 
+Time:2019-08-02 15:32:51,102; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:32:54,299; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:32:57,303; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:33:02,305; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:33:05,470; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:33:05,472; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:33:05,474; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:33:05,477; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:33:05.475783 
+Time:2019-08-02 15:33:05,479; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:33:05,481; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:33:05.480783 
+Time:2019-08-02 15:33:05,484; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802153305 
+Time:2019-08-02 15:33:05,486; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:33:05,488; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:33:05,490; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:33:05,492; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:33:05,495; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:33:07,518; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:33:07,520; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:media\report\201908\screenshots\screenpicture_20190802153305.png 
+Time:2019-08-02 15:33:07,521; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:33:07,522; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 15:33:10,525; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:33:10,528; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:35:28,610; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:35:28.609969 
+Time:2019-08-02 15:35:28,610; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802153528 
+Time:2019-08-02 15:35:28,615; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 15:35:28,616; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:35:28.615970 
+Time:2019-08-02 15:35:28,617; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802153528 
+Time:2019-08-02 15:35:28,617; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:35:28.617970 
+Time:2019-08-02 15:35:28,618; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:35:28,618; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:35:28,619; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:35:28,620; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:35:28,621; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802153528_report.html 
+Time:2019-08-02 15:35:29,556; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:35:32,532; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:35:35,534; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:35:40,535; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:35:43,514; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:35:43,517; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:35:43,519; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:35:43,521; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:35:43.520822 
+Time:2019-08-02 15:35:43,523; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:35:43,525; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:35:43.524822 
+Time:2019-08-02 15:35:43,527; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802153543 
+Time:2019-08-02 15:35:43,530; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:35:43,532; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:35:43,534; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:35:43,536; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:35:43,538; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:35:45,746; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:35:45,746; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:media\report\201908\screenshots\screenpicture_20190802153543.png 
+Time:2019-08-02 15:35:45,747; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:35:45,747; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 15:35:48,750; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:35:48,753; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:37:30,595; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:37:30.594946 
+Time:2019-08-02 15:37:30,596; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802153730 
+Time:2019-08-02 15:37:30,600; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 15:37:30,601; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:37:30.600947 
+Time:2019-08-02 15:37:30,602; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802153730 
+Time:2019-08-02 15:37:30,602; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:37:30.602947 
+Time:2019-08-02 15:37:30,603; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:37:30,604; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:37:30,604; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:37:30,605; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:37:30,606; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802153730_report.html 
+Time:2019-08-02 15:37:31,517; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:37:34,492; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:37:37,495; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:37:42,496; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:37:45,689; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:37:45,690; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:37:45,691; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:37:45,691; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:37:45.691810 
+Time:2019-08-02 15:37:45,692; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:37:45,693; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:37:45.693810 
+Time:2019-08-02 15:37:45,694; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802153745 
+Time:2019-08-02 15:37:45,695; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:37:45,696; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:37:45,697; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:37:45,698; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:37:45,699; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:37:47,950; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:37:47,951; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:media\report\201908\screenshots\screenpicture_20190802153745.png 
+Time:2019-08-02 15:37:47,952; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:37:47,953; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 15:37:50,955; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:37:50,956; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:40:08,719; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:40:08.719991 
+Time:2019-08-02 15:40:08,720; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154008 
+Time:2019-08-02 15:40:08,725; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 15:40:08,726; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:40:08.725991 
+Time:2019-08-02 15:40:08,726; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154008 
+Time:2019-08-02 15:40:08,727; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:40:08.727991 
+Time:2019-08-02 15:40:08,728; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:40:08,728; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:40:08,729; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:40:08,730; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:40:08,731; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802154008_report.html 
+Time:2019-08-02 15:40:09,669; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:40:12,715; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:40:15,715; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:40:20,717; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:40:23,845; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:40:23,845; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:40:23,846; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:40:23,847; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:40:23.846856 
+Time:2019-08-02 15:40:23,847; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:40:23,848; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:40:23.847856 
+Time:2019-08-02 15:40:23,848; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154023 
+Time:2019-08-02 15:40:23,849; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:40:23,849; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:40:23,850; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:40:23,851; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:40:23,851; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:40:25,827; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:40:25,828; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:media\report\201908\screenshots\screenpicture_20190802154023.png 
+Time:2019-08-02 15:40:25,828; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:40:25,829; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 15:40:28,831; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:40:28,834; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:41:59,932; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:41:59.931352 
+Time:2019-08-02 15:41:59,933; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154159 
+Time:2019-08-02 15:41:59,938; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 15:41:59,939; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:41:59.939352 
+Time:2019-08-02 15:41:59,940; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154159 
+Time:2019-08-02 15:41:59,941; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:41:59.940352 
+Time:2019-08-02 15:41:59,941; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:41:59,942; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:41:59,943; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:41:59,944; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:41:59,945; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802154159_report.html 
+Time:2019-08-02 15:42:01,098; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:42:04,125; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:42:09,340; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:42:09.339890 
+Time:2019-08-02 15:42:09,340; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154209 
+Time:2019-08-02 15:42:09,345; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 15:42:09,346; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:42:09.346890 
+Time:2019-08-02 15:42:09,347; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154209 
+Time:2019-08-02 15:42:09,347; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:42:09.347890 
+Time:2019-08-02 15:42:09,348; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:42:09,349; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:42:09,349; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:42:09,350; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:42:09,351; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802154209_report.html 
+Time:2019-08-02 15:42:10,225; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:42:13,147; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:42:16,149; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:42:21,150; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:42:24,295; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:42:24,297; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:42:24,300; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:42:24,302; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:42:24.300745 
+Time:2019-08-02 15:42:24,304; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:42:24,307; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:42:24.305746 
+Time:2019-08-02 15:42:24,309; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154224 
+Time:2019-08-02 15:42:24,312; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:42:24,314; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:42:24,317; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:42:24,318; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:42:24,319; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:42:26,748; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:42:26,749; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:media\report\201908\screenshots\screenpicture_20190802154224.png 
+Time:2019-08-02 15:42:26,749; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:42:26,750; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 15:42:29,753; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:42:29,755; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:43:09,679; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:43:09.679341 
+Time:2019-08-02 15:43:09,680; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154309 
+Time:2019-08-02 15:43:09,689; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 15:43:09,690; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:43:09.689342 
+Time:2019-08-02 15:43:09,691; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154309 
+Time:2019-08-02 15:43:09,692; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:43:09.691342 
+Time:2019-08-02 15:43:09,693; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:43:09,694; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:43:09,695; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:43:09,696; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:43:09,698; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802154309_report.html 
+Time:2019-08-02 15:43:10,650; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:43:13,661; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:43:16,662; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:43:21,665; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:43:24,802; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:43:24,804; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:43:24,807; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:43:24,809; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:43:24.807206 
+Time:2019-08-02 15:43:24,811; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:43:24,813; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:43:24.811206 
+Time:2019-08-02 15:43:24,815; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154324 
+Time:2019-08-02 15:43:24,817; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:43:24,819; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:43:24,821; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:43:24,824; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:43:24,826; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:43:26,940; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:43:26,941; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:media\report\201908\screenshots\screenpicture_20190802154324.png 
+Time:2019-08-02 15:43:26,941; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:43:26,942; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 15:43:29,943; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:43:29,946; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:44:07,961; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:44:07.960675 
+Time:2019-08-02 15:44:07,961; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154407 
+Time:2019-08-02 15:44:07,966; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 15:44:07,966; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:44:07.966675 
+Time:2019-08-02 15:44:07,967; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154407 
+Time:2019-08-02 15:44:07,968; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:44:07.967675 
+Time:2019-08-02 15:44:07,968; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:44:07,969; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:44:07,969; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:44:07,970; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:44:07,971; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802154407_report.html 
+Time:2019-08-02 15:44:08,859; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:44:11,789; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:44:14,792; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:44:19,794; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:44:22,973; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:44:22,975; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:44:22,975; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:44:22,976; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:44:22.976533 
+Time:2019-08-02 15:44:22,977; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:44:22,979; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:44:22.978533 
+Time:2019-08-02 15:44:22,979; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154422 
+Time:2019-08-02 15:44:22,980; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:44:22,981; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:44:22,982; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:44:22,983; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:44:22,984; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:44:25,227; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:44:25,228; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:media\report\201908\screenshots\screenpicture_20190802154422.png 
+Time:2019-08-02 15:44:25,229; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:44:25,229; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 15:44:28,231; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:44:28,233; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:46:01,298; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:46:01.298157 
+Time:2019-08-02 15:46:01,299; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154601 
+Time:2019-08-02 15:46:01,303; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:Running the tests... 
+Time:2019-08-02 15:46:01,304; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:46:01.304157 
+Time:2019-08-02 15:46:01,305; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154601 
+Time:2019-08-02 15:46:01,305; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:46:01.305157 
+Time:2019-08-02 15:46:01,306; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:46:01,306; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:46:01,307; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:46:01,307; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:46:01,308; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:The report path:D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/20190802154601_report.html 
+Time:2019-08-02 15:46:02,278; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:关闭包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:46:05,342; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:启动包名为[com.ahdi.qrindo.wallet]的应用--------- 
+Time:2019-08-02 15:46:08,343; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:46:13,345; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待5秒... 
+Time:2019-08-02 15:46:16,478; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：False 
+Time:2019-08-02 15:46:16,478; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 
+Time:2019-08-02 15:46:16,479; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:调用截取图片函数 
+Time:2019-08-02 15:46:16,479; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:46:16.479025 
+Time:2019-08-02 15:46:16,480; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:46:16,481; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:46:16.480025 
+Time:2019-08-02 15:46:16,481; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154616 
+Time:2019-08-02 15:46:16,482; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:46:16,482; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:46:16,483; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:46:16,484; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots 
+Time:2019-08-02 15:46:16,484; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/screenshots/ 
+Time:2019-08-02 15:46:18,796; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:46:18,798; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:media\report\201908\screenshots\screenpicture_20190802154616.png 
+Time:2019-08-02 15:46:18,799; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:***** 
+Time:2019-08-02 15:46:18,800; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:出错原因：定位控件失败.具体原因：-32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=Log in with Password], method: objInfo 
+Time:2019-08-02 15:46:21,800; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:等待3秒... 
+Time:2019-08-02 15:46:21,801; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:self.isstartappd的值为：True 

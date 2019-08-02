@@ -1,0 +1,113 @@
+Time:2019-08-02 15:00:59,239; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:00:59.237608 
+Time:2019-08-02 15:00:59,241; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802150059 
+Time:2019-08-02 15:00:59,242; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:00:59.241608 
+Time:2019-08-02 15:00:59,243; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:00:59,245; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经创建目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies/ 
+Time:2019-08-02 15:10:10,611; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:10:10.610145 
+Time:2019-08-02 15:10:10,612; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802151010 
+Time:2019-08-02 15:10:10,612; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:10:10.612145 
+Time:2019-08-02 15:10:10,613; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:10:10,614; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:10:10,615; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:10:10,615; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:10:10,616; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies 
+Time:2019-08-02 15:10:10,616; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies/ 
+Time:2019-08-02 15:12:02,880; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:12:02.879566 
+Time:2019-08-02 15:12:02,881; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802151202 
+Time:2019-08-02 15:12:02,882; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:12:02.882566 
+Time:2019-08-02 15:12:02,883; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:12:02,884; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:12:02,885; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:12:02,886; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:12:02,887; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies 
+Time:2019-08-02 15:12:02,888; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies/ 
+Time:2019-08-02 15:16:04,232; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:16:04.230371 
+Time:2019-08-02 15:16:04,233; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802151604 
+Time:2019-08-02 15:16:04,235; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:16:04.234371 
+Time:2019-08-02 15:16:04,235; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:16:04,237; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:16:04,238; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:16:04,239; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:16:04,239; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies 
+Time:2019-08-02 15:16:04,241; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies/ 
+Time:2019-08-02 15:20:38,812; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:20:38.812076 
+Time:2019-08-02 15:20:38,813; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802152038 
+Time:2019-08-02 15:20:38,814; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:20:38.813076 
+Time:2019-08-02 15:20:38,814; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:20:38,815; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:20:38,816; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:20:38,816; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:20:38,817; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies 
+Time:2019-08-02 15:20:38,817; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies/ 
+Time:2019-08-02 15:33:10,587; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:33:10.587075 
+Time:2019-08-02 15:33:10,588; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802153310 
+Time:2019-08-02 15:33:10,589; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:33:10.588075 
+Time:2019-08-02 15:33:10,589; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:33:10,590; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:33:10,591; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:33:10,592; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:33:10,593; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies 
+Time:2019-08-02 15:33:10,593; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies/ 
+Time:2019-08-02 15:35:48,802; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:35:48.801124 
+Time:2019-08-02 15:35:48,803; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802153548 
+Time:2019-08-02 15:35:48,803; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:35:48.803124 
+Time:2019-08-02 15:35:48,804; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:35:48,804; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:35:48,805; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:35:48,806; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:35:48,807; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies 
+Time:2019-08-02 15:35:48,807; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies/ 
+Time:2019-08-02 15:37:50,996; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:37:50.995113 
+Time:2019-08-02 15:37:50,997; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802153750 
+Time:2019-08-02 15:37:50,998; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:37:50.998113 
+Time:2019-08-02 15:37:50,999; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:37:51,000; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:37:51,001; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:37:51,002; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:37:51,003; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies 
+Time:2019-08-02 15:37:51,004; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies/ 
+Time:2019-08-02 15:40:28,903; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:40:28.903145 
+Time:2019-08-02 15:40:28,905; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154028 
+Time:2019-08-02 15:40:28,906; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:40:28.905145 
+Time:2019-08-02 15:40:28,908; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:40:28,909; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:40:28,909; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:40:28,910; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:40:28,910; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies 
+Time:2019-08-02 15:40:28,911; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies/ 
+Time:2019-08-02 15:42:29,812; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:42:29.811061 
+Time:2019-08-02 15:42:29,813; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154229 
+Time:2019-08-02 15:42:29,813; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:42:29.813061 
+Time:2019-08-02 15:42:29,814; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:42:29,815; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:42:29,815; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:42:29,816; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:42:29,817; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies 
+Time:2019-08-02 15:42:29,817; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies/ 
+Time:2019-08-02 15:43:30,012; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:43:30.011504 
+Time:2019-08-02 15:43:30,013; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154330 
+Time:2019-08-02 15:43:30,014; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:43:30.013504 
+Time:2019-08-02 15:43:30,015; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:43:30,016; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:43:30,017; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:43:30,018; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:43:30,019; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies 
+Time:2019-08-02 15:43:30,019; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies/ 
+Time:2019-08-02 15:44:28,293; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:44:28.292837 
+Time:2019-08-02 15:44:28,294; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154428 
+Time:2019-08-02 15:44:28,295; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:44:28.295838 
+Time:2019-08-02 15:44:28,296; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:44:28,298; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:44:28,299; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:44:28,301; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:44:28,302; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies 
+Time:2019-08-02 15:44:28,303; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies/ 
+Time:2019-08-02 15:46:21,826; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:46:21.826331 
+Time:2019-08-02 15:46:21,827; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串：20190802154621 
+Time:2019-08-02 15:46:21,828; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:当前时间：2019-08-02 15:46:21.827331 
+Time:2019-08-02 15:46:21,828; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:时间串年月：201908 
+Time:2019-08-02 15:46:21,829; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media 
+Time:2019-08-02 15:46:21,829; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report 
+Time:2019-08-02 15:46:21,830; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908 
+Time:2019-08-02 15:46:21,830; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies 
+Time:2019-08-02 15:46:21,831; FileName:my_log.py;-> FuncName:printLog;  LineNo.:82; LevelNo.:20;--->LevelName:INFO;----->LogMessage:已经存在目录：D:\Users\Administrator\PycharmProjects\webtestdata/media/report/201908/pies/ 
