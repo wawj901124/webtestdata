@@ -46,6 +46,9 @@ class MeminfoTestResultAdmin(object):
               'clickbackmeminfo',
               'backaftertenmeminfo',
               'backaftertenmeminfotwo',
+              'test_phone_name',
+              'test_app_packagename',
+              'test_app_version',
               ]
 
     list_display =['id','testproject', 'testmodule','testpage','testcasetitle','teststarttime',
@@ -58,9 +61,13 @@ class MeminfoTestResultAdmin(object):
                    'clickbackmeminfo',
                    'backaftertenmeminfo',
                    'backaftertenmeminfotwo',
+                   'test_phone_name',
+                   'test_app_packagename',
+                   'test_app_version',
                    'add_time','update_time']#定义显示的字段
     search_fields =  ['testproject', ]   #定义搜索字段
-    list_filter =  ['testproject','testmodule','testpage','testcasetitle',] #定义筛选的字段
+    list_filter =  ['testproject','testmodule','testpage','testcasetitle',
+                    'test_phone_name','test_app_packagename','test_app_version',] #定义筛选的字段
     model_icon = 'fa fa-tasks'  # 定义图标显示
     ordering = ['-add_time']  # 添加默认排序规则显示排序，根据添加时间倒序排序
     readonly_fields = ['add_time',]  # 设置某些字段为只为可读  #设置了readonly_fields，再设置exclude，exclude对该字段无效，
