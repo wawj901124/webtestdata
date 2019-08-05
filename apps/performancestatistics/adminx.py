@@ -50,6 +50,20 @@ class MeminfoTestResultAdmin(object):
               'test_app_packagename',
               'test_app_version',
               ]
+    ziduan_onlyread = ['id','testproject', 'testmodule','testpage','testcasetitle','teststarttime',
+                    'forcount',
+                   'currentpagememinfo',
+                   'currentpageaftertenmeminfo',
+                   'clicknextpagememinfo',
+                   'nextaftertenmeminfo',
+                   'nextaftertenmeminfotwo',
+                   'clickbackmeminfo',
+                   'backaftertenmeminfo',
+                   'backaftertenmeminfotwo',
+                   'test_phone_name',
+                   'test_app_packagename',
+                   'test_app_version',
+                   'add_time','update_time']  #定义只读字段
 
     list_display =['id','testproject', 'testmodule','testpage','testcasetitle','teststarttime',
                     'forcount',
@@ -70,7 +84,8 @@ class MeminfoTestResultAdmin(object):
                     'test_phone_name','test_app_packagename','test_app_version',] #定义筛选的字段
     model_icon = 'fa fa-tasks'  # 定义图标显示
     ordering = ['-add_time']  # 添加默认排序规则显示排序，根据添加时间倒序排序
-    readonly_fields = ['add_time',]  # 设置某些字段为只为可读  #设置了readonly_fields，再设置exclude，exclude对该字段无效，
+    readonly_fields = ziduan_onlyread  # 设置某些字段为只为可读  #设置了readonly_fields，再设置exclude，exclude对该字段无效，
+    # readonly_fields = ['add_time',]  # 设置某些字段为只为可读  #设置了readonly_fields，再设置exclude，exclude对该字段无效，
     # exclude = ['case_step']  # 设置某些字段为不显示，即隐藏  #readonly_fields和exclude设置会有冲突
     # inlines = [TestCaseInline]  # inlines配和TestCaseInline使用，可以直接在项目页面添加测试用例#只能做一层嵌套，不能进行两层嵌套
     list_editable = ziduan   # 可以在列表页对字段进行编辑

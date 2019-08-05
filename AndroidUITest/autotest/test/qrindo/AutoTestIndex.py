@@ -145,6 +145,9 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
         meminfotestresult.clickbackmeminfo = hs30
         meminfotestresult.backaftertenmeminfo = hs31
         meminfotestresult.backaftertenmeminfotwo = hs3
+        meminfotestresult.test_phone_name = self.devicename
+        meminfotestresult.test_app_packagename = self.apppackagename
+        meminfotestresult.test_app_version = self.appversion
         meminfotestresult.save()
         return meminfoarray
 
