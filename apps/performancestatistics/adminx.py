@@ -59,8 +59,8 @@ class MeminfoTestResultAdmin(object):
                    'backaftertenmeminfo',
                    'backaftertenmeminfotwo',
                    'add_time','update_time']#定义显示的字段
-    search_fields =  ['testproject',]   #定义搜索字段
-    list_filter =  ['testproject',] #定义筛选的字段
+    search_fields =  ['testproject', ]   #定义搜索字段
+    list_filter =  ['testproject','testmodule','testpage','testcasetitle',] #定义筛选的字段
     model_icon = 'fa fa-tasks'  # 定义图标显示
     ordering = ['-add_time']  # 添加默认排序规则显示排序，根据添加时间倒序排序
     readonly_fields = ['add_time',]  # 设置某些字段为只为可读  #设置了readonly_fields，再设置exclude，exclude对该字段无效，
@@ -79,9 +79,12 @@ class MeminfoTestResultAdmin(object):
     data_charts = {   #使用网址：https://xadmin.readthedocs.io/en/latest/_modules/xadmin/plugins/chart.html
                       # 插件介绍网址：http://www.mamicode.com/info-detail-2403646.html
                       #使用网址：https://www.jianshu.com/p/6201e1e9133c
-        "user_count": {'title': u"currentpagememinfo Report", "x-field": "forcount", "y-field": (  'currentpagememinfo',),
+        "user_count": {'title': u"当前页内存统计", "x-field": "forcount", "y-field": ('currentpagememinfo','currentpageaftertenmeminfo',),
                        "order": ('id',)},
-        "avg_count": {'title': u"currentpageaftertenmeminfo Report", "x-field": "forcount", "y-field": ( 'currentpageaftertenmeminfo',), "order": ('id',)}
+        "avg_count": {'title': u"进入下一页内存统计", "x-field": "forcount", "y-field": ('clicknextpagememinfo','nextaftertenmeminfo','nextaftertenmeminfotwo',),
+                      "order": ('id',)},
+        "back_count": {'title': u"返回当前页内存统计", "x-field": "forcount","y-field": ('clickbackmeminfo','backaftertenmeminfo','backaftertenmeminfotwo',),
+                       "order": ('id',)},
     }
 
 
