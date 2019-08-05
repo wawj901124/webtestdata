@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Qrindo_内存专项测试 自动化测试_测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 120%; }
+table       { font-size: 100%; }
+
+/* -- heading ---------------------------------------------------------------------- */
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- report ------------------------------------------------------------------------ */
+#total_row  { font-weight: bold; }
+.passCase   { color: #5cb85c; }
+.failCase   { color: #d9534f; font-weight: bold; }
+.errorCase  { color: #f0ad4e; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+/* -- 为饼图添加样式------------------------------------------------------------------------ */
+.report_pie{
+    float:right;
+    margin-top:-190px;
+    margin-right:600px;
+    width:300px;
+    height:222px;
+    background-color:#999;
+}
+.report_pie img {
+    width: 100%;
+    height: 100%;
+}
+.big_pie{
+    position:absolute;
+    border: 2px solid #999;
+    top:10px;
+    right:100px;
+    bottom:-20px;
+    width:525px;
+    height:390px;
+    z-index: 2;
+    display: none;
+}
+.big_pie img {
+    width: 100%;
+    height: 100%;
+}
+/* -- 为饼图添加样式结束------------------------------------------------------------------------ */
+
+</style>
+
+</head>
+<body >
+<script language="javascript" type="text/javascript">
+output_list = Array();
+
+/*level 调整增加只显示通过用例的分类 --Findyou
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+*/
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level == 2 || level == 0 ) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level < 2) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+
+    //加入【详细】切换文字变化 --Findyou
+    detail_class=document.getElementsByClassName('detail');
+    //console.log(detail_class.length)
+    if (level == 3) {
+        for (var i = 0; i < detail_class.length; i++){
+            detail_class[i].innerHTML="收起"
+        }
+    }
+    else{
+            for (var i = 0; i < detail_class.length; i++){
+            detail_class[i].innerHTML="详细"
+        }
+    }
+}
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        //ID修改 点 为 下划线 -Findyou
+        tid0 = 't' + cid.substr(1) + '_' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        //修改点击无法收起的BUG，加入【详细】切换文字变化 --Findyou
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+            document.getElementById(cid).innerText = "详细"
+        }
+        else {
+            document.getElementById(tid).className = '';
+            document.getElementById(cid).innerText = "收起"
+        }
+    }
+}
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/*显示饼图的大图*/
+function bigImg() {
+    var big_pie = document.getElementById("big_pie")
+    big_pie.style.display = "block"
+}
+function normalImg() {
+    var big_pie = document.getElementById("big_pie")
+    big_pie.style.display = "none"
+}
+/*显示饼图的大图结束*/
+</script>
+<div class='heading'>
+<h1 style="font-family: Microsoft YaHei">Qrindo_内存专项测试 自动化测试_测试报告</h1>
+<p class='attribute'><strong>测试人员 : </strong> 小贝</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-08-02 17:15:46</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:10:49.835169</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 10，通过 10，通过率= 100.00%</p>
+
+<p class='description'>用例执行情况：</p>
+</div>
+<!--为饼图设置一个div层，用于存放饼图-->
+<div onmousemove="bigImg(this)" onmouseout="normalImg(this)" class='report_pie'>
+<!--img src='../../result/http://127.0.0.1:8060/media/report/201908/pies/20190802172636_pie.png/pic.png'-->
+<img src='http://127.0.0.1:8060/media/report/201908/pies/20190802172636_pie.png'>
+</div>
+<div id="big_pie" class='big_pie'>
+<!--img src='../../result/http://127.0.0.1:8060/media/report/201908/pies/20190802172636_pie.png/pic.png'-->
+<img src='http://127.0.0.1:8060/media/report/201908/pies/20190802172636_pie.png'>   
+
+</div>
+<!--把饼图放到了heading部分，我们在HEADING_TMPL部分添加红框中的代码，之所以添加了两个div容器，主要是考虑到位置空间大小的问题，我们也知道，图片很大，直接塞到heading里面会让页面变得很丑，实在影响美观，所以我就用鼠标事件来控制，当我们鼠标在小图上时，我们就放大展示这个饼图，否则只能看到缩略图。-->
+
+
+
+<p id='show_detail_line'>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败+错误{ 0 + 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 10 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 10 }</a>
+</p>
+<table id='result_table' class="table table-condensed table-bordered table-hover">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 14px;">
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>AndroidUITest.autotest.test.qrindo.AutoTestIndex.TestIndexClass</td>
+    <td class="text-center">10</td>
+    <td class="text-center">10</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',10)" class="detail" id='c1'>详细</a></td>
+</tr>
+
+    <tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_func_00008_主页面点击消息图标进入Notifications页面后返回主页面内存显示情况_00001</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_1' type="button"  class="btn btn-success btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-success btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in">
+    <pre>
+    
+1_1: 关闭包名为[com.ahdi.qrindo.wallet]的应用---------
+启动包名为[com.ahdi.qrindo.wallet]的应用---------
+等待3秒...
+等待5秒...
+WARNING:root:-32001 Jsonrpc error: &lt;android.support.test.uiautomator.UiObjectNotFoundException&gt; data: UiSelector[TEXT=Log in with Password], method: objInfo, retrying in 0.5 seconds...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 193
+WARNING:root:-32001 Jsonrpc error: &lt;android.support.test.uiautomator.UiObjectNotFoundException&gt; data: UiSelector[TEXT=Log in with Password], method: objInfo, retrying in 0.6 seconds...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 190
+INFO:root:获取到内存为：63078 kB
+获取到内存为：63078 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 289
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：58607 kB
+获取到内存为：58607 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 289
+INFO:root:该控件的text属性的值为：None
+该控件的text属性的值为：None
+INFO:root:定位到text为[None]的控件。
+定位到text为[None]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 292
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击该控件。
+点击该控件。
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：58608 kB
+获取到内存为：58608 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 302
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 301
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:定位到text为[Notifications]的控件。
+定位到text为[Notifications]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 301
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:存在text:Notifications
+存在text:Notifications
+INFO:root:获取到内存为：61037 kB
+获取到内存为：61037 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：59890 kB
+获取到内存为：59890 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击返回按键
+点击返回按键
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：74358 kB
+获取到内存为：74358 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：71058 kB
+获取到内存为：71058 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：71059 kB
+获取到内存为：71059 kB
+INFO:root:当前页内存：63078 KB,静置10秒后，内存：58607 KB,点击进入下一个页面内存：58608 KB,静置10秒后，内存：61037 KB,静置10秒后，内存：59890 KB,点击返回后内存：74358,静置10秒后，内存：71058,静置10秒后，内存：71059
+当前页内存：63078 KB,静置10秒后，内存：58607 KB,点击进入下一个页面内存：58608 KB,静置10秒后，内存：61037 KB,静置10秒后，内存：59890 KB,点击返回后内存：74358,静置10秒后，内存：71058,静置10秒后，内存：71059
+INFO:root:meminfoarray:['63078', '58607', '58608', '61037', '59890', '74358', '71058', '71059']
+meminfoarray:['63078', '58607', '58608', '61037', '59890', '74358', '71058', '71059']
+测试通过
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+    
+    <tr id='pt1_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_func_00008_主页面点击消息图标进入Notifications页面后返回主页面内存显示情况_00002</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_2' type="button"  class="btn btn-success btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_2' type="button"  class="btn btn-success btn-xs" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse in">
+    <pre>
+    
+1_2: INFO:root:获取到内存为：71059 kB
+获取到内存为：71059 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：71059 kB
+获取到内存为：71059 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 289
+INFO:root:该控件的text属性的值为：None
+该控件的text属性的值为：None
+INFO:root:定位到text为[None]的控件。
+定位到text为[None]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击该控件。
+点击该控件。
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：71059 kB
+获取到内存为：71059 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 301
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 301
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:定位到text为[Notifications]的控件。
+定位到text为[Notifications]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 300
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:存在text:Notifications
+存在text:Notifications
+INFO:root:获取到内存为：62889 kB
+获取到内存为：62889 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：62626 kB
+获取到内存为：62626 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击返回按键
+点击返回按键
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：78457 kB
+获取到内存为：78457 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 288
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：75160 kB
+获取到内存为：75160 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：75161 kB
+获取到内存为：75161 kB
+INFO:root:当前页内存：71059 KB,静置10秒后，内存：71059 KB,点击进入下一个页面内存：71059 KB,静置10秒后，内存：62889 KB,静置10秒后，内存：62626 KB,点击返回后内存：78457,静置10秒后，内存：75160,静置10秒后，内存：75161
+当前页内存：71059 KB,静置10秒后，内存：71059 KB,点击进入下一个页面内存：71059 KB,静置10秒后，内存：62889 KB,静置10秒后，内存：62626 KB,点击返回后内存：78457,静置10秒后，内存：75160,静置10秒后，内存：75161
+INFO:root:meminfoarray:['71059', '71059', '71059', '62889', '62626', '78457', '75160', '75161']
+meminfoarray:['71059', '71059', '71059', '62889', '62626', '78457', '75160', '75161']
+测试通过
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+    
+    <tr id='pt1_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_func_00008_主页面点击消息图标进入Notifications页面后返回主页面内存显示情况_00003</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_3' type="button"  class="btn btn-success btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_3' type="button"  class="btn btn-success btn-xs" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse in">
+    <pre>
+    
+1_3: INFO:root:获取到内存为：75161 kB
+获取到内存为：75161 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 289
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 289
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：75161 kB
+获取到内存为：75161 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+INFO:root:该控件的text属性的值为：None
+该控件的text属性的值为：None
+INFO:root:定位到text为[None]的控件。
+定位到text为[None]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击该控件。
+点击该控件。
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：75161 kB
+获取到内存为：75161 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 301
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 303
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:定位到text为[Notifications]的控件。
+定位到text为[Notifications]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 300
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:存在text:Notifications
+存在text:Notifications
+INFO:root:获取到内存为：64912 kB
+获取到内存为：64912 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：64614 kB
+获取到内存为：64614 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击返回按键
+点击返回按键
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：60195 kB
+获取到内存为：60195 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 289
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：75161 kB
+获取到内存为：75161 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：75162 kB
+获取到内存为：75162 kB
+INFO:root:当前页内存：75161 KB,静置10秒后，内存：75161 KB,点击进入下一个页面内存：75161 KB,静置10秒后，内存：64912 KB,静置10秒后，内存：64614 KB,点击返回后内存：60195,静置10秒后，内存：75161,静置10秒后，内存：75162
+当前页内存：75161 KB,静置10秒后，内存：75161 KB,点击进入下一个页面内存：75161 KB,静置10秒后，内存：64912 KB,静置10秒后，内存：64614 KB,点击返回后内存：60195,静置10秒后，内存：75161,静置10秒后，内存：75162
+INFO:root:meminfoarray:['75161', '75161', '75161', '64912', '64614', '60195', '75161', '75162']
+meminfoarray:['75161', '75161', '75161', '64912', '64614', '60195', '75161', '75162']
+测试通过
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+    
+    <tr id='pt1_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_func_00008_主页面点击消息图标进入Notifications页面后返回主页面内存显示情况_00004</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_4' type="button"  class="btn btn-success btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_4' type="button"  class="btn btn-success btn-xs" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse in">
+    <pre>
+    
+1_4: INFO:root:获取到内存为：75162 kB
+获取到内存为：75162 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：75162 kB
+获取到内存为：75162 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：None
+该控件的text属性的值为：None
+INFO:root:定位到text为[None]的控件。
+定位到text为[None]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击该控件。
+点击该控件。
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：59348 kB
+获取到内存为：59348 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 301
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 301
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:定位到text为[Notifications]的控件。
+定位到text为[Notifications]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 302
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:存在text:Notifications
+存在text:Notifications
+INFO:root:获取到内存为：65043 kB
+获取到内存为：65043 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：64822 kB
+获取到内存为：64822 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击返回按键
+点击返回按键
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：60858 kB
+获取到内存为：60858 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：79259 kB
+获取到内存为：79259 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：79260 kB
+获取到内存为：79260 kB
+INFO:root:当前页内存：75162 KB,静置10秒后，内存：75162 KB,点击进入下一个页面内存：59348 KB,静置10秒后，内存：65043 KB,静置10秒后，内存：64822 KB,点击返回后内存：60858,静置10秒后，内存：79259,静置10秒后，内存：79260
+当前页内存：75162 KB,静置10秒后，内存：75162 KB,点击进入下一个页面内存：59348 KB,静置10秒后，内存：65043 KB,静置10秒后，内存：64822 KB,点击返回后内存：60858,静置10秒后，内存：79259,静置10秒后，内存：79260
+INFO:root:meminfoarray:['75162', '75162', '59348', '65043', '64822', '60858', '79259', '79260']
+meminfoarray:['75162', '75162', '59348', '65043', '64822', '60858', '79259', '79260']
+测试通过
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+    
+    <tr id='pt1_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_func_00008_主页面点击消息图标进入Notifications页面后返回主页面内存显示情况_00005</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_5' type="button"  class="btn btn-success btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_5'>通过</button>
+    <div id='div_pt1_5' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_5' type="button"  class="btn btn-success btn-xs" data-toggle="collapse" data-target='#div_pt1_5'>通过</button>
+    <div id='div_pt1_5' class="collapse in">
+    <pre>
+    
+1_5: INFO:root:获取到内存为：79260 kB
+获取到内存为：79260 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 292
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：79260 kB
+获取到内存为：79260 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 293
+INFO:root:该控件的text属性的值为：None
+该控件的text属性的值为：None
+INFO:root:定位到text为[None]的控件。
+定位到text为[None]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击该控件。
+点击该控件。
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：63098 kB
+获取到内存为：63098 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 301
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 301
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:定位到text为[Notifications]的控件。
+定位到text为[Notifications]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 302
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:存在text:Notifications
+存在text:Notifications
+INFO:root:获取到内存为：65046 kB
+获取到内存为：65046 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：64880 kB
+获取到内存为：64880 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击返回按键
+点击返回按键
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：61268 kB
+获取到内存为：61268 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 289
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：79263 kB
+获取到内存为：79263 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：79259 kB
+获取到内存为：79259 kB
+INFO:root:当前页内存：79260 KB,静置10秒后，内存：79260 KB,点击进入下一个页面内存：63098 KB,静置10秒后，内存：65046 KB,静置10秒后，内存：64880 KB,点击返回后内存：61268,静置10秒后，内存：79263,静置10秒后，内存：79259
+当前页内存：79260 KB,静置10秒后，内存：79260 KB,点击进入下一个页面内存：63098 KB,静置10秒后，内存：65046 KB,静置10秒后，内存：64880 KB,点击返回后内存：61268,静置10秒后，内存：79263,静置10秒后，内存：79259
+INFO:root:meminfoarray:['79260', '79260', '63098', '65046', '64880', '61268', '79263', '79259']
+meminfoarray:['79260', '79260', '63098', '65046', '64880', '61268', '79263', '79259']
+测试通过
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+    
+    <tr id='pt1_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_func_00008_主页面点击消息图标进入Notifications页面后返回主页面内存显示情况_00006</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_6' type="button"  class="btn btn-success btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_6'>通过</button>
+    <div id='div_pt1_6' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_6' type="button"  class="btn btn-success btn-xs" data-toggle="collapse" data-target='#div_pt1_6'>通过</button>
+    <div id='div_pt1_6' class="collapse in">
+    <pre>
+    
+1_6: INFO:root:获取到内存为：79259 kB
+获取到内存为：79259 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：79259 kB
+获取到内存为：79259 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 292
+INFO:root:该控件的text属性的值为：None
+该控件的text属性的值为：None
+INFO:root:定位到text为[None]的控件。
+定位到text为[None]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击该控件。
+点击该控件。
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：60450 kB
+获取到内存为：60450 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 180
+WARNING:root:-32001 Jsonrpc error: &lt;android.support.test.uiautomator.UiObjectNotFoundException&gt; data: UiSelector[TEXT=Notifications], method: objInfo, retrying in 0.5 seconds...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 182
+WARNING:root:-32001 Jsonrpc error: &lt;android.support.test.uiautomator.UiObjectNotFoundException&gt; data: UiSelector[TEXT=Notifications], method: objInfo, retrying in 0.6 seconds...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 182
+INFO:root:页面元素还未加载出来，再次进行10秒等待。
+页面元素还未加载出来，再次进行10秒等待。
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 302
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:定位到text为[Notifications]的控件。
+定位到text为[Notifications]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 302
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:存在text:Notifications
+存在text:Notifications
+INFO:root:获取到内存为：66105 kB
+获取到内存为：66105 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：65457 kB
+获取到内存为：65457 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击返回按键
+点击返回按键
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：61507 kB
+获取到内存为：61507 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：79259 kB
+获取到内存为：79259 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：79260 kB
+获取到内存为：79260 kB
+INFO:root:当前页内存：79259 KB,静置10秒后，内存：79259 KB,点击进入下一个页面内存：60450 KB,静置10秒后，内存：66105 KB,静置10秒后，内存：65457 KB,点击返回后内存：61507,静置10秒后，内存：79259,静置10秒后，内存：79260
+当前页内存：79259 KB,静置10秒后，内存：79259 KB,点击进入下一个页面内存：60450 KB,静置10秒后，内存：66105 KB,静置10秒后，内存：65457 KB,点击返回后内存：61507,静置10秒后，内存：79259,静置10秒后，内存：79260
+INFO:root:meminfoarray:['79259', '79259', '60450', '66105', '65457', '61507', '79259', '79260']
+meminfoarray:['79259', '79259', '60450', '66105', '65457', '61507', '79259', '79260']
+测试通过
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+    
+    <tr id='pt1_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_func_00008_主页面点击消息图标进入Notifications页面后返回主页面内存显示情况_00007</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_7' type="button"  class="btn btn-success btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_7'>通过</button>
+    <div id='div_pt1_7' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_7' type="button"  class="btn btn-success btn-xs" data-toggle="collapse" data-target='#div_pt1_7'>通过</button>
+    <div id='div_pt1_7' class="collapse in">
+    <pre>
+    
+1_7: INFO:root:获取到内存为：79260 kB
+获取到内存为：79260 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：79260 kB
+获取到内存为：79260 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+INFO:root:该控件的text属性的值为：None
+该控件的text属性的值为：None
+INFO:root:定位到text为[None]的控件。
+定位到text为[None]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 292
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击该控件。
+点击该控件。
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：63883 kB
+获取到内存为：63883 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 302
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 300
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:定位到text为[Notifications]的控件。
+定位到text为[Notifications]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 300
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:存在text:Notifications
+存在text:Notifications
+INFO:root:获取到内存为：66287 kB
+获取到内存为：66287 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：66019 kB
+获取到内存为：66019 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击返回按键
+点击返回按键
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：61683 kB
+获取到内存为：61683 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：79270 kB
+获取到内存为：79270 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：79260 kB
+获取到内存为：79260 kB
+INFO:root:当前页内存：79260 KB,静置10秒后，内存：79260 KB,点击进入下一个页面内存：63883 KB,静置10秒后，内存：66287 KB,静置10秒后，内存：66019 KB,点击返回后内存：61683,静置10秒后，内存：79270,静置10秒后，内存：79260
+当前页内存：79260 KB,静置10秒后，内存：79260 KB,点击进入下一个页面内存：63883 KB,静置10秒后，内存：66287 KB,静置10秒后，内存：66019 KB,点击返回后内存：61683,静置10秒后，内存：79270,静置10秒后，内存：79260
+INFO:root:meminfoarray:['79260', '79260', '63883', '66287', '66019', '61683', '79270', '79260']
+meminfoarray:['79260', '79260', '63883', '66287', '66019', '61683', '79270', '79260']
+测试通过
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+    
+    <tr id='pt1_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_func_00008_主页面点击消息图标进入Notifications页面后返回主页面内存显示情况_00008</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_8' type="button"  class="btn btn-success btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_8'>通过</button>
+    <div id='div_pt1_8' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_8' type="button"  class="btn btn-success btn-xs" data-toggle="collapse" data-target='#div_pt1_8'>通过</button>
+    <div id='div_pt1_8' class="collapse in">
+    <pre>
+    
+1_8: INFO:root:获取到内存为：79260 kB
+获取到内存为：79260 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：79260 kB
+获取到内存为：79260 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 292
+INFO:root:该控件的text属性的值为：None
+该控件的text属性的值为：None
+INFO:root:定位到text为[None]的控件。
+定位到text为[None]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 88
+INFO:root:点击该控件。
+点击该控件。
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：64008 kB
+获取到内存为：64008 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 302
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 302
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:定位到text为[Notifications]的控件。
+定位到text为[Notifications]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 300
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:存在text:Notifications
+存在text:Notifications
+INFO:root:获取到内存为：66492 kB
+获取到内存为：66492 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：66341 kB
+获取到内存为：66341 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击返回按键
+点击返回按键
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：62121 kB
+获取到内存为：62121 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：79257 kB
+获取到内存为：79257 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：79258 kB
+获取到内存为：79258 kB
+INFO:root:当前页内存：79260 KB,静置10秒后，内存：79260 KB,点击进入下一个页面内存：64008 KB,静置10秒后，内存：66492 KB,静置10秒后，内存：66341 KB,点击返回后内存：62121,静置10秒后，内存：79257,静置10秒后，内存：79258
+当前页内存：79260 KB,静置10秒后，内存：79260 KB,点击进入下一个页面内存：64008 KB,静置10秒后，内存：66492 KB,静置10秒后，内存：66341 KB,点击返回后内存：62121,静置10秒后，内存：79257,静置10秒后，内存：79258
+INFO:root:meminfoarray:['79260', '79260', '64008', '66492', '66341', '62121', '79257', '79258']
+meminfoarray:['79260', '79260', '64008', '66492', '66341', '62121', '79257', '79258']
+测试通过
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+    
+    <tr id='pt1_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_func_00008_主页面点击消息图标进入Notifications页面后返回主页面内存显示情况_00009</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_9' type="button"  class="btn btn-success btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_9'>通过</button>
+    <div id='div_pt1_9' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_9' type="button"  class="btn btn-success btn-xs" data-toggle="collapse" data-target='#div_pt1_9'>通过</button>
+    <div id='div_pt1_9' class="collapse in">
+    <pre>
+    
+1_9: INFO:root:获取到内存为：79258 kB
+获取到内存为：79258 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 289
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：79258 kB
+获取到内存为：79258 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+INFO:root:该控件的text属性的值为：None
+该控件的text属性的值为：None
+INFO:root:定位到text为[None]的控件。
+定位到text为[None]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 292
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击该控件。
+点击该控件。
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：64299 kB
+获取到内存为：64299 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 302
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 302
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:定位到text为[Notifications]的控件。
+定位到text为[Notifications]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 302
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:存在text:Notifications
+存在text:Notifications
+INFO:root:获取到内存为：66365 kB
+获取到内存为：66365 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：66305 kB
+获取到内存为：66305 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击返回按键
+点击返回按键
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：62371 kB
+获取到内存为：62371 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：79265 kB
+获取到内存为：79265 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：79256 kB
+获取到内存为：79256 kB
+INFO:root:当前页内存：79258 KB,静置10秒后，内存：79258 KB,点击进入下一个页面内存：64299 KB,静置10秒后，内存：66365 KB,静置10秒后，内存：66305 KB,点击返回后内存：62371,静置10秒后，内存：79265,静置10秒后，内存：79256
+当前页内存：79258 KB,静置10秒后，内存：79258 KB,点击进入下一个页面内存：64299 KB,静置10秒后，内存：66365 KB,静置10秒后，内存：66305 KB,点击返回后内存：62371,静置10秒后，内存：79265,静置10秒后，内存：79256
+INFO:root:meminfoarray:['79258', '79258', '64299', '66365', '66305', '62371', '79265', '79256']
+meminfoarray:['79258', '79258', '64299', '66365', '66305', '62371', '79265', '79256']
+测试通过
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+    
+    <tr id='pt1_10' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_func_00008_主页面点击消息图标进入Notifications页面后返回主页面内存显示情况_00010</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_10' type="button"  class="btn btn-success btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_10'>通过</button>
+    <div id='div_pt1_10' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_10' type="button"  class="btn btn-success btn-xs" data-toggle="collapse" data-target='#div_pt1_10'>通过</button>
+    <div id='div_pt1_10' class="collapse in">
+    <pre>
+    
+1_10: INFO:root:获取到内存为：79256 kB
+获取到内存为：79256 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：79256 kB
+获取到内存为：79256 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：None
+该控件的text属性的值为：None
+INFO:root:定位到text为[None]的控件。
+定位到text为[None]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 88
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 291
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 89
+INFO:root:点击该控件。
+点击该控件。
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：61048 kB
+获取到内存为：61048 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 301
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 301
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:定位到text为[Notifications]的控件。
+定位到text为[Notifications]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 302
+INFO:root:该控件的text属性的值为：Notifications
+该控件的text属性的值为：Notifications
+INFO:root:存在text:Notifications
+存在text:Notifications
+INFO:root:获取到内存为：66460 kB
+获取到内存为：66460 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：66019 kB
+获取到内存为：66019 kB
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 88
+INFO:root:点击返回按键
+点击返回按键
+INFO:root:等待3秒...
+等待3秒...
+INFO:root:获取到内存为：61318 kB
+获取到内存为：61318 kB
+INFO:root:等待10秒...
+等待10秒...
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:定位到text为[Show all]的控件。
+定位到text为[Show all]的控件。
+DEBUG:urllib3.connectionpool:http://127.0.0.1:1737 "POST /jsonrpc/0 HTTP/1.1" 200 290
+INFO:root:该控件的text属性的值为：Show all
+该控件的text属性的值为：Show all
+INFO:root:存在text:Show all
+存在text:Show all
+INFO:root:获取到内存为：58454 kB
+获取到内存为：58454 kB
+INFO:root:等待10秒...
+等待10秒...
+INFO:root:获取到内存为：79257 kB
+获取到内存为：79257 kB
+INFO:root:当前页内存：79256 KB,静置10秒后，内存：79256 KB,点击进入下一个页面内存：61048 KB,静置10秒后，内存：66460 KB,静置10秒后，内存：66019 KB,点击返回后内存：61318,静置10秒后，内存：58454,静置10秒后，内存：79257
+当前页内存：79256 KB,静置10秒后，内存：79256 KB,点击进入下一个页面内存：61048 KB,静置10秒后，内存：66460 KB,静置10秒后，内存：66019 KB,点击返回后内存：61318,静置10秒后，内存：58454,静置10秒后，内存：79257
+INFO:root:meminfoarray:['79256', '79256', '61048', '66460', '66019', '61318', '58454', '79257']
+meminfoarray:['79256', '79256', '61048', '66460', '66019', '61318', '58454', '79257']
+测试通过
+<img hidden="hidden" src="" alt="picture_shot" height="480" width="270"></img>
+<a  hidden="hidden"  href="">picture_shot</a>
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+    
+<tr id='total_row' class="text-center active">
+    <td>总计</td>
+    <td>10</td>
+    <td>10</td>
+    <td>0</td>
+    <td>0</td>
+    <td>通过率：100.00%</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+
+</body>
+</html>

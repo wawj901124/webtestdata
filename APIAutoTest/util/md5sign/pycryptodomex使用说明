@@ -1,0 +1,5 @@
+1.网址：https://blog.csdn.net/zengqiaoya/article/details/89516384
+2.
+ Linux上安装：pip install pycryptodome
+ Windows上安装：pip install pycryptodomex
+ 同时装了python2和python3，直接 ：python3 -m pip install pycryptodemex

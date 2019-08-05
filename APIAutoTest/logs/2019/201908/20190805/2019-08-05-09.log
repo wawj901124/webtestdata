@@ -1,0 +1,2 @@
+Time:2019-08-05 09:54:41,451; FileName:my_log.py;-> FuncName:printLog;  LineNo.:83; LevelNo.:20;--->LevelName:INFO;----->LogMessage:mylogtest 
+Time:2019-08-05 09:54:41,454; FileName:my_log.py;-> FuncName:printErrorLog;  LineNo.:87; LevelNo.:40;--->LevelName:ERROR;----->LogMessage:mylogtest 
