@@ -245,7 +245,7 @@ def __generateTestCases():
 
     from performancestatistics.models import MeminfoTestCase
 
-    meminfotestcase_all = MeminfoTestCase.objects.filter(testproject="Qrindo").filter(testpage="主页面").filter(id=8).order_by('id')
+    meminfotestcase_all = MeminfoTestCase.objects.filter(testproject="Qrindo").filter(testpage="主页面").order_by('id')
 
 
     for meminfotestcase in meminfotestcase_all:
