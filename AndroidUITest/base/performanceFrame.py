@@ -10,6 +10,10 @@ class PerformanceFrame(object):
     def outPutMyLog(self,context):
         mylog = MyLog(context)
         mylog.runMyLog()
+
+    def outPutErrorMyLog(self,context):
+        mylog = MyLog(context)
+        mylog.runErrorLog()
         
     # 使用到的函数adbOrder_rand()，adbOrder_order()，turnHropf()和DumpRead()
     def excuOrder(self,orderName):
@@ -56,15 +60,25 @@ class PerformanceFrame(object):
 
             return meminfoheapsize
         else:
-            self.outPutMyLog("没有找到相应APP的信息，请确定APP已经启动运行")
+            self.outPutErrorMyLog("没有找到相应APP的信息，请确定APP已经启动运行")
 
 
     def getCurrentPageMeninfoHeapAll(self,devicename,appversion,apppackagename):
         cmd = 'adb shell "dumpsys meminfo %s | grep TOTAL"' % apppackagename   # 获取cup占用率命令
         content = os.popen(cmd)
         result = content.readlines()
+
+        cmd_views = 'adb shell "dumpsys meminfo %s | grep Views"' % apppackagename  # 获取cup占用率命令
+        content_views = os.popen(cmd_views)
+        result_views = content_views.readlines()
+
+        cmd_activities = 'adb shell "dumpsys meminfo %s | grep Activities"' % apppackagename  # 获取cup占用率命令
+        content_activities = os.popen(cmd_activities)
+        result_activities = content_activities.readlines()
+
+
         # self.outPutMyLog("result:%s"% result)
-        alldata = [("deviceid", "appversion", "timestamp", "meminfoheapsize","meminfoheapalloc","meminfoheapfree")]  # 要保存的数据，时间戳及cup占用率
+        alldata = [("deviceid", "appversion", "timestamp","psstotal", "meminfoheapsize","meminfoheapalloc","meminfoheapfree","objectsviews","objectsactivities")]  # 要保存的数据，时间戳及cup占用率
 
         heap = []
         if result != []:
@@ -73,26 +87,74 @@ class PerformanceFrame(object):
                 # self.outPutMyLog("line:%s" % line)
                 meminfototal = line.strip()
                 # self.outPutMyLog("meminfototal:%s"% meminfototal)
-                meminfoheap = meminfototal.split("    ")
-                self.outPutMyLog("meminfosize:%s"% meminfoheap)
-                meminfoheapsize = meminfoheap[5]
-                meminfoheapalloc = meminfoheap[6]
-                meminfoheapfree = meminfoheap[7]
+                total = meminfototal.split("    ")
+                self.outPutMyLog("TOTAL 行:%s"% total)
 
-                if meminfoheapsize:   #如果取到值，就终止循环
+                if len(total) == 8:
+                    psstotal = total[1]
+                    meminfoheapsize = total[5]
+                    meminfoheapalloc = total[6]
+                    meminfoheapfree = total[7]
+                    heap.append(psstotal)
                     heap.append(meminfoheapsize)
                     heap.append(meminfoheapalloc)
                     heap.append(meminfoheapfree)
+
+                    self.outPutMyLog("获取到的Pss TOTAL内存为：%s kB"% psstotal)
                     self.outPutMyLog("获取到的Heap Size内存为：%s kB"% meminfoheapsize)
                     self.outPutMyLog("获取到的Heap Alloc内存为：%s kB"% meminfoheapalloc)
                     self.outPutMyLog("获取到的Heap Free内存为：%s kB"% meminfoheapfree)
-                    break
+                elif len(total) == 7:
+                    psstotal_mem = total[0]
+                    psstotal_mem = psstotal_mem.split("   ")
+                    psstotal = psstotal_mem[1]
+
+                    meminfoheapsize = total[4]
+                    meminfoheapalloc = total[5]
+                    meminfoheapfree = total[6]
+                    heap.append(psstotal)
+                    heap.append(meminfoheapsize)
+                    heap.append(meminfoheapalloc)
+                    heap.append(meminfoheapfree)
+
+                    self.outPutMyLog("获取到的Pss TOTAL内存为：%s kB"% psstotal)
+                    self.outPutMyLog("获取到的Heap Size内存为：%s kB"% meminfoheapsize)
+                    self.outPutMyLog("获取到的Heap Alloc内存为：%s kB"% meminfoheapalloc)
+                    self.outPutMyLog("获取到的Heap Free内存为：%s kB"% meminfoheapfree)
+                else:
+                    self.outPutErrorMyLog("TOTAL 行没有被分成7项或8项！")
+                break
+
+            for line_views in result_views:
+                line_views_list = line_views.strip()
+                line_views_list = line_views_list.split(":")
+                line_views = line_views_list[1]
+                line_views = line_views.split("         ")
+                line_views = line_views[0]
+                objectsviews = line_views.strip()
+                heap.append(objectsviews)
+                self.outPutMyLog("获取到的Objects Views为：%s 个" %  objectsviews)
+                break
+
+            for line_activities in result_activities:
+                line_activities_list = line_activities.split(":")
+                line_activities = line_activities_list[2]
+                objectsactivities = line_activities.strip()
+                heap.append(objectsactivities)
+                self.outPutMyLog("获取到的Objects Activities为：%s 个" % objectsactivities)
+                break
+
             currenttime = self.getCurrentTime()  #  获取当前时间
-            alldata.append((devicename,appversion,currenttime,meminfoheapsize,meminfoheapalloc,meminfoheapfree))  #  写入数据到self.alldata
+            alldata.append((devicename,appversion,currenttime,psstotal,meminfoheapsize,meminfoheapalloc,meminfoheapfree,objectsviews,objectsactivities))  #  写入数据到self.alldata
             self.outPutMyLog("获取到的Heap内存为：%s kB" % heap)
             return heap
         else:
-            self.outPutMyLog("没有找到相应APP的信息，请确定APP已经启动运行")
+            self.outPutErrorMyLog("没有找到相应APP的信息，请确定APP已经启动运行")
+
+
+
+    #性能方案网址：https://blog.csdn.net/onfire22/article/details/79679196   https://blog.csdn.net/zouxiongqqq/article/details/83030343
+
 
 
 if __name__ == "__main__":

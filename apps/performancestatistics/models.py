@@ -33,21 +33,63 @@ class MeminfoTestResult(models.Model):
     testcasetitle = models.CharField(max_length=100, default="", verbose_name=u"测试内容的名称")
     teststarttime = models.CharField(max_length=100, default="", verbose_name=u"开始运行时间")
     forcount = models.CharField(max_length=100, default="", verbose_name=u"第几次循环")
-    currentpagememinfo = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"当前页面内存",help_text=u"当前页面内存（单位：KB）")
-    currentpageaftertenmeminfo = models.CharField(max_length=100, default="", null=True, blank=True, verbose_name=u"当前页面静置10秒后内存",
-                                          help_text=u"当前页面静置10秒后内存（单位：KB）")
-    clicknextpagememinfo = models.CharField(max_length=100, default="", null=True, blank=True, verbose_name=u"点击进入下一个页面内存",
-                                          help_text=u"点击进入下一个页面内存（单位：KB）")
-    nextaftertenmeminfo = models.CharField(max_length=100, default="", null=True, blank=True, verbose_name=u"静置10秒后内存",
-                                          help_text=u"静置10秒后内存（单位：KB）")
-    nextaftertenmeminfotwo = models.CharField(max_length=100, default="", null=True, blank=True, verbose_name=u"再次静置10秒后内存",
-                                          help_text=u"再次静置10秒后内存（单位：KB）")
-    clickbackmeminfo = models.CharField(max_length=100, default="", null=True, blank=True, verbose_name=u"点击返回后内存",
-                                          help_text=u"点击返回后内存（单位：KB）")
-    backaftertenmeminfo = models.CharField(max_length=100, default="", null=True, blank=True, verbose_name=u"静置10秒后内存",
-                                          help_text=u"静置10秒后内存（单位：KB）")
-    backaftertenmeminfotwo = models.CharField(max_length=100, default="", null=True, blank=True, verbose_name=u"再次静置10秒后内存",
-                                          help_text=u"再次静置10秒后内存（单位：KB）")
+    currentpagepsstotal = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"当前页面Pss Total内存",help_text=u"当前页面Pss Total内存（单位：KB）")
+    currentpageheapsize = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"当前页面Heap Size内存",help_text=u"当前页面Heap Size内存（单位：KB）")
+    currentpageheapalloc = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"当前页面Heap Alloc内存",help_text=u"当前页面Heap Alloc内存（单位：KB）")
+    currentpageheapfree = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"当前页面Heap Free内存",help_text=u"当前页面Heap Free内存（单位：KB）")
+    currentpageobjectsviews = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"当前页面Objects Viewss数",help_text=u"当前页面Objects Viewss数（单位：个）")
+    currentpageobjectsactivities = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"当前页面Objects Activities数",help_text=u"当前页面Objects Activities数（单位：个）")
+
+    currentpageaftertenpsstotal = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"当前页面静置10秒后Pss Total内存",help_text=u"当前页面静置10秒后Pss Total内存（单位：KB）")
+    currentpageaftertenheapsize = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"当前页面静置10秒后Heap Size内存",help_text=u"当前页面静置10秒后Heap Size内存（单位：KB）")
+    currentpageaftertenheapalloc = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"当前页面静置10秒后Heap Alloc内存",help_text=u"当前页面静置10秒后Heap Alloc内存（单位：KB）")
+    currentpageaftertenheapfree = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"当前页面静置10秒后Heap Free内存",help_text=u"当前页面静置10秒后Heap Free内存（单位：KB）")
+    currentpageaftertenobjectsviews = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"当前页面静置10秒后Objects Viewss数",help_text=u"当前页面静置10秒后Objects Viewss数（单位：个）")
+    currentpageaftertenobjectsactivities = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"当前页面静置10秒后Objects Activities数",help_text=u"当前页面静置10秒后Objects Activities数（单位：个）")
+
+    clicknextpagepsstotal = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"点击进入下一个页面Pss Total内存",help_text=u"点击进入下一个页面Pss Total内存（单位：KB）")
+    clicknextpageheapsize = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"点击进入下一个页面Heap Size内存",help_text=u"点击进入下一个页面Heap Size内存（单位：KB）")
+    clicknextpageheapalloc = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"点击进入下一个页面Heap Alloc内存",help_text=u"点击进入下一个页面Heap Alloc内存（单位：KB）")
+    clicknextpageheapfree = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"点击进入下一个页面Heap Free内存",help_text=u"点击进入下一个页面Heap Free内存（单位：KB）")
+    clicknextpageobjectsviews = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"点击进入下一个页面Objects Viewss数",help_text=u"点击进入下一个页面Objects Viewss数（单位：个）")
+    clicknextpageobjectsactivities = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"点击进入下一个页面Objects Activities数",help_text=u"点击进入下一个页面Objects Activities数（单位：个）")
+
+
+    nextaftertenpsstotal = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"进入页静置10秒后Pss Total内存",help_text=u"进入页静置10秒后Pss Total内存（单位：KB）")
+    nextaftertenheapsize = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"进入页静置10秒后Heap Size内存",help_text=u"进入页静置10秒后Heap Size内存（单位：KB）")
+    nextaftertenheapalloc = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"进入页静置10秒后Heap Alloc内存",help_text=u"进入页静置10秒后Heap Alloc内存（单位：KB）")
+    nextaftertenheapfree = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"进入页静置10秒后Heap Free内存",help_text=u"进入页静置10秒后Heap Free内存（单位：KB）")
+    nextaftertenobjectsviews = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"进入页静置10秒后Objects Viewss数",help_text=u"进入页静置10秒后Objects Viewss数（单位：个）")
+    nextaftertenobjectsactivities = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"进入页静置10秒后Objects Activities数",help_text=u"进入页静置10秒后Objects Activities数（单位：个）")
+
+    nextaftertentwopsstotal = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"进入页再次静置10秒后Pss Total内存",help_text=u"进入页再次静置10秒后Pss Total内存（单位：KB）")
+    nextaftertentwoheapsize = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"进入页再次静置10秒后Heap Size内存",help_text=u"进入页再次静置10秒后Heap Size内存（单位：KB）")
+    nextaftertentwoheapalloc = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"进入页再次静置10秒后Heap Alloc内存",help_text=u"进入页再次静置10秒后Heap Alloc内存（单位：KB）")
+    nextaftertentwoheapfree = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"进入页再次静置10秒后Heap Free内存",help_text=u"进入页再次静置10秒后Heap Free内存（单位：KB）")
+    nextaftertentwoobjectsviews = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"进入页再次静置10秒后Objects Viewss数",help_text=u"进入页再次静置10秒后Objects Viewss数（单位：个）")
+    nextaftertentwoobjectsactivities = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"进入页再次静置10秒后Objects Activities数",help_text=u"进入页再次静置10秒后Objects Activities数（单位：个）")
+
+    clickbackpsstotal = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"点击返回后Pss Total内存",help_text=u"点击返回后Pss Total内存（单位：KB）")
+    clickbackheapsize = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"点击返回后Heap Size内存",help_text=u"点击返回后Heap Size内存（单位：KB）")
+    clickbackheapalloc = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"点击返回后Heap Alloc内存",help_text=u"点击返回后Heap Alloc内存（单位：KB）")
+    clickbackheapfree = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"点击返回后Heap Free内存",help_text=u"点击返回后Heap Free内存（单位：KB）")
+    clickbackobjectsviews = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"点击返回后Objects Viewss数",help_text=u"点击返回后Objects Viewss数（单位：个）")
+    clickbackobjectsactivities = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"点击返回后Objects Activities数",help_text=u"点击返回后Objects Activities数（单位：个）")
+
+    backaftertenpsstotal = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"返回页静置10秒后Pss Total内存",help_text=u"返回页静置10秒后Pss Total内存（单位：KB）")
+    backaftertenheapsize = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"返回页静置10秒后Heap Size内存",help_text=u"返回页静置10秒后Heap Size内存（单位：KB）")
+    backaftertenheapalloc = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"返回页静置10秒后Heap Alloc内存",help_text=u"返回页静置10秒后Heap Alloc内存（单位：KB）")
+    backaftertenheapfree = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"返回页静置10秒后Heap Free内存",help_text=u"返回页静置10秒后Heap Free内存（单位：KB）")
+    backaftertenobjectsviews = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"返回页静置10秒后Objects Viewss数",help_text=u"返回页静置10秒后Objects Viewss数（单位：个）")
+    backaftertenobjectsactivities = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"返回页静置10秒后Objects Activities数",help_text=u"返回页静置10秒后Objects Activities数（单位：个）")
+
+    backaftertentwopsstotal = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"返回页再次静置10秒后Pss Total内存",help_text=u"返回页再次静置10秒后Pss Total内存（单位：KB）")
+    backaftertentwoheapsize = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"返回页再次静置10秒后Heap Size内存",help_text=u"返回页再次静置10秒后Heap Size内存（单位：KB）")
+    backaftertentwoheapalloc = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"返回页再次静置10秒后Heap Alloc内存",help_text=u"返回页再次静置10秒后Heap Alloc内存（单位：KB）")
+    backaftertentwoheapfree = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"返回页再次静置10秒后Heap Free内存",help_text=u"返回页再次静置10秒后Heap Free内存（单位：KB）")
+    backaftertentwoobjectsviews = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"返回页再次静置10秒后Objects Viewss数",help_text=u"返回页再次静置10秒后Objects Viewss数（单位：个）")
+    backaftertentwoobjectsactivities = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"返回页再次静置10秒后Objects Activities数",help_text=u"返回页再次静置10秒后Objects Activities数（单位：个）")
+
     test_phone_name = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"测试手机ID")
     test_app_packagename = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"测试应用包名")
     test_app_version = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"测试应用版本号")

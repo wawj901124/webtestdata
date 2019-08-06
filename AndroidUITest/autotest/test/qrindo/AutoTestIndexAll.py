@@ -76,7 +76,7 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
         meminfoarray = []
         #———————————————第一次获取内存———————————————————————————————
         # 获取当前页面占用内存
-        hs10 = self.performanceframe.getCurrentPageMeninfoHeapSize(self.devicename, self.appversion, self.apppackagename)
+        hs10 = self.performanceframe.getCurrentPageMeninfoHeapAll(self.devicename, self.appversion, self.apppackagename)
         meminfoarray.append(hs10)
         #延时10秒
         self.baseframe.delaytime(10)
@@ -84,13 +84,13 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
         self.defineasserttext(currentpagetext,currentpagetext)
         #———————————————静置10秒后，第二次获取内存———————————————————————————————
         #获取当前页面占用内存
-        hs1 = self.performanceframe.getCurrentPageMeninfoHeapSize(self.devicename,self.appversion,self.apppackagename)
+        hs1 = self.performanceframe.getCurrentPageMeninfoHeapAll(self.devicename,self.appversion,self.apppackagename)
         meminfoarray.append(hs1)
         #点击元素
         self.baseframe.findelement_and_click(currrentfindstyle,currentstyleparame)
         #———————————————进入下一个页面，第三次获取内存———————————————————————————————
         #获取当前页面占用内存
-        hs20=self.performanceframe.getCurrentPageMeninfoHeapSize(self.devicename,self.appversion,self.apppackagename)
+        hs20=self.performanceframe.getCurrentPageMeninfoHeapAll(self.devicename,self.appversion,self.apppackagename)
         meminfoarray.append(hs20)
         self.baseframe.delaytime(10)
         if not self.baseframe.ele_is_exist("text",nextpagetext):
@@ -101,31 +101,31 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
         self.defineasserttext(nextpagetext,nextpagetext)
         #———————————————静置10秒后，第四次获取内存———————————————————————————————
         #获取当前页面占用内存
-        hs21=self.performanceframe.getCurrentPageMeninfoHeapSize(self.devicename,self.appversion,self.apppackagename)
+        hs21=self.performanceframe.getCurrentPageMeninfoHeapAll(self.devicename,self.appversion,self.apppackagename)
         meminfoarray.append(hs21)
         self.baseframe.delaytime(10)
         #———————————————静置10秒后，第五次获取内存———————————————————————————————
         #获取当前页面占用内存
-        hs2=self.performanceframe.getCurrentPageMeninfoHeapSize(self.devicename,self.appversion,self.apppackagename)
+        hs2=self.performanceframe.getCurrentPageMeninfoHeapAll(self.devicename,self.appversion,self.apppackagename)
         meminfoarray.append(hs2)
         #点击返回按钮
         self.baseframe.clickback()
         # self.baseframe.findbyresourceId_and_click(self.myqrcodepage.back_resourceId)
         #———————————————点击返回，第六次获取内存———————————————————————————————
         #获取当前页面占用内存
-        hs30 = self.performanceframe.getCurrentPageMeninfoHeapSize(self.devicename,self.appversion,self.apppackagename)
+        hs30 = self.performanceframe.getCurrentPageMeninfoHeapAll(self.devicename,self.appversion,self.apppackagename)
         meminfoarray.append(hs30)
         self.baseframe.delaytime(10)
         # 找到该页面的某个元素
         self.defineasserttext(currentpagetext, currentpagetext)
         #———————————————静置10秒后，第七次获取内存———————————————————————————————
         #获取当前页面占用内存
-        hs31 = self.performanceframe.getCurrentPageMeninfoHeapSize(self.devicename,self.appversion,self.apppackagename)
+        hs31 = self.performanceframe.getCurrentPageMeninfoHeapAll(self.devicename,self.appversion,self.apppackagename)
         meminfoarray.append(hs31)
         self.baseframe.delaytime(10)
         #———————————————静置10秒后，第八次获取内存———————————————————————————————
         #获取当前页面占用内存
-        hs3 = self.performanceframe.getCurrentPageMeninfoHeapSize(self.devicename,self.appversion,self.apppackagename)
+        hs3 = self.performanceframe.getCurrentPageMeninfoHeapAll(self.devicename,self.appversion,self.apppackagename)
         meminfoarray.append(hs3)
         self.baseframe.outPutMyLog("当前页内存：%s KB,静置10秒后，内存：%s KB,点击进入下一个页面内存：%s KB,静置10秒后，内存：%s KB,静置10秒后，内存：%s KB,点击返回后内存：%s,静置10秒后，内存：%s,静置10秒后，内存：%s" % (hs10,hs1,hs20,hs21,hs2,hs30,hs31,hs3))
         self.baseframe.outPutMyLog("meminfoarray:%s" % meminfoarray)
@@ -137,14 +137,62 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
         meminfotestresult.testcasetitle = testcasetitle
         meminfotestresult.teststarttime = starttime
         meminfotestresult.forcount = forcount
-        meminfotestresult.currentpageheapsize = hs10
-        meminfotestresult.currentpageaftertenheapsize = hs1
-        meminfotestresult.clicknextpageheapsize = hs20
-        meminfotestresult.nextaftertenheapsize = hs21
-        meminfotestresult.nextaftertentwoheapsize = hs2
-        meminfotestresult.clickbackheapsize = hs30
-        meminfotestresult.backaftertenheapsize = hs31
-        meminfotestresult.backaftertentwoheapsize = hs3
+        meminfotestresult.currentpagepsstotal = hs10[0]
+        meminfotestresult.currentpageheapsize = hs10[1]
+        meminfotestresult.currentpageheapalloc = hs10[2]
+        meminfotestresult.currentpageheapfree = hs10[3]
+        meminfotestresult.currentpageobjectsviews = hs10[4]
+        meminfotestresult.currentpageobjectsactivities = hs10[5]
+
+        meminfotestresult.currentpageaftertenpsstotal = hs1[0]
+        meminfotestresult.currentpageaftertenheapsize = hs1[1]
+        meminfotestresult.currentpageaftertenheapalloc = hs1[2]
+        meminfotestresult.currentpageaftertenheapfree = hs1[3]
+        meminfotestresult.currentpageaftertenobjectsviews = hs1[4]
+        meminfotestresult.currentpageaftertenobjectsactivities = hs1[5]
+
+        meminfotestresult.clicknextpagepsstotal = hs20[0]
+        meminfotestresult.clicknextpageheapsize = hs20[1]
+        meminfotestresult.clicknextpageheapalloc = hs20[2]
+        meminfotestresult.clicknextpageheapfree = hs20[3]
+        meminfotestresult.clicknextpageobjectsviews = hs20[4]
+        meminfotestresult.clicknextpageobjectsactivities = hs20[5]
+
+        meminfotestresult.nextaftertenpsstotal = hs21[0]
+        meminfotestresult.nextaftertenheapsize = hs21[1]
+        meminfotestresult.nextaftertenheapalloc = hs21[2]
+        meminfotestresult.nextaftertenheapfree = hs21[3]
+        meminfotestresult.nextaftertenobjectsviews = hs21[4]
+        meminfotestresult.nextaftertenobjectsactivities = hs21[5]
+
+        meminfotestresult.nextaftertentwopsstotal = hs2[0]
+        meminfotestresult.nextaftertentwoheapsize = hs2[1]
+        meminfotestresult.nextaftertentwoheapalloc = hs2[2]
+        meminfotestresult.nextaftertentwoheapfree = hs2[3]
+        meminfotestresult.nextaftertentwoobjectsviews = hs2[4]
+        meminfotestresult.nextaftertentwoobjectsactivities = hs2[5]
+
+        meminfotestresult.clickbackpsstotal = hs30[0]
+        meminfotestresult.clickbackheapsize = hs30[1]
+        meminfotestresult.clickbackheapalloc = hs30[2]
+        meminfotestresult.clickbackheapfree = hs30[3]
+        meminfotestresult.clickbackobjectsviews = hs30[4]
+        meminfotestresult.clickbackobjectsactivities = hs30[5]
+
+        meminfotestresult.backaftertenpsstotal = hs31[0]
+        meminfotestresult.backaftertenheapsize = hs31[1]
+        meminfotestresult.backaftertenheapalloc = hs31[2]
+        meminfotestresult.backaftertenheapfree = hs31[3]
+        meminfotestresult.backaftertenobjectsviews = hs31[4]
+        meminfotestresult.backaftertenobjectsactivities = hs31[5]
+
+        meminfotestresult.backaftertentwopsstotal = hs3[0]
+        meminfotestresult.backaftertentwoheapsize = hs3[1]
+        meminfotestresult.backaftertentwoheapalloc = hs3[2]
+        meminfotestresult.backaftertentwoheapfree = hs3[3]
+        meminfotestresult.backaftertentwoobjectsviews = hs3[4]
+        meminfotestresult.backaftertentwoobjectsactivities = hs3[5]
+
         meminfotestresult.test_phone_name = self.devicename
         meminfotestresult.test_app_packagename = self.apppackagename
         meminfotestresult.test_app_version = self.appversion
@@ -197,7 +245,7 @@ def __generateTestCases():
 
     from performancestatistics.models import MeminfoTestCase
 
-    meminfotestcase_all = MeminfoTestCase.objects.filter(testproject="Qrindo").filter(testpage="主页面").order_by('id')
+    meminfotestcase_all = MeminfoTestCase.objects.filter(testproject="Qrindo").filter(testpage="主页面").filter(id=8).order_by('id')
 
 
     for meminfotestcase in meminfotestcase_all:
