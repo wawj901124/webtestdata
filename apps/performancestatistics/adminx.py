@@ -107,6 +107,9 @@ class MeminfoTestResultAdmin(object):
                       "order": ('id',)},
         "back_count": {'title': u"返回当前页内存统计", "x-field": "forcount","y-field": ('clickbackmeminfo','backaftertenmeminfo','backaftertenmeminfotwo',),
                        "order": ('id',)},
+        "beforeandafter_count": {'title': u"未进入其它页前后当前页内存统计", "x-field": "forcount",
+                       "y-field": ('currentpageaftertenmeminfo', 'backaftertenmeminfotwo',),
+                       "order": ('id',)},
     }
 
 
