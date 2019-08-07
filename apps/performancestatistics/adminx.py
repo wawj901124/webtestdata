@@ -14,10 +14,11 @@ from .models import  MeminfoTestCase,MeminfoTestResult
 
 class MeminfoTestCaseAdmin(object):
     ziduan = ['testproject', 'testmodule','testpage','testcasetitle',
-              'currentpagetext','currrentfindstyle','currentstyleparame','nextpagetext','forcount']
+              'currentpagetext','currrentfindstyle','currentstyleparame','nextpagetext','forcount','dependcase',]
 
     list_display =['id','testproject', 'testmodule','testpage','testcasetitle',
                    'currentpagetext','currrentfindstyle','currentstyleparame', 'nextpagetext', 'forcount',
+                   'dependcase',
                    'add_time','update_time']#定义显示的字段
     search_fields =  ['testproject',]   #定义搜索字段
     list_filter =  ['testproject',] #定义筛选的字段

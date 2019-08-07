@@ -12,6 +12,7 @@ class MeminfoTestCase(models.Model):
     currentstyleparame = models.CharField(max_length=1000, default="", verbose_name=u"要点击元素查找风格的确切值",help_text=u"要点击元素查找风格的确切值")
     nextpagetext = models.CharField(max_length=100, default="", verbose_name=u"输入下一个页面标识元素text",help_text=u"下一个页面标识元素text")
     forcount = models.IntegerField(verbose_name="用例循环次数",help_text=u"用例循环次数")
+    dependcase = models.ForeignKey('self', default="", null=True, blank=True, verbose_name=u"依赖的用例ID",on_delete=models.PROTECT)
 
     add_time = models.DateTimeField(null=True, blank=True,auto_now_add=True,
                                     verbose_name=u"添加时间")  # datetime.now记录实例化时间，datetime.now()记录模型创建时间,auto_now_add=True是指定在数据新增时, 自动写入时间

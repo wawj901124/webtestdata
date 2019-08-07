@@ -21,7 +21,7 @@ from AndroidUITest.autotest.config.page.qrindo.globalConfig import globalconfig
 
 
 
-class TestIndexClass(unittest.TestCase):  # 创建测试类
+class TestBalanceClass(unittest.TestCase):  # 创建测试类
 
 
     @classmethod  # 类方法，只执行一次，但必须要加注解@classmethod,且名字固定为setUpClass
@@ -62,36 +62,47 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
         if dependid != None:
             self.baseframe.outPutMyLog("执行依赖")
             from performancestatistics.models import MeminfoTestCase
-            meminfotestcases = MeminfoTestCase.objects.filter(id=dependid)
+            meminfotestcases = MeminfoTestCase.objects.filter(id=int(dependid))
+            print("meminfotestcases:%s" % meminfotestcases)
 
-            if  meminfotestcases != []:
+            if str(meminfotestcases) != "<QuerySet []>":
                 self.baseframe.outPutMyLog("找到依赖数据")
-                for  meminfotestcase in  meminfotestcases:
-                    currentpagetext =  meminfotestcase.currentpagetext
-                    # 找到该页面的某个元素
-                    self.defineasserttext(currentpagetext, currentpagetext)
-                    currrentfindstyle = meminfotestcase.currrentfindstyle
-                    currentstyleparame = meminfotestcase.currentstyleparame
-                    # 点击元素
-                    self.baseframe.findelement_and_click(currrentfindstyle, currentstyleparame)
-                    # 延时10秒
-                    self.baseframe.delaytime(10)
-                    nextpagetext = meminfotestcase.nextpagetext
-                    if not self.baseframe.ele_is_exist("text", nextpagetext):
-                        self.baseframe.outPutMyLog("页面元素还未加载出来，再次进行10秒等待。")
+                for meminfotestcase in  meminfotestcases:
+                    depend = meminfotestcase.dependcase_id
+                    print("depend:%s" % depend)
+                    if depend != None:
+                        self.baseframe.outPutMyLog("进入下一层依赖")
+                        self.definedepend(depend)
+                    else:
+                        self.baseframe.outPutMyLog("执行本次依赖")
+                        currentpagetext =  meminfotestcase.currentpagetext
+                        # 找到该页面的某个元素
+                        self.defineasserttext(currentpagetext, currentpagetext)
+                        currrentfindstyle = meminfotestcase.currrentfindstyle
+                        currentstyleparame = meminfotestcase.currentstyleparame
+                        # 点击元素
+                        self.baseframe.findelement_and_click(currrentfindstyle, currentstyleparame)
+                        # 延时10秒
                         self.baseframe.delaytime(10)
-                    # 找到该页面的某个元素
-                    # self.baseframe.findbytext(self.myqrcodepage.balance_text)
-                    self.defineasserttext(nextpagetext, nextpagetext)
-                    break
+                        nextpagetext = meminfotestcase.nextpagetext
+                        if not self.baseframe.ele_is_exist("text", nextpagetext):
+                            self.baseframe.outPutMyLog("页面元素还未加载出来，再次进行10秒等待。")
+                            self.baseframe.delaytime(10)
+                        # 找到该页面的某个元素
+                        # self.baseframe.findbytext(self.myqrcodepage.balance_text)
+                        self.defineasserttext(nextpagetext, nextpagetext)
             else:
-                self.baseframe.outPutErrorMyLog("没有找到依赖id%s对应的数据！" % dependid)
+                self.baseframe.outPutErrorMyLog("没有找到依赖id[%s]对应的数据！" % dependid)
         else:
-            self.baseframe.outPutErrorMyLog("没有输入依赖ID！")
+            self.baseframe.outPutMyLog("没有输入依赖ID！或依赖ID为None，不执行依赖！")
+
+    # def test_001(self):
+    #     dependid = 9
+    #     self.definedepend(dependid)
 
 
     #定义搜索查找函数
-    def defineclickandback(self,forcount,currentpagetext,currrentfindstyle, currentstyleparame,nextpagetext,testproject,testmodule,testpage,testcasetitle,starttime):
+    def defineclickandback(self,forcount,currentpagetext,currrentfindstyle, currentstyleparame,nextpagetext,testproject,testmodule,testpage,testcasetitle,starttime,dependid):
         if forcount == 1:
             isstartapp = True
         else:
@@ -105,6 +116,7 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
             # print("Login_isExist:%s" % Login_isExist)
             if Login_isExist:
                 self.definelogin()
+            self.definedepend(dependid)
 
 
 
@@ -263,9 +275,9 @@ class TestIndexClass(unittest.TestCase):  # 创建测试类
 
 
     @staticmethod    #根据不同的参数生成测试用例(forcount,currentpagetext,nextpagetext,testproject,testmodule,testpage,testcasetitle,starttime):
-    def getTestFunc(forcount,currentpagetext,currrentfindstyle, currentstyleparame,nextpagetext,testproject,testmodule,testpage,testcasetitle,starttime):
+    def getTestFunc(forcount,currentpagetext,currrentfindstyle, currentstyleparame,nextpagetext,testproject,testmodule,testpage,testcasetitle,starttime,dependid):
         def func(self):
-            self.defineclickandback(forcount,currentpagetext,currrentfindstyle, currentstyleparame,nextpagetext,testproject,testmodule,testpage,testcasetitle,starttime)
+            self.defineclickandback(forcount,currentpagetext,currrentfindstyle, currentstyleparame,nextpagetext,testproject,testmodule,testpage,testcasetitle,starttime,dependid)
         return func
 
 def __generateTestCases():
@@ -280,7 +292,7 @@ def __generateTestCases():
 
     from performancestatistics.models import MeminfoTestCase
 
-    meminfotestcase_all = MeminfoTestCase.objects.filter(testproject="Qrindo").filter(testpage="主页面").order_by('id')
+    meminfotestcase_all = MeminfoTestCase.objects.filter(testproject="Qrindo").filter(testpage="Balance页").order_by('id')
 
 
     for meminfotestcase in meminfotestcase_all:
@@ -324,9 +336,10 @@ def __generateTestCases():
             args.append(meminfotestcase.testpage)
             args.append(meminfotestcase.testcasetitle)
             args.append(starttime)
+            args.append(meminfotestcase.dependcase_id)
 
-            setattr(TestIndexClass, 'test_func_%s_%s_%s' % (meminfotestcaseid,meminfotestcase.testcasetitle,forcount_i),
-                    TestIndexClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
+            setattr(TestBalanceClass, 'test_func_%s_%s_%s' % (meminfotestcaseid,meminfotestcase.testcasetitle,forcount_i),
+                    TestBalanceClass.getTestFunc(*args))  # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
 
 
     # file_name = "D:\\Users\\Administrator\\PycharmProjects\\seleniumweb\\sele\\dataconfig\\assertselectsearchmanager.xls"
@@ -357,7 +370,8 @@ __generateTestCases()
 if __name__ == '__main__':
     print("hello world")
     unittest.main()
-
+    # balance = TestBalanceClass()
+    # balance.definedepend(9)
 
 
 
