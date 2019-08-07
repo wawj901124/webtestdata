@@ -9,9 +9,6 @@ from AndroidUITest.util.gettimestr import GetTimeStr   #导入获取时间串函
 from AndroidUITest.util.my_log import MyLog
 
 
-
-
-
 class BaseFrame:
     def __init__(self,outdevice=None,apppacakagename=None):
         if outdevice==None:
@@ -34,6 +31,7 @@ class BaseFrame:
     def outPutErrorMyLog(self,context):
         mylog = MyLog(context)
         mylog.runErrorLog()
+
 
     #执行shell命令
     def adbshell(self,order):
@@ -309,7 +307,8 @@ class BaseFrame:
     #得到设备信息
     def getdeviceinfo(self):
         deviceinfo = self.d.device_info
-        self.outPutMyLog("deviceinfo:",deviceinfo)
+        self.outPutMyLog("deviceinfo:%s"%deviceinfo)
+        self.outPutMyLog("deviceinfo类型:%s"% type(deviceinfo))
         return deviceinfo
 
     #建立crash监听
@@ -381,7 +380,12 @@ baseframe = BaseFrame()
 
 if __name__ == "__main__":
     bf = BaseFrame()
-    bf.findbytext_and_click(outpretoastmessage='',text="Show QR")
+    # bf.findbytext_and_click(outpretoastmessage='',text="Show QR")
+    dv = bf.getdeviceinfo()
+    print(dv["model"])
+    print(dv["version"])
+    print(dv["display"]["width"])
+    print(dv["display"]["height"])
 
 
 

@@ -94,6 +94,10 @@ class MeminfoTestResult(models.Model):
     test_phone_name = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"测试手机ID")
     test_app_packagename = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"测试应用包名")
     test_app_version = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"测试应用版本号")
+    test_phone_model = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"测试手机型号")
+    test_phone_system_version = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"测试手机系统版本")
+    test_phone_resolution_ratio = models.CharField(max_length=100, default="",null=True, blank=True, verbose_name=u"测试手机分辨率")
+
     add_time = models.DateTimeField(null=True, blank=True,auto_now_add=True,
                                     verbose_name=u"添加时间")  # datetime.now记录实例化时间，datetime.now()记录模型创建时间,auto_now_add=True是指定在数据新增时, 自动写入时间
     update_time = models.DateTimeField(default=datetime.now, null=True, blank=True,

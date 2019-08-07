@@ -58,6 +58,9 @@ class MeminfoTestResultAdmin(object):
               'test_phone_name',
               'test_app_packagename',
               'test_app_version',
+              'test_phone_model',
+              'test_phone_system_version',
+              'test_phone_resolution_ratio',
               ]
     ziduan_all = ['id','testproject', 'testmodule','testpage','testcasetitle','teststarttime',
                     'forcount',
@@ -80,6 +83,9 @@ class MeminfoTestResultAdmin(object):
                    'test_phone_name',
                    'test_app_packagename',
                    'test_app_version',
+                  'test_phone_model',
+                  'test_phone_system_version',
+                  'test_phone_resolution_ratio',
                    'add_time','update_time']  #定义只读字段
 
     list_display = ziduan_all#定义显示的字段

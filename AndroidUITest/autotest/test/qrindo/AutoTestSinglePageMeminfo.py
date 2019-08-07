@@ -177,6 +177,7 @@ class TestSinglePageMeminfoClass(unittest.TestCase):  # 创建测试类
         meminfoarray.append(hs3)
         self.baseframe.outPutMyLog("当前页内存：%s KB,静置10秒后，内存：%s KB,点击进入下一个页面内存：%s KB,静置10秒后，内存：%s KB,静置10秒后，内存：%s KB,点击返回后内存：%s,静置10秒后，内存：%s,静置10秒后，内存：%s" % (hs10,hs1,hs20,hs21,hs2,hs30,hs31,hs3))
         self.baseframe.outPutMyLog("meminfoarray:%s" % meminfoarray)
+        deviceinfo_dict = self.baseframe.getdeviceinfo()
         from performancestatistics.models import MeminfoTestResult
         meminfotestresult = MeminfoTestResult()
         meminfotestresult.testproject = testproject
@@ -244,6 +245,10 @@ class TestSinglePageMeminfoClass(unittest.TestCase):  # 创建测试类
         meminfotestresult.test_phone_name = self.devicename
         meminfotestresult.test_app_packagename = self.apppackagename
         meminfotestresult.test_app_version = self.appversion
+        meminfotestresult.test_phone_model = deviceinfo_dict["model"]
+        meminfotestresult.test_phone_system_version = deviceinfo_dict["version"]
+        meminfotestresult.test_phone_resolution_ratio = "%s*%s" %(deviceinfo_dict["display"]["width"],deviceinfo_dict["display"]["height"])
+
         meminfotestresult.save()
         return meminfoarray
 
