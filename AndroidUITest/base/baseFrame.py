@@ -9,11 +9,12 @@ from AndroidUITest.util.gettimestr import GetTimeStr   #导入获取时间串函
 from AndroidUITest.util.my_log import MyLog
 
 
-class BaseFrame:
-    def __init__(self,outdevice=None,apppacakagename=None):
+class BaseFrame(object):
+    def __init__(self,outdevice=None,apppacakagename=None,isusb=None):
+        print(outdevice)
         if outdevice==None:
             # self.d = u2.connect('192.168.199.168')
-            self.d = u2.connect_usb('810EBM32TZ4K')
+            self.d = u2.connect_usb('192.168.1.100:5555')
         else:
             self.d = u2.connect_usb(outdevice)
 
@@ -375,17 +376,20 @@ class BaseFrame:
                 self.outPutMyLog("已经创建目录：%s" % zuhefiledir)
 
 
-baseframe = BaseFrame()
-
 
 if __name__ == "__main__":
-    bf = BaseFrame()
+    outdevice = "192.168.1.100:5555"
+    apppacakagename = "com.tencent.tmgp.sgame"
+
+    bf = BaseFrame(outdevice=outdevice,apppacakagename=apppacakagename)
     # bf.findbytext_and_click(outpretoastmessage='',text="Show QR")
-    dv = bf.getdeviceinfo()
-    print(dv["model"])
-    print(dv["version"])
-    print(dv["display"]["width"])
-    print(dv["display"]["height"])
+    # dv = bf.getdeviceinfo()
+    # print(dv["model"])
+    # print(dv["version"])
+    # print(dv["display"]["width"])
+    # print(dv["display"]["height"])
+    bf.startapp()
+
 
 
 
