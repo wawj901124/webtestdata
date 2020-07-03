@@ -4,7 +4,7 @@
     <file url="file://$PROJECT_DIR$/APIAutoTest/autotest/test/sanxing/autoapitest.py" charset="GBK" />
     <file url="file://$PROJECT_DIR$/APIAutoTest/util/md5sign/IIATF_sign_verify.py" charset="GBK" />
     <file url="file://$PROJECT_DIR$/APIAutoTest/util/md5sign/my_private_rsa_key.pem" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/APIAutoTest/util/md5sign/my_private_rsa_key——备份.pem" charset="GBK" />
     <file url="file://$PROJECT_DIR$/APIAutoTest/util/md5sign/my_rsa_public.pem" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/APIAutoTest/util/md5sign/my_private_rsa_key——备份.pem" charset="GBK" />
   </component>
 </project>
