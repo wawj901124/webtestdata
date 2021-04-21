@@ -100,7 +100,7 @@ for one_list in all_xiang_list:
                                         {%% if cab.id == %s.%s_id %%}
                                             selected="selected"
                                         {%% endif %%}>
-                            [{{ cab.test_project }}]-[{{ cab.test_module }}]-[{{ cab.test_page }}]_{{cab.test_case_title }}]
+                            [{{ cab.test_project }}]-[{{ cab.test_module }}]-[{{ cab.test_page }}]_[{{cab.test_case_title }}]
                         </option>
                     {%% endfor %%}
 
