@@ -102,31 +102,60 @@ class MakeTable:
                 </tr>""" % (label_name, tag_id, tag_id, model_name, tag_id, tag_id, tag_id, model_name, tag_id)
 
             elif tag_html_type == "ForeignKey":
-                table_one_tr = """        <tr>
-                    <td>
-                        <label>%s:</label>
-                    </td>
-                    <td>
-                        <select id="%s" name="%s">
-                            <option value=""
-                                    {%% if %s.%s_id == None %%}
-                                        selected="selected"
-                                    {%% endif %%}>
-                                    ---请选择
-                            </option>
-                            {%% for cab in %s_all %%}
-                                <option
-                                        value={{ cab.id }}
-                                                {%% if cab.id == %s.%s_id %%}
-                                                    selected="selected"
-                                                {%% endif %%}>
-                                    [{{ cab.test_project }}]-[{{ cab.test_module }}]-[{{ cab.test_page }}]_[{{cab.test_case_title }}]
+                if str(waijian_type) == "'self'":
+                    table_one_tr = """        <tr>
+                        <td>
+                            <label>%s:</label>
+                        </td>
+                        <td>
+                            <select id="%s" name="%s">
+                                <option value=""
+                                        {%% if %s.%s_id == None %%}
+                                            selected="selected"
+                                        {%% endif %%}>
+                                        ---请选择
                                 </option>
-                            {%% endfor %%}
+                                {%% for cab in %s_all %%}
+                                    <option
+                                            value={{ cab.id }}
+                                                    {%% if cab.id == %s.%s_id %%}
+                                                        selected="selected"
+                                                    {%% endif %%}>
+                                        [{{ cab.test_project }}]-[{{ cab.test_module }}]-[{{ cab.test_page }}]_[{{cab.test_case_title }}]
+                                    </option>
+                                {%% endfor %%}
 
-                        </select>
+                            </select>
 
-                    </td>""" % (label_name, tag_id, tag_id, model_name, tag_id, tag_id, model_name, tag_id)
+                        </td>""" % (label_name, tag_id, tag_id, model_name, tag_id, model_name, model_name, tag_id)
+                else:
+                    table_one_tr = """        <tr>
+                        <td>
+                            <label>%s:</label>
+                        </td>
+                        <td>
+                            <select id="%s" name="%s">
+                                <option value=""
+                                        {%% if %s.%s_id == None %%}
+                                            selected="selected"
+                                        {%% endif %%}>
+                                        ---请选择
+                                </option>
+                                {%% for cab in %s_all %%}
+                                    <option
+                                            value={{ cab.id }}
+                                                    {%% if cab.id == %s.%s_id %%}
+                                                        selected="selected"
+                                                    {%% endif %%}>
+                                        [{{ cab.test_project }}]-[{{ cab.test_module }}]-[{{ cab.test_page }}]_[{{cab.test_case_title }}]
+                                    </option>
+                                {%% endfor %%}
+
+                            </select>
+
+                        </td>""" % (label_name, tag_id, tag_id, model_name, tag_id, tag_id, model_name, tag_id)
+
+
 
             else:
                 table_one_tr = ""
