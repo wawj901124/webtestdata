@@ -86,7 +86,7 @@ class MakeTable:
                         <label>%s:</label>
                     </td>
                     <td>
-                        <input id="%s" name="%s" type="text" value="{{ %sform.%s.value }}"/>
+                        <input id="%s" name="%s" type="text" value="{{ %s.%s }}"/>
                     </td>
                 </tr>""" % (label_name, tag_id, tag_id, model_name, tag_id)
 
@@ -96,67 +96,37 @@ class MakeTable:
                         <label>%s:</label>
                     </td>
                     <td>
-                        <input type="radio" id="%s" name="%s"  value=1 {%% if %sform.%s.value == 1 %%} checked="checked"{%% endif %%}>是
-                        <input type="radio" id="%s" name="%s"  value=0 {%% if %sform.%s.value == 0 %%} checked="checked"{%% endif %%}>否
+                        <input type="radio" id="%s" name="%s"  value=1 {%% if %s.%s == 1 %%} checked="checked"{%% endif %%}>是
+                        <input type="radio" id="%s" name="%s"  value=0 {%% if %s.%s == 0 %%} checked="checked"{%% endif %%}>否
                     </td>
                 </tr>""" % (label_name, tag_id, tag_id, model_name, tag_id, tag_id, tag_id, model_name, tag_id)
 
             elif tag_html_type == "ForeignKey":
-                print("外键类型：")
-                print(waijian_type)
-                if str(waijian_type) == "'self'":
-                    table_one_tr = """        <tr>
-                        <td>
-                            <label>%s:</label>
-                        </td>
-                        <td>
-                            <select id="%s" name="%s">
-                                <option value=""
-                                        {%% if %s.%s_id == None %%}
-                                            selected="selected"
-                                        {%% endif %%}>
-                                        ---请选择
+                table_one_tr = """        <tr>
+                    <td>
+                        <label>%s:</label>
+                    </td>
+                    <td>
+                        <select id="%s" name="%s">
+                            <option value=""
+                                    {%% if %s.%s_id == None %%}
+                                        selected="selected"
+                                    {%% endif %%}>
+                                    ---请选择
+                            </option>
+                            {%% for cab in %s_all %%}
+                                <option
+                                        value={{ cab.id }}
+                                                {%% if cab.id == %s.%s_id %%}
+                                                    selected="selected"
+                                                {%% endif %%}>
+                                    [{{ cab.test_project }}]-[{{ cab.test_module }}]-[{{ cab.test_page }}]_[{{cab.test_case_title }}]
                                 </option>
-                                {%% for cab in %s_all %%}
-                                    <option
-                                            value={{ cab.id }}
-                                                    {%% if cab.id == %s.%s_id %%}
-                                                        selected="selected"
-                                                    {%% endif %%}>
-                                        [{{ cab.test_project }}]-[{{ cab.test_module }}]-[{{ cab.test_page }}]_[{{cab.test_case_title }}]
-                                    </option>
-                                {%% endfor %%}
+                            {%% endfor %%}
 
-                            </select>
+                        </select>
 
-                        </td>""" % (label_name, tag_id, tag_id, model_name, tag_id, model_name, model_name, tag_id)
-
-                else:
-                    table_one_tr = """        <tr>
-                        <td>
-                            <label>%s:</label>
-                        </td>
-                        <td>
-                            <select id="%s" name="%s">
-                                <option value=""
-                                        {%% if %s.%s_id == None %%}
-                                            selected="selected"
-                                        {%% endif %%}>
-                                        ---请选择
-                                </option>
-                                {%% for cab in %s_all %%}
-                                    <option
-                                            value={{ cab.id }}
-                                                    {%% if cab.id == %s.%s_id %%}
-                                                        selected="selected"
-                                                    {%% endif %%}>
-                                        [{{ cab.test_project }}]-[{{ cab.test_module }}]-[{{ cab.test_page }}]_[{{cab.test_case_title }}]
-                                    </option>
-                                {%% endfor %%}
-
-                            </select>
-
-                        </td>""" % (label_name, tag_id, tag_id, model_name, tag_id, tag_id, model_name, tag_id)
+                    </td>""" % (label_name, tag_id, tag_id, model_name, tag_id, tag_id, model_name, tag_id)
 
             else:
                 table_one_tr = ""
@@ -283,7 +253,7 @@ class MakeTable:
 
 if __name__ == "__main__":
     modelcontentfile = "modelcontent.txt"
-    modelname = "ClickTestCase"
+    modelname = "InputTestCase"
     mt = MakeTable(modelcontentfile=modelcontentfile, modelname=modelname)
-    # mt.make_table()
-    mt.make_table_form()
+    mt.make_table()
+    # mt.make_table_form()
