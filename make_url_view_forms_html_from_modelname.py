@@ -1,4 +1,4 @@
-model_name = "InputTestCase"
+model_name = "CheckTestCase"
 
 #生成forms:
 def make_forms(model_name):
@@ -56,12 +56,13 @@ class %sView(View):  # 继承View
 
     def post(self, request, %s_id):
         username = request.user.username
+        %s = %s.objects.get(
+            id=int(%s_id))  # 获取用例
         clicktestcase_all = ClickTestCase.objects.all().order_by("-id")
         startpackage_all = StartPackage.objects.all().order_by("-id")
         %s_form = %sForm(
             request.POST)  # 实例化%sForm()
-        clicktestcase = ClickTestCase.objects.get(
-            id=int(clicktestcase_id))  # 获取用例
+
 
         if %s_form.is_valid():  # is_valid()判断是否有错
 
@@ -99,16 +100,18 @@ class %sView(View):  # 继承View
            model_name, model_name.lower(),
            model_name.lower(),
 
-           model_name.lower(), model_name.lower(),
-           model_name, model_name,
-           model_name.lower(), model_name.lower(),
+           model_name.lower(),model_name.lower(),
            model_name, model_name.lower(),
            model_name.lower(), model_name,
+           model_name, model_name.lower(),
            model_name.lower(), model_name,
            model_name.lower(), model_name.lower(),
-           model_name.lower(), model_name,
+           model_name, model_name.lower(),
+           model_name, model_name.lower(),
            model_name.lower(), model_name.lower(),
+           model_name, model_name.lower(),
            model_name.lower(), model_name.lower(),
+           model_name.lower(),
            )
 
     print("生成在【views.py】文件中的内容：")
