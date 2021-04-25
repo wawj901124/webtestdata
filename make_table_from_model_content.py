@@ -64,6 +64,7 @@ class MakeTable:
         print(all_xiang_list)
         return all_xiang_list
 
+    #生成table
     def make_table(self):
         all_xiang_list = self.all_xiang_list
         table_zong = ""
@@ -171,6 +172,7 @@ class MakeTable:
         print(table_zong)
         return table_zong
 
+    #生成table form
     def make_table_form(self):
         all_xiang_list = self.all_xiang_list
 
@@ -279,10 +281,82 @@ class MakeTable:
         print("table_zong:")
         print(table_zong)
 
+    #生产在xadmin中的内容
+    def make_xadmin(self):
+        all_xiang_list = self.all_xiang_list
+
+        aiduan_list = []
+        # 根据列表生成内容
+        for one_list in all_xiang_list:
+            tag_id = one_list[3]
+            aiduan_list.append(tag_id)
+
+        mubiao = """
+from .models import %s
+
+
+#%sadmin
+class %sXAdmin(object):
+    ziduan = %s
+    
+
+    list_display = %s  # 定义显示的字段
+    search_fields = ['%s', ]  # 定义搜索字段
+    list_filter = ['%s', ]  # 定义筛选的字段
+    model_icon = 'fa fa-tasks'  # 定义图标显示
+    ordering = ['-add_time']  # 添加默认排序规则显示排序，根据添加时间倒序排序
+    # 设置某些字段为只为可读  #设置了readonly_fields，再设置exclude，exclude对该字段无效，
+    readonly_fields = ['add_time', ]
+    # exclude = ['case_step']  # 设置某些字段为不显示，即隐藏  #readonly_fields和exclude设置会有冲突
+    # inlines = [TestCaseInline]  #
+    # inlines配和TestCaseInline使用，可以直接在项目页面添加测试用例#只能做一层嵌套，不能进行两层嵌套
+    list_editable = ziduan   # 可以在列表页对字段进行编辑
+    refresh_times = [3, 5]  # 对列表页进行定时刷新,配置了3秒和5秒，可以从中选择一个
+    list_per_page = 50  # 每页设置50条数据，默认每页展示100条数据
+    list_display_links = ['%s', ]  # 设置点击链接进入编辑页面的字段
+    # date_hierarchy = 'add_time'   #详细时间分层筛选，未生效
+    show_detail_fields = ['%s', ]  # 显示数据详情
+
+    # 批量设置选中用例为 not run
+
+    def patch_set_not_run(self, request, querset):
+        for qs_one in querset:
+            # 再删除本体
+            qs_one.is_run_case = '0'
+            qs_one.save()
+
+    # 批量设置选中用例为 not run
+    def patch_set_run(self, request, querset):
+        for qs_one in querset:
+            # 再删除本体
+            qs_one.is_run_case = '1'
+            qs_one.save()
+
+    patch_set_not_run.short_description = "批量设置用例为不运行"
+    patch_set_run.short_description = "批量设置用例为运行"
+
+    actions = [patch_set_not_run, patch_set_run, ]
+
+
+# 在xadmin中注册%s
+xadmin.site.register(%s, %sXAdmin)
+    """ % (self.model_name, self.model_name,
+           self.model_name, str(aiduan_list),
+           str(aiduan_list), str(aiduan_list[0]),
+           str(aiduan_list[0]), str(aiduan_list[0]),
+           str(aiduan_list[0]), self.model_name,
+           self.model_name, self.model_name
+           )
+
+        print("在xadmin文件中的内容：")
+        print(mubiao)
+
+
 
 if __name__ == "__main__":
     modelcontentfile = "modelcontent.txt"
-    modelname = "InputTestCase"
+    modelname = "CheckTestCase"
     mt = MakeTable(modelcontentfile=modelcontentfile, modelname=modelname)
-    mt.make_table()
+    # mt.make_table()
     # mt.make_table_form()
+    mt.make_xadmin()
