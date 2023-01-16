@@ -33,7 +33,7 @@ openpyxl==2.5.3
 packaging==19.1
 Pillow==5.1.0
 progress==1.5
-py==1.8.0
+py==1.10.0
 pycryptodomex==3.8.2
 PyMySQL==0.8.1
 pyparsing==2.4.0
