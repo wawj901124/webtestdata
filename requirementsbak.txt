@@ -42,7 +42,7 @@ pytesseract==0.2.6
 python-dateutil==2.8.0
 pytz==2018.4
 pywin32==224
-PyYAML==3.12
+PyYAML==5.4
 requests==2.18.4
 retry==0.9.2
 selenium==3.141.0
